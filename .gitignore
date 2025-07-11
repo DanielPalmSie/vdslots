@@ -1,0 +1,54 @@
+# Environment and configuration
+.env
+.env.*
+*.env
+*.env.*
+!*.env.example
+config/*secret*.php
+config/*local*.php
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+# Logs
+*.log
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+
+# Dependencies
+vendor/
+node_modules/
+
+# Build/output
+build/
+dist/
+*/build/
+*/dist/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.swp
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# CI/CD configs (remove if needed in repo)
+.github/
+.gitlab-ci.yml
+
+# Misc runtime files
+*.pid
+phive/config/GamesRecommendations.config.php
+phive/config/brand-videoslots/dev/GamesRecommendations.config.php
+phive/config/Localizer.config.php
