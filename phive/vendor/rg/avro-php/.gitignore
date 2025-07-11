@@ -1,5 +1,0 @@
-vendor/
-.phpunit.result.cache
-composer.lock
-!bin/php
-!build/.gitkeep
