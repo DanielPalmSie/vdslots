@@ -1,0 +1,43 @@
+variables:
+  SERVER_TEST:
+    value: ""
+    description: "Target deploy server"
+  COMMAND_TEST:
+    value: ""
+    options:
+      - "deploy-test"
+      - "release-test"
+      - ""
+    description: "To deploy a feature-branch for testing, select 'deploy-test'. After testing is done, run this job again with 'release-test'"
+  BRAND:
+    value: $CI_PROJECT_NAME
+    description: "Target deploy brand (project folder name)"
+  TARGET_BRANCH:
+    value: ""
+    description: "Type 'main' to deploy the main branch, otherwise leave empty to deploy the selected branch name"
+  DOCKER_PIPELINE:
+    value: "false"
+    options:
+      - "false"
+      - "true"
+    description: "Select 'true' to create and push a docker image"
+
+stages:
+  - deploy_test
+  - sonar_test_branch
+  - update_story
+  - docker_version_management
+  - docker_build
+  - docker_push
+
+include:
+  - project: "utilities/ci-templates"
+    ref: "main"
+    file:
+      - "deploy-templates/deploy_test.yml"
+      - "code-analysis-templates/sonar_test_branch.yml"
+      - "automation-templates/update_story.yml"
+      - "docker-pipeline/version-management.yml"
+      - "docker-pipeline/docker-config.yml"
+      - "docker-pipeline/build.yml"
+      - "docker-pipeline/push.yml"

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+php vendor/bin/codecept run --skip-group=complex --fail-fast unit
+php vendor/bin/codecept run --skip-group=complex --fail-fast api

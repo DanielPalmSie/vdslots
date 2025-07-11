@@ -1,0 +1,20 @@
+actor: ApiTester
+modules:
+    enabled:
+        - Asserts
+        - \Helper\Api
+        - \Helper\AppHelper
+        - REST:
+            url: "%API_BASE_URL%"
+            depends: PhpBrowser
+            part: Json
+
+groups:
+    # Some tests require complicated configuration in order to succeed and should therefore be skipped by default.
+    # For example /app-tests/tests/api/Phive/Modules/Micro/Thunderkick/FreeSpinBetAndWinCest.php tests free spins
+    # and requires that a free spin reward exists for the player/game, is activated, not expired and has remaining free spins.
+    # Typically you need to create a trophy reward for the user in admin2 then activate it from the Videoslots profile page, then run the test.
+    # All test files which require complicated configuration must include clear instructions at the top of the file.
+    # To execute all tests except the complicated ones: php vendor/bin/codecept run --skip-group=complicated api
+    # See https://codeception.com/docs/07-AdvancedUsage#Group-Files for more information.
+    complex: [tests/api/Phive/Modules/Micro/Thunderkick/FreeSpinBetAndWinCest.php]

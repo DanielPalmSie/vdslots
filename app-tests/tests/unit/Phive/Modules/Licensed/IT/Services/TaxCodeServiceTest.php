@@ -1,0 +1,146 @@
+<?php
+namespace Tests\Unit\Phive\Modules\Licensed\IT\Services;
+
+use CodiceFiscale\Subject;
+use IT\Pacg\Types\TaxCodeType;
+use IT\Services\TaxCodeService;
+use Tests\Unit\Phive\Modules\Licensed\IT\Support;
+
+/**
+ * Class TaxCodeServiceTest
+ */
+class TaxCodeServiceTest extends Support
+{
+    public function testGetSubject()
+    {
+        $tax_code = \Mockery::mock(TaxCodeType::class);
+        $tax_code->shouldReceive(['toArray' => ['test']]);
+
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getSubject');
+        $return = $get_subject->invokeArgs($mock, [$tax_code]);
+
+        $this->assertInstanceOf(Subject::class, $return);
+    }
+
+    public function testGetTaxCodeType()
+    {
+        $payload = $this->getPayload();
+
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getTaxCodeType');
+        $return = $get_subject->invokeArgs($mock, [$payload]);
+
+        $this->assertInstanceOf(TaxCodeType::class, $return);
+    }
+
+    public function testGetTaxCodeTypeFails()
+    {
+        $payload = $this->getPayload();
+        unset($payload['gender']);
+
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getTaxCodeType');
+        $this->expectException(\Exception::class);
+        $get_subject->invokeArgs($mock, [$payload]);
+    }
+
+    public function testCalculate()
+    {
+        $payload = $this->getPayload();
+
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getTaxCodeType');
+        $tax_code = $get_subject->invokeArgs($mock, [$payload]);
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getSubject');
+        $subject = $get_subject->invokeArgs($mock, [$tax_code]);
+        $calculate = self::getAccessibleMethod(TaxCodeService::class, 'calculate');
+        $result = $calculate->invokeArgs($mock, [$subject]);
+        $expected_tax_code_value = 'SRNNMA85H06A109B';
+
+        $this->assertEquals($expected_tax_code_value, $result);
+    }
+
+    public function testExtractDataFromTaxCode()
+    {
+        $tax_code_value = 'SRNNMA85H06A109B';
+
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $extract_data_from_taxCode = self::getAccessibleMethod(TaxCodeService::class, 'extractDataFromTaxCode');
+        $result = $extract_data_from_taxCode->invokeArgs($mock, [$tax_code_value]);
+
+        $this->assertInstanceOf(Subject::class, $result);
+    }
+
+    public function testMountResponse()
+    {
+        $payload = $this->getPayload();
+
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getTaxCodeType');
+        $tax_code = $get_subject->invokeArgs($mock, [$payload]);
+
+        $get_subject = self::getAccessibleMethod(TaxCodeService::class, 'getSubject');
+        $subject = $get_subject->invokeArgs($mock, [$tax_code]);
+
+        $mount_response = self::getAccessibleMethod(TaxCodeService::class, 'mountResponse');
+        $return = $mount_response->invokeArgs($mock, [$subject]);
+
+        $this->assertInstanceOf(TaxCodeType::class, $return);
+    }
+
+    public function testGenerate()
+    {
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $payload = $this->getPayload();
+        $tax_code_value = 'SRNNMA85H06A109B';
+
+        $expected_response = [
+            'code' => TaxCodeService::SUCCESS_CODE,
+            'tax_code' => $tax_code_value
+        ];
+
+        $result = $mock->generate($payload);
+
+        $this->assertEquals($expected_response, $result);
+    }
+
+    public function testGenerateFails()
+    {
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $payload = $this->getPayload();
+        unset($payload['gender']);
+
+        $result = $mock->generate($payload);
+
+        $this->assertEquals(TaxCodeService::ERROR_CODE, $result['code']);
+    }
+
+    public function testExtract()
+    {
+        $mock = \Mockery::mock(TaxCodeService::class)->makePartial();
+        $tax_code_value = 'SRNNMA85H06A109B';
+        $result = $mock->extract($tax_code_value);
+
+        $tax_code_expected_return = $this->getPayload();
+
+        $this->assertEquals($tax_code_expected_return['birthDate'], $result['tax_code']['birthDate']);
+        $this->assertEquals($tax_code_expected_return['gender'], $result['tax_code']['gender']);
+        $this->assertEquals($tax_code_expected_return['registryCode'], $result['tax_code']['registryCode']);
+        $this->assertEquals(TaxCodeService::SUCCESS_CODE, $result['code']);
+    }
+
+    /**
+     * @return array
+     */
+    private function getPayload(): array
+    {
+        return [
+            "name" => 'Name',
+            "surname" => 'Surname',
+            "birthDate" => '1985-06-06',
+            "gender" => 'M',
+            "registryCode" => 'A109',
+        ];
+    }
+}

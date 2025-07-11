@@ -1,0 +1,68 @@
+<?php
+namespace IT\Tests\Services;
+
+use IT\Services\ResidenceService;
+use IT\Tests\Support;
+
+/**
+ * Class ResidenceServiceTest
+ * @package IT\Tests\Services
+ */
+class ResidenceServiceTest extends Support
+{
+    public function testRealListPath()
+    {
+        $mock = \Mockery::mock(ResidenceService::class)->makePartial();
+        $path = $mock->getPath();
+        $this->assertTrue(is_string($path));
+        $this->assertTrue(strlen($path) > 5);
+        $this->assertTrue(file_exists($path));
+    }
+
+    public function testLoadFromCache()
+    {
+        $mock = \Mockery::mock(ResidenceService::class)->makePartial();
+        $load_from_cache = self::getAccessibleMethod(ResidenceService::class, 'loadFromCache');
+        $return = $load_from_cache->invoke($mock);
+        $expected_result = file_get_contents($mock->getPath());
+        $this->assertEquals($expected_result, $return);
+    }
+
+    public function testLoad()
+    {
+        $mock = \Mockery::mock(ResidenceService::class)->makePartial();
+        $file_body = file_get_contents($mock->getPath());
+        $city_info = json_decode($file_body, true);
+        $load = self::getAccessibleMethod(ResidenceService::class, 'load');
+        $return = $load->invoke($mock);
+        $this->assertTrue(is_array($return));
+        $this->assertEquals($city_info, $return);
+    }
+
+    public function testGetComuniCodes()
+    {
+        $mock = \Mockery::mock(ResidenceService::class)->makePartial();
+        $file_body = file_get_contents($mock->getPath());
+        $city_info = json_decode($file_body, true);
+        $result = $mock->getComuniCodes();
+        $this->assertEquals(count($city_info), count($result));
+    }
+
+    public function testGetComuniDetail()
+    {
+        $mock = \Mockery::mock(ResidenceService::class)->makePartial();
+        $file_body = file_get_contents($mock->getPath());
+        $city_info = json_decode($file_body, true);
+        for ($i = 0; $i <= 50; $i++) {
+            $belfiore_code = array_rand($city_info);
+            $item = $city_info[$belfiore_code];
+
+            $result = $mock->getComuniDetail($belfiore_code);
+            $expected_return = [
+                'denomination' => $item['denomination'],
+                'municipal_territorial_unit' => $item['denomination_of_the_supra_municipal_territorial_unit']
+            ];
+            $this->assertEquals($expected_return, $result);
+        }
+    }
+}
