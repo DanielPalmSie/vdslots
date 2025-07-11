@@ -1,0 +1,159 @@
+@include custom-code(kungaslottet) {
+
+  // User strip
+
+  .vs-game-info-strip {
+    @media screen and (orientation: portrait) {
+      border-top: none;
+    }
+
+    @media screen and (orientation: landscape) {
+      border-left: none;
+    }
+  }
+
+  .vs-game-info-strip__content {
+    color: $neutral;
+  }
+
+  .vs-game-info-strip__item-container--outlined {
+   font-size: 100%;
+  }
+
+  .vs-avatar__image {
+    width: 18px;
+    height: 18px;
+    border: none;
+  }
+
+  .vs-game-info-strip__item-container--outlined {
+    background: $dark-blue-400;
+  }
+
+  .vs-button__deposits {
+    background: $deposit-gradient;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .has-large-bottom-bar .vs-button__deposits {
+    font-size: 20px;
+    padding: 2px;
+  }
+
+  .vs-button__rewards {
+
+    // .vs-button__rewards.icon-vs-gift
+    &.icon-vs-gift {
+      color: $neutral;
+    }
+    // .vs-button__rewards .vs-btn-cancel-default-l
+    .vs-btn-cancel-default-l {
+      background: $kunga-blue;
+    }
+
+    // .vs-button__rewards .vs-mobile-rewards-count
+    .vs-mobile-rewards-count {
+      top: 4px;
+      right: -4px;
+
+      width: 10px;
+      height: 10px;
+
+      font-size: 6px;
+      line-height: 8px;
+
+      border: 1px solid $kunga-blue;
+    }
+  }
+
+  .has-large-bottom-bar .vs-mobile-rewards-count {
+    top: 9px;
+    right: -4px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .has-large-bottom-bar .vs-game-info-strip__switch {
+    background: $dark-blue-400;
+    color: $neutral;
+
+    @media screen and (orientation: portrait) {
+      margin-top: -30px;
+    }
+
+    @media screen and (orientation: landscape) {
+      margin-left: -30px;
+    }
+  }
+
+  .vs-game-info-strip.gradient-normal {
+    background: $dark-blue-500;
+  }
+
+  .vs-button__split-main, .vs-button__split-individual {
+    @media screen and (orientation: portrait) {
+      border-left: 1px solid $dark-blue-divider;
+    }
+
+    @media screen and (orientation: landscape) {
+      border-top: 1px solid $dark-blue-divider;
+    }
+  }
+
+  .vs-game-info-strip__item > .vs-button__split-individual-index {
+    color: $kunga-blue;
+  }
+
+
+  // Popups
+
+  .vs-popup-overlay {
+    background: $dark-blue-500;
+  }
+
+  .vs-popup-overlay__header {
+    background: $kunga-blue-pop-ups;
+  }
+
+  $vs-notification--margin: 8px;
+  .vs-notification {
+    width: calc(100% - 2*#{$vs-notification--margin});
+    margin: 0 $vs-notification--margin;
+    background: $dark-blue-500;
+  }
+
+  .vs-notification:nth-child(even) {
+    background: $dark-blue-400;
+  }
+
+
+  // Game Search
+
+  .vs-game-search__input-container {
+    background: $dark-blue-400;
+  }
+
+  .vs-game-search__input-search-container {
+    color: $light-grey;
+  }
+
+  .vs-game-search-strip {
+    background: $dark-blue-200;
+  }
+
+  .vs-game-search__strip-item--active {
+    color: $kunga-blue;
+  }
+
+  // Split Submenu
+
+  .vs-button__split-individual-submenu {
+    background: $dark-blue-500;
+    color: $white;
+    border-radius: 5px;
+    padding-right: 30px;
+  }
+}

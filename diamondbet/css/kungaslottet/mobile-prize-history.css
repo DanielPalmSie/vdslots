@@ -1,0 +1,50 @@
+.reward-history-container {
+  padding: 0px 10px 0px 10px;
+}
+
+.reward-detailed {
+  position: relative;
+}
+
+.reward-detailed h3 {
+  width: 325px;
+}
+
+.moreinfo {
+  position: absolute;
+  top: 48px;
+  right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.trophy-infobox {
+  background: url(/diamondbet/images/box-bg.png) #000 repeat-x;
+  min-height: 30px;
+  border-radius: 0;
+}
+
+.moreinfo-info {
+  width: 353px;
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+
+.trophy-infobox::before {
+  /*border-color: #333 transparent;*/
+  border-width: 15px 15px 0;
+  top: 51px;
+  left: 300px;
+}
+
+.trophy-infobox::after {
+  /*border-color: #333 transparent;*/
+  border-width: 15px 15px 0;
+  top: 50px;
+  left: 300px;
+}
+
+.infobox-spacing {
+  margin-top: 80px;
+}

@@ -1,0 +1,121 @@
+// .deposit_popup__amount_value, .deposit_popup__amount_value #amount_value
+$deposit_popup__amount_value--background-color: #f3faff;
+$deposit_popup__amount_value--color: $black;
+$deposit_popup__currency--color: $main-color;
+
+// .deposit_popup__amounts_amount_text
+$deposit_popup__amounts_amount_text--background-color: #F9F9F9;
+$deposit_popup__amounts_amount_text--color: #474747;
+$deposit_popup__amounts_amount_text--border-color: #EAEAEA;
+
+// input[type=radio]:checked + label > .deposit_popup__amounts_amount_text
+$deposit_popup__amounts_amount_text-selected--color: #FFFFFF;
+
+// .deposit_popup__tnc
+$deposit_popup__tnc--border-color: #e1e1e1;
+
+// .deposit_popup__tnc-vertical-line
+$deposit_popup__tnc-vertical-line--border-color: #e1e1e1;
+
+// .deposit_popup__tnc-description
+$deposit_popup__tnc-description--color: #282828;
+
+// .deposit_popup-btn--deposit-btn
+$deposit_popup-btn-deposit-btn--background-color: #006A14;
+
+// .deposit_popup-btn--no-deposit-btn
+$deposit_popup-btn-no-deposit-btn--border-color: #C5BEBC;
+$deposit_popup-btn-no-deposit-btn--color: #C5BEBC;
+$deposit_popup-btn-no-deposit-btn--background-color: #FFFFFF;
+
+// .pp_strategy
+$pp_strategy-button--border: #EAEAEA;
+$pp_strategy-active--background-color: #f3faff;
+$pp_strategy-checkmark-circle--color: #016BB2;
+
+// .deposit-response__title
+$deposit-response__title--color: $main-color;
+
+// .deposit-response__description
+$deposit-response__description--color: #474747;
+
+// .deposit-withdraw__amount-value
+$deposit-withdraw__amount-value--background-color: #f3faff;
+$deposit-withdraw__amount-value--color: $black;
+
+// .deposit-withdraw__currency
+$deposit-withdraw__currency--color: $main-color;
+
+// .deposit-withdraw__description
+$deposit-withdraw__description--color: #282828;
+
+// .pnp-user-details__details
+$pnp-user-details__details--background-color: #F4F4F4;
+
+// .pnp-user-details__details-text
+$pnp-user-details__details-text--color: #282828;
+
+// .pnp-user-details__label--country .styled-select::after
+$pnp-styled-select-valid-after--background: url('#{$brand-image-path}/pay-n-play/expand.png') no-repeat center center;
+
+// .pnp-user-details__input
+$pnp-user-details__input--border-color: #D1D1D1;
+$pnp-user-details__input--background-color: #FFFFFF;
+$pnp-user-details__input--color: $black;
+
+// .pnp-user-details__input ::placeholder
+$pnp-user-details__input-placeholder--color: #EBEBEB;
+
+// .pnp-user-details__input.error , .pnp-account-verification__input.error
+$input-error--color: #C41620;
+$input-error--background-color: #FFE0E0;
+$input-error--border-color: #C41620;
+
+// .pnp-user-details__input--email
+$pnp-user-details__input-email--background-image: url("../../images/pay-n-play/mail.svg") !default;
+
+// .pnp-user-details__input--email.error
+$pnp-user-details__input-email-error--background-image: url("../../images/pay-n-play/mail-red.svg") !default;
+
+// .pnp-user-details__input--country
+$pnp-user-details__input-country--background-image: url("../../images/pay-n-play/country.png") !default;
+$pnp-user-details__input-country--border-color: $neutral-500;
+$pnp-user-details__input-country--color: #ADADAD;
+
+// .pnp-user-details__input--country.error
+$pnp-user-details__input-country-error--background-image: url("../../images/pay-n-play/country-red.png") !default;
+
+// .pnp-user-details__input--country-prefix
+$pnp-user-details__input-country-prefix--color: #9C9C9C;
+$pnp-user-details__input-country-prefix--background-color: #CFCFCF;
+
+// .pnp-user-details__input--phone
+$pnp-user-details__input-phone--background-image: url("../../images/pay-n-play/phone.svg") !default;
+
+// .pnp-user-details__input--phone.error
+$pnp-user-details__input-phone-error--background-image: url("../../images/pay-n-play/phone-red.svg") !default;
+
+// .pnp-user-details__wish-to-receive-checkbox
+$pnp-user-details__wish-to-receive-checkbox--background-color: #EAE9E9;
+
+// .pnp-user-details__label-text--wish-to-receive
+$pnp-user-details__label-text-wish-to-receive--color: #5A5A5A;
+
+// .pnp-error-popup__title
+$pnp-error-popup__title--color: $main-color;
+
+// .pnp-error-popup__description
+$pnp-error-popup__description--color: #282828;
+
+// .pnp-error-popup__description a
+$pnp-error-popup__description-a--color: #282828;
+
+// .pnp-error-popup__btn--proceed
+$pnp-error-popup__btn-proceed--background-color: #07A85B;
+
+// .pnp-error-popup__btn--request-limit-increase
+$pnp-error-popup__btn-request-limit-increase--background-color: #006A14;
+
+
+// .btn-default-l
+$btn-default-l--background-color: #07A85B;

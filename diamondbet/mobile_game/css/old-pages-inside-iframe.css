@@ -1,0 +1,62 @@
+/**
+ * This file will contain a subset of special rules that applies only for the old website pages
+ * that are loaded inside the iframe overlay in the new mobile game mode
+ * Ex. deposit and rewards
+ */
+
+/* Viewport amendment styling */
+body.iframe-in-popup {
+    padding-top: 10px;
+
+    user-select: none;
+    -webkit-text-size-adjust: 100%;
+
+    margin: 0 auto;
+}
+
+
+/* MyRewards page specific amendment ("my-prize") >>> */
+body.iframe-in-popup .fail-confirm {
+    width: 100%;
+    /*  Avoid overlap with large game info strip switch */
+    max-width: calc(100% - 30px);
+}
+
+body.iframe-in-popup .simple-box.left {
+    float: none;
+}
+
+.iframe-in-popup .reward-detailed::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Fix popup button to go over text */
+.iframe-in-popup #mbox-msg .neg-margin-top-25 {
+    margin-top: inherit;
+}
+/* Fix popup not being centered - we already have auto margin, so we override multibox horizontal positioning */
+.iframe-in-popup #mbox-msg {
+    left: 0px !important;
+}
+/* MyRewards page specific amendment ("my-prize") <<< */
+
+/* Deposits page specific amendment ("deposit") <<< */
+.iframe-in-popup .cashierBox input {
+    box-sizing: content-box;
+}
+
+.container-holder{
+    padding-top: 0px !important;
+}
+
+.multibox-content{
+    background-color: #fff !important;
+}
+
+#mbox-msg{
+    position: absolute !important;
+    top: 0px;
+}
+
+/* Deposits page specific amendment ("deposit") <<< */

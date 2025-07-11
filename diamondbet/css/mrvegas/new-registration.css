@@ -1,0 +1,1814 @@
+@charset "UTF-8";
+#registration-wrapper {
+  background: #FFF !important;
+  width: 906px;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#registration-wrapper-step3 {
+  background: #FFF !important;
+  width: 540px;
+  min-height: 430px;
+}
+
+.registration-header {
+  background-color: #18723C;
+  min-height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration-header-idscan {
+  background-color: #18723C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.registration-header-left {
+  width: 150px;
+  height: 62px;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.registration-header-center {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+  text-align: center;
+  font: 700 18px/normal Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #FFF;
+}
+
+.registration-header-center-idscan {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.registration-header-center-step3 {
+  width: 240px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.registration-header-right {
+  right: 22px;
+  top: 16px;
+  position: absolute;
+  z-index: 10;
+}
+
+#close-registration-box {
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#chat-registration {
+  background-image: url("../../images/mrvegas/registration-icons/Support_Icon.png");
+  background-repeat: no-repeat;
+  background-position: 0px 10px;
+  width: 60px;
+  height: 62px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.registration-header #chat-registration {
+  margin-left: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.registration-content-left {
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .registration-content-left {
+    margin-right: 52px;
+  }
+}
+
+#step1 input, #step2 input {
+  color: #A0A0A0;
+}
+#step1 input[type=checkbox], #step2 input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px !important;
+  height: 18px !important;
+  border: 1px solid #18723C;
+  padding: 0;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+#step1 input[type=checkbox]:checked, #step2 input[type=checkbox]:checked {
+  background: #18723C;
+  color: #FFF;
+}
+#step1 input[type=checkbox]:checked:before, #step2 input[type=checkbox]:checked:before {
+  top: 1px;
+  left: 5px;
+  content: "";
+  position: relative;
+  top: 1px;
+  left: 5px;
+  width: 4px;
+  height: 9px;
+  color: #FFF;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+#step1 input[type=checkbox]:checked.valid, #step2 input[type=checkbox]:checked.valid {
+  background: #18723C !important;
+}
+#step1 input[type=checkbox]:checked.valid:before, #step2 input[type=checkbox]:checked.valid:before {
+  border-color: #FFF;
+}
+#step1 input:focus, #step1 select:focus, #step2 input:focus, #step2 select:focus {
+  border-color: #18723C;
+  outline: none;
+}
+
+#step1 #password_holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#step1 #country {
+  background-color: rgba(24, 114, 60, 0.1);
+  border: 1px solid #18723C;
+  color: #ADADAD;
+  padding-left: 60px !important;
+  width: 378px;
+}
+@media screen and (min-width: 768px) {
+  #step1 #country {
+    padding-left: 56px !important;
+  }
+}
+#step1 #mobile {
+  width: 275px;
+  position: relative;
+  right: 4px;
+  padding-left: 20px;
+}
+#step1 #mobile-container {
+  width: 384px;
+  margin-bottom: 15px;
+}
+#step1 #country_prefix {
+  border: 1px solid #18723C !important;
+  background-color: #18723C !important;
+  color: #FFF !important;
+  width: 104px !important;
+  padding: 10px 30px 10px 10px;
+}
+#step1 #terms-span, #step1 #privacy-span {
+  color: #474747;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+#step1 #terms-span a, #step1 #privacy-span a {
+  color: #18723C;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+#step1 .register-button-second_denmark {
+  height: 43px;
+}
+#step1 .register-button-second_denmark > span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#step1 #mobile-container .styled-select::after {
+  width: 32px;
+  background: url("../../images/mrvegas/registration-icons/expand_white.png") no-repeat scroll 0 0;
+  background-size: 16px 16px;
+}
+#step1 .conditions-check, #step1 .bonus-terms-and-conditions, #step1 .gambling-check, #step1 .age-check, #step1 .opt_in_promotions {
+  margin-top: 16px;
+}
+#step1 .register-button {
+  width: 378px;
+  margin-top: 15px;
+  color: #FFFDFB;
+  font-size: 18px;
+  font-weight: 700;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 5px;
+  margin-bottom: 6%;
+  display: grid;
+}
+#step1 .register-button span {
+  margin-right: auto;
+}
+#step1 #terms-span.error, #step1 #gambling-span.error {
+  background: none !important;
+  border: none !important;
+}
+#step1 .register-button-second_denmark-img {
+  margin: 6px 5px 0px 0px !important;
+  height: 31px;
+}
+
+.registration-info-txt {
+  color: #232323;
+}
+
+.step2-text-size-es p, .step2-text-size-es span, .step2-text-size-es small {
+  font-size: 12px !important;
+}
+
+.registration-container h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.registration-container p {
+  font-size: 15px;
+  width: auto;
+}
+
+.registration-container {
+  padding: 20px 16px;
+  overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .registration-container {
+    padding: 20px 32px;
+  }
+}
+
+.registration-container * {
+  margin-top: 0;
+}
+
+#validation_step1 {
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  #validation_step1 {
+    padding: 0 15px;
+  }
+}
+#validation_step1 .registration-content-right {
+  margin-top: 39px;
+  width: 363px;
+}
+#validation_step1 .registration-content-right h3 {
+  display: block;
+}
+
+.registration-content-middle,
+.registration-content-left {
+  float: left;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .registration-content-middle,
+.registration-content-left {
+    margin-right: 52px;
+  }
+}
+
+.registration-container input, .registration-container select {
+  width: 378px;
+  height: 50px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 10px;
+  font: 400 16px/normal Roboto, Arial, Helvetica, sans-serif;
+  padding-left: 56px;
+  background-color: #FFF;
+  color: #A0A0A0;
+}
+.registration-container input:-webkit-autofill, .registration-container select:-webkit-autofill {
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  /* Adjust background-clip */
+  -webkit-box-shadow: 0 0 0 50px rgba(24, 114, 60, 0.2) inset !important;
+  -webkit-text-fill-color: #ADADAD;
+}
+
+@media screen and (min-width: 768px) {
+  .registration-container #step1 input:not([type=checkbox]):not([type=radio]),
+.registration-container #step2 input:not([type=checkbox]):not([type=radio]),
+.registration-container #step1 select,
+.registration-container #step2 select {
+    margin-top: 14px;
+  }
+}
+.registration-content-right select,
+.registration-content-right input {
+  margin: 8px 0 0 0;
+}
+
+#currency, #email_code {
+  padding-left: 16px;
+}
+
+.registration-content-right .registration-step-2-control {
+  margin: 0 0 14px 0;
+}
+
+.registration-container select {
+  border: 1px solid #18723C;
+  -webkit-appearance: none;
+}
+
+.registration-container .registration-checkbox {
+  height: 30px;
+}
+
+.registration-container input::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.registration-container input:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.registration-container input::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+@media (min-width: 800px) {
+  #country {
+    -webkit-appearance: initial;
+  }
+}
+#gambling_check,
+#age_check,
+#conditions,
+#terms {
+  width: 20px;
+  margin-top: 0px;
+}
+
+#terms-span.error, #eighteen-span.error, #aml-span.error, #pep_check-span.error,
+#legal_age-span.error {
+  background: none !important;
+  border: none !important;
+}
+
+#terms-span.error a, #eighteen-span.error a, #aml-span.error a,
+#pep_check-span.error a, #legal_age-span.error a {
+  color: #FC282B;
+}
+
+.step1-check > span, .step1-check a,
+#privacy-span, #privacy-span a {
+  color: #474747;
+  font-size: 13px;
+}
+
+.step1-check > input,
+#privacy {
+  width: 20px;
+  margin-top: 0px;
+}
+
+#privacy-span.error, #eighteen-span.error, #aml-span.error,
+#pep_check-span.error, #legal_age-span.error {
+  background: none !important;
+  border: none !important;
+}
+
+#privacy-span.error a, #eighteen-span.error a, #aml-span.error a,
+#pep_check-span.error a, #legal_age-span.error a {
+  color: #FC282B;
+}
+
+#opt_in_promotions, #eighteen, #honest_player, #aml, #legal_age, #pep_check {
+  width: 18px !important;
+  height: 18px;
+  margin-top: 0px;
+  padding-left: 0;
+  border-radius: 5px;
+}
+
+.opt_in_promotions > label > span {
+  margin-left: 5px;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1 !important;
+}
+
+::-moz-placeholder {
+  opacity: 1 !important;
+}
+
+:-moz-placeholder {
+  opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+.register-button, .register-button-step2 {
+  background-color: #18723C;
+  font-size: 18px;
+  font-weight: 700;
+  width: 398px;
+  height: 43px !important;
+  line-height: 43px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #FFF;
+}
+.register-button-second_denmark, .register-button-step2-second_denmark {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-left: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 43px;
+}
+.register-button-second_denmark-img, .register-button-step2-second_denmark-img {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 7px !important;
+  padding: 0 8px;
+}
+
+.lic-mbox-btn-mit-id--disabled {
+  background-color: #706E6E !important;
+  color: #FFFF !important;
+}
+
+.registration-content-right {
+  float: left;
+  color: #474747;
+  width: 378px;
+}
+
+.registration-banner-container {
+  width: 362px;
+  margin-top: 25px;
+}
+
+.registration-banner {
+  width: 362px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+#submit_step_1 {
+  margin-top: 0;
+}
+
+.regstep2-right, .regstep2-middle {
+  position: static;
+  width: 378px;
+}
+
+#country_prefix {
+  position: static;
+  width: 75px;
+  padding-left: 25px;
+  text-align: center;
+  color: #474747;
+}
+
+#mobile-container .styled-select {
+  width: auto !important;
+}
+
+#email {
+  background-image: url("../../images/mrvegas/registration-icons/username.png");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+#email.error {
+  background-image: url("../../images/mrvegas/registration-icons/username-error.png");
+}
+
+.password-field-icon {
+  float: right;
+  top: 32px;
+  right: 20px;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.password-field-icon-mobile {
+  float: right;
+  margin-left: -25px;
+  margin-top: -37px;
+  margin-right: 13px;
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#secemail {
+  background-image: url("../../images/mrvegas/registration-icons/email.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+#password {
+  background-image: url("../../images/mrvegas/registration-icons/password.png");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+#password.error {
+  background-image: url("../../images/mrvegas/registration-icons/password-error.png");
+}
+
+#secpassword {
+  background-image: url("../../images/mrvegas/registration-icons/password.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+#security_question {
+  background-image: url("../../images/registration-icons/sec-question.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+#security_answer {
+  background-image: url("../../images/registration-icons/sec-answer.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+#country {
+  background-image: url("../../images/mrvegas/registration-icons/country.png");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+#personal_number {
+  background-image: url("../../images/mrvegas/registration-icons/nid.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+#errorZone {
+  color: red;
+}
+
+.input-normal:disabled {
+  color: #474747;
+}
+
+.error-message {
+  color: red;
+  font-size: 15px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.info-message {
+  color: #474747;
+  font-size: 15px;
+  width: 378px;
+  margin-top: 10px;
+}
+
+.step2 .register-button, .step2 .register-button-step2 {
+  margin: auto;
+}
+
+.resend-button {
+  background-color: #18723C;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 43px;
+  line-height: 43px;
+  padding-top: 0px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #FFF;
+  margin-top: 14px;
+  margin-left: 0px;
+}
+
+#infotext {
+  margin-left: 110px;
+}
+
+#bonus_code_text p {
+  color: #474747;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-left: 10px;
+  text-decoration: underline;
+}
+
+#bonus_code_text p:hover {
+  text-decoration: none;
+}
+
+#change_email_mobile {
+  cursor: pointer;
+}
+
+.regstep2-right p {
+  color: #474747;
+}
+
+#customer_email p, #customer_mobile p, #change_email_mobile p {
+  margin: 0 0 5px 0;
+}
+
+#customer_mobile {
+  width: 200px;
+}
+
+#customer_mobile a {
+  color: #474747;
+  text-decoration: none;
+}
+
+#change_email_mobile {
+  float: right;
+}
+
+#change_email_mobile p {
+  text-decoration: underline;
+  color: #18723C;
+  font-weight: 400;
+}
+
+#change_email_mobile p:hover {
+  text-decoration: none;
+  color: #18723C;
+  font-weight: 400;
+}
+
+#submit_step_2 {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  #submit_step_2 {
+    margin-top: 24px;
+  }
+}
+
+#mobile {
+  width: 318px;
+}
+
+#birthdate-container {
+  height: 90px;
+}
+
+.regstep2-right {
+  font-size: 20px;
+  color: #ADADAD;
+  padding-top: 27px;
+}
+
+.regstep2-right label, .label-sex {
+  font: 400 15px/16px Roboto, Arial, Helvetica, sans-serif;
+}
+
+.date-item, #birthyear, #birthdate, #birthmonth, #doc_year, #doc_month, #doc_date {
+  background-color: #FFF;
+  width: 119px;
+  color: #ADADAD;
+  border-color: #18723C;
+  padding-left: 17px !important;
+  float: none;
+}
+
+.label-birth_country,
+.label-birthdate {
+  padding: 0;
+  display: block;
+}
+
+.label-preferred_lang {
+  display: none;
+}
+
+.field-birthdate label {
+  display: inline-block !important;
+}
+
+.field-birthdate,
+.field-birth_country,
+.field-sex {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.registration-content-left .field-birth_country {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.field-email_code p.label-email_code {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
+.container-holder {
+  margin-bottom: 0;
+}
+
+#birthyear-cont {
+  float: none;
+}
+
+#birthdate-title {
+  width: 400px;
+}
+
+.step2-gender-lbl {
+  color: #ADADAD;
+  float: none;
+  font-weight: normal;
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#male, #female {
+  display: none;
+}
+
+.regstep2-left input[type=radio]:checked + label,
+.regstep2-right input[type=radio]:checked + label {
+  color: #FFF;
+  border: 1px solid #18723C;
+  background-color: #18723C;
+}
+
+label[for=male], label[for=female] {
+  width: 184px;
+  height: 50px;
+  color: #18723C;
+  border: 1px solid #18723C;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 16px;
+  margin-bottom: 0px !important;
+}
+
+label[for=female] {
+  margin-right: 10px;
+  background-image: url("../../images/mrvegas/registration-icons/Female_Icon.png");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+#female:checked + label {
+  background-image: url("../../images/mrvegas/registration-icons/female-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+label[for=male] {
+  background-image: url("../../images/mrvegas/registration-icons/Male_Icon.png");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+#male:checked + label {
+  background-image: url("../../images/mrvegas/registration-icons/male-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+label[for=male] input:checked, label[for=female] :checked {
+  border: 1px solid green;
+  background-color: #E6F8EA;
+}
+
+label[for=newsletter] {
+  display: inline-block;
+  width: 400px;
+}
+
+.registration-step-2-control {
+  display: block;
+}
+
+.registration-step-2-control:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.registration-step-2-control.field-opt_in_promotions {
+  margin: 0 !important;
+}
+@media screen and (min-width: 768px) {
+  .registration-step-2-control.field-opt_in_promotions {
+    margin: 30px 0 0 0 !important;
+  }
+}
+
+.registration-step-2-control.field-eighteen {
+  margin: 0 !important;
+}
+@media screen and (min-width: 768px) {
+  .registration-step-2-control.field-eighteen {
+    margin: 30px 0 14px 0;
+  }
+}
+
+.field-email_code label {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+@media screen and (min-width: 768px) {
+  .field-email_code label {
+    display: block !important;
+  }
+}
+.field-email_code label #change_email_mobile {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.field-email_code label #email_code {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 19px;
+}
+
+.registration-step-2-control #preferred_lang {
+  padding-left: 16px;
+}
+
+.registration-step2 #preferred_lang {
+  padding-left: 56px;
+}
+
+.registration-country-default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .registration-country-default {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.registration-country-default .label {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
+.registration-country-default .regstep2-right .label-birthdate {
+  margin-top: 0;
+}
+
+.registration-country-default .regstep2-left .label-residence_country,
+.registration-country-default .regstep2-left .label-nationality,
+.registration-country-default .regstep2-left .label-fiscal_region,
+.registration-country-default .regstep2-left .label-preferred_lang,
+.registration-country-default .regstep2-left .label-main_province,
+.registration-country-default .regstep2-left .label-industry {
+  display: none;
+}
+
+.registration-container .error {
+  border: 1px solid #E6AAAA !important;
+  background-color: #FED6D7 !important;
+  color: #FC282B !important;
+  font-weight: normal !important;
+}
+
+.registration-container .error::-webkit-input-placeholder {
+  color: #FC282B;
+}
+
+.registration-container .valid {
+  border: 1px solid #18723C !important;
+  background-color: rgba(24, 114, 60, 0.2);
+  color: #ADADAD !important;
+}
+
+.styled-select, .styled-select-valid, .styled-select-error {
+  position: relative;
+  display: inline-block;
+}
+
+.styled-select::after, .styled-select-valid::after, .styled-select-error::after {
+  content: "▼";
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  display: block;
+  width: 29px;
+  font-size: 12px;
+  line-height: 46px;
+  text-align: left;
+  color: #ADADAD;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  pointer-events: none;
+}
+
+.styled-select::after {
+  background: #FFF none repeat scroll 0 0;
+}
+
+.styled-select-valid::after {
+  background: #E6F8EA none repeat scroll 0 0;
+}
+
+.styled-select-error::after {
+  background: #FED6D7 none repeat scroll 0 0;
+}
+
+/* customized select dropdown behaviour only for step1 & step2 */
+#step1 .select-validation.valid,
+#step1 .styled-select-valid select, #step2 .select-validation.valid,
+#step2 .styled-select-valid select {
+  background-color: rgba(24, 114, 60, 0.2) !important;
+}
+#step1 .styled-select::after, #step1 .styled-select-valid::after, #step1 .styled-select-error::after, #step2 .styled-select::after, #step2 .styled-select-valid::after, #step2 .styled-select-error::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 2px;
+  display: block;
+  width: 50px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 46px;
+  text-align: left;
+  color: #ADADAD;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  pointer-events: none;
+}
+#step1 .styled-select::after, #step2 .styled-select::after {
+  background: rgba(24, 114, 60, 0) url("../../images/mrvegas/registration-icons/expand.png") no-repeat scroll 0 0;
+  color: #474747;
+  background-size: 16px 16px;
+  background-position: 16px center;
+  top: 18px;
+}
+@media screen and (min-width: 768px) {
+  #step1 .styled-select::after, #step2 .styled-select::after {
+    top: 32px;
+  }
+}
+#step1 .styled-select-valid::after, #step2 .styled-select-valid::after {
+  background: rgba(24, 114, 60, 0) url("../../images/mrvegas/registration-icons/expand.png") no-repeat scroll 0 0;
+  color: #474747 !important;
+  background-size: 16px 16px;
+  background-position: 16px center;
+  top: 18px;
+}
+@media screen and (min-width: 768px) {
+  #step1 .styled-select-valid::after, #step2 .styled-select-valid::after {
+    top: 32px;
+  }
+}
+
+#step3 {
+  width: 500px;
+  color: #474747;
+}
+
+.registration-container .input-normal:focus {
+  border: 1px solid #D0D0D0;
+}
+
+#step3 .register-button {
+  width: 250px;
+}
+
+#language-currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#language-currency label {
+  width: 49% !important;
+  margin-bottom: 0;
+}
+
+.input-with-icon input {
+  width: 320px;
+}
+
+.input-with-icon .icon {
+  width: 50px;
+  float: right;
+  height: 50px;
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-image: url("../../../../images/registration-icons/search-icon.svg");
+  background-color: #C3C1C2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.registration-country-IT {
+  font-size: 20px;
+  color: #ADADAD;
+}
+
+.registration-country-IT .label-preferred_lang,
+.registration-country-IT .label-doc_place,
+.registration-country-IT .label-doc_issued_by,
+.registration-country-IT .label-main_province,
+.registration-country-IT .label-main_city,
+.registration-country-IT .label-main_country,
+.registration-country-IT .label-birth_country {
+  display: none;
+}
+
+.registration-country-IT .label-sex,
+.registration-country-IT .label-currency {
+  font-size: 20px;
+}
+
+.registration-country-IT .registration-step-2-control input,
+.registration-country-IT .registration-step-2-control select {
+  padding-left: 16px;
+}
+
+.registration-country-NL .field-doc_number > label > span.label,
+.registration-country-IT .field-doc_number > label > span.label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.registration-country-NL .field-doc_type,
+.registration-country-NL .field-doc_number,
+.registration-country-NL .field-doc_type select,
+.registration-country-NL .field-doc_number input,
+.registration-country-IT .field-doc_type,
+.registration-country-IT .field-doc_number,
+.registration-country-IT .field-doc_type select,
+.registration-country-IT .field-doc_number input {
+  width: 185px;
+  overflow-x: hidden;
+  float: left;
+}
+
+.registration-country-NL .field-doc_type,
+.registration-country-NL .field-doc_number {
+  width: 49%;
+}
+
+.registration-country-NL .field-doc_type,
+.registration-country-NL .field-doc_type .info-message,
+.registration-country-IT .field-doc_type,
+.registration-country-IT .field-doc_type .info-message {
+  overflow-x: visible;
+}
+
+.registration-country-NL .field-doc_number:after,
+.registration-country-IT .field-doc_number:after {
+  height: 5px;
+}
+
+.registration-country-NL .field-doc_type select,
+.registration-country-IT .field-doc_type select {
+  padding-left: 16px;
+}
+
+.registration-country-default:after,
+.registration-country-NL .field-doc_number:after,
+.registration-country-IT .field-doc_number:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.registration-country-NL .resend-button {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.registration-country-NL .field-doc_number,
+.registration-country-IT .field-doc_number {
+  float: right;
+}
+
+.registration-country-NL .label-preferred_lang,
+.registration-country-NL .label-doc_issued_by {
+  display: none;
+}
+
+.registration-country-NL .field-doc_issue_date .styled-select-error,
+.registration-country-NL .field-doc_issue_date .styled-select-valid,
+.registration-country-NL .field-doc_issue_date .styled-select {
+  width: 32.4% !important;
+}
+
+.registration-country-NL .field-doc_issue_date select {
+  width: 100%;
+}
+
+.registration-country-IT .field-doc_issue_date {
+  float: none;
+  clear: both;
+}
+
+.registration-country-IT .field-birthdate label,
+.registration-country-IT .field-doc_issue_date label {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration-country-IT .field-birthdate .label-birthdate,
+.registration-country-IT .field-doc_issue_date .label-doc_issue_date {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.step2-description {
+  margin-bottom: 16px;
+}
+
+.step2-description p {
+  margin: 0;
+}
+
+.registration-wrapper-NL .step2-description,
+.registration-wrapper-IT .step2-description {
+  display: block !important;
+}
+
+.registration-country-NL .step2-description,
+.registration-country-IT .step2-description {
+  display: none !important;
+}
+
+.registration-country-NL .regstep2-right,
+.registration-country-IT .regstep2-right {
+  padding-top: 0 !important;
+}
+
+.disabled-field select {
+  background-color: #DFDFDF !important;
+  color: #AFAFAF;
+  border: 1px solid #D0D0D0 !important;
+}
+
+.disabled-field .styled-select::after {
+  display: none;
+}
+
+.registration-country-NL .registration-step-2-control #birthyear,
+.registration-country-NL .registration-step-2-control #birthdate,
+.registration-country-NL .registration-step-2-control #birthmonth {
+  padding-left: 25px !important;
+}
+
+.registration-country-NL .field-doc_issue_date .label-doc_issue_date,
+.registration-country-NL .field-doc_type .label-doc_type,
+.registration-country-NL .field-doc_number .label-doc_number,
+.registration-country-NL .field-birthdate .label-birthdate {
+  display: block !important;
+  font-size: 20px;
+  color: #ADADAD;
+  padding-left: 5px;
+}
+
+.registration-country-NL .registration-step-2-control .input-normal {
+  padding-left: 25px;
+}
+
+.registration-country-NL .registration-step-2-control .label-email_code {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.registration-country-NL .registration-step-2-control #customer_email p,
+.registration-country-NL .registration-step-2-control #customer_mobile p {
+  margin-left: 0;
+}
+
+.registration-country-NL .registration-step-2-control.field-opt_in_promotions > br,
+.registration-country-NL .registration-step-2-control.field-honest_player > br {
+  display: none;
+}
+
+.registration-country-NL .registration-step-2-control.field-honest_player,
+.registration-country-NL .registration-step-2-control.field-opt_in_promotions,
+.registration-country-NL .registration-step-2-control.field-eighteen {
+  margin-bottom: 10px;
+}
+
+.registration-country-NL .registration-step-2-control.field-iban .description-top,
+.registration-country-NL .registration-step-2-control #honest_player-span,
+.registration-country-NL .registration-step-2-control #opt_in_promotions-span,
+.registration-country-NL .registration-step-2-control #eighteen-span,
+.registration-country-NL .registration-step-2-control #aml-span,
+.registration-country-NL .registration-step-2-control #pep_check-span,
+.registration-country-NL .registration-step-2-control #legal_age-span {
+  color: #474747;
+  font-size: 14px;
+}
+
+.registration-country-NL .registration-step-2-control.field-iban .description-top {
+  margin-bottom: -5px;
+  font-size: 12px;
+}
+
+.registration-country-NL .registration-step-2-control.field-birthdate {
+  margin-top: 15px;
+}
+
+.registration-country-NL .regstep2-left .registration-step-2-control {
+  margin-bottom: 5px;
+}
+
+.registration-country-NL .input-normal:disabled {
+  background-color: #EAE9EA;
+  color: #B3B3B3;
+}
+
+.honest_player_msg {
+  color: #FC282B;
+}
+
+.registration-wrapper-NL #submit_step_2 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.registration-country-NL .registration-step-2-control #doc_issued_by {
+  padding-left: 16px !important;
+}
+
+.registration-country-NL .registration-step-2-control #currency {
+  padding-left: 16px;
+}
+
+.registration-country-NL .doc-month::after {
+  width: 15px;
+}
+
+#opt_in_promotions-span {
+  font: 400 15px/normal Roboto, Arial, Helvetica, sans-serif;
+}
+
+.registration-scroll {
+  overflow-y: scroll;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration-container .result__container {
+  text-align: center;
+}
+
+.registration-container #result__container_failure {
+  display: none;
+}
+
+.registration-container .hidden {
+  display: none !important;
+}
+
+.registration-container .show {
+  display: block !important;
+}
+
+.result_page__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.registration-container .result__page {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.registration-container .result__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.registration-container .result__content {
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.registration-container .result__content-text {
+  padding-top: 1rem;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.registration-container .result__content-text-bold {
+  font-weight: 700;
+}
+
+.registration-container .result__screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.registration-container #idscan_popup_description > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+#country.disabled-field {
+  background: #DFDFDF url(../images/registration-icons/country.png) no-repeat 5px center !important;
+}
+
+.styled-select-valid.disabled-field::after {
+  display: none;
+}
+
+#country, #preferred_lang, #occupation {
+  width: 378px;
+  color: #ADADAD;
+  border-color: #18723C;
+  border-radius: 2px;
+  padding-left: 56px;
+}
+
+#preferred_lang {
+  background: #FFF;
+}
+
+#occupation {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.form-validation-counter {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  font-size: 17px;
+  padding-top: 2px;
+  padding-right: 3px;
+}
+
+.form-validation-counter-active {
+  color: #AFAFAF;
+}
+
+.form-validation-counter-failure {
+  color: #FC282B;
+}
+
+.registration-footer {
+  color: black;
+  padding-top: 2px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration-footer .responsible-gambling-desc {
+  background: #F3F3F3;
+  padding: 10px 20px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+.registration-footer .responsible-gambling-desc a {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .show-registration-footer .registration-container {
+    padding-bottom: 20px !important;
+    height: auto;
+  }
+}
+.registration-footer .responsible-gambling-logo {
+  background: #D2D2D2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+.registration-footer .responsible-gambling-logo a {
+  color: #000000;
+  text-decoration: none;
+}
+.registration-footer .responsible-gambling-logo .vertical-bar {
+  padding: 0 5px;
+  color: #B1B1B1;
+}
+.registration-footer .responsible-gambling-logo .bold {
+  font-weight: bold;
+}
+.registration-footer .responsible-gambling-logo .age_icon {
+  height: 28px;
+  color: #000000;
+  width: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #FF0000;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  font-size: 12px;
+}
+
+.fit_for_play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #ADADAD;
+  padding-top: 10px;
+}
+.fit_for_play__info-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+.fit_for_play__info-icon img {
+  height: 100%;
+  width: auto;
+}
+.fit_for_play__description {
+  background-color: #F3F3F3;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-align: start;
+  color: #ADADAD;
+}
+.fit_for_play #fitForPlay {
+  width: 20px;
+  height: 30px;
+}
+.fit_for_play #fitForPlay-span {
+  margin-left: 10px;
+}
+
+.verification-btn-IT {
+  margin-bottom: 20px;
+}
+
+.registration-country-IT #doc_number {
+  padding-left: 16px;
+}
+
+#firstname, #lastname, #address, #zipcode, #city, #nationality, #place_of_birth, #birth_country,
+#birth_province, #birth_city, #main_address, #main_country, #main_province, #preferred_lang {
+  padding-left: 56px;
+  background-repeat: no-repeat;
+}
+
+#address, #zipcode, #city, #nationality, #place_of_birth, #birth_country, #birth_province,
+#birth_city, #main_address, #main_country, #main_province, #preferred_lang {
+  background-position: 16px center !important;
+}
+
+#firstname, #lastname {
+  background-image: url("../../images/mrvegas/registration-icons/username.png");
+  background-position: 16px center;
+}
+
+#address {
+  background-image: url("../../images/mrvegas/registration-icons/address.svg");
+}
+
+#zipcode {
+  background-image: url("../../images/mrvegas/registration-icons/post-code.svg");
+}
+
+#city {
+  background-image: url("../../images/mrvegas/registration-icons/city.svg");
+}
+
+#nationality {
+  background-image: url("../../images/mrvegas/registration-icons/nationality.svg");
+}
+
+#place_of_birth {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth.svg");
+}
+
+#birth_country {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth.svg");
+}
+
+#birth_province {
+  background-image: url("../../images/mrvegas/registration-icons/address.svg");
+}
+
+#birth_city {
+  background-image: url("../../images/mrvegas/registration-icons/city.svg");
+}
+
+#main_address {
+  background-image: url("../../images/mrvegas/registration-icons/address.svg");
+}
+
+#main_country {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth.svg");
+}
+
+#main_province {
+  background-image: url("../../images/mrvegas/registration-icons/address.svg");
+}
+
+#preferred_lang {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth.svg");
+}
+#preferred_lang:disabled {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth-disabled.png");
+}
+
+#firstname.error, #lastname.error {
+  background-image: url("../../images/mrvegas/registration-icons/username-error.png");
+  background-position: 16px center;
+}
+
+#address.error {
+  background-image: url("../../images/mrvegas/registration-icons/address-error.png");
+}
+
+#zipcode.error {
+  background-image: url("../../images/mrvegas/registration-icons/post-code-error.png");
+}
+
+#city.error {
+  background-image: url("../../images/mrvegas/registration-icons/city-error.png");
+}
+
+#nationality.error {
+  background-image: url("../../images/mrvegas/registration-icons/nationality-error.png");
+}
+
+#place_of_birth.error {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth-error.svg");
+}
+
+#step2 .input-normal:disabled:not(.valid) {
+  background-color: #E2E2E2 !important;
+  border-color: #D0D0D0 !important;
+  color: #ADADAD !important;
+}
+
+#firstname:disabled:not(.valid), #lastname:disabled:not(.valid) {
+  background-image: url("../../images/mrvegas/registration-icons/username-disabled.png");
+  background-position: 16px center;
+}
+
+#address:disabled:not(.valid) {
+  background-image: url("../../images/mrvegas/registration-icons/address-disabled.png");
+}
+
+#zipcode:disabled:not(.valid) {
+  background-image: url("../../images/mrvegas/registration-icons/post-code-disabled.png");
+}
+
+#city:disabled:not(.valid) {
+  background-image: url("../../images/mrvegas/registration-icons/city-disabled.png");
+}
+
+#nationality:disabled:not(.valid) {
+  background-image: url("../../images/mrvegas/registration-icons/nationality-disabled.png");
+}
+
+#place_of_birth:disabled:not(.valid) {
+  background-image: url("../../images/mrvegas/registration-icons/country-of-birth-disabled.png");
+}
+
+#login-otp-captcha {
+  padding-left: 5px;
+}
+
+@media only screen and (min-width: 720px) {
+  #bonus_code.input-normal:disabled {
+    background-color: #DFDFDF;
+    color: #C3C2C2;
+  }
+}
+#mitid-verify-btn > span {
+  position: relative;
+  top: 11px;
+  height: 21px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.login-popup #mitid-verify-btn > span {
+  position: relative;
+  top: 0;
+}
+
+#lic-mbox-login-otp label[for=otp] {
+  position: relative;
+}
+#lic-mbox-login-otp label[for=otp] span {
+  position: absolute;
+  font-size: 26px;
+  color: #18723C;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-top: 4px;
+}
+#lic-mbox-login-otp label[for=otp] #lic-login-otp-field {
+  padding-left: 0;
+}

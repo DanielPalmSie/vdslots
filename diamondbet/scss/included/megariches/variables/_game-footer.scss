@@ -1,0 +1,77 @@
+// .games-footer
+$games-footer--background: $frame-600;
+$games-footer--color: $white;
+
+// #gfooter-result
+$games-footer--bottom: -100px;
+$games-footer--box-shadow: 0 0 8px $black;
+$games-footer--height: 135px;
+
+// #gfooter-result li
+$gfooter-result-li--width: 102px;
+$gfooter-result-li--height: 86px;
+
+// #gfooter-result
+$gfooter-result--background: $frame-1000;
+
+// #gfooter-result .img-thumb
+$gfooter-result-img-thumb--height: 82px;
+$gfooter-result-img-thumb--width: 97px;
+
+// #search_str1, #search_str2, #search_str3, #search_str0
+$search-str--background: $frame-600 no-repeat;
+$search-str--background-image: url('#{$brand-image-path}/game_page2/Search.png');
+
+// #footer-search
+$footer-search--background: $frame-600 no-repeat;
+
+// .gfooter-direction-nav a
+$gfooter-direction-nav-a--background: $frame-600;
+$gfooter-direction-nav-a--bottom: 0px;
+
+// .notifications-list
+$notifications-list--width: 280px;
+$notifications-list--background-color: $frame-600;
+
+// .notification-list-item
+$notification-list-item--width: 100%;
+
+// .notification-list-line
+$notification-list-line--width: 100%;
+$notification-list-line--background: $divider-light;
+
+// .notification-list-holder
+$notifications-list-holder--background-color: $frame-600;
+
+// .notification-list-holder-light
+$notification-list-holder-light: #444;
+
+
+// .notification-item
+$notification-item--width: 100%;
+
+// .notifications-list .notification-x
+$notification-x--margin-top: 12px;
+
+// .notifications-bell
+$notifications-bell--background: url('#{$brand-image-path}/game_page2/bell.png') no-repeat bottom;
+
+// .notifications-icon
+$notifications-icon--min-width: 12px;
+$notifications-icon--height: 12px;
+$notifications-icon--font-size: 11px;
+$notifications-icon--padding: 0;
+$notifications-icon--border-radius: 50px;
+$notifications-icon--text-shadow: none;
+
+// .notifications-list-top
+$notifications-list-top--padding: 10px 5px;
+$notifications-list-top--font-size: 15px;
+
+// .notifications-footer
+$notifications-footer--margin: 4px 0 0 0;
+
+// .notifications-footer a
+$notifications-footer-a--color: $primary-500;
+$notifications-footer-a--font-size: 14px;
+$notifications-footer-a--font-weight: 700;

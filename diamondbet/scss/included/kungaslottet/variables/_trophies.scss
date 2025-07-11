@@ -1,0 +1,44 @@
+//.trophy-category-section
+$trophy-category-section--margin-top: 0;
+
+// .activity-category-description
+$activity-category-description--font-size: 12px;
+$activity-category-description--font-weight: 400;
+
+// .activity-progress-txt
+$activity-progress-txt--font-weight: 400;
+
+// .xp-progressbar-bkg
+$xp-progressbar-bkg: $dark-blue-400;
+
+// .xp-progressbar-bar
+$xp-progressbar-bar--box-shadow: 0px 0px 4px #adf;
+
+// .text-medium-bold
+$text-medium-bold--color: $white;
+
+// .trophy-infobox
+$trophy-infobox--border: 1px solid #333;
+$trophy-infobox--background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
+$trophy-infobox--color: inherit;
+
+// .rewards-middle-box h3
+$rewards-middle-box-h3--border-bottom: none;
+
+// .active-reward-area
+$active-reward-area--width: calc(100% - 103px);
+
+// .search-container .icon-vs-search:before
+$search-container-icon-vs-search-before--color: $neutral-800;
+
+// .mission-graph colors
+$mission-graph--font-color: #fff;
+$mission-graph--base-color: $dark-blue-400;
+$mission-graph--fill-color: $kunga-blue-60;
+
+// .new-reset-icon
+$new-reset-icon--background-color: $dark-blue-400;
+$new-reset-icon--border: 1px solid $dark-blue-200;
+// .new-reset-icon .icon
+$new-reset-icon-icon--color: $kunga-blue;
+

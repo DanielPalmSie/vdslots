@@ -1,0 +1,115 @@
+.verification-reminder__container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background: #fff !important;
+    min-width: 300px;
+}
+
+.verification-reminder__body {
+    display: flex;
+    align-items: center;
+}
+
+.verification-reminder__part {
+    width: 50%;
+}
+
+.verification-reminder__text {
+    text-align: left;
+}
+
+.verification-reminder__timers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    color: red;
+}
+
+.verification-reminder-timer {
+    display: flex;
+    flex-direction: column;
+}
+
+.verification-reminder-timer__circle text {
+    font-size: 45px;
+}
+
+.verification-reminder__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.verification-reminder__buttons button {
+    max-width: 200px;
+    margin: 0 10px;
+    height: 35px;
+}
+
+.verification-reminder-timer__over-circle {
+    will-change: transform;
+    ///* Calculate radians to display % of time left with the circles,
+    // * so the circle animation starts with empty fill
+    // * circle_length = 2 * pi() * 40 = 251
+    // */
+    stroke-dasharray: 0,251;
+    transform: rotate(-90deg);
+}
+
+.verification-reminder-timer__bag-circle {
+    position: absolute;
+}
+
+#enhanced-timer {
+    max-width: 100%;
+}
+
+#enhanced-timer .verification-reminder__body {
+    flex-direction: column;
+}
+
+#enhanced-timer .verification-reminder__timers.dark-red circle,
+#enhanced-timer .verification-reminder__timers.dark-red {
+    stroke: #931919;
+    color: #931919;
+}
+
+#enhanced-timer .verification-reminder__timers.dark-red text {
+    fill: #931919;
+}
+
+#enhanced-timer .verification-reminder-title {
+    font-weight: bold;
+}
+
+#enhanced-timer .verification-reminder__part {
+    width: 100%;
+}
+
+#enhanced-timer .verification-reminder__text {
+    text-align: center;
+}
+
+#enhanced-timer.mobile .verification-reminder__buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.verification-reminder__container-overtime {
+    width: 100% !important;
+}
+.verification-reminder__container-overtime p {
+    text-align: center;
+    width: 100%;
+}
+
+.verification-reminder__container-overtime .verification-reminder__buttons,
+.verification-reminder__container-overtime .verification-reminder__buttons  button {
+    width: 100%;
+    max-width: 100%;
+}

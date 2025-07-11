@@ -1,0 +1,73 @@
+// .cashier-make-normal-wrapper
+$cashier-make-normal-wrapper--width: 100%;
+
+// .cashier-expense-min-label, .cashier-expense-max-label, .cashier-expense-min-value, .cashier-expense-max-value
+$cashier-expense--color: $neutral-900;
+
+// .ulBig
+$ul-big-color: $neutral-900;
+
+// .cashier-wrapper
+$cashier-wrapper--width: 956px;
+
+// .cashier-help-table h3
+$cashier-help-table-h3--color: $neutral-900;
+
+// .cashier-help-table td
+$cashier-help-table-td--color: $neutral-700;
+
+// .cashier-predefined-amount
+$cashier-predefined-amount--color: $neutral-900;
+$cashier-predefined-amount--font-size: 15px !important;
+$cashier-predefined-amount--width: 128px;
+
+// .cashierBtnInner
+$cashier-btn-inner--width: 100%;
+
+//. cashierBoxInsert
+$cashier-box-insert--padding: 20px 0;
+
+// .cashierInput
+$cashier-input--width: 100%;
+
+// .cashier-fee-list-right
+$cashier-fee-list-right--width: 100%;
+$cashier-fee-list-right--padding-left: 0;
+
+// .cashier-minor-headline
+$cashier-minor-headline--color: $neutral-900;
+$cashier-minor-headline--font-weight: 400;
+$cashier-minor-headline--gradient-color-start: $frame-400;
+$cashier-minor-headline--gradient-color-end: $frame-400;
+
+// .cashierHeader
+$cashier-header--border-radius: 5px 5px 0px 0px;
+$cashier-header--color: $neutral-900;
+
+// .cashierHeader
+$cashier-header--gradient-color-start: $frame-800;
+$cashier-header--gradient-color-end: $frame-800;
+
+// .cashier-left-alt-pic
+$cashier-left-alt-pic--margin: 3px 2px 2px 2px;
+
+// .cashier-left-wrap, .cashier-right-wrap
+$cashier-left-wrap--padding: 0;
+$cashier-left-wrap--width: 284px;
+
+// .amountInput
+$amount-input--border: 2px $primary-200 solid;
+$amount-input--width: 115px;
+$amount-input--box-shadow: none;
+
+// .cashier-middle-wrap
+$cashier-middle-wrap--width: 284px;
+$cashier-middle-wrap--margin-top: 0;
+$cashier-middle-wrap--margin-left: 20px;
+
+// .cashier-right-wrap
+$cashier-right-wrap--margin-left: 20px;
+
+// .logo-select-border
+$logo-select-border--box-shadow: inset $primary-200 0px 0px 2px 4px;
+$logo-select-border--border-radius: 8px !important;

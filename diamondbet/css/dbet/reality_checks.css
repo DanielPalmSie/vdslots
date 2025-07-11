@@ -1,0 +1,465 @@
+.clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#reality-check-popup {
+  position: fixed;
+  z-index: 2010;
+  top: -180px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #282828;
+}
+
+.rc__top-part, .rc__body, .rc__actions {
+  float: left;
+  width: 100%;
+}
+
+.rc__body-container, .rc__body--title, .rc__body--text {
+  float: left;
+}
+
+.rc__body, .rc__actions {
+  background-color: #FFF;
+}
+
+.rc__top-part {
+  background-color: #112F7C;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.41);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.41);
+  margin-top: 1px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.rc__top-part--close {
+  font-size: 16px;
+  margin-right: 22px;
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.rc__top-part--title {
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin-left: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  -ms-flex-order: 0;
+  -webkit-box-ordinal-group: 1;
+          order: 0;
+  -ms-flex: 3 1 auto;
+  -webkit-box-flex: 3;
+          flex: 3 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  color: #FFF;
+}
+
+.rc__actions {
+  padding-bottom: 24px;
+}
+
+.rc__body-container, .rc__actions--container {
+  float: none;
+  margin: 16px 12px;
+  border-radius: 7px;
+}
+
+.rc__body-container {
+  background-color: #FFF;
+  padding: 24px 16px;
+}
+
+.rc__body--title {
+  color: #232323;
+  font-size: 18px;
+  padding-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.rc__body--text {
+  color: #5E5E5E;
+  font-size: 15px;
+  text-align: center;
+}
+
+.rc__actions--buttons {
+  float: none;
+  margin: 0 12px;
+}
+
+.button-rc {
+  background-color: #4075FF;
+  width: 48.5%;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-top: 14px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #FFF;
+  font-weight: 700;
+}
+
+#dialogRcGameHistoryButton.button-rc {
+  background-color: #2ACA81;
+}
+
+#dialogRcLeaveGameButton.button-rc {
+  background-color: #F4C004;
+}
+
+#dialogRcResponsibleGamingButton.button-rc {
+  background-color: #2ACA81;
+}
+
+#extendedBy {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#extendedBy:nth-child(1) {
+  -ms-flex-order: 0;
+  -webkit-box-ordinal-group: 1;
+          order: 0;
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.rc__actions--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button-rc {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.button-rc:not(:first-child) {
+  margin-left: 10px;
+}
+
+#reality-check-interval {
+  display: block;
+  padding: 0;
+  font-weight: 400;
+  background: #FFF;
+  outline: none;
+  color: #232323;
+  border: 1px #112F7C solid;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+  height: 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reality-check-btn {
+  padding: 7px 12px;
+  background-color: #112F7C;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFF;
+  height: 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reality-check-btn.right {
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.reality-check-btn.left {
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#dialogRcSetButton {
+  margin: 0 auto;
+}
+
+.reality-check-btn span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+@media screen and (min-device-width: 1024px) {
+  #reality-check-popup {
+    position: absolute;
+    z-index: 2010;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 7px;
+  }
+
+  .rc__top-part {
+    margin-top: 0px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+  #reality-check-popup {
+    top: 0px;
+  }
+
+  #reality-check-popup.has-logos,
+#multibox-overlay-rc-msg.has-logos {
+    margin-top: 24px;
+    height: calc(100% - 24px);
+  }
+}
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+  #rc-msg {
+    z-index: 4000 !important;
+  }
+
+  .rc__top-part {
+    margin-top: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .rc__top-part--title {
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .rc__top-part--close {
+    font-size: 12px;
+  }
+
+  .rc__body-container {
+    margin: 0;
+    padding: 16px 7px;
+    border-radius: 0;
+  }
+
+  .rc__body--title {
+    font-size: 16px;
+    padding-bottom: 9px;
+  }
+
+  .rc__body--text {
+    font-size: 14px;
+  }
+
+  .rc__actions--container {
+    margin: 0 12px;
+  }
+
+  .rc__body-container {
+    margin: 0 auto;
+  }
+
+  .rc__actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 4px;
+    background-color: #282828;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  #reality-check-popup {
+    background-color: #FFF;
+  }
+
+  #reality-check-popup.has-logos,
+#multibox-overlay-rc-msg.has-logos {
+    margin-top: 24px;
+  }
+
+  .rg-top__item:last-child {
+    margin: 0;
+  }
+
+  .rg-mobile-top {
+    margin-right: 0;
+  }
+
+  .reality-check-btn {
+    padding: 1px 10px;
+    font-size: 33px;
+  }
+
+  .reality-check-btn.left {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #reality-check-interval {
+    padding: 12px 0;
+    font-size: 12px;
+  }
+
+  #dialogRcSetButton {
+    margin: 5px 7px;
+  }
+
+  .rc__actions.has-logos {
+    bottom: 24px;
+  }
+
+  .rc__actions--buttons {
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+  }
+
+  body.split-game-mode #reality-check-popup.has-logos,
+body.split-game-mode #multibox-overlay-rc-msg.has-logos {
+    margin-top: 0px;
+    margin-left: 24px;
+    width: calc(100% - 24px);
+  }
+
+  body.split-game-mode .rc__actions.has-logos {
+    bottom: 0px;
+  }
+
+  body.split-game-mode .rc__top-part--title {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  body.split-game-mode .rc__body--title {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  body.split-game-mode .rc__body--text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+  .rc__body--title {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .rc__body--text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rc__actions--buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .rc__actions--buttons .button-rc {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  #dialogRcSetButton.button-rc {
+    width: auto;
+    margin: 0px 16px;
+  }
+}

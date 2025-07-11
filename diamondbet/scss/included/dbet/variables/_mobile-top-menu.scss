@@ -1,0 +1,49 @@
+// .vs-mobile-menu__container
+$vs-mobile-menu-container--height: 30px;
+$vs-mobile-menu-container--color: $white;
+$vs-mobile-menu-container--border-bottom-color: transparent;
+$vs-mobile-menu-container--background: $primary-500;
+
+// .vs-mobile-menu__item--active
+$vs-mobile-menu-item-active--color: $secondary-500;
+
+// .vs-mobile-menu__item-register
+$vs-mobile-menu-item-register--background: $button-primary-light;
+$vs-mobile-menu-item-register--color: $button-text-dark;
+
+// .vs-mobile-menu__item-login
+$vs-mobile-menu-item-login--background: $button-secondary-light;
+$vs-mobile-menu-item-login--color: $button-text-dark;
+
+// .vs-mobile-menu__item-deposit
+$vs-mobile-menu-item-deposit--background: $button-deposit;
+$vs-mobile-menu-item-deposit--color: $button-text-dark;
+
+// .vs-mobile-menu__item-rewards
+$vs-mobile-menu-item-rewards--background: none;
+$vs-mobile-menu-item-rewards--color: $white;
+
+// .vs-mobile__bos-upcoming
+$vs-mobile__bos-upcoming--background: $frame-600;
+$vs-mobile__bos-upcoming--border-bottom: none;
+
+// .vs-mobile__bos-upcoming-logo-container
+$vs-mobile__bos-upcoming-logo-container--border-right: 2px solid $primary-800;
+
+// .vs-mobile__bos-upcoming-battle
+$vs-mobile__bos-upcoming-battle--border-right: none;
+
+// .vs-mobile__bos-upcoming-battle-button
+$vs-mobile__bos-upcoming-battle-button--background: $primary-gradient;
+
+// .button-arrow
+$button-arrow--border-left: 7px solid $button-text-light;
+
+// .bottom-sticky__level-left
+$bottom-sticky-level-left--background-color: $button-primary-light;
+
+// .bottom-sticky__level-right
+$bottom-sticky__level-right--background-color: $button-secondary-light;
+
+// .vs-mobile__news-feed__news-link
+$vs-mobile-news-feed-news-link--color: $primary-500;

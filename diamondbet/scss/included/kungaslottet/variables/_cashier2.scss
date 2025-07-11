@@ -1,0 +1,73 @@
+// .cashier-make-normal-wrapper
+$cashier-make-normal-wrapper--width: 350px;
+
+// .cashier-expense-min-label, .cashier-expense-max-label, .cashier-expense-min-value, .cashier-expense-max-value
+$cashier-expense--color: $white;
+
+// .ulBig
+$ul-big-color: $white;
+
+// .cashier-wrapper
+$cashier-wrapper--width: 1067px;
+
+// .cashier-help-table h3
+$cashier-help-table-h3--color: $white;
+
+// .cashier-help-table td
+$cashier-help-table-td--color: $white;
+
+// .cashier-predefined-amount
+$cashier-predefined-amount--color: #282828;
+$cashier-predefined-amount--font-size: 15px !important;
+$cashier-predefined-amount--width: 130px;
+
+// .cashierBtnInner
+$cashier-btn-inner--width: 265px;
+
+//. cashierBoxInsert
+$cashier-box-insert--padding: 20px 10px;
+
+// .cashierInput
+$cashier-input--width: 165px;
+
+// .cashier-fee-list-right
+$cashier-fee-list-right--width: 265px;
+$cashier-fee-list-right--padding-left: 10px;
+
+// .cashier-minor-headline
+$cashier-minor-headline--color: $white;
+$cashier-minor-headline--font-weight: 400;
+$cashier-minor-headline--gradient-color-start: #23396B;
+$cashier-minor-headline--gradient-color-end: $dark-blue-400;
+
+// .cashierHeader
+$cashier-header--border-radius: 5px 5px 0px 0px;
+$cashier-header--color: $white;
+
+// .cashierHeader
+$cashier-header--gradient-color-start: #23396B;
+$cashier-header--gradient-color-end: $dark-blue-400;
+
+// .cashier-left-alt-pic
+$cashier-left-alt-pic--margin: 3px 5px 2px 3px;
+
+// .cashier-left-wrap, .cashier-right-wrap
+$cashier-left-wrap--padding: 5px;
+$cashier-left-wrap--width: 310px;
+
+// .amountInput
+$amount-input--border: 2px $kunga-blue solid;
+$amount-input--width: 123px;
+$amount-input--box-shadow: none;
+
+// .cashier-middle-wrap
+$cashier-middle-wrap--width: 382px;
+$cashier-middle-wrap--margin-top: 5px;
+$cashier-middle-wrap--margin-left: 15px;
+
+// .cashier-right-wrap
+$cashier-right-wrap--margin-left: 15px;
+
+// .logo-select-border
+$logo-select-border--box-shadow: inset $kunga-blue 0px 0px 2px 4px;
+$logo-select-border--border-radius: 8px !important;

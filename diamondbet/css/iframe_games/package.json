@@ -1,0 +1,21 @@
+{
+  "name": "vs-old-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch-css",
+    "build-css": "node-sass --source-map true --output-style expanded games.scss games.css && npx postcss games.css -r -u autoprefixer --no-map --verbose",
+    "watch-css": "nodemon -e scss -x 'npm run build-css'"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://www.videoslots.com",
+  "dependencies": {
+    "autoprefixer": "^9.4.4",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "postcss-cli": "^6.1.1"
+  }
+}

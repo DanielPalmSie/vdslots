@@ -1,0 +1,810 @@
+#content {
+  background: #FFF;
+}
+
+#cashierDepositWithdraw {
+  background: #11100D;
+  padding: 20px;
+}
+
+#cashierDepositWithdraw a {
+  text-decoration: none;
+}
+
+.cashierHeader {
+  background-color: #1A1814;
+  border-radius: 4px;
+  height: auto;
+  color: #B89A54;
+  margin-top: 0px;
+}
+
+.cashierHeader .arrow {
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+  top: -36px;
+  right: 10px;
+}
+
+.cashierHeader .closed {
+  background: url("../../images/megariches/slide_close_icon.png") no-repeat;
+}
+
+.cashierHeader .open {
+  background: url("../../images/megariches/slide_down_icon.png") no-repeat;
+}
+
+.cashierHeader h3 {
+  padding: 10px 10px 0 10px;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.cashierBoxInsert {
+  display: none;
+  zoom: 1;
+}
+
+.cashierBox, .noDepBox {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 0;
+  background-color: #0D0C0A;
+}
+
+.infoArea {
+  padding: 16px 8px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.infoArea .infoText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+.infoArea .infoImage, .infoArea .cashier-fee-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+}
+
+.infoArea ul {
+  color: #FFF;
+  list-style-type: none;
+  width: 110px;
+  float: left;
+  margin-top: 0px;
+  padding-left: 0;
+}
+
+.infoArea ul li {
+  margin-bottom: 5px;
+}
+
+.infoImage {
+  width: 160px;
+  float: left;
+}
+
+.infoText {
+  width: auto !important;
+  float: left;
+  height: 50px;
+  margin-top: -10px;
+}
+
+.cashierBoxInsert {
+  padding: 20px 0;
+  border-top: 2px #715C2B solid;
+  font-size: 12px;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.cashierDefaultInput {
+  border: 1px solid #9B8146;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 2px 2px 2px #888;
+  box-shadow: inset 2px 2px 2px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: -25px;
+}
+
+.cashierDefaultInput:focus {
+  border: 3px solid #C4A867;
+  height: 26px;
+}
+
+.cashierDefaultInput:disabled {
+  background-color: #C2C0C0;
+}
+
+.cashierInput {
+  border: 1px solid #9A9A9A;
+  height: 30px;
+  width: 100%;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 2px 2px 2px #888;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+  position: static;
+  left: 185px;
+  top: -25px;
+}
+
+.cashierInput.error {
+  border: 3px solid #993300;
+  height: 26px;
+}
+
+.input-error {
+  border: 3px solid #993300;
+}
+
+.cashierInput:focus {
+  border: 2px solid #B89A54;
+  height: 28px;
+}
+
+.cashierInput:disabled {
+  background-color: #C2C0C0;
+}
+
+.cashierSelect__container {
+  display: inline-block;
+  position: relative;
+  left: 185px;
+  top: -25px;
+  height: 32px;
+  width: 200px;
+}
+.cashierSelect__container::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  background: url("/diamondbet/images/registration-icons/expand.png") no-repeat center/16px 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.cashierSelect {
+  border: 1px solid #9A9A9A;
+  height: 32px;
+  width: 200px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 2px 2px 2px #888;
+  box-shadow: inset 2px 2px 2px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.cashierSelect:focus {
+  border: 3px solid #B89A54;
+  height: 32px;
+}
+
+.cashierSelect:disabled {
+  background-color: #C2C0C0;
+}
+
+.cashierInputLabel {
+  width: 600px;
+}
+
+.cashierDefaultBtnInner {
+  color: #FFF;
+  height: 43px;
+  width: 150px;
+  background: url("../../images/megariches/account/transfer_btn_bg_yellow.png") repeat-x;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+.cashierDefaultBtnInner h4 {
+  padding: 0px;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+
+.cashierBtnInner {
+  color: #FFF;
+  height: 43px;
+  width: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2EB649), to(#0D3515));
+  background: linear-gradient(180deg, #2EB649 0%, #0D3515 100%);
+  border-radius: 3px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  margin-top: -30px;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cashierBtnInner.withdrawPost {
+  background: #B89A54;
+  height: 32px;
+  margin-top: -15px;
+}
+
+.cashierBtnInner h4 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  margin-top: 0;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.medium {
+  width: 50px;
+}
+
+.small {
+  width: 20px;
+}
+
+.info_box {
+  background: url("../../images/megariches/dc-box/infobox.png") no-repeat scroll 0 0 transparent;
+  display: none;
+  height: 134px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  width: 225px;
+  z-index: 10000;
+}
+
+.cvs_info {
+  color: black;
+  font-size: 10px;
+  left: 35px;
+  position: relative;
+  top: 15px;
+  width: 170px;
+}
+
+.card_back {
+  background: url("../../images/megariches/dc-box/backcard.png") no-repeat scroll 0 0 transparent;
+  height: 52px;
+  left: 80px;
+  position: relative;
+  top: 10px;
+  width: 81px;
+}
+
+.icon_questionmark {
+  background: url("../../images/megariches/dc-box/info.png") no-repeat scroll 0 0 transparent;
+  width: 21px;
+  height: 22px;
+  position: relative;
+  left: 255px;
+  top: -50px;
+}
+
+.cashierBoxInsertCol {
+  float: left;
+  width: 100%;
+}
+
+.complete {
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#deposit_complete,
+#withdraw_complete {
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+#bankBox .cashierBtnOuter {
+  top: -30px;
+  right: 0px;
+}
+
+.ulBig {
+  font-weight: bold;
+  color: #FFF;
+}
+
+.slideTrigger {
+  cursor: pointer;
+}
+
+.error {
+  color: #A00;
+  font-weight: bold;
+}
+
+.error a {
+  color: #C22 !important;
+  font-weight: bold;
+}
+
+.cashierBoxInsert label.error {
+  display: block;
+  width: 200px;
+  margin: 8px 0;
+}
+
+.maxWidth {
+  width: 600px;
+}
+
+#pugglepay-verification, #pugglepay-authorize {
+  padding: 0px 0px 20px 200px;
+}
+
+.ccardBtn .cashierBtnInner {
+  position: relative;
+}
+
+.bank-other-account-btn {
+  width: 200px;
+  left: 185px;
+  top: -10px;
+  position: relative;
+  margin-bottom: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2EB649), to(#0D3515));
+  background: linear-gradient(180deg, #2EB649 0%, #0D3515 100%);
+}
+
+.cashier-init-hidden {
+  display: none;
+}
+
+.cashierCVCLabel {
+  padding: 5px;
+}
+
+.withdraw-error-popup {
+  max-width: 362px;
+}
+
+.withdraw-error-popup span, .withdraw-error-popup p {
+  -ms-flex-item-align: start;
+      align-self: start;
+  text-align: left;
+}
+
+.withdraw-error-popup-resume {
+  background-color: #FBCFCF;
+  margin: 20px 0;
+  padding: 15px 0;
+}
+
+.withdraw-error-popup-resume ul {
+  margin: 0 15px;
+  padding: 0;
+}
+
+.withdraw-error-popup-resume li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.withdraw-error-popup-resume li:first-child {
+  padding-bottom: 15px;
+}
+
+.withdraw-error-popup-resume li div {
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+}
+
+.withdraw-error-popup-resume, .withdraw-error-popup-button {
+  width: 94%;
+}
+
+input[type=number],
+input[type=tel] {
+  font-size: 16px;
+}
+
+.withdraw_complete_success {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#cashierDepositWithdraw .withdrawal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+#cashierDepositWithdraw .withdrawal-content .withdrawal-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#cashierDepositWithdraw .withdrawal-content .withdrawal-text h1 {
+  margin-top: 0;
+}
+#cashierDepositWithdraw .withdrawal-content .withdrawal-images {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 300px;
+  height: 237px;
+  position: relative;
+}
+#cashierDepositWithdraw .withdrawal-content .withdrawal-images img {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 221px;
+  height: 235px;
+}
+#cashierDepositWithdraw .cashierBox {
+  margin-bottom: 17px;
+  background-color: #211E1A;
+}
+#cashierDepositWithdraw .cashierBox .cashierBoxInsert {
+  padding: 20px;
+  margin: 0;
+}
+#cashierDepositWithdraw .cashierBox .cashierBoxInsert .withdrawForm > .cashierInput {
+  position: relative;
+  width: 200px;
+}
+
+.cashierSelect2 {
+  padding: unset;
+  height: auto;
+}
+.cashierSelect2 .select2-selection--single {
+  border: unset !important;
+}
+@media screen and (min-width: 769px) {
+  .cashierSelect2 {
+    width: 212px !important;
+    margin-top: 3px !important;
+  }
+  .cashierSelect2 .select2-selection--single {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cashierSelect2 {
+    width: 142px !important;
+  }
+}
+
+.select2-results__options .select2-results__option {
+  color: black;
+}
+.select2-results__options .custom-disabled-option {
+  color: gray !important;
+  background-color: #F2F2F2 !important;
+}
+
+.bankAccountsDropdown .select2-results__options .select2-results__option.dropdown-option-btn {
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+.bankAccountsDropdown .select2-results__options .select2-results__option.dropdown-option-btn[aria-selected=true] {
+  color: black;
+}
+.bankAccountsDropdown .select2-results__options .select2-results__option.dropdown-option-btn[aria-selected=true]:hover {
+  color: white;
+}
+
+@media screen and (min-width: 769px) {
+  #withdrawForm-trustly label.error {
+    margin-left: 185px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #withdrawForm-trustly label.error {
+    width: 155px !important;
+  }
+}
+
+.verify_document__withdrawal .verify_document__body {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.verify_document__withdrawal .verify_document__body-image {
+  width: 100%;
+  height: 200px;
+}
+.verify_document__withdrawal .verify_document__body-image img {
+  width: auto;
+  height: 100%;
+}
+.verify_document__withdrawal .verify_document__body-description {
+  width: 100%;
+  height: auto;
+  line-height: 21px;
+  text-align: center;
+  padding: 10px 0;
+}
+.verify_document__withdrawal .verify_document-body-btn {
+  margin-top: 10px;
+  position: relative;
+  border-radius: 6px;
+  height: 43px;
+  width: 70%;
+}
+.verify_document__withdrawal .verify_document-body-btn-txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media screen and (max-width: 768px) {
+  .verify_document__withdrawal .verify_document__body-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: calc(100vh - 445px);
+  }
+}
+
+#general_info_popup-box .general_info__action .mbox-ok-btn {
+  margin-top: 15px;
+  width: 15%;
+}
+@media screen and (max-width: 768px) {
+  #general_info_popup-box .general_info {
+    margin-top: 35vh;
+  }
+}
+
+#verify-code .cashierBtnOuter {
+  width: 150px;
+  margin: auto;
+}
+
+.invalid-account-selected-popup .lic-mbox-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.invalid-account-selected-popup .lic-mbox-container .general_info {
+  margin-top: unset !important;
+}
+.invalid-account-selected-popup .lic-mbox-container,
+.invalid-account-selected-popup .general_info__body-description .description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .invalid-account-selected-popup .lic-mbox-container,
+.invalid-account-selected-popup .general_info__body-description .description {
+    padding-bottom: unset !important;
+    margin-bottom: unset !important;
+  }
+}
+.invalid-account-selected-popup .valid-account-details {
+  scrollbar-width: thin;
+  scrollbar-color: #B89A54 transparent;
+  /*Codes needed to make scrollbar visible for iOS less than 13*/
+  overflow-y: auto;
+  margin: 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.invalid-account-selected-popup .valid-account-details::-webkit-scrollbar {
+  width: 5px;
+}
+.invalid-account-selected-popup .valid-account-details::-webkit-scrollbar-thumb {
+  background: #B89A54;
+}
+.invalid-account-selected-popup .valid-account-details::-webkit-scrollbar-track {
+  background: transparent;
+}
+.invalid-account-selected-popup .valid-account-details::-webkit-scrollbar-corner {
+  background: transparent;
+}
+@supports (-webkit-touch-callout: none) {
+  .invalid-account-selected-popup .valid-account-details {
+    overflow: scroll;
+    -webkit-overflow-scrolling: auto;
+  }
+  .invalid-account-selected-popup .valid-account-details::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .invalid-account-selected-popup .valid-account-details {
+    max-height: 302px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .invalid-account-selected-popup .valid-account-details {
+    max-height: calc(100vh - 48px - 160px);
+  }
+}
+@media screen and (min-width: 769px) {
+  .invalid-account-selected-popup .valid-account-details.scrollbar-overflow-adjustment {
+    margin-right: -10px;
+  }
+}
+.invalid-account-selected-popup .valid-account-details .valid-account-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  padding: 20px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #EEEEEE;
+  gap: 10px;
+}
+.invalid-account-selected-popup .valid-account-details .valid-account-option .valid-account-option-context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.invalid-account-selected-popup .valid-account-details .valid-account-option .valid-account-option-context span {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 25px;
+}
+.invalid-account-selected-popup .valid-account-details .valid-account-option .valid-account-option-context span:nth-of-type(2) {
+  font-weight: 700;
+}
+.invalid-account-selected-popup .valid-account-details .valid-account-option button {
+  width: 90px;
+  height: 36px;
+  padding: 0 9px 0 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #006A14;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  .invalid-account-selected-popup .general_info__action {
+    margin: auto;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 20px;
+  }
+}
+.invalid-account-selected-popup .general_info__action button {
+  margin-top: unset !important;
+  width: 300px !important;
+  height: 43px;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .invalid-account-selected-popup .general_info__action button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    width: 100% !important;
+  }
+}

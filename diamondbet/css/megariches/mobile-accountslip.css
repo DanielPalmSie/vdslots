@@ -1,0 +1,77 @@
+.mobile-accountslip h3 {
+  color: #B89A54;
+  font-weight: normal;
+  text-transform: initial;
+  border-bottom: none;
+  line-height: 40px;
+  padding-left: initial;
+}
+
+.active-rewards-bg h3 {
+  background: none;
+  background-position: initial;
+  background-size: initial;
+}
+
+.latest-trophies-bg h3 {
+  background: none;
+  background-position: initial;
+  background-size: initial;
+}
+
+.view-more-mobile {
+  height: 16px;
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: #B89A54;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.zebra-tbl th {
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.recent_account_history-mobile tr {
+  border-top: none;
+}
+
+.recent_account_history-mobile tr:first-child {
+  border-top: none;
+}
+
+.recent_account_history-mobile td {
+  color: #FFF;
+  padding: 20px 5px 20px 0px;
+}
+
+.recent_account_history-mobile {
+  padding: 10px;
+  margin: 10px 0px 0px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 95.5%;
+}
+
+.recent_account_history-mobile h3 {
+  font-weight: 700;
+}
+
+.rewards-middle-box {
+  height: 410px;
+}
+
+.reward-detailed.simple-box {
+  width: 92%;
+}
+
+.rewards-middle-box {
+  width: 95%;
+}

@@ -1,0 +1,438 @@
+.account-documents-holder input[type=file] {
+  width: 100%;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* file upload button */
+.account-documents-holder input[type=file]::file-selector-button {
+  cursor: pointer;
+  margin-right: 16px;
+  border-radius: 5px;
+  border: 1px solid #C4A867;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 32px;
+  padding: 5px 16px;
+  background-color: transparent;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .account-documents-holder input[type=file]::file-selector-button {
+    width: 200px;
+    display: inline-block;
+  }
+}
+
+.doc-status-btn {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 128px;
+  padding: 4px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.document-status-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.doc-status-btn .status,
+.document-status-btn .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 24px;
+  background-position: 1px;
+}
+
+.document-status-section {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 10px;
+}
+@media screen and (min-width: 768px) {
+  .document-status-section {
+    padding: 12px 16px;
+  }
+}
+.document-status-section p {
+  font-size: 12px;
+}
+
+.file-upload-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .file-upload-title {
+    font-size: 16px;
+  }
+}
+
+.document-status {
+  text-align: center;
+  line-height: 29px;
+  color: #FFF !important;
+  font-weight: 400;
+}
+.document-status td {
+  text-align: left;
+}
+.document-status button {
+  font-weight: 500;
+}
+
+.document-row .document {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.document h3 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+}
+
+.document-row {
+  overflow: hidden;
+}
+
+.filename {
+  width: 280px;
+  float: left;
+}
+
+.account-documents-holder .document .filename,
+.account-documents-holder .document-mobile .filename-mobile {
+  font-size: 13px;
+}
+
+.account-documents-holder .document .filestatus,
+.account-documents-holder .document-mobile .filestatus-mobile {
+  line-height: normal;
+  margin: 10px 0 0 0;
+}
+
+.filename-mobile {
+  width: 200px;
+  float: left;
+}
+
+.filestatus {
+  float: right;
+  width: 100px;
+  margin: 20px 0 0 0;
+  line-height: 25px;
+  text-align: center;
+  height: 25px;
+  font-size: 13px;
+}
+
+.filestatus-mobile {
+  float: right;
+  width: 100px;
+  margin: 10px 0 0 0;
+  line-height: 25px;
+  text-align: center;
+  height: 25px;
+  font-size: 13px;
+}
+
+.clear {
+  clear: both;
+}
+
+.choose-file-container {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .choose-file-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.choose-file-container > span {
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 85vw;
+  display: block;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .choose-file-container > span {
+    margin-left: 15px;
+    max-width: unset;
+    display: unset;
+    text-overflow: unset;
+    overflow: unset;
+  }
+}
+
+.choose-file-field-container {
+  border: 1px solid #C4A867;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .choose-file-field-container {
+    width: 200px;
+  }
+}
+
+.choose-file-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  background: transparent;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .choose-file-field {
+    width: 200px;
+  }
+}
+
+.add-file-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  padding: 0px 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  background: #43371A;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .add-file-field {
+    width: 200px;
+  }
+}
+
+.document-uploadform {
+  width: 300px;
+}
+
+.deactivate_button {
+  float: right;
+  margin-top: 104px;
+}
+
+.account-documents-holder {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.account-documents-holder td {
+  padding: 0 25px 24px 0;
+}
+@media screen and (min-width: 768px) {
+  .account-documents-holder td {
+    padding: 0 12px 24px 0;
+  }
+}
+
+.verification-status-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.verification-status {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 28px;
+  padding: 6px 67px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.account-documents-holder select {
+  -webkit-appearance: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 28px;
+  padding: 4px 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  background-color: #F4F4F4;
+  color: #474747;
+  position: relative;
+}
+.account-documents-holder select::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 0px;
+  display: block;
+  font-size: 10px;
+  color: #ADADAD;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("/diamondbet/images/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+#source_of_income {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #source_of_income {
+    width: 50%;
+  }
+}
+
+#source_of_income .uploadfields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+
+.account-documents-holder .submit {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.account-documents-holder .errors {
+  float: none;
+}
+
+.upload-instructions p {
+  line-height: 25px;
+}
+
+.document-status-section .document-status-headline {
+  font-size: 14px;
+}
+
+.document-status-section .upload-instructions-headline {
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFF;
+}
+
+.document-status .document-status-info {
+  color: #C4C4C4;
+}

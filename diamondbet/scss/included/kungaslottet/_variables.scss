@@ -1,0 +1,53 @@
+// Varibles specific across Kungaslottet brand go here
+@import '_palette.scss';
+
+// variable needed for conditional code loading
+$brand: 'kungaslottet';
+$brand-image-path: '../../images/#{$brand}';
+
+$body--color: #fff;
+
+// Colours
+$kunga-blue: #249CEC; //$primary-500
+$kunga-blue-60: #ADDEFF;
+$kunga-blue-100: #94CFF8;
+$kunga-blue-200: #78C4F8;
+$kunga-blue-300: #4FB0F2;
+
+// main brand color
+$main-color: #016BB2;
+
+$dark-blue-divider: #223969; //$frame-50
+
+$dark-blue-100: #2D4785;
+$dark-blue-200: #142346; //$frame-800
+$dark-blue-300: #0D1D42;
+$dark-blue-400: #0D1935; //$frame-200
+$dark-blue-500: #010B21; //$frame-600
+
+$kunga-dark-blue-pop-ups: #003E68;
+$kunga-blue-pop-ups: #016BB2;
+
+$green-button-gradient: linear-gradient(
+    180deg,
+    #23BD73 0%,
+    #07A85B 41.15%,
+    #005C30 100%
+); //$primary-gradient
+
+$green-button-popups: #07A85B;
+
+$deposit-button-gradient: linear-gradient(180deg, #66C72A 0%, #238500 100%); //$deposit-gradient
+
+$videoslots-body-text: #474747;
+
+$deposit-button-green: #006A14;
+$deposit-gradient: linear-gradient(180deg, #66C72A 0%, #238500 100%);
+
+$error-validation-colours: #C41620;
+
+$mobile-background: #071128;
+
+$neutral: #fff;
+
+$kunga-gradient: linear-gradient(180deg, #249CEC 0%, #016BB2 100%);

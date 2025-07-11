@@ -1,0 +1,98 @@
+.mobile-accountslip h3 {
+    color: $mobile-accountslip-h3--color;
+    font-weight: normal;
+    text-transform: $mobile-accountslip-h3--text-transform;
+    border-bottom: none;
+    line-height: 40px;
+    padding-left: $mobile-accountslip-h3--padding-left;
+}
+
+.active-rewards-bg h3  {
+    background: $active-rewards-bg-h3--background;
+    background-position: $active-rewards-bg-h3--background-position;
+    background-size: $active-rewards-bg-h3--background-size;
+
+    @include custom-code(kungaslottet) {
+        font-weight: 700;
+    }
+
+    @include custom-code(dbet) {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.latest-trophies-bg h3  {
+    background: $latest-trophies-bg-h3--background;
+    background-position: $latest-trophies-bg-h3--background-position;
+    background-size: $latest-trophies-bg-h3--background-size;
+
+    @include custom-code(kungaslottet) {
+        font-weight: 700;
+    }
+
+    @include custom-code(dbet) {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.view-more-mobile {
+    height: 16px;
+    padding: 12px;
+    font-size: $view-more-mobile--font-size;
+    text-align: center;
+    color: $view-more-mobile--color;
+    background-color: $view-more-mobile--background-color;
+    cursor: pointer;
+    border-radius: $view-more-mobile--border-radius;
+    font-weight: $view-more-mobile--font-weight;
+    line-height: $view-more-mobile--line-height;
+}
+
+.zebra-tbl th {
+    text-align: left;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.recent_account_history-mobile tr {
+    border-top: $recent_account_history-mobile-tr--border-top;
+}
+
+.recent_account_history-mobile tr:first-child {
+    border-top: none;
+}
+
+.recent_account_history-mobile td {
+    color: $recent_account_history-mobile-td--color;
+    padding: 20px 5px 20px 0px;
+}
+
+.recent_account_history-mobile {
+    padding: 10px;
+    margin: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    width: 95.5%;
+}
+
+.recent_account_history-mobile h3 {
+    font-weight: $recent_account_history-mobil-h3--font-weight;
+
+    @include custom-code(dbet) {
+        font-size: 16px;
+    }
+}
+
+.rewards-middle-box {
+    height: 410px;
+}
+
+.reward-detailed.simple-box {
+    width: 92%;
+}
+
+.rewards-middle-box {
+    width: 95%;
+}

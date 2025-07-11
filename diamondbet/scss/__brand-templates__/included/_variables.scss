@@ -1,0 +1,7 @@
+// Variables specific across NEW brand go here
+@import '_palette.scss';
+
+$brand: '__brand-templates__'; // rename to brand folder name
+$brand-image-path: '../../images/#{$brand}';
+
+$main-color: $placeholder-color; // replace the placeholder color by true main color from the brand palette

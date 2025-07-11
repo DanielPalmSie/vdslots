@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) {
+  .container-holder:has(#altenar-container) {
+    float: none;
+  }
+
+  #altenar-container {
+    min-height: 100vh;
+  }
+}
+#altenar-container {
+  padding: 16px 0;
+}

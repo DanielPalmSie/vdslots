@@ -1,0 +1,86 @@
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .win-container-body {
+    font-size: 14px !important;
+  }
+
+  .win-text-header-top {
+    font-size: 18px !important;
+  }
+
+  .winText {
+    font-size: 18px !important;
+  }
+
+  .btn-profile, .btn-homepage, .btn-affirmative {
+    padding: 8px 0px 8px 0px !important;
+  }
+
+  .modal-title {
+    font-size: 20px !important;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+  .win-container-body {
+    font-size: 12px !important;
+  }
+
+  .win-text-header-top {
+    font-size: 16px !important;
+  }
+
+  .winText {
+    font-size: 16px !important;
+  }
+
+  .btn-profile, .btn-homepage, .btn-affirmative {
+    padding: 5px 0px 5px 0px !important;
+  }
+
+  .modal-title {
+    font-size: 20px !important;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .win-container-body {
+    font-size: 10px !important;
+  }
+
+  .win-text-header-top {
+    font-size: 12px !important;
+  }
+
+  .winText {
+    font-size: 12px !important;
+  }
+
+  .btn-profile, .btn-homepage, .btn-affirmative {
+    padding: 5px 0px 5px 0px !important;
+    font-size: 16px;
+  }
+
+  .modal-title {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .win-container-body {
+    font-size: 8px !important;
+  }
+
+  .win-text-header-top {
+    font-size: 10px !important;
+  }
+
+  .winText {
+    font-size: 10px !important;
+  }
+
+  .btn-profile, .btn-homepage, .btn-affirmative {
+    padding: 5px 0px 5px 0px !important;
+    font-size: 14px;
+  }
+
+  .modal-title {
+    font-size: 14px !important;
+  }
+}

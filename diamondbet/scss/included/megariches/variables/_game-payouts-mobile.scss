@@ -1,0 +1,77 @@
+// #search_payout
+$search_payout--border: none;
+$search_payout--border-radius: 5px;
+
+// .game-payout-row
+$game-payout-row--border: none;
+$game-payout-row--background: $neutral-900;
+
+// .game-payout-first
+$game-payout-first--width: 30%;
+
+// .game-payout-middle
+$game-payout-middle--width: 40%;
+$game-payout-middle--padding: 5px;
+$game-payout-middle--justify-content: center;
+
+// .game-payout-middle .headline-default-m
+$game-payout-middle-headline-default-m--font-size: 12px;
+$game-payout-middle-headline-default-m--margin-bottom: 10px;
+$game-payout-middle-headline-default-m--color: $white;
+
+// .game-payout-last
+$game-payout-last--width: 40%;
+$game-payout-last--padding: 5px;
+
+// .game-payout-last-left
+$game-payout-last-left--width: 65%;
+$game-payout-last-left--justify-content: center;
+$game-payout-last-left--align-items: center;
+
+// .game-payout-last-right
+$game-payout-last-right--padding: 0px;
+$game-payout-last-right--width: 35%;
+$game-payout-last-right--justify-content: center;
+
+// .game-payout-first img
+$game-payout-first-img--width: 79px;
+
+// .headline-default-xl-mobile
+$headline-default-xl-mobile--color: $primary-100;
+$headline-default-xl-mobile--font-size: 20px;
+$headline-default-xl-mobile--margin: 0px;
+
+// .game-payout-last-right img
+$game-payout-last-right-img--width: 20px;
+$game-payout-last-right-img--margin-left: 0px;
+
+// .header-small-mobile
+$header-small-mobile--color: $neutral-600;
+$header-small-mobile--font-size: 6px;
+$header-small-mobile--font-weight: normal;
+$header-small-mobile--line-height: 10px;
+
+// span.header-small-mobile
+$span-header-small-mobile--color: $white;
+
+// .view-more-mobile
+$view-more-mobile--background-color: $button-primary-light;
+$view-more-mobile--border-radius: 5px;
+$view-more-mobile--font-weight: 700;
+
+// .game-payout-middle .mobile-play-button
+$game-payout-middle-mobile-play-button--width: 95px !important;
+$game-payout-middle-mobile-play-button--height: 21px !important;
+
+// .game-payout-last .header-small
+$game-payout-last-header-small--font-size: 8px;
+$game-payout-last-header-small--margin-top: 0px;
+
+// .gch-item .sbHolder, .gch-item .sbSmallHolder
+$gch-item-sbHolder--border: none;
+$gch-item-sbHolder--border-radius: 5px;
+
+// .sbToggle::after
+$sbtoggle-after--content: "\e90e";
+$sbtoggle-after--left: 6px;
+$sbtoggle-after--color: $neutral-400;

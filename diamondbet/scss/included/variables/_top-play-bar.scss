@@ -1,0 +1,60 @@
+// .top-play-bar
+$top-play-bar--height: 43px;
+$top-play-bar--background: url('#{$brand-image-path}/top-play-bar-bkg.png') repeat-x;
+$top-play-bar--border-bottom-color: #cf9c33;
+
+// .topbar-txt
+$topbar-txt--color: #cf9c33;
+
+// .topbar-rewards
+$topbar-rewards--background-color: #3e3d3d;
+$topbar-rewards--margin-right: 15px;
+
+// .topbar-rewards .icon
+$topbar-rewards-icon--height: 22px;
+$topbar-rewards-icon--width: 22px;
+$topbar-rewards-icon--color: #DD9E37;
+
+// .topbar-rewards-counter
+$topbar-rewards-counter--padding: 2px 0px 0px 0px !important;
+
+// #maximize
+$maximize--background: url('#{$brand-image-path}/game_page/maximize.png') no-repeat;
+
+// #maximize:hover
+$maximize-hover--background: url('#{$brand-image-path}/game_page/maximize_over.png') no-repeat;
+
+// #games_select
+$games-select--color: #cf9c33;
+
+// #game_top .sbHolder
+$game-top-sbholder--color: #cf9c33;
+$game-top-sbholder--border-color: #cf9c33;
+
+// #game_top .sbOptions
+$game-top-sboptions--border-color: #cf9c33;
+
+// #game_top .sbOptions a
+$game-top-sboptions-a--color: #cf9c33 !important;
+
+// #game_top .sbOptions a:hover
+$game-top-sboptions-a-hover--color: #ffbf55 !important;
+
+// #game_top .sbToggle
+$game-top-sbtoggle--background: url('#{$brand-image-path}/game_page/select-icons.png') no-repeat scroll 0 -167px transparent;
+
+// #game_top .sbToggleOpen
+$game-top-sbtoggleopen--background: url('#{$brand-image-path}/game_page/select-icons.png') no-repeat scroll 0 -66px transparent;
+
+// .top-bar-menuitem
+$top-bar-menuitem--padding: 0px 16px 0px 40px;
+
+// .top-login
+$top-login--background: url('#{$brand-image-path}/game_page/login_bkg.png') no-repeat;
+
+// .top-bar-name
+$top-bar-name--color: #cf9c33;
+
+// .top-bar-timer
+$top-bar-timer--margin-top: 14px;
+$top-bar-timer--margin-left: 23px;

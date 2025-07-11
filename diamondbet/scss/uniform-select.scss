@@ -1,0 +1,70 @@
+.uniform-select {
+    background-image: $uniform-select--background-image;
+    position: relative;
+    @include custom-code(kungaslottet) {
+        border-radius: 5px;
+        border: 1px #D1D1D1 solid;
+    }
+
+    select {
+        display: block;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        font-size: 0.9em;
+        padding: 4px 5px;
+        background-size: 10px;
+
+        ///* Disable default styling on ff */
+        ///*-moz-appearance: none;
+        //
+        ///* Disable default styling on webkit browsers*/
+        -webkit-appearance: none;
+    }
+
+    &:after {
+        font-family: "videoslots-font" !important;
+        height: 0px;
+        font-size: 10px;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        top: 52%;
+        right: 15px;
+        content: "\e91e";
+        transform: rotate(270deg);
+        color: #747474;
+        pointer-events: none;
+    }
+
+    ///* Disable ugly ass outline on firefox */
+    select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+    }
+}
+
+///* Disable default arrow on IE 11+ *
+//.uniform-select select::-ms-expand {
+//  display: none;
+//}*/
+//
+//
+///* IE 9 only*/
+@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+  .uniform-select {
+    padding-right: 0;
+  }
+
+  .uniform-select select:after, .uniform-select select:before {
+    display: none;
+  }
+}

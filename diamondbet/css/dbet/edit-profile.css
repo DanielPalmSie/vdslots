@@ -1,0 +1,421 @@
+@charset "UTF-8";
+.edit-profile-select-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.edit-profile-select-wrapper #preferred_lang {
+  -webkit-appearance: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 28px;
+  padding: 4px 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  border: 1px solid #0E2A6E;
+  background-color: #FFF;
+  color: #474747;
+}
+@media screen and (min-width: 768px) {
+  .edit-profile-select-wrapper #preferred_lang {
+    width: 200px;
+  }
+}
+.edit-profile-select-wrapper::after {
+  content: "";
+  font-family: "videoslots-font";
+  position: absolute;
+  top: 9px;
+  right: 0px;
+  display: block;
+  font-size: 10px;
+  color: #000;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+}
+
+.edit-profile-terms__empty-data {
+  width: 35%;
+}
+
+.edit-profile-terms__btn-data {
+  width: 100%;
+  padding-right: 19px;
+}
+@media screen and (min-width: 768px) {
+  .edit-profile-terms__btn-data {
+    width: 65%;
+  }
+}
+
+.edit-profile-terms__btn-input {
+  width: 201px;
+}
+
+.registerform input[type=text],
+.registerform input[type=tel],
+.registerform input[type=password],
+.registerform .regform-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  width: 100% !important;
+  height: 28px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #474747;
+  background-color: #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #474747;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .registerform input[type=text],
+.registerform input[type=tel],
+.registerform input[type=password],
+.registerform .regform-field {
+    width: 200px !important;
+  }
+}
+
+.simple-box.personal-info-box,
+.simple-box.contact-info-box,
+.simple-box.account-info-box,
+.simple-box.account-security-box,
+.simple-box.term-and-condition-box {
+  margin-top: 16px;
+  padding: 12px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.simple-box.personal-info-box {
+  margin-top: 0;
+}
+
+.simple-box .section-title {
+  margin: 0 0 10px;
+}
+
+.registerform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+.registerform .select-option {
+  margin: 0 0 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .registerform .select-option {
+    width: auto;
+  }
+}
+.registerform .update-button {
+  width: 100%;
+}
+.registerform .update-button input[type=submit] {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .registerform .update-button input[type=submit] {
+    width: 200px;
+  }
+}
+.registerform input[type=checkbox] {
+  margin: 0;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.registerform p {
+  margin: 0 0 2px 0;
+}
+
+.personal-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.edit-profile-submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: #4075FF;
+}
+@media screen and (min-width: 768px) {
+  .edit-profile-submit-btn {
+    width: 200px;
+  }
+}
+
+.registerform.contact-info-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .registerform.contact-info-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 16px 24px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.registerform.account-security-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.registerform.account-info-section,
+.registerform .account-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .registerform.account-info-section,
+.registerform .account-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px 24px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: auto;
+  }
+}
+.registerform.account-info-section .account-info-item,
+.registerform .account-info .account-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .registerform.account-info-section .account-info-item:first-child,
+.registerform .account-info .account-info-item:first-child {
+    margin-right: 50%;
+  }
+}
+
+.simple-box .registerform .account-info-item,
+.simple-box .registerform .contact-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .simple-box .registerform .account-info-item,
+.simple-box .registerform .contact-info-item {
+    width: auto;
+  }
+}
+
+.simple-box .registerform .contact-info-description-item {
+  width: 100%;
+}
+
+/* copied it from all.scss just to update checkbox only inside edit profile.
+need to be deleted when updated checkbox is available all places
+*/
+input {
+  vertical-align: middle;
+  color: #000;
+}
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #0E2A6E;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  position: relative;
+  background: #FFF;
+}
+input[type=checkbox]:checked {
+  background: #112F7C;
+  color: white;
+}
+input[type=checkbox]:checked:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 4px;
+  height: 9px;
+  color: white;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#edit-profile-form #email[disabled],
+#edit-profile-form #mobile[disabled],
+#edit-profile-form #city[disabled],
+#edit-profile-form #zipcode[disabled],
+#edit-profile-form #address[disabled],
+#edit-profile-form #building[disabled],
+#edit-profile-form #main_province[disabled] {
+  color: #5E5E5E;
+  border: 1px solid #5E5E5E;
+  background: #808080;
+  pointer-events: none;
+  opacity: 1;
+}
+#edit-profile-form [name=submit_contact_info] {
+  display: none;
+}
+
+#validate_contact_info {
+  margin-top: 10px;
+}
+
+#validate_contact_info[disabled] {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+#edit_profile_validation_code_popup .lic-mbox-title {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+#edit_profile_validation_code_popup .lic-mbox-header {
+  height: 55px;
+}
+#edit_profile_validation_code_popup .lic-mbox-close-box {
+  top: 20px;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__body {
+  margin-bottom: 10px;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__label {
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid grey;
+  padding: 8px;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__resend {
+  height: auto;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__info {
+  font-size: 14px;
+  color: #112F7C;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__error {
+  font-size: 12px;
+  text-align: left;
+}
+#edit_profile_validation_code_popup .edit-profile-validation-code__submit {
+  height: 36px;
+}
+
+.edit-profile-success-popup .btn {
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  padding: 9px 20px;
+}

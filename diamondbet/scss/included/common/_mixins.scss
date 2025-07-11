@@ -1,0 +1,322 @@
+@use "sass:math";
+
+@mixin custom-code ($brand-name) {
+  @if ($brand-name == $brand) {
+    @content;
+  }
+}
+
+@mixin brands-in($brands...) {
+  @if (index($brands, $brand)) {
+    @content;
+  }
+}
+
+// Used the below mixin to fix the blurry images on new versions of chrome and edge.
+@mixin fix-image-rendering {
+  border-style: none;
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+    image-rendering: -webkit-optimize-contrast;
+  }
+  // On safari, using the auto as before.
+  @media not all and (min-resolution: .001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+      image-rendering: auto;
+    }
+  }
+}
+
+@mixin thin-scrollbar($non-thumb-background: transparent) {
+    scrollbar-width: thin;
+    scrollbar-color: $main-color $non-thumb-background;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $main-color;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $non-thumb-background;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: $non-thumb-background;
+    }
+
+    /*Codes needed to make scrollbar visible for iOS less than 13*/
+    @supports (-webkit-touch-callout: none) {
+        overflow: scroll;
+        -webkit-overflow-scrolling: auto;
+
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+    }
+}
+
+@mixin font-face ($font-name, $file-name, $weight, $common: false) {
+  $path: $brand-font-path !default;
+
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: $font-name;
+    font-style: normal;
+    font-weight: $weight;
+
+    @if $common {
+      $path: $common-font-path;
+      src: url('#{$path}/#{$file-name}.eot'); /* IE9 Compat Modes */
+      src: url('#{$path}/#{$file-name}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('#{$path}/#{$file-name}.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('#{$path}/#{$file-name}.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('#{$path}/#{$file-name}.svg##{$font-name}') format('svg'); /* Legacy iOS */
+    } @else {
+      src: url('#{$path}/#{$file-name}.eot'); /* IE9 Compat Modes */
+      src: url('#{$path}/#{$file-name}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('#{$path}/#{$file-name}.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('#{$path}/#{$file-name}.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('#{$path}/#{$file-name}.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('#{$path}/#{$file-name}.svg##{$font-name}') format('svg'); /* Legacy iOS */
+    }
+  }
+}
+
+@mixin custom-radio-box($width, $border-width, $background, $checked-background, $border-color) {
+  &[type="radio"] {
+    appearance: none;
+    width: $width;
+    height: $width;
+    border-radius: $width;
+    background: $background;
+    border: $border-width solid $border-color;
+    margin: 0 3px 0 5px;
+
+    $radio-checked-white-space: 4;
+
+    &:checked:after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      left: $border-width * 2;
+      top: $border-width * 2;
+      width: $width - $border-width * 2 - $radio-checked-white-space;
+      height: $width - $border-width * 2 - $radio-checked-white-space;
+      background: $checked-background;
+      border-radius: $width;
+    }
+  }
+}
+
+@mixin set-access-restricted-image-size {
+  .access-restricted {
+      img {
+          width: 200px;
+          height: 200px;
+      }
+  }
+}
+
+// hide Scrollbar mixin
+@mixin hide-scroll-bar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  // Codes needed to make scrollbar visible for iOS less than 13
+  @supports (-webkit-touch-callout: none) {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: auto;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+
+@mixin topbar-cashier-button(
+  $background
+) {
+  .topbar-cashier button {
+    padding: 0 17px;
+    box-sizing: border-box;
+    background: $background;
+    border-radius: 4px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@mixin privacy-confirm-box() {
+    .privacy-confirm-box {
+        width: 448px !important;
+
+        // .privacy-confirm-box .mbox-msg-content
+        .mbox-msg-content {
+            margin-bottom: 24px;
+
+            // .privacy-confirm-box .mbox-msg-content p
+            p {
+                margin: 0;
+            }
+        }
+
+        // .privacy-confirm-box .mbox-msg-container
+        .mbox-msg-container {
+            padding: 20px 16px !important;
+
+            @media screen and (min-width: 768px) {
+                padding: 20px 32px !important;
+            }
+        }
+
+        // .privacy-confirm-box .mbox-button-strip
+        .mbox-button-strip {
+            flex-direction: column;
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+        }
+
+        // .privacy-confirm-box .btn-privacy-yes,
+        // .privacy-confirm-box .btn-privacy-no
+        .btn-privacy-yes,
+        .btn-privacy-no {
+            padding: 10px 84px;
+            height: 43px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 5px;
+
+            @media screen and (min-width: 768px) {
+                width: 200px;
+                padding: 1px 0;
+            }
+        }
+
+        // .privacy-confirm-box .btn-privacy-yes
+        .btn-privacy-yes {
+            background: $button-primary-light;
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 768px) {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+
+        // .privacy-confirm-box .btn-privacy-no
+        .btn-privacy-no {
+            background: $button-secondary-light;
+            color: white !important;
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@mixin account-activation-popup($color) {
+    #mbox-msg.no-deposit-msg {
+        // #mbox-msg.no-deposit-msg .mbox-msg-title-bar
+        .mbox-msg-title-bar {
+            height: 48px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        // #mbox-msg.no-deposit-msg .mbox-msg-container
+        .mbox-msg-container {
+            padding: 20px 16px !important;
+            @media screen and (min-width: 768px) {
+                padding: 20px 32px !important;
+            }
+
+            // #mbox-msg.no-deposit-msg .mbox-msg-container .text-container
+            .text-container {
+                margin-bottom: 24px;
+            }
+        }
+
+        // #mbox-msg.no-deposit-msg .account-activation
+        .account-activation {
+            // #mbox-msg.no-deposit-msg .account-activation img
+            img {
+                margin-bottom: 24px;
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            // #mbox-msg.no-deposit-msg .account-activation span
+            span {
+                font-size: 20px;
+                display: block;
+                color: $color;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+
+            // #mbox-msg.no-deposit-msg .account-activation div
+            div {
+                font-size: 15px;
+            }
+        }
+
+        // #mbox-msg.no-deposit-msg .mbox-ok-btn
+        .mbox-ok-btn {
+            width: 270px;
+            height: 43px;
+            border-radius: 5px;
+            background-color: $button-primary-light;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        // #mbox-msg.no-deposit-msg .multibox-close
+        .multibox-close {
+            right: 22px;
+            top: 16px;
+            margin: 0;
+
+            // #mbox-msg.no-deposit-msg .multibox-close .icon-vs-close
+            .icon-vs-close {
+                font-size: 15px;
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@mixin flex-gap-column($gap) {
+    display: flex;
+    flex-direction: column;
+
+    // Modern browsers
+    gap: $gap;
+
+    // Use margin for iOS devices
+    /* this is to handle specific case Iphone 12 v14.1 flex gap is applied but not working  */
+    /* this will add margin-top to all direct children except the first child,
+    similar to what gap is doing adding space between children */
+    @supports (-webkit-touch-callout: none) {
+        gap: 0;
+        > * + * {
+            margin-top: $gap !important;
+        }
+    }
+}

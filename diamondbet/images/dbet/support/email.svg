@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27" height="27" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 27 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3058b8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Icons_-_24x24" data-name="Icons - 24x24">
+    <path id="_164-email" data-name="164-email" class="cls-1" d="M1.5,2.5h24M1.5,2.5v17.4h24V2.5M1.5,2.5l12,8.7L25.5,2.5"/>
+  </g>
+</svg>

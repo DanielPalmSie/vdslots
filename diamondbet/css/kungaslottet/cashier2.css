@@ -1,0 +1,707 @@
+.cashierMsgBackBtn {
+  position: fixed;
+  top: 410px;
+  left: 410px;
+  width: 250px;
+}
+
+.cashierBoxInsert {
+  font-size: 12px;
+}
+
+.icon_questionmark {
+  left: 40px;
+  top: -52px;
+}
+
+.cashier-make-normal-wrapper {
+  position: fixed;
+  top: 420px;
+  left: 360px;
+  width: 350px;
+}
+
+#pugglepay-verification, #pugglepay-authorize {
+  padding: 0 0 10px 25px !important;
+  margin-top: 10px !important;
+  position: relative;
+  z-index: 100;
+  height: 390px !important;
+}
+
+.cashier-expense-min-label,
+.cashier-expense-max-label,
+.cashier-expense-min-value,
+.cashier-expense-max-value {
+  font-size: 10px;
+  color: #FFF;
+}
+
+.expense-info {
+  margin-left: 60px;
+}
+
+.ulBig {
+  color: #FFF;
+}
+
+.cashier-wrapper {
+  width: 1067px;
+}
+
+#wrapper:has(.container-holder > .cashier-wrapper > .cashier2-layout-table),
+.cashier-box-inside-iframe > #wrapper {
+  background: #071128 !important;
+}
+
+.cashier-box-inside-iframe > #wrapper > .container-holder > p {
+  padding: 16px 32px;
+}
+
+.cashier-help-table {
+  position: fixed;
+  top: 475px;
+  left: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cashier-help-table tbody tr td:first-child > p {
+  margin-left: 60px;
+}
+
+.cashier-help-table.help-row-table {
+  border-collapse: separate;
+  table-layout: fixed;
+  width: 100%;
+  /* Add margin-right to the text cell of each pair except the last one before site info */
+}
+.cashier-help-table.help-row-table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Changed from space-between */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.cashier-help-table.help-row-table .help-live-chat {
+  width: 100px !important;
+}
+.cashier-help-table.help-row-table h3 {
+  margin-bottom: 3px;
+}
+.cashier-help-table.help-row-table .faq-right-text.company-details {
+  width: 110px;
+}
+.cashier-help-table.help-row-table .brand_name {
+  font-weight: 700;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+.cashier-help-table.help-row-table .faq-right-image {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cashier-help-table.help-row-table .faq-right-image img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.cashier-help-table.help-row-table .faq-right-text {
+  padding: 0;
+  width: 100px;
+  font-weight: 400;
+}
+.cashier-help-table.help-row-table .faq-right-text p {
+  padding: 0;
+  margin: 0;
+}
+.cashier-help-table.help-row-table .faq-right-image + .faq-right-text {
+  margin-left: 13px;
+}
+.cashier-help-table.help-row-table .faq-right-text:not(:last-of-type) {
+  margin-right: auto;
+  /* Adjust this value for desired gap between pairs */
+}
+
+.cashier-help-table .w-40-pc {
+  width: 145px;
+}
+
+.cashier-help-table .w-10-pc {
+  width: 61px;
+}
+.cashier-help-table .w-10-pc img {
+  margin-left: 25px;
+}
+
+.cashier-help-table .help-live-chat {
+  width: 182px;
+}
+
+.cashier-help-table h3 {
+  color: #FFF;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+
+.cashier-help-table td {
+  color: #FFF;
+  font-size: 10px;
+}
+
+.cashier-predefined-amount {
+  background-color: #FFF;
+  border-radius: 4px;
+  color: #282828;
+  padding: 3px 0px 3px 0px;
+  margin: 5px 5px 5px 5px;
+  font-size: 15px !important;
+  font-weight: bold;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gradient-text-default {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.cashier-expense {
+  font-weight: bold;
+}
+
+.cashier2-layout-table {
+  margin-top: 0px;
+}
+
+.cashier2-layout-table td {
+  vertical-align: top;
+}
+
+.sms-submit {
+  color: #FFF;
+  background-color: transparent;
+  border: none;
+  padding-top: 0px;
+  margin: 10px 0px 0px 0px;
+  display: block;
+}
+
+.infoText {
+  width: 360px;
+  height: auto;
+  float: none;
+  position: relative;
+  top: 0px;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.cashierBtnInner {
+  position: fixed;
+  top: 410px;
+  left: 770px;
+  width: 265px;
+}
+
+.show-bonus-code-txt {
+  position: fixed;
+  top: 430px;
+  left: 770px;
+  cursor: pointer;
+}
+
+#verify-code .cashierBtnOuter {
+  left: 465px;
+  top: 260px;
+}
+
+#verify-start .cashierBtnOuter {
+  left: 465px;
+  top: 260px;
+}
+
+.amount-label {
+  display: none;
+}
+
+label[for$=_amount] {
+  position: fixed;
+  left: 730px;
+  top: 275px;
+}
+
+input[name=amount] {
+  position: fixed;
+  left: 915px;
+  top: 200px;
+  width: 116px;
+}
+
+.cashierBoxInsert {
+  padding: 20px 10px;
+  display: block;
+}
+
+.cashierInputLabel {
+  width: 150px;
+  font-weight: bold;
+}
+
+.cashierBox, .noDepBox {
+  height: 450px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.noDepBox {
+  display: block !important;
+}
+
+.cashierInput {
+  left: 170px;
+  width: 165px;
+  border-radius: 2px;
+  border: 1px #016BB2 solid;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.infoArea {
+  padding-top: 0px;
+}
+
+.cashier-expense {
+  display: block;
+  float: right;
+}
+
+.cashier-fee-list, .cashier-fee-list-right {
+  width: 265px;
+}
+
+.cashier-fee-list-right {
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+.cashier-fee-list {
+  margin-bottom: 0px;
+  padding: 0px;
+  position: fixed;
+  left: 775px;
+  top: 265px;
+  height: 0px;
+}
+
+.cashier-fee-list li, .cashier-fee-list-right li {
+  list-style: none;
+  padding-top: 5px;
+}
+
+.cashierSelect {
+  width: 180px;
+  left: 170px;
+}
+
+#cashierDepositWithdraw {
+  width: 375px;
+  background: #000;
+  padding: 5px 20px 20px 20px;
+}
+
+.dc-quick-deposit {
+  max-width: auto;
+  margin-left: 0px;
+}
+
+.dc-quick-deposit .pad10 {
+  padding: 0;
+}
+
+.quick-dep-select {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cashier-minor-headline {
+  /* autoprefixer: off */
+  color: #FFF;
+  font-weight: 400;
+  padding: 4px;
+  background: #23396B;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #23396B), color-stop(100%, #0D1935));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #23396B 0%, #0D1935 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#23396B", endColorstr="#0D1935",GradientType=0 );
+  /* IE6-9 */
+  border-radius: 5px 5px 0px 0px;
+}
+
+.cashierHeader {
+  /* autoprefixer: off */
+  border-radius: 5px 5px 0px 0px;
+  color: #FFF;
+  background: #23396B;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #23396B), color-stop(100%, #0D1935));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #23396B 0%, #0D1935 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #23396B 0%, #0D1935 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#23396B", endColorstr="#0D1935",GradientType=0 );
+  /* IE6-9 */
+}
+
+.cashier-left-alt-pic {
+  margin: 3px 5px 2px 3px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cashierHeader .closed {
+  display: none;
+}
+
+.slideTrigger {
+  cursor: default;
+}
+
+.cashier-left-content-wrap, .cashier-right-content-wrap {
+  padding: 2px 10px 10px 10px;
+}
+
+.cashier-left-wrap, .cashier-right-wrap {
+  padding: 5px;
+  width: 310px;
+}
+
+.cashier-middle-wrap-error .cashierBox {
+  width: 400px;
+}
+
+.medium {
+  width: 50px;
+}
+
+.small {
+  width: 20px;
+}
+
+#pugglepay-verification, #pugglepay-authorize {
+  padding: 0px 0px 20px 90px;
+}
+
+#msgBox {
+  z-index: 100;
+  position: fixed;
+  top: 13px;
+  left: 344px;
+  height: 450px;
+  width: 375px;
+  background: #000;
+}
+
+#pugglepay-verification, #pugglepay-authorize {
+  height: 235px;
+  overflow-y: scroll;
+}
+
+#astroBoxInsert select {
+  padding-top: 2px;
+}
+
+#astroBoxInsert select:focus {
+  height: 30px !important;
+  border: 1px solid #EFBC4C !important;
+}
+
+.banks-selector {
+  width: 100%;
+  overflow: hidden;
+}
+
+.b-selector {
+  float: left;
+  position: relative;
+  display: block;
+  width: 81px;
+  height: 35px;
+  margin: 0 7px 10px 0;
+  cursor: pointer;
+}
+
+.b-selector input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.b-selector.bank200 span {
+  background-image: url(/file_uploads/alandsbanken-small.png);
+}
+
+.b-selector.bank231 span {
+  background-image: url(/file_uploads/poppankki-small.png);
+}
+
+.b-selector.bank232 span {
+  background-image: url(/file_uploads/aktia-small.png);
+}
+
+.b-selector.bank233 span {
+  background-image: url(/file_uploads/saastopankki-small.png);
+}
+
+.b-selector.bank208 span {
+  background-image: url(/file_uploads/skandia-small.png);
+}
+
+.b-selector.bank234 span {
+  background-image: url(/file_uploads/s-pankki-small.png);
+}
+
+.b-selector.bank265 span {
+  background-image: url(/file_uploads/sparbanken-small.png);
+}
+
+.b-selector.bank209 span {
+  background-image: url(/file_uploads/swedbank-small.png);
+}
+
+.b-selector.bank207 span {
+  background-image: url(/file_uploads/seb-small.png);
+}
+
+.b-selector.bank260 span {
+  background-image: url(/file_uploads/lansforsakringar-small.png);
+}
+
+.b-selector.bank205 span {
+  background-image: url(/file_uploads/handelsbanken-small.png);
+}
+
+.b-selector.bank216 span {
+  background-image: url(/file_uploads/handelsbanken-small.png);
+}
+
+.b-selector.bank211 span {
+  background-image: url(/file_uploads/nordea-small.png);
+}
+
+.b-selector.bank206 span {
+  background-image: url(/file_uploads/nordea-small.png);
+}
+
+.b-selector.bank204 span {
+  background-image: url(/file_uploads/danske-bank-small.png);
+}
+
+.b-selector.bank213 span {
+  background-image: url(/file_uploads/op-pohjola-small.png);
+}
+
+.b-selector.bank600 span {
+  background-image: url(/file_uploads/ideal-small.png);
+}
+
+.b-selector.bank240 span {
+  background-image: url(/file_uploads/bankdeposit-small.png);
+}
+
+.b-selector.bank235 span {
+  background-image: url(/file_uploads/omasp-small.png);
+}
+
+.b-selector.bankTrustly span {
+  background-image: url(/file_uploads/trustly-small.png);
+}
+
+.b-selector.bankGiropay span {
+  background-image: url(/file_uploads/giropay-small.png);
+}
+
+.b-selector.bankIdeal span {
+  background-image: url(/file_uploads/ideal-small.png);
+}
+
+.b-selector.bankSofort span {
+  background-image: url(/file_uploads/sofort-small.png);
+}
+
+.b-selector.bankEuteller span {
+  background-image: url(/file_uploads/euteller-small.png);
+}
+
+.b-selector.bankInstadebit span {
+  background-image: url(/file_uploads/instadebit-small.png);
+}
+
+.b-selector.bankUms span {
+  background-image: url(/file_uploads/ums-small.png);
+}
+
+.b-selector.bankPoli span {
+  background-image: url(/file_uploads/poli-small.png);
+}
+
+.b-selector.bankCitadel span {
+  background-image: url(/file_uploads/citadel-small.png);
+}
+
+.b-selector.bankInterac span {
+  background-image: url(/file_uploads/interac-small.png);
+}
+
+.b-selector.bankInteraconline span {
+  background-image: url(/file_uploads/interaconline-small.png);
+}
+
+.b-selector.bankRapid span {
+  background-image: url(/file_uploads/rapid-small.png);
+}
+
+.b-selector input:active + span, .b-selector input:active + span {
+  opacity: 0.7;
+}
+
+.b-selector input:checked + span, .b-selector input:checked + span {
+  -webkit-box-shadow: inset #60CC02 0px 0px 2px 3px;
+  box-shadow: inset #60CC02 0px 0px 2px 3px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+
+.b-selector div {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  width: 81px;
+  height: 35px;
+}
+
+.b-selector span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  width: 81px;
+  height: 35px;
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.b-selector:hover span {
+  -webkit-filter: brightness(0.9) grayscale(0.9) opacity(0.9);
+  -moz-filter: brightness(0.9) grayscale(0.9) opacity(0.9);
+  filter: brightness(0.9) grayscale(0.9) opacity(0.9);
+}
+
+.amountInput {
+  border: 2px #249CEC solid;
+  height: 30px;
+  width: 123px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 6px;
+}
+
+.cashier-middle-wrap {
+  width: 382px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.cashier-right-wrap {
+  margin-left: 15px;
+}
+
+.errors {
+  color: #A33 !important;
+}
+
+.logo-select-border {
+  -webkit-box-shadow: inset #249CEC 0px 0px 2px 4px;
+          box-shadow: inset #249CEC 0px 0px 2px 4px;
+  border: 0px solid black !important;
+  border-radius: 8px !important;
+  width: 87px;
+  height: 41px;
+  display: inline-block;
+}
+
+.standard-quick-deposit td {
+  vertical-align: middle !important;
+  font-weight: bold;
+}
+
+#deposit-cashier-box {
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#deposit-cashier-box::-webkit-scrollbar {
+  width: 6px;
+}
+#deposit-cashier-box::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 10px;
+}
+#deposit-cashier-box::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}

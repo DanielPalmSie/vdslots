@@ -1,0 +1,221 @@
+html, body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #000;
+}
+
+
+// /* default font settings in a table cell */
+
+td {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+// /* default settings for all links */
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button {
+  font-weight: bold;
+  font-size: 9px;
+  font-family : Tahoma, Arial, sans-serif; // migration fix
+  padding: 4px 8px;
+  border: 1px solid $a-button--border-color;
+  text-align: center;
+  min-width: 75px;
+  text-transform: uppercase;
+}
+
+a.button:link {
+  background-color: #000;
+  color: $a-button-link--color;
+  text-decoration: none;
+}
+
+a.button:visited {
+  background-color: #000;
+  color: $a-button-visited--color;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background-color: #000;
+  color: $a-button-hover--color;
+  text-decoration: none;
+}
+
+a.button:active {
+  background-color: #000;
+  color: $a-button-active--color;
+  text-decoration: none;
+}
+
+
+// /* bar styles*/
+
+.bar {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 10px;
+  background-color: #000;
+  color: $bar--color;
+}
+
+.bar a:link {
+  color: $bar-a-link--color;
+  text-decoration: none;
+}
+
+.bar a:visited {
+  color: $bar-a-visited--color;
+  text-decoration: none;
+}
+
+.bar a:hover {
+  color: $bar-a-hover--color;
+  text-decoration: underline;
+}
+
+.bar a:active {
+  color: $bar-a-active--color;
+  text-decoration: none;
+}
+
+// /* default input fields */
+input {
+  background-color: Transparent;
+  border: solid 1px $input--border-color;
+  font-size: 8pt;
+  color: #fff;
+  font-family: Tahoma, Arial;
+}
+
+select {
+  background-color: Transparent;
+  border: solid 1px $select--border-color;
+  font-size: 8pt;
+  color: #fff;
+  font-family: Tahoma, Arial;
+}
+
+// /* special text styles */
+.text_bold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: $text-bold--color;
+}
+
+.text_small {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  color: $text-small--color;
+}
+
+.error {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: red;
+}
+
+// /* forms */
+
+.frm_box {
+  border-style: ridge;
+  border-color: black;
+  border-width: 1;
+  font-size: 13px;
+  background-color: #000;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #fff;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 1;
+  padding-bottom: 1;
+}
+
+// /* imput buttons */
+
+.btn {
+  border: solid 1px $btn--border-color;
+  font-size: 12px;
+  color: #fff;
+  background-color: #000;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+// /* done for links in 'WPF Light' */
+
+.btn_link {
+  cursor: default;
+  border: 1px ridge #999999;
+  font-size: 11px;
+  color: #003F6B;
+  background-color: #ffffff;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.btn_link:link {
+  background-color: #ffffff;
+  color: #444444;
+  text-decoration: none;
+  cursor: default;
+}
+
+.btn_link:visited {
+  background-color: #ffffff;
+  color: #444444;
+  text-decoration: none;
+  cursor: default;
+}
+
+.btn_link:hover {
+  background-color: #ffffff;
+  color: #444444;
+  text-decoration: none;
+  cursor: default;
+}
+
+.btn_link:active {
+  background-color: #ffffff;
+  color: #444444;
+  text-decoration: none;
+  cursor: default;
+}
+
+#verificationcode_mandatory {
+  display: none;
+}

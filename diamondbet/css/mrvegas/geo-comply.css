@@ -1,0 +1,416 @@
+/* general modifier */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.center-both-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.geo_comply_wrapper, .gc--geo_comply_wrapper {
+  width: 100%;
+}
+
+.geo_comply_grid, .gc--geo_comply_grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.height-100, .gc--height-100 {
+  height: 100%;
+}
+
+.flex-1, .gc--flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.overflow-scroll, .gc--overflow-scroll {
+  overflow-y: auto;
+}
+
+.flex, .gc--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column, .gc--flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.geo_comply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.geo_comply * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.geo_comply .text-bold {
+  font-weight: bold;
+}
+
+.header__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.geo_comply__install_image {
+  margin-bottom: 15px;
+}
+
+.geo_comply__content {
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .geo_comply__content {
+    margin-bottom: 25px;
+  }
+}
+.geo_comply__content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #595959;
+  margin-bottom: 20px;
+}
+
+.geo_comply__content__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #595959;
+  margin-bottom: 28px;
+}
+
+.geo_comply__content__desc-point {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.geo_comply__install_points {
+  color: #595959;
+  padding-left: 30px;
+  background: #F7F7F7;
+}
+
+.geo_comply__content__desc-point > ol {
+  text-align: left;
+  padding: 15px 0;
+}
+
+.geo_comply__content__desc-point li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #595959;
+  padding-top: 20px;
+}
+
+.geo_comply__btn-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+}
+
+.geo_comply__verification_blocked {
+  padding: 10px;
+  color: #C41620;
+}
+
+.geo_comply__download-btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.geo_comply__btn-blue-color {
+  color: #FFF;
+  background: #0046FC;
+  border-radius: 5px;
+  border-color: #0046FC;
+}
+
+.geo_comply__btn-orange-color {
+  color: #FFF;
+  background: #DD9E37;
+  border-radius: 5px;
+  border-color: #DD9E37;
+}
+
+.geo_comply__btn-orange-color:disabled {
+  background-color: #C2C0C0;
+  color: #FFF;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 700px) {
+  .geo_comply__download-btn {
+    padding: 10px;
+    width: 60%;
+  }
+}
+.geo_comply__download-btn span {
+  padding-left: 10px;
+}
+
+.geo_comply__app_info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #595959;
+  margin: 10px 0;
+  padding: 0 8%;
+}
+
+.multi_image_container {
+  position: relative;
+}
+
+.inner_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 50px;
+}
+
+.geo_comply__scroll_wrapper, .gc--geo_comply__scroll_wrapper {
+  overflow-y: auto;
+  max-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr;
+}
+
+/* loader css */
+@-webkit-keyframes scaling {
+  0%, 100% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    background-color: #0046FC80;
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #0046FCB2;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #0761FF;
+  }
+}
+@keyframes scaling {
+  0%, 100% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    background-color: #0046FC80;
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #0046FCB2;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #0761FF;
+  }
+}
+.loader__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dot-circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: scaling 1.5s ease-in-out infinite;
+          animation: scaling 1.5s ease-in-out infinite;
+  display: inline-block;
+  margin: 0.4rem;
+}
+
+.dot-circle:nth-child(0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.dot-circle:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.dot-circle:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.dot-circle:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.dot-circle:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.dot-circle:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.geocomply_ndb_popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  gap: 0;
+}
+.geocomply_ndb_popup__main-content {
+  height: 90%;
+  overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.geocomply_ndb_popup__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+.geocomply_ndb_popup__logo-icon {
+  width: 316px;
+}
+.geocomply_ndb_popup__logo-icon img {
+  height: auto;
+  width: 100%;
+}
+.geocomply_ndb_popup__description {
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.geocomply_ndb_popup__popup-btn {
+  width: 206px !important;
+}
+
+.geocomply_ndb_popup .result__content {
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 30px;
+}
+.geocomply_ndb_popup .result__content-text {
+  padding-top: 1rem;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+}
+.geocomply_ndb_popup .result__content-text-bold {
+  font-weight: 700;
+}
+.geocomply_ndb_popup .result__page-btn > input {
+  padding: 10px;
+}
+
+.gc-html5-ui-modal {
+  z-index: 2010 !important;
+}
+
+.geo_comply__btn-orange-color {
+  color: #FFFFFF;
+  background: #18723C;
+  border-radius: 5px;
+  border-color: #18723C;
+}

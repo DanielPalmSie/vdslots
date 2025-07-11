@@ -1,0 +1,863 @@
+.tournament-wrapper {
+  width: 1077px;
+}
+
+.tournament-lobby-wrapper {
+  width: 820px;
+}
+
+.tournament-table table {
+  width: 100%;
+}
+
+.tournament-table {
+  width: 1067px;
+}
+
+.tournament-content {
+  padding: 5px;
+  border-left: solid 1px #888;
+  border-right: solid 1px #888;
+  border-bottom: solid 1px #888;
+  background: url("/diamondbet/images/fancybox/bkg.png") repeat-x scroll 0 0 #000;
+}
+
+.gradient-dark {
+  /* autoprefixer: off */
+  background: #3D3D3D;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3D3D3D 0%, #000000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3D3D3D), color-stop(100%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3D3D3D 0%, #000000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3D3D3D 0%, #000000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3D3D3D 0%, #000000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3D3D3D 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3D3D3D", endColorstr="#000000", GradientType=0);
+  /* IE6-9 */
+}
+
+.gradient-light {
+  /* autoprefixer: off */
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, #C9C9C9 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, #C9C9C9));
+  background: -webkit-linear-gradient(top, white 0%, #C9C9C9 100%);
+  background: -o-linear-gradient(top, white 0%, #C9C9C9 100%);
+  background: -ms-linear-gradient(top, white 0%, #C9C9C9 100%);
+  background: linear-gradient(to bottom, white 0%, #C9C9C9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#C9C9C9", GradientType=0);
+}
+
+.thin-border {
+  border: 1px solid;
+  border-color: #555;
+}
+
+.tournament-format-btns td {
+  padding: 3px 10px 3px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tournament-category-btns td {
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tournament-format-btn, .tournament-category-btn, .tournament-status-btn {
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.tournament-left, .tournament-right {
+  vertical-align: top;
+}
+
+.tournament-left {
+  width: 767px;
+}
+
+.tournament-lobby {
+  width: 800px;
+}
+
+.tournament-left td, .lobby-right td {
+  text-align: center;
+}
+
+.lobby-left {
+  color: #000;
+  width: 500px;
+  padding: 5px;
+  height: 330px;
+}
+
+.lobby-left td:first-child {
+  max-width: 235px;
+}
+
+.lobby-right {
+  width: 300px;
+  height: 240px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  background-color: #FFF;
+}
+
+.lobby-right.full-list {
+  height: 310px;
+}
+
+.normal-payout-color {
+  color: #FF69B4;
+}
+
+.close-chat {
+  position: absolute;
+  color: black;
+  top: 0;
+  right: 3px;
+  z-index: 1;
+  background: white;
+  font-size: 14px;
+}
+
+.tournament-right {
+  width: 300px;
+}
+
+.search-tournament {
+  width: 120px;
+  height: 14px;
+  font-size: 10px;
+  color: #555;
+  margin: 2px;
+  background-color: #FFF;
+  border: none;
+  padding-left: 5px;
+}
+
+.tournament-list {
+  color: #555;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+.tournament-list .even,
+.tournament-list .odd {
+  cursor: pointer;
+  border: 0px;
+}
+
+/*
+.tournament-list .even:hover,
+.tournament-list .odd:hover{
+  background-color: #FAD336;
+}
+*/
+.tournament-list-selected {
+  background-color: #FAD336 !important;
+}
+
+.tournament-list .even {
+  background-color: #EEE;
+}
+
+.tournament-list .odd {
+  background-color: #FFF;
+}
+
+.tournament-header th {
+  border-left: 1px solid;
+  border-color: #888;
+  cursor: pointer;
+}
+
+.tournament-header {
+  background: url("../images/tournament/gradient-graphic.png") repeat-x;
+  height: 22px;
+}
+
+.lobby-main-headline {
+  padding: 2px 0px 2px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.right-headline {
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+}
+
+.right-headline span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.tournament-info {
+  background: #FFF;
+  color: #000;
+  height: 290px;
+  font-weight: bold;
+}
+
+.tournament-info-tbl {
+  margin-left: 10px;
+  margin-top: -4px;
+}
+
+.yellow-right {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.right-bottom td {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  width: 50%;
+}
+
+.right-bottom td li {
+  font-weight: bold !important;
+  font-size: 22px !important;
+}
+
+.right-bottom td .digital-clock {
+  width: 60px !important;
+  margin: 0 !important;
+  margin-left: 10px !important;
+  padding: 0 !important;
+  float: none !important;
+}
+
+.right-bottom {
+  margin-top: 10px;
+  height: 70px;
+  border: none;
+  border-collapse: collapse;
+}
+
+.login-deposit {
+  text-shadow: 2px 1px 2px #000;
+}
+
+.txt-align-left {
+  text-align: left !important;
+  padding-left: 5px;
+}
+
+.tournament-list-wrapper {
+  height: 390px;
+  overflow-y: scroll;
+  background-color: #FFF;
+}
+
+.tournament-wrapper .cashier-top-bar,
+.tournament-lobby-wrapper .cashier-top-bar {
+  display: block !important;
+}
+
+.mp-popup-header {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #000;
+  color: #FFF;
+}
+
+.mp-popup-content-wrapper {
+  padding: 20px 20px 20px 20px;
+  float: left;
+  background: #000 url("/diamondbet/images/fancybox/bkg.png") repeat-x;
+  border: solid 1px #555;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+}
+
+.mp-popup-content-wrapper button {
+  margin-top: 20px;
+}
+
+.mp-top-info {
+  height: 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.mp-top-info .topmost-menu li {
+  font-size: 12px !important;
+}
+
+.mp-top-info .topmost-menu li span {
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: auto;
+  width: auto;
+}
+
+.mp-top-info .topmost-menu li img {
+  margin-right: 5px;
+  display: block;
+  float: left;
+}
+
+.mp-tname-top {
+  background-color: #555;
+  padding: 6px 10px 4px 10px;
+  margin-top: -8px;
+  margin-left: 10px;
+  color: #FDB645 !important;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.75);
+  height: 18px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.mp-my-tournaments-top {
+  margin-left: 20px;
+  margin-top: -7px;
+}
+
+.mp-leaderboard-prize-top {
+  background-color: #0A0A0A;
+  padding: 7px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 115px;
+  display: inline-block;
+  text-align: right;
+  color: #FDB645;
+}
+
+.mp-leaderboard-prize-top-headline {
+  font-weight: bold;
+  font-size: 12px;
+  width: 110px;
+  padding: 7px 5px;
+  display: inline-block;
+}
+
+#leaderboard {
+  width: 250px;
+  position: fixed;
+  background-color: rgba(25, 25, 25, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 0px #000000;
+          box-shadow: 0px 0px 8px 0px #000000;
+  overflow: hidden;
+}
+
+.tdown-headline {
+  width: 69px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 10px;
+}
+
+.tdown-bkg {
+  background-color: #555;
+  width: 25px;
+  float: left;
+  margin-left: 3px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.tdown-semi {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Droid sans";
+  color: #C8C8C8;
+}
+
+.tdown-num {
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 9px;
+  top: 19px;
+  color: #C8C8C8;
+}
+
+.mp-topinfo-holder {
+  margin-bottom: 7px;
+}
+
+#tdown-hours {
+  left: 22px;
+}
+
+#tdown-min {
+  left: 101px;
+}
+
+#tdown-sec {
+  left: 180px;
+}
+
+#mp-nano,
+#leaderboard-tbl {
+  width: 250px;
+  overflow: hidden;
+}
+
+table.tournament-lobby #mp-nano {
+  width: auto;
+}
+
+.how-it-works-wrapper {
+  padding: 5px;
+  background: url("/diamondbet/images/fancybox/bkg.png") repeat-x scroll 0 0 #000;
+  float: left;
+}
+
+.how-it-works-col {
+  width: 125px;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  background-color: #444;
+  height: 300px;
+}
+
+.mp-continue-btn {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.mp-hiw-check {
+  float: right;
+  margin-top: -10px;
+  color: #FFF;
+}
+
+.mp-hiw-content {
+  height: 100px;
+  color: #FFF;
+}
+
+.right-fixed {
+  position: fixed;
+  right: -58px;
+  top: 250px;
+  background-color: #922;
+  z-index: 1000;
+  display: block;
+  height: 30px;
+  width: 150px;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  border: solid 1px #C00;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.rot-90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.freeroll-color {
+  color: #026;
+}
+
+.guaranteed-color {
+  color: #600;
+}
+
+.mp-jackpot-color {
+  color: #9D7605;
+}
+
+.added-color {
+  color: #030;
+}
+
+#mp-tab-table {
+  width: 100%;
+}
+
+.rebuy-countdown {
+  font-weight: bold;
+}
+
+.mp-chat-msgs {
+  /* autoprefixer: off */
+  height: 65px;
+  width: 100%;
+  background: #313131;
+  /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxMzEzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MzQzNDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #313131 0%, #434343 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #313131), color-stop(100%, #434343));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #313131 0%, #434343 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #313131 0%, #434343 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #313131 0%, #434343 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #313131 0%, #434343 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#313131", endColorstr="#434343",GradientType=0 );
+  /* IE6-8 */
+  border-top: 5px solid #000;
+  position: relative;
+}
+
+.mp-chat-write {
+  width: 205px;
+  height: 18px;
+  border: none;
+  color: #000;
+  text-indent: 5px;
+  font-size: 11px;
+  background-color: transparent;
+}
+
+.mp-btn-view-battle {
+  width: 98%;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #999;
+  color: #C8C8C8;
+  padding: 5px 0px;
+  margin: 7px 1%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.mp-chat-write-container {
+  margin: 2px 0px;
+  padding: 7px 1px;
+  background: #FFF;
+}
+
+.mp-chat-hi {
+  color: #666;
+}
+
+.mp-chat-item {
+  font-size: 12px;
+}
+
+.mp-chat-item td {
+  padding: 10px 5px;
+}
+
+#mp-mess-table {
+  border: 0px;
+}
+
+.mp-send-message {
+  position: absolute;
+  float: right;
+  border: 0px;
+  width: 40px;
+  height: 32px;
+  vertical-align: middle;
+  background: #FFF url("../images/registration-icons/email.png") left top no-repeat;
+  margin: -7px 0px 0px 2px;
+  padding: 0px;
+  color: #CCC;
+  cursor: pointer;
+}
+
+.mp-player {
+  color: #000;
+}
+
+.mp-chat-item .me {
+  color: #028420 !important;
+}
+
+.mp-chat-item .system {
+  color: yellow !important;
+}
+
+.mp-chat-item .only {
+  background-color: yellow;
+}
+
+.mp-activity-container {
+  width: 580px;
+}
+
+.mp-activity-t-row {
+  float: left;
+  margin-bottom: 8px;
+}
+
+.mp-activity-t-img {
+  width: 60px;
+  height: 50px;
+  float: left;
+  border-style: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (-webkit-min-device-pixel-ratio: 0), screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .mp-activity-t-img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .mp-activity-t-img {
+      image-rendering: auto;
+    }
+  }
+}
+
+.mp-activity-t-right > span {
+  color: #CCC;
+  font-size: 13px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
+
+.mp-activity-t-right {
+  float: left;
+  margin-left: 15px;
+  width: 500px;
+}
+
+.mp-activity-t-name {
+  color: #EEE;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mp-activity-btn {
+  background: url("/diamondbet/images/tournament/playbtn.png");
+  width: 39px;
+  height: 33px;
+  cursor: pointer;
+  display: block;
+  margin-top: -15px;
+  float: right;
+  margin-right: 5px;
+}
+
+.mp-lobby-bottom-btn {
+  width: 250px;
+  display: inline-block;
+  height: 17px !important;
+  margin-top: 1px !important;
+  margin-bottom: 0px !important;
+}
+
+.mp-activity-view-link {
+  color: #FF5555;
+  cursor: pointer;
+}
+
+.cur-mp-top {
+  margin: -5px 0px 5px 15px;
+}
+
+.mp-play-page-headline {
+  margin-bottom: 5px;
+}
+
+.mp-popup-prize-list-container {
+  max-height: 300px;
+  overflow-y: scroll;
+  color: #000;
+}
+
+#leaderboard-content .zebra-tbl td {
+  padding: 15px 3px;
+  text-align: center;
+}
+
+#leaderboard-content .race-left,
+#leaderboard-content .race-amount {
+  text-align: center;
+}
+
+#leaderboard-content .race-left .value,
+#leaderboard-content .race-amount .value {
+  color: #FDB645;
+  font-weight: bold;
+  display: block;
+  height: 14px;
+}
+
+#leaderboard-content .race-left .text,
+#leaderboard-content .race-amount .text {
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  height: 14px;
+}
+
+#leaderboard-content .zebra-tbl tr:nth-child(even) {
+  background-color: #0A0A0A;
+}
+
+#leaderboard-content .zebra-tbl tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+#leaderboard-content .race-arrow {
+  text-align: center;
+  padding: 15px 0px !important;
+}
+
+.clearer {
+  clear: both;
+}
+
+#leaderboard .timer {
+  padding: 18px 16px;
+}
+
+#mp-chat-msgs .nano > .nano-content {
+  background-color: white;
+}
+
+#mp-system-container {
+  border: 1px solid #222;
+  color: #FDB645;
+  font-style: italic;
+  height: 35px;
+  text-align: center;
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+table.tournament-lobby #mp-system-container {
+  display: none;
+}
+
+.mp-chat-item:nth-child(odd) {
+  background-color: #CCC;
+}
+
+.mp-chat-item:nth-child(even) {
+  background-color: #FFF;
+}
+
+#tournament-lobby-wrapper .race-left .text,
+#tournament-lobby-wrapper .race-amount .text,
+#tournament-lobby-wrapper #mp-system-container {
+  display: none;
+}
+
+#tournament-lobby-wrapper .mp-chat-write-container {
+  margin-top: 5px;
+}
+
+#tournament-lobby-wrapper .mp-chat-write-container {
+  margin-top: 5px;
+}
+
+#tournament-lobby-wrapper .mp-chat-write {
+  width: 255px;
+}
+
+#leaderboard-content .race-position {
+  width: 20px;
+}
+
+#leaderboard-content .race-fname {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
+#leaderboard-content .race-left {
+  width: 65px;
+}
+
+#leaderboard-content .race-amount {
+  width: 65px;
+}
+
+#leaderboard-content .race-arrow {
+  width: 20px;
+}
+
+#bos-lobby-reload {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 770px;
+  cursor: pointer;
+}
+
+.mp-q-countdown-box {
+  width: 150px;
+  height: 75px;
+  background-color: #444;
+  margin: auto;
+  border-radius: 5px;
+}
+.mp-q-countdown-box #qcnt {
+  font-weight: bolder;
+  font-size: 35px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+.mp-q-countdown-number {
+  color: #999;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.mp-admin-chat {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mp-admin-chat td {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.mp-admin-chat td:first-child {
+  width: 40%;
+}

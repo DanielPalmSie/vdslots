@@ -1,0 +1,533 @@
+.games-footer {
+  background: $games-footer--background;
+  color: $games-footer--color;
+  bottom: $games-footer--bottom;
+  left: 0px;
+  box-shadow: $games-footer--box-shadow;
+  height: $games-footer--height;
+  position: fixed;
+  width: 100%;
+  z-index: 10010;
+}
+
+.games-footer>ul {
+  padding-left: 0;
+  margin: 0;
+  // /*border-bottom: 1px solid #CF9C33;*/
+}
+
+.games-footer>ul>li>img {
+  margin-top: -8px;
+  margin-right: 3px;
+}
+
+#games-footer-down img {
+  margin-top: 2px;
+}
+
+.games-footer>ul>li {
+  list-style: none;
+  float: left;
+  height: 22px;
+  margin-top: 2px;
+}
+
+#gfooter-result li {
+  list-style: none;
+  float: left;
+  width: $gfooter-result-li--width;
+  height: $gfooter-result-li--height;
+  position: relative;
+}
+
+#gfooter-result {
+  position: relative;
+  overflow-x: hidden;
+  padding-left: 23px;
+  background: $gfooter-result--background !important;
+}
+
+#gfooter-result.remove-slide {
+  padding-left: 0px;
+}
+
+#gfooter-result .img-thumb {
+  cursor: pointer;
+  display: block;
+}
+
+@include custom-code(mrvegas) {
+  #gfooter-result .img-thumb:hover {
+    -webkit-box-shadow: 0px 0px 10px #fff;
+            box-shadow: 0px 0px 10px #fff;
+  }
+}
+
+#gfooter-result .thumb-ribbon {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+#gfooter-result .img-thumb,
+#gfooter-result .thumb-ribbon{
+  height: $gfooter-result-img-thumb--height;
+  width: $gfooter-result-img-thumb--width;
+
+  @include fix-image-rendering;
+}
+
+#gfooter-result .img-thumb:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
+
+#gfooter-result .thumb-ribbon:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
+
+#games-footer-down {
+  display: none;
+  cursor: pointer;
+  line-height: 36px;
+  margin-left: 8px;
+}
+
+.games-footer-image {
+  margin-left: 24px;
+  cursor: pointer;
+  padding: 8px 0px 0px 0px;
+}
+
+.games-footer-icon {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+#notification-count .games-footer-icon {
+  margin-right: 2px;
+}
+
+.games-footer-regulations {
+  float: right !important;
+  margin-right: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.games-footer-clock {
+    float: right !important;
+    margin-top: -5px !important;
+}
+
+.games-footer-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 0px;
+  padding: 8px 6px 0px 2px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.games-footer-text-hot {
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 0px;
+  padding: 8px 6px 0px 2px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+#games-footer-search {
+  margin-left: 5px;
+  position: relative;
+}
+
+#search_str1, #search_str2, #search_str3, #search_str0 {
+  background: $search-str--background;
+  background-image: $search-str--background-image;
+  color: #fff;
+  border: none;
+  height: 28px;
+  width: 185px;
+  padding-left: 25px;
+  // /*margin-top: 3px;*/
+}
+
+#footer_search {
+  background: $footer-search--background;
+  color: #fff;
+  border: none;
+  height: 28px;
+  width: 185px;
+  padding-left: 30px;
+}
+
+#games-footer-search .icon-vs-search:before {
+  position: absolute;
+  font-size: 16px;
+  left: 6px;
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+.gfooter-direction-nav a {
+  background: $gfooter-direction-nav-a--background;
+  position: fixed;
+  height: 62px;
+  width: 20px;
+  margin-bottom: 4px;
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 10201;
+  margin-top: -78px;
+  bottom: $gfooter-direction-nav-a--bottom;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #000;
+  padding: 20px 20px 0px 20px;
+  display: block;
+  opacity: 0;
+  text-decoration: none;
+
+  @include custom-code(dbet) {
+    color: $white;
+  }
+}
+
+.gfooter-direction-nav li {
+  list-style: none;
+}
+
+.gfooter-direction-nav a:hover {
+  opacity: 0.5;
+}
+
+.gfooter-prev {
+  left: 0px;
+}
+
+.gfooter-next {
+  right: 0px;
+}
+
+.gfooter-direction-nav .gfooter-disabled {
+    display: none;
+}
+
+.notifications-list {
+  position: fixed;
+  bottom: -500px;
+  right: 20px;
+  width: $notifications-list--width;
+  z-index: 9999;
+  background-color: $notifications-list--background-color;
+  ///*background-color: rgba(25, 25, 25, 0.8);*/
+  ///*border-radius: 4px;*/
+
+  @include custom-code(kungaslottet) {
+    box-sizing: border-box;
+  }
+
+  @include custom-code(megariches) {
+    box-sizing: border-box;
+  }
+
+  @include custom-code(dbet) {
+    box-sizing: border-box;
+  }
+}
+
+#notifications {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  width: 220px;
+  z-index: 9998;
+}
+
+.notification-list-item {
+  width: $notification-list-item--width;
+  display: flex;
+  align-items: center;
+  @include custom-code(kungaslottet) {
+    box-sizing: border-box;
+  }
+}
+
+.notification-list-line {
+  height: 1px;
+  width: $notification-list-line--width;
+  background: $notification-list-line--background;
+  float: left;
+
+  @include custom-code(kungaslottet) {
+    //.notification-list-line:first-child
+    &:first-child {
+      background: none;
+    }
+  }
+
+  @include custom-code(megariches) {
+    //.notification-list-line:first-child
+    &:first-child {
+        background: none;
+    }
+  }
+}
+
+@include custom-code(megariches) {
+  #notifications-nano-content {
+    padding: 0 8px;
+
+    .notification-list-line:first-child {
+      background: transparent;
+    }
+  }
+}
+
+@include custom-code(dbet) {
+  #notifications-nano-content {
+    padding: 0 8px;
+
+    .notification-list-line:first-child {
+      background: transparent;
+    }
+  }
+}
+
+.notification-list-holder {
+  float: left;
+  padding: 5px;
+  // /*background-color: rgba(25, 25, 25, 0.15);*/
+  background-color: $notifications-list-holder--background-color;
+
+  @include custom-code(kungaslottet) {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.notification-list-holder-light {
+  // /*background-color: rgba(85, 85, 85, 0.5);*/
+  background-color: $notification-list-holder-light;
+}
+
+.notification-list-item:last-child {
+  border-bottom: none !important;
+}
+
+.notification-item {
+  position: relative;
+  top: 75px;
+  height: 100%;
+  width: $notification-item--width;
+  border: medium hidden;
+  margin-bottom: 5px;
+  padding: 10px 5px;
+  box-shadow: 0 0 4px #000;
+  display: flex;
+  align-items: center;
+
+  @include custom-code(dbet) {
+    &.gradient-normal {
+      background: $frame-900;
+    }
+    .notification-x {
+      color: $neutral-1000;
+      margin-right: 8px;
+    }
+  }
+}
+
+.notification-img {
+  width: 67px;
+  display: flex;
+}
+
+.notification-content {
+  font-size: 13px;
+  padding: 0 5px;
+  flex: 1;
+
+  @include custom-code(dbet) {
+    color: $neutral-700;
+
+    // .notification-content strong, .notification-content b
+    strong, b {
+      color: $primary-200;
+    }
+  }
+}
+
+.notification-msg {
+  font-size: 13px;
+  float: left;
+}
+
+.notification-x {
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+  width: 10px;
+}
+
+.notifications-list .notification-x {
+  margin-top: $notification-x--margin-top;
+  margin-right: 10px;
+  float: right;
+
+  @include custom-code(dbet) {
+    color: $neutral-1000;
+  }
+}
+
+.notifications-bell {
+  width: 21px;
+  height: 20px;
+  background: $notifications-bell--background;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.notifications-icon {
+  min-width: $notifications-icon--min-width;
+  height: $notifications-icon--height;
+  text-align: center;
+  font-size: $notifications-icon--font-size;
+  font-weight: bold;
+  padding: $notifications-icon--padding;
+  border-radius: $notifications-icon--border-radius;
+  text-shadow: $notifications-icon--text-shadow;
+  margin-top: 1px;
+}
+
+.games-footer-notifications-icon {
+  padding-top: 5px;
+  float: right !important;
+}
+
+.notifications-list-top {
+  padding: $notifications-list-top--padding;
+  font-size: $notifications-list-top--font-size;
+  font-weight: bold;
+  width: 190px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  @include custom-code(dbet) {
+    color: $neutral-1000;
+  }
+}
+
+.notifications-footer {
+  margin: $notifications-footer--margin;
+
+  @include custom-code(kungaslottet) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111B3E;
+    height: 32px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 4px;
+  }
+
+  @include custom-code(megariches) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $frame-800;
+    height: 32px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 4px;
+  }
+
+  @include custom-code(dbet) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $frame-400;
+    height: 32px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 4px;
+  }
+}
+
+.notifications-footer div {
+  margin: 0px 0px 3px 1px;
+  @include custom-code(kungaslottet) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+.notifications-footer a {
+  color: $notifications-footer-a--color;
+  text-decoration: none;
+  font-size: $notifications-footer-a--font-size;
+  font-weight: $notifications-footer-a--font-weight;
+  @include custom-code(kungaslottet) {
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+.logged-in-time-footer {
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.games-footer-clock .digital-clock{
+  width: 40px !important;
+}
+
+.games-footer__right {
+  float: right !important;
+  margin-right: 16px;
+  color: #808080;
+}
+
+.games-footer-link {
+  text-decoration: none;
+  color: #808080;
+}
+
+.games-footer__image {
+  height: 20px;
+  position: relative;
+  top: 2px;
+  margin-right: 0px !important;
+}
+
+.games-footer-18plus {
+  border: 1.5px solid #808080;
+  border-radius: 26px;
+  display: inline-block;
+  width: 16px;
+  height: 13px !important;
+  padding: 0px;
+  font-size: 10px;
+  line-height: 10px;
+  position: relative;
+  top: 3px;
+  padding-top: 4px;
+}
+
+.games-footer-18plus .plus {
+  font-size: 7px;
+  position: relative;
+  top: -2px;
+}
+
+.games-footer-license {
+  font-size: 9px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

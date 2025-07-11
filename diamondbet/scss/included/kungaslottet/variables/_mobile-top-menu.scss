@@ -1,0 +1,49 @@
+// .vs-mobile-menu__container
+$vs-mobile-menu-container--height: 29px;
+$vs-mobile-menu-container--color: #8c8c8a;
+$vs-mobile-menu-container--border-bottom-color: $dark-blue-divider;
+$vs-mobile-menu-container--background: url('#{$brand-image-path}/mobile/top_menu_bkg.png') repeat-x;
+
+// .vs-mobile-menu__item--active
+$vs-mobile-menu-item-active--color:$kunga-blue;
+
+// .vs-mobile-menu__item-register
+$vs-mobile-menu-item-register--background: $green-button-gradient;
+$vs-mobile-menu-item-register--color: $white;
+
+// .vs-mobile-menu__item-login
+$vs-mobile-menu-item-login--background: $primary-gradient;
+$vs-mobile-menu-item-login--color: $button-text-light;
+
+// .vs-mobile-menu__item-deposit
+$vs-mobile-menu-item-deposit--background: $deposit-gradient;
+$vs-mobile-menu-item-deposit--color: $white;
+
+// .vs-mobile-menu__item-rewards
+$vs-mobile-menu-item-rewards--background: #333333;
+$vs-mobile-menu-item-rewards--color: $kunga-blue;
+
+// .vs-mobile__bos-upcoming
+$vs-mobile__bos-upcoming--background: #00112B;
+$vs-mobile__bos-upcoming--border-bottom: 1px solid $black;
+
+// .vs-mobile__bos-upcoming-logo-container
+$vs-mobile__bos-upcoming-logo-container--border-right: 2px solid $primary-800;
+
+// .vs-mobile__bos-upcoming-battle
+$vs-mobile__bos-upcoming-battle--border-right: 2px solid $black;
+
+// .vs-mobile__bos-upcoming-battle-button
+$vs-mobile__bos-upcoming-battle-button--background: $primary-gradient;
+
+// .button-arrow
+$button-arrow--border-left: 7px solid #111111;
+
+// .bottom-sticky__level-left
+$bottom-sticky-level-left--background-color: $primary-500;
+
+// .bottom-sticky__level-right
+$bottom-sticky__level-right--background-color: #262626;
+
+// .vs-mobile__news-feed__news-link
+$vs-mobile-news-feed-news-link--color: $primary-500;

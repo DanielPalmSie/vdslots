@@ -1,0 +1,90 @@
+#lightbox-content label {
+  display: block;
+  color: #FFF;
+  width: 410px;
+  height: 30px;
+  margin: 7px 0px;
+  line-height: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+#lightbox-content label > input[type=text],
+#lightbox-content label > input[type=email],
+#lightbox-content label > input[type=tel],
+#lightbox-content label > input[type=password],
+#lightbox-content label > select#currency,
+#lightbox-content label > select#preferred_lang,
+#lightbox-content label > select#country,
+#birthyear-cont, #birthdate, #birthmonth {
+  float: right;
+}
+
+body {
+  background: #000 url("/diamondbet/images/fancybox/bkg.png") repeat-x scroll 0 0;
+  height: 100%;
+}
+
+#wrapper2 {
+  height: 100%;
+  background: #000 url("/diamondbet/images/fancybox/bkg.png") repeat-x scroll 0 0;
+}
+
+#lightbox-content label > select#preferred_lang {
+  margin-right: 88px;
+}
+
+#lightbox-content label > select#currency {
+  margin-right: 170px;
+}
+
+#lightbox-content label.gender {
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  width: 80px;
+}
+
+#mobile_error {
+  float: none;
+  margin-left: 152px;
+  margin-top: -26px;
+}
+
+#step3 {
+  width: 400px;
+}
+
+#idtype {
+  width: 246px;
+  background-color: #222;
+  border: 1px solid #9C7238;
+  color: #FFF;
+  padding: 4px 0;
+}
+
+#lightbox-content label > select#idtype,
+#lightbox-content label > input[type=file] {
+  float: right;
+}
+
+#image-front, #image-back {
+  float: right;
+}
+
+#image-back-container, #image-front-container {
+  width: 492px;
+}
+
+#stepChooseIdType {
+  width: 620px;
+}
+
+#stepUploadDocuments {
+  width: 620px;
+}
+
+#submit-document-2 {
+  margin-top: 30px;
+}

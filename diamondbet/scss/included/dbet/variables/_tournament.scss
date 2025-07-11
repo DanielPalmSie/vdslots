@@ -1,0 +1,23 @@
+// Generic name since variable is to be used in multiple classes,
+// otherwise use naming convention detailed in https://wikijs.videoslots.com/en/home/development/general-processes/SASS-based-branding
+$tournament-brand--color: $placeholder-color;
+
+// .right-fixed
+$right-fixed--background-color: $button-secondary-light;
+$right-fixed--border-radius: 0px 0px 5px 5px;
+$right-fixed--border: solid 1px transparent;
+$right-fixed--text-shadow: none;
+
+// .mp-activity-t-right > span
+$mp-activity-t-right-span--color: $neutral-700;
+$mp-activity-t-right-span--font-size: 12px;
+
+// .mp-activity-t-name
+$mp-activity-t-name--color: $neutral-900;
+$mp-activity-t-name--font-size: 15px;
+
+// .mp-activity-btn
+$mp-activity-btn--background: url('#{$brand-image-path}/tournament/playbtn.png');
+
+// .mp-activity-view-link
+$mp-activity-view-link--color: $primary-500;

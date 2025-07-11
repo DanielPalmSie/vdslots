@@ -1,0 +1,145 @@
+.cur-lang {
+  margin: 0px 0px 0px 0px;
+  float: right;
+  color: #FF8503;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 501;
+  position: relative;
+}
+
+.cur-lang-currency {
+  /* autoprefixer: off */
+  padding: 5px 15px 5px 15px;
+  float: right;
+  margin-left: 5px;
+  position: relative;
+  float: left;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: solid 1px #999;
+  border-top: solid 1px #999;
+  border-bottom: solid 1px #222;
+  border-right: solid 1px #222;
+  background: #3d3d3d; /* Old browsers */
+  background: -moz-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d3d3d), color-stop(100%, #000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* IE10+ */
+  background: linear-gradient(to bottom, #3d3d3d 0%, #000000 100%);/* W3C */
+  border-radius: 3px;
+  z-index: 501;
+}
+
+.cur-lang-currency img {
+  float: left;
+}
+
+.cur-lang-text {
+  margin: 0px 0px 0px 4px;
+  float: left;
+}
+
+.sbTopCurrencyHolder {
+  /* autoprefixer: off */
+  position: relative;
+  float: left;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: solid 1px #999;
+  border-top: solid 1px #999;
+  border-bottom: solid 1px #222;
+  border-right: solid 1px #222;
+  border-radius: 3px;
+  height: 26px;
+  margin-left: 5px;
+  width: 80px;
+  background: #3d3d3d; /* Old browsers */
+  background: -moz-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d3d3d), color-stop(100%, #000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3d3d3d 0%, #000000 100%);/* IE10+ */
+  background: linear-gradient(to bottom, #3d3d3d 0%, #000000 100%);/* W3C */
+  z-index: 502;
+}
+
+.sbTopCurrencyOptions {
+  // /*border: solid 1px #FF8503;*/
+  background: #333;
+  width: 71px;
+  top: 26px !important;
+  height: auto;
+  list-style: none outside none;
+  margin: 0;
+  overflow-y: hidden;
+  padding: 5px 5px 0px 5px;
+  position: absolute;
+  margin-left: -1px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  z-index: 501;
+}
+
+.sbTopCurrencyOptions li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #ccc;
+  width: 70px;
+  text-align: center;
+  z-index: 501;
+}
+
+.sbTopCurrencyOptions a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ccc !important;
+  text-decoration: none;
+  z-index: 501;
+}
+
+.sbTopCurrencyOptions a:hover {
+  color: #fff !important;
+  z-index: 501;
+}
+
+.cur-lang .sbToggle, .cur-lang .sbToggle:hover {
+  background: url("/diamondbet/images/game_page/grey-arrows.png") no-repeat scroll 0 -169px transparent;
+  z-index: 501;
+}
+
+.cur-lang .sbToggleOpen, .cur-lang .sbToggleOpen:hover {
+  background: url("/diamondbet/images/game_page/grey-arrows.png") no-repeat scroll 0 -69px transparent;
+  z-index: 501;
+}
+
+.cur-lang .sbSelector {
+  line-height: 26px;
+  z-index: 501;
+}
+
+.cur-lang .sbSelector:link, .cur-lang .sbSelector:visited, .cur-lang .sbSelector:hover {
+  color: #ccc;
+  outline: medium none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  width: 70px;
+  z-index: 501;
+}
+
+.sbTopCurrencyOptions li:last-child {
+  border-bottom: none;
+  margin-bottom: 0px;
+  z-index: 501;
+}

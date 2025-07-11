@@ -1,0 +1,25 @@
+.notification_item {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #1A1A1A;
+  border: 1px solid #444242;
+}
+
+.notification_item-description {
+  width: 280px;
+}
+
+.notification_item-date {
+  width: 280px;
+  margin: 10px 0px 0px 0px;
+  font-size: 9px;
+  color: #AFAFAF;
+}
+
+.notification_item-icon {
+  float: right;
+}
+
+.simple-box img {
+  padding: 0px;
+}

@@ -1,0 +1,45 @@
+// #reality-check-popup
+$reality-check-popup--top: -180px;
+
+// .rc__top-part
+$rc-top-part--background-color: $popup-header-color;
+
+//.rc__top-part--title
+$rc-top-part-title--font-size: 18px;
+
+// .rc__body--title
+$rc-body-title--color: $neutral-900;
+$rc-body-title--font-size: 18px;
+$rc-body-title--padding-bottom: 0px;
+
+//.rc__body--text
+$rc__body--text--color: $neutral-700;
+$rc__body--text--font-size: 15px;
+$rc__body--text--text-align: center;
+
+// .button-rc
+$button-rc--background-color: $button-primary-light;
+$button-rc--border-radius: 5px;
+$button-rc--box-shadow: none;
+$button-rc--font-weight: 700;
+
+//#reality-check-interval
+$reality-check-interval--padding: 0;
+$reality-check-interval--color: $neutral-900;
+$reality-check-interval--border: 1px $primary-500 solid;
+$reality-check-interval--box-shadow: none;
+
+// .reality-check-btn
+$reality-check-btn--padding: 7px 12px;
+$reality-check-btn--background-color: $primary-500;
+$reality-check-btn--box-shadow: none;
+
+// .rc__actions--buttons mobile
+$rc-actions-buttons-mobile--flex-direction: column;
+
+// .rc__actions--buttons .button-rc
+$rc-actions-buttons-button-rc--width: auto;
+
+// #dialogRcSetButton.button-rc
+$dialogRcSetButton-button-rc--width: auto;
+$dialogRcSetButton-button-rc--margin: 0px 16px;

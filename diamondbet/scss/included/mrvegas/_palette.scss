@@ -1,0 +1,136 @@
+$placeholder-color: #FF00FF;
+$placeholder-gradient: linear-gradient($placeholder-color, white);
+
+// primary colors
+$primary-50: #E5f2E1;
+$primary-100: $placeholder-color;
+$primary-200: $placeholder-color;
+$primary-300: $placeholder-color;
+$primary-400: $placeholder-color;
+$primary-500: #18723C;
+$primary-600: #18723C;
+$primary-700: $placeholder-color;
+$primary-800: #212529;
+$primary-900: #18723C; //#262626
+$primary-1000: $placeholder-color;
+
+// secondary colors
+$secondary-50: $placeholder-color;
+$secondary-100: $placeholder-color;
+$secondary-200: $placeholder-color;
+$secondary-300: $placeholder-color;
+$secondary-400: $placeholder-color;
+$secondary-500: $placeholder-color;
+$secondary-600: $placeholder-color;
+$secondary-700: $placeholder-color;
+$secondary-800: $placeholder-color;
+$secondary-900: $placeholder-color;
+$secondary-1000: $placeholder-color;
+
+// tertiary colors
+$tertiary-50: $placeholder-color;
+$tertiary-100: $placeholder-color;
+$tertiary-200: $placeholder-color;
+$tertiary-300: $placeholder-color;
+$tertiary-400: $placeholder-color;
+$tertiary-500: $placeholder-color;
+$tertiary-600: $placeholder-color;
+$tertiary-700: $placeholder-color;
+$tertiary-800: $placeholder-color;
+$tertiary-900: $placeholder-color;
+$tertiary-1000: $placeholder-color;
+
+// neutral colors
+$white: #FFF;
+$neutral-50: $placeholder-color;
+$neutral-100: #E2E2E2;
+$neutral-200: $placeholder-color;
+$neutral-300: $placeholder-color;
+$neutral-400: #ADADAD;
+$neutral-500: $placeholder-color; // #D0D0D0;
+$neutral-600: #D0D0D0; // #D0D0D0;
+$neutral-700: $placeholder-color;
+$neutral-800: #474747;
+$neutral-900: #232323;
+$neutral-1000: $placeholder-color;
+$black: #000;
+
+// frame colors
+$frame-50: #1f1f1f;
+$frame-100: $placeholder-color;
+$frame-200: #201D1C; //#212121 #333
+$frame-300: $placeholder-color;
+$frame-400: $placeholder-color;
+$frame-500: $placeholder-color;
+$frame-600: #191919; //#282828
+$frame-700: $placeholder-color;
+$frame-800: #282828; //#131313
+$frame-900: #000;
+$frame-1000: $placeholder-color;
+
+// gradient colors
+$primary-gradient: $placeholder-gradient;
+$secondary-gradient: $placeholder-gradient;
+$tertiary-gradient: $placeholder-gradient;
+$frame-gradient: $placeholder-gradient;
+$neutral-gradient: $placeholder-gradient;
+$deposit-gradient: #3B6B0F;
+
+// text colors
+$button-text-light: #FFFFFF;
+$button-text-dark: #251802;
+
+// button colors
+$button-primary-light: #18723C;
+$button-primary-dark: $placeholder-color;
+$button-secondary-light: $placeholder-color;
+$button-secondary-dark: $placeholder-color;
+$button-depost: $placeholder-color;
+
+// divider colors
+$divider-light: $placeholder-color;
+
+// header variants
+$popup-header-color: $primary-900;
+
+// backgrounds
+$desktop-background: $placeholder-color;
+$mobile-background: #000;
+
+// error colors
+$error-100: $placeholder-color;
+$error-200: $placeholder-color;
+$error-300: $placeholder-color;
+$error-400: $placeholder-color;
+$error-500: $placeholder-color;
+
+// warning colors
+$warning-100: $placeholder-color;
+$warning-200: $placeholder-color;
+$warning-300: $placeholder-color;
+$warning-400: $placeholder-color;
+$warning-500: $placeholder-color;
+
+// success colors
+$success-100: #e6f8ea;
+$success-200: $placeholder-color;
+$success-300: $placeholder-color;
+$success-400: $placeholder-color;
+$success-500: #8ED090;
+
+// info colors
+$info-100: $placeholder-color;
+$info-200: $placeholder-color;
+$info-300: $placeholder-color;
+$info-400: $placeholder-color;
+$info-500: $placeholder-color;
+
+// sportsbook colors
+$sportsbook-increase: $placeholder-color;
+$sportsbook-decrease: $placeholder-color;
+$sportsbook-neutral: $placeholder-color;
+
+$button-deposit: $button-primary-light;
+$button-cancel: #AE1919;
+
+$extra-1: #1F8532;

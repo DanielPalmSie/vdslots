@@ -1,0 +1,686 @@
+.lightbox-content {
+  margin: 10px;
+}
+
+.step1 {
+  width: 378px;
+}
+
+.step2 {
+  width: 840px;
+}
+
+.step3 {
+  width: 300px;
+  height: 300px;
+}
+
+.poker_reg {
+  width: 400px;
+  height: 300px;
+}
+
+#fancybox-wrap label {
+  display: block;
+  color: #fff;
+  width: 410px;
+  height:30px;
+  margin: 7px 0px;
+  line-height: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+#fancybox-wrap label > input[type="text"],
+#fancybox-wrap label > input[type="email"],
+#fancybox-wrap label > input[type="tel"],
+#fancybox-wrap label > input[type="password"],
+#fancybox-wrap label > select#currency,
+#fancybox-wrap label > select#preferred_lang,
+#fancybox-wrap label > select#country,
+#birthyear-cont, #birthdate, #birthmonth {
+  float: right;
+}
+
+#fancybox-wrap label > select#preferred_lang {
+  margin-right: 88px;
+}
+
+#fancybox-wrap label > select#currency {
+  margin-right: 170px;
+}
+
+#fancybox-wrap label.gender {
+  width: 80px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  height: 26px;
+  line-height:26px;
+  margin:0;
+}
+
+#confirm-terms {
+  margin:20px 0px;
+  color: #fff;
+}
+
+#confirm-terms a {
+  color: #fff;
+  // TODO
+  // @rkrejci Fix in next iteration.
+  ffont-weight: bold;
+}
+
+.input-normal {
+  border: 1px solid $input-normal--border-color;
+  height: 26px;
+  width: 235px;
+  -webkit-border-radius: $input-normal--border-radius;
+  -moz-border-radius: $input-normal--border-radius;
+  border-radius: $input-normal--border-radius;
+  -moz-box-shadow: $input-normal--box-shadow;
+  -webkit-box-shadow: $input-normal--box-shadow;
+  box-shadow: $input-normal--box-shadow;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing:border-box;
+  font-size:13px;
+}
+
+.country_prefix {
+  margin-right: 5px;
+}
+
+.input-normal:focus {
+  border: 3px solid $input-normal-focus--border-color;
+}
+
+.input-normal:disabled {
+  background-color: #DFDFDF;
+}
+
+.button-left-normal {
+  width: 4px;
+  height: 43px;
+  float: left;
+  cursor: pointer;
+  background: $reg__button-left-normal--background;
+}
+
+.button-middle-normal {
+  width: 220px;
+  height: 43px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  background: $button-midle-normal--background;
+}
+
+.button-right-normal {
+  width: 4px;
+  height: 43px;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  background: $button-right-normal--background;
+}
+
+.icon_fail {
+  margin-top: 7px;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+  background: $icon-fail--background;
+}
+
+.icon_ok {
+  margin-top: 2px;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+  background: $icon-ok--background;
+}
+
+.text_middle_form {
+  clear: both;
+  float: left;
+  font-weight: bold;
+  width: 120px;
+  margin-top: 7px;
+  height: 35px;
+  color: #fff;
+}
+
+.icon_questionmark {
+  width: 21px;
+  height: 22px;
+  background: $icon-questionmark--background;
+}
+
+.loading {
+  position: absolute;
+  width: 220px;
+  height: 19px;
+  text-align: center;
+  background: $loading--background;
+}
+
+.processing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-weight: bold;
+  z-index: 100;
+  display: none;
+  border-radius: 5px;
+  background: $processing--background;
+}
+
+.info_box {
+  width: 225px;
+  height: 134px;
+  position: absolute;
+  z-index: 10000;
+  display: none;
+  left: 0px;
+  top: 0px;
+  background: $info-box--background;
+}
+
+.infotext_box {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  color: black;
+  width: 166px;
+  height: 94px
+}
+
+.ui-dialog {
+  border-color: #705a2d;
+}
+
+.smsBox {
+  padding-bottom: 10px;
+}
+
+.cashierBtnOuter {
+  margin-bottom: 10px !important;
+}
+
+.register-big-btn {
+  width: 220px;
+  height: 43px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  clear: both;
+  position: relative;
+  margin: auto;
+  background: $register-big-btn--background;
+}
+
+.register-big-btn-txt {
+  font-size: $register-big-btn-txt--font-size;
+  font-weight: bold;
+  color:#fff;
+}
+
+.password-big-btn-txt {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#fff;
+}
+
+#submit_step_1 {
+  margin-top: 40px;
+}
+
+#submit_step_2 {
+  margin-top:80px;
+}
+
+#submit_step_3 {
+  top: 150px;
+}
+
+.error-reg {
+  float: right;
+}
+
+#eighteen_error{
+  float:left;
+}
+
+.register1-info-txt {
+  height: 110px;
+}
+
+.register2-info-txt {
+  height: 86px;
+}
+
+// .regstep2-left
+.regstep2-left {
+  width: 378px;
+}
+
+.regstep2-right {
+  position: absolute;
+  top: 30px;
+  left: 440px;
+  width: 400px;
+}
+
+.step2-gender-lbl {
+  float: left;
+  width: 115px;
+  color: #fff;
+  font-weight: bold;
+  height:26px;
+  line-height:28px;
+  width: 155px;
+}
+
+.step2-prlang-lbl {
+  float: left;
+  width: 120px;
+  height: 28px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.step2-dob-lbl {
+  float: left;
+  width: 160px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.step3-txt {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 360px;
+  height: 140px;
+}
+
+#submit_username {
+  margin-top: 100px;
+}
+
+.reg2-newsletter-label {
+  float: left;
+  font-weight: bold;
+  width: 350px;
+  position: relative;
+  top: 2px;
+}
+
+#registration-box {
+  max-height: 100vh;
+}
+
+@include custom-code(videoslots) {
+  @supports (-webkit-touch-callout: none) {
+    // /* CSS specific to iOS devices */
+    @media screen and (max-height: 900px) {
+      .registration-box-inside-iframe .registration-container {
+        padding-bottom: 120px;
+      }
+    }
+  }
+}
+
+body.registration-box-inside-iframe {
+  min-width: auto;
+}
+
+body.registration-box-inside-iframe #registration-wrapper {
+  min-height: auto;
+}
+
+// /* Hide scrollbars in Chrome, Safari, Edge and Opera */
+body.registration-box-inside-iframe::-webkit-scrollbar {
+  display: none;
+}
+
+// /* Hide scrollbars in IE and old Firefox versions */
+body.registration-box-inside-iframe {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+// /* Hide scrollbars in new Firefox versions */
+html.registration-box-inside-iframe {
+  scrollbar-width: none;
+}
+
+// body.scrollable-iframe .registration-container
+body.scrollable-iframe .registration-container {
+    padding-bottom: 20px;
+}
+
+#lic-mbox-registration-captcha {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.registration-captcha-popup .clearfix {
+  display: inline-flex;
+}
+
+.registration-captcha-popup label {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+#registration_captcha_msg {
+  width: 200px;
+  position: relative;
+  right: 15px;
+  margin-top: 0px;
+}
+
+#registration_captcha_input {
+  height: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  background-image: url(../images/registration-icons/password.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  box-shadow: none;
+  border: 1px solid #c2bdb5;
+  padding-left: 50px;
+  width: 200px;
+}
+
+.registration-captcha-popup .btn-l {
+  height: 50px;
+  background-color: $button-midle-normal--background;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.registration-captcha-popup .error-msg {
+  margin-top: 10px;
+}
+
+.registration-captcha-popup .disable_captcha_btn {
+  background-color: #c2b8b8;
+}
+
+.timer-wrapper {
+  margin-top: 10px;
+}
+
+.time-icon {
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+@include custom-code(kungaslottet) {
+  #registration_captcha_msg {
+    width: 400px;
+    margin: 12px 0;
+    position: relative;
+    color: $kunga-blue-pop-ups;
+    font-size: 18px;
+    font-weight: bold;
+    right: 0px;
+  }
+
+  .input-reset-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  #registration_captcha_input {
+    height: 46px;
+    font-size: 15px;
+    padding-left: 10px;
+    width: 88%;
+    margin-bottom: 10px;
+
+    &:focus {
+      border: 1px solid $kunga-blue-pop-ups !important;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #EBEBEB;
+    }
+  }
+
+  #reset-captcha-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    height: 46px;
+    color: $kunga-blue-pop-ups;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 25px;
+  }
+
+  .registration-captcha-popup .btn-l {
+    background-color: #07A85B;
+    font-size: 20px;
+    width: 88%;
+    height: 43px;
+  }
+
+  .registration-captcha-popup #captcha_img {
+    height: 85px;
+    width: 88%;
+    border-radius: 5px;
+  }
+
+  #lic-mbox-registration-captcha {
+    margin-bottom: 12px;
+  }
+
+  .registration-captcha-popup label {
+    margin-left: 0;
+  }
+
+  .registration-captcha-popup .error-msg {
+    margin-top: 5px;
+  }
+
+  .timer-wrapper {
+    margin-top: 3px;
+  }
+}
+
+@include custom-code(dbet) {
+    #lic-mbox-registration-captcha {
+        // #lic-mbox-registration-captcha img
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    // #registration_captcha_msg
+    #registration_captcha_msg {
+        width: 400px;
+        margin: 12px 0;
+        position: relative;
+        color: $neutral-900;
+        font-size: 18px;
+        font-weight: bold;
+        right: 0px;
+    }
+
+    // .input-reset-container
+    .input-reset-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    // #registration_captcha_input
+    #registration_captcha_input {
+        height: 46px;
+        font-size: 15px;
+        padding-left: 10px;
+        width: 88%;
+        margin-bottom: 10px;
+        border: 1px solid $neutral-800;
+
+        // #registration_captcha_input::focus
+        &:focus {
+            border: 1px solid $primary-500 !important;
+            outline: none;
+        }
+
+        // #registration_captcha_input::placeholder
+        &::placeholder {
+            color: $neutral-500;
+        }
+    }
+
+    // #reset-captcha-button
+    #reset-captcha-button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 46px;
+        color: $primary-500;
+        font-weight: 700;
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    // .registration-captcha-popup .btn-l
+    .registration-captcha-popup .btn-l {
+        background-color: $button-primary-light;
+        font-size: 20px;
+        width: 88%;
+        height: 43px;
+    }
+
+    // .registration-captcha-popup #captcha_img
+    .registration-captcha-popup #captcha_img {
+        height: 85px;
+        width: 88%;
+        border-radius: 5px;
+    }
+
+    // #lic-mbox-registration-captcha
+    #lic-mbox-registration-captcha {
+        margin-bottom: 12px;
+    }
+
+    // .registration-captcha-popup label
+    .registration-captcha-popup label {
+        margin-left: 0;
+    }
+
+    // .registration-captcha-popup .error-msg
+    .registration-captcha-popup .error-msg {
+        margin-top: 5px;
+    }
+
+    //.timer-wrapper
+    .timer-wrapper {
+        margin-top: 3px;
+    }
+}
+
+
+@include custom-code(kungaslottet) {
+  .new-pwd-popup-container {
+    width: 450px !important;
+    height: 565px !important;
+
+    #infotext.errors {
+      color: $kunga-blue;
+      font-size: 14px;
+    }
+
+    .icon-vs-close {
+      position: fixed;
+      font-size: 16px;
+    }
+  }
+
+  .new-pwd-table {
+    display: none;
+  }
+
+  #new-pwd-msg-content p {
+    width: 95%;
+  }
+
+  #new-pwd1, #new-pwd2 {
+    width: 95%;
+    padding-top: 4px;
+
+    ~ .input-icon {
+      top: 11px;
+      left: 25px;
+    }
+
+    &:focus {
+      border: 1px solid #249CEC !important;
+      outline: none;
+    }
+  }
+
+  #new-pwd2 {
+    margin-top: 15px;
+  }
+
+  .pwd-container {
+    position: relative;
+  }
+
+  .register-big-btn {
+    width: 95%;
+    background: #07A85B;
+  }
+
+  .new-pwd-success-container {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    p {
+      color: $kunga-blue-pop-ups;
+      font-weight: bold;
+    }
+    .mbox-ok-btn {
+      width: 240px !important;
+      height: 35px;
+      border-radius: 5px;
+      background: #07A85B;
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .multibox-close {
+      font-size: 16px;
+    }
+  }
+}

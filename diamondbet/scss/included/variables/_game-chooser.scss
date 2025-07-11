@@ -1,0 +1,67 @@
+//.gch-left ul li
+$gch-left-ul-li--background: url("#{$brand-image-path}/game_chooser/left_row_bkg.jpg") repeat-x;
+$gch-left-ul-li--border: solid 1px $frame-900;
+$gch-left-ul-li--font-size: 14px;
+
+// .gch-left ul li a
+$gch-left-ul-li-a--color:  #aaa;
+
+// .gch-left ul li a:hover
+$gch-left-ul-li-a-hover--color:  $white;
+
+// .gch-left .magnifying-glass
+$gch-left-magnyfying-glass--background: url("#{$brand-image-path}/game_chooser/search_bkg.jpg") repeat-x;
+
+// .gch-right hr
+$gch-right-hr--border: 1px solid #3C3214;
+
+// .game .game-text a
+$game-game-text-a--color: #aaa;
+
+// .gch-right .gch-grey-btn
+$gch-right-grey-btn--border: 1px solid #3C3214;
+$gch-right-grey-btn--background: url("#{$brand-image-path}/game_chooser/search_bkg.jpg") repeat-x;
+
+// .gch-right .show-own-favs-btn
+$gch-right-show-own-favs-btn--background: url("#{$brand-image-path}/game_chooser/starred.png");
+
+// .search-bar .icon-vs-search:before
+$search-bar-icon-vs-search-before--color: #919191;
+
+// #search_str
+$search-str--height: 24px;
+$search-str--color: #555;
+$search-str--border: 1px solid  #3C3214;
+
+// .gch-item .sbHolder, .gch-item .sbSmallHolder, .gch-item .sbMediumHolder
+$gch-holder--color: #222;
+$gch-holder--font-weight: bold;
+$gch-holder--border: 1px solid #3C3214;
+$gch-holder--height: 26px;
+$gch-holder--background: url("#{$brand-image-path}/game_chooser/search_bkg.jpg") repeat-x;
+
+// .gch-item .sbToggle
+$gch-item-sbtoggle--height: 26px;
+$gch-item-sbtoggle--background: url("#{$brand-image-path}/game_chooser/select-icons.png") no-repeat scroll 0 -169px, $gch-holder--background, transparent;
+
+// .gch-item .sbToggleOpen
+$gch-item-sbtoggleopen--background: url("#{$brand-image-path}/game_chooser/select-icons.png") no-repeat scroll 0 -69px, $gch-holder--background, transparent;
+
+// .gch-item .sbSelector
+$gch-item-sbSelector--color: #000;
+
+// .jp-amount
+$jp-amount--color: #FDB645;
+$jp-amount--font-size: 14px;
+
+// .ystar
+$ystar--background: url("#{$brand-image-path}/game_chooser/ystar.png");
+
+// .gstar
+$gstar--background: url("#{$brand-image-path}/game_chooser/gstar.png");
+
+// .fav-top-btn
+$fav-top-btn--text-shadow: 1px 1px 2px #000;
+
+// .overlay-add-action
+$overlay-add-action--background: linear-gradient( #efcb5d 0%, #d18b0f 100%);

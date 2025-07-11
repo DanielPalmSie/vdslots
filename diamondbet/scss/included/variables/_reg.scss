@@ -1,0 +1,40 @@
+// .input-normal
+$input-normal--border-color: $primary-600;
+$input-normal--border-radius: 5px;
+$input-normal--box-shadow: inset 1px 1px 1px #888;
+
+// .input-normal:focus
+$input-normal-focus--border-color: #EFBC4C;
+
+// .button-left-normal
+$reg__button-left-normal--background: url('#{$brand-image-path}/buttons/orange-left-button.png') no-repeat;
+
+// .button-middle-normal
+$button-midle-normal--background: #DD9E37;
+
+// .button-right-normal
+$button-right-normal--background: url('#{$brand-image-path}/buttons/orange-right-button.png') no-repeat;
+
+// .icon_fail
+$icon-fail--background: url('#{$brand-image-path}/dc-box/icon_fail.png') no-repeat;
+
+// .icon_ok
+$icon-ok--background: url('#{$brand-image-path}/dc-box/icon_ok.png') no-repeat;
+
+// .icon_questionmark
+$icon-questionmark--background: url('#{$brand-image-path}/dc-box/info.png') no-repeat;
+
+// .loading
+$loading--background: url('#{$brand-image-path}/dc-box/loading.gif') no-repeat;
+
+// .processing
+$processing--background: url('#{$brand-image-path}/lightbox/background-content.png') repeat;
+
+// .info_box
+$info-box--background: url('#{$brand-image-path}/dc-box/infobox.png') no-repeat;
+
+// .register-big-btn
+$register-big-btn--background: url('#{$brand-image-path}/buttons/orange-middle-button.png') repeat-x;
+
+// .register-big-btn-txt
+$register-big-btn-txt--font-size: 20px;

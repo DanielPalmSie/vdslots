@@ -1,0 +1,70 @@
+// .landing-page__main-section .top-game-section
+$landing-page-top-game-section--background: linear-gradient(180deg, rgba(25, 71, 190, 0.8) 0%, rgba(0, 51, 115, 0.8) 100%);
+
+// .landing-page__main-section .top-title .text-desc
+$landing-page-top-game-section-title--color: #FFFFFF;
+$landing-page-top-game-section-text-desc--drop-shadow: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.25));
+
+
+// .landing-page__main-section .top-title .text-gradient
+$landing-page-top-game-section-title--background: linear-gradient(180deg, #58FCE4 0%, #45BFFD 100%);
+$landing-page-top-game-section-title--drop-shadow: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.25));
+
+// .landing-page__main-section .top-desc
+$landing-page-top-game-section-description--color: #FFFFFF;
+$landing-page-top-game-section-description--drop-shadow: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.25));
+
+
+// .landing-page__main-section .top-action button
+$landing-page-top-game-section-action-btn--background: linear-gradient(180deg, #66C72A 0%, #238500 100%);
+
+$landing-page-top-game-section-action-btn--color: #FFFFFF;
+$landing-page-top-game-section-action-btn--drop-shadow: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.25));
+
+
+// .landing-page__main-section .bottom
+$landing-page-bottom-section--background: linear-gradient(0deg, rgba(0, 31, 69, 0.20) 0%, rgba(0, 31, 69, 0.20) 100%);
+
+// .landing-page__main-section .bottom-title
+$landing-page-bottom-section-title--color: #FFFFFF;
+$landing-page-bottom-section-title--drop-shadow: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.25));
+
+// .landing-page__main-section .game-filter li
+
+$landing-page-bottom-section-game-filter-list--color: #78C4F8;
+$landing-page-bottom-section-game-filter-list--border-color: #78C4F8;
+
+// .landing-page__main-section .game-filter #secondary-nav li a
+$landing-page-bottom-section-game-filter-list-a--color: #78C4F8;
+
+// .landing-page__main-section .game-list li
+$landing-page-bottom-section-game-list-item--color: #78C4F8;
+$landing-page-bottom-section-game-list-item--box-shadow: 0px 0px 4px 0px #00000040;
+
+
+// .landing-page .footer-desc
+$landing-page-footer-description--background: #00132B;
+$landing-page-footer-description--color: #249CEC;
+
+// .landing-page .footer-menu-links
+$landing-page-footer-menu-links--background: #001834;
+
+// .landing-page .footer-menu-links .footer-links li
+$landing-page-footer-menu-links-list--color: #249CEC;
+$landing-page-footer-menu-links-list--border-color: #249CEC;
+
+// .landing-page .footer-menu-links .footer-links a
+$landing-page-footer-menu-links-list-a--color: #249CEC;
+
+// .landing-page .customer-service-section
+$landing-page-customer-service-section--border-color: #249CEC;
+
+// .landing-page .vertical-separator
+$landing-page-vertical-separator--background: #249CEC;
+$landing-page-vertical-separator--border-color: #249CEC;
+
+// .landing-page .opening-soon
+$landing-page-opening-soon--background: linear-gradient(180deg, #58FCE4 0%, #45BFFD 100%);
+$landing-page-opening-soon--drop-shadow: drop-shadow(0 4px 4px #00000040);
+
+$customer-service--background-image: url(../../images/kungaslottet/mobile/cust-service.png);

@@ -1,0 +1,11 @@
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Luckiest Guy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/common/luckiest-guy-v22-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/common/luckiest-guy-v22-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/common/luckiest-guy-v22-latin-regular.woff2") format("woff2"), url("../../fonts/common/luckiest-guy-v22-latin-regular.woff") format("woff"), url("../../fonts/common/luckiest-guy-v22-latin-regular.ttf") format("truetype"), url("../../fonts/common/luckiest-guy-v22-latin-regular.svg#Luckiest Guy") format("svg");
+  /* Legacy iOS */
+}

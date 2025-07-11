@@ -1,0 +1,1058 @@
+// a
+$a--color: $primary-500;
+
+// input
+$input--color: $neutral-700;
+
+// input[name=submit-stats]
+$input-submit-stats--background: $button-primary-light;
+$input-submit-stats--color: $button-text-light;
+
+//.generic
+$generic--background-color: $desktop-background;
+
+// #wrapper
+$wrapper--background: url('#{$brand-image-path}/bg-wrapper.jpg') 50% 0;
+
+// .header-3
+$header-3--color: $primary-500;
+
+// #header .logo
+$header-logo--background: url('#{$brand-image-path}/logo.png') no-repeat;
+$header-logo--height: 100px;
+$header-logo--width: 239px;
+$header-logo--margin: 0 auto 0 0;
+
+// .sponsor-logos
+$sponsor-logos--margin-top: 13px;
+$sponsor-logo--width: 100px;
+$sponsor-logo--height: 110px;
+
+// #header .lang
+$header-lang--background: none; // url('#{$brand-image-path}/half-transparent.png') repeat;
+
+// .topmost-menu li
+$topmost-menu-li--margin-left: 13px;
+
+// .topmost-menu li img
+$topmost-menu-li-img--margin-right: 13px;
+
+// .digital-full-clock li
+$digital-full-clock-li--font-size: 12px !important;
+$digital-full-clock-li--margin-top: 1px;
+
+// .input-box-base
+$input-box-base--background: url('#{$brand-image-path}/bg-input.png') no-repeat;
+
+// .input-box
+$input-box--background: url('#{$brand-image-path}/bg-input.png') no-repeat;
+
+// .submit
+$submit--background: $placeholder-gradient;
+$submit--font-weight: normal;
+$submit--padding-bottom: 0;
+$submit--text-shadow: none;
+$submit--font-size: 14px;
+
+// .form-holder .holder a
+$form-holder-holder-a--background: url('#{$brand-image-path}/knapp-red-small.png') no-repeat;
+
+// .frame
+$frame--width: 960px;
+
+// .frame-t
+$frame-t--height: 97px;
+$frame-t--width: 0;
+$frame-t--display: none;
+
+// .frame-inner
+$frame-inner--width: 960px;
+
+// .thin-promo .holder-frame
+$thin-promo-holder-frame--background: url('#{$brand-image-path}/threeuro/front-bkg.png') repeat-x;
+
+// .thin-promo-btn
+$thin-promo-btn--background: url('#{$brand-image-path}/threeuro/front-btn.png') no-repeat;
+
+// .one-two-three .holder-frame
+$one-two-three-holder-frame--background: url('#{$brand-image-path}/onetwothree-bg.jpg') repeat-x;
+
+// .small-btn
+$small-btn--background: $button-secondary-light;
+$small-btn--height: 17px;
+$small-btn--color: $button-text-dark;
+
+// .frame .holder .button, .bigbutton
+$frame-holder-button-bigbutton--background: $placeholder-color; // url('#{$brand-image-path}/knapp-yellow-big.png') no-repeat;
+
+// .medium-bigbutton
+$medium-bigbutton--background: url('#{$brand-image-path}/knapp-yellow-mediumbig.png') no-repeat;
+
+// #nav
+$nav--padding: 16px 0 0 0;
+
+// #secondary-nav
+$secondary-nav--width: 100%;
+$secondary-nav--margin: 28px auto auto auto;
+$secondary-nav--background: $primary-500;
+
+//.secondary-nav_sports_icon justify-content
+$secondary-nav_sports_icon--justify-content: flex-start !important;
+
+// #secondary-nav ul
+$secondary-nav-ul--zindex: 999;
+
+// #secondary-nav ul li.active a
+$secondary-nav-ul-li-active-a--color: $secondary-500;
+
+// .sub-menu-active
+$sub-menu-active--color: $primary-500 !important;
+
+// #secondary-nav ul li a
+$secondary-nav-ul-li-a--color: $white;
+
+// .nav-arrow--left
+$nav-arrow--left--background: linear-gradient(to right, $primary-500 100%, rgba(0,0,0,0.85) 100%);
+
+// .nav-arrow--right
+$nav-arrow--right--background: linear-gradient(to left, $primary-500 100%, rgba(0,0,0,0.85) 100%);
+
+// #nav ul li a, .profile-menu ul li a
+$nav-ul-li-a--color: $primary-500;
+
+// #nav ul .active span strong em,
+// #nav ul li:hover span strong em,
+// #nav ul li.hover span strong em
+$nav-ul-span-strong-em: none; // url('#{$brand-image-path}/bg-nav-h.png') no-repeat;
+
+// .sub-nav
+$sub-nav--margin: 0 0 9px 0;
+
+//.sub-nav-l
+$sub-nav-l--background: url('#{$brand-image-path}/bg-sub-nav-l.png') no-repeat;
+
+// .sub-nav-r
+$sub-nav-r--width: 7px;
+$sub-nav-r--background: url('#{$brand-image-path}/bg-sub-nav-r.png') no-repeat;
+
+// .sub-nav-holder ul
+$sub-nav-holder-ul--background: url('#{$brand-image-path}/bg-sub-nav-c.png') repeat-x;
+
+//.sub-nav-holder ul li a
+$sub-nav-holder-ul-li-a--color: $button-text-light;
+
+// #main
+$main--width: 960px;
+$main--margin-top: 55px;
+
+// .boxes-frame2
+$boxes-frame2--background: url('#{$brand-image-path}/bg-boxes-frame2.gif') no-repeat;
+
+// .boxes
+$boxes--background: url('#{$brand-image-path}/bg-boxes-holder.gif') repeat-y;
+
+// .boxes-container
+$boxes-container--background: url('#{$brand-image-path}/gradient-top.jpg') repeat-x black;
+
+// .boxes-container-transparent
+$boxes-container-transparent--width: 960px;
+$boxes-container-transparent--background: rgba($frame-800, 0.7);
+
+// .boxes-holder
+$boxes-holder--background: url('#{$brand-image-path}/bg-boxes-holder.gif') repeat-y;
+
+// .boxes-frame
+$boxes-frame--background: url('#{$brand-image-path}/bg-boxes-frame.gif') no-repeat;
+
+// .boxes-inner
+$boxes-inner--background: url('#{$brand-image-path}/bg-boxes-inner.gif') no-repeat 0 100%;
+
+// .simple-box img
+$simple-box-img--padding: 3px;
+
+// .simple-box h3, .box h3,
+// .mp-activity-container h3
+$simple-box-h3--color: $primary-500;
+$simple-box-h3--margin: 0 0 10px;
+$simple-box-h3--font-weight: 700;
+$simple-box-h3--font-size: 14px;
+
+// .box .more
+$box-more--background: url('#{$brand-image-path}/knapp-red-small.png') no-repeat;
+
+// .container-holder
+$container-holder--background: $frame-1000;
+$container-holder--margin-bottom: 0px;
+
+// .container-holder hr
+$container-holder-hr--border: none;
+
+// .dual
+$dual--background: url('#{$brand-image-path}/bg-banner.gif') repeat-y;
+
+// .dual-holder
+$dual-holder--background: url('#{$brand-image-path}/bg-banner-holder.gif') no-repeat;
+
+// .fb-background
+$fb-background--background: $frame-1000;
+
+// .frame-block2
+$frame-block2--background: url('#{$brand-image-path}/game-list-bg.png') $placeholder-color repeat-x;
+
+// .block
+$block--background: url('#{$brand-image-path}/bg-block.gif') repeat-y;
+
+// .block-holder
+$block-holder--background: url('#{$brand-image-path}/bg-block-holder.gif') no-repeat;
+
+// .table-holder
+$table-holder--background: url('#{$brand-image-path}/bg-table.gif') repeat-y;
+
+// .content ul li
+$content-ul-li--background: url('#{$brand-image-path}/bullet2.gif') no-repeat 0 3px;
+
+// .button
+$button--background: url('#{$brand-image-path}/bg-button3.gif') no-repeat;
+
+// .footer
+$footer--color: $light-grey;
+$footer--border: none;
+
+// .footer .menu ul li
+$footer-menu-ul-li--background: url('#{$brand-image-path}/bullet1.gif') no-repeat 0 6px;
+
+// .footer .menu ul li a
+$footer-menu-ul-li-a--color: $primary-500;
+
+// .top-profile-frame
+$top-profile-frame--background: rgba($primary-600, 0.7);
+$top-profile-frame--height: 73px;
+$top-profile-frame--width: 282px;
+$top-profile-frame--margin-right: 6px;
+
+// .top-profile-frame .top-profile-buttons li
+$top-profile-frame-li--margin-right: 8px;
+
+// .profile-menu
+$profile-menu--background: url('#{$brand-image-path}/profile-menu-bg.png') no-repeat;
+
+// .profile-content
+$profile-content--background: url('#{$brand-image-path}/my-profile-bg.png') no-repeat;
+
+// .top-flash-bg, .game-list-bg
+$top-flash-bg--background: url('#{$brand-image-path}/top-flash-bg.png') no-repeat;
+
+// .zebra-tbl,
+$zebra-tbl--color: $neutral-900;
+
+// .zebra-tbl .odd, .accountHistoryTable .odd
+$zebra-tbl-odd: $frame-400;
+
+// .zebra-header, .accountHistoryTableHeader
+$zebra-header--background: $frame-200;
+
+// .simple-box
+$simple-box--background: $frame-700;
+$simple-box--border-color: $frame-700;
+
+// .simple-frame
+$simple-frame--background: $frame-400;
+$simple-frame--border: none;
+
+// .btn-table td
+$btn-table-td--background: url('#{$brand-image-path}/game-list-btn-bg.png') no-repeat;
+
+// .btn-table td a
+$btn-table-td-a--color: $placeholder-color;
+
+// .bonus_entry_table .odd
+$bonus_entry_table-odd--background-color: transparent;
+
+// .a-big
+$a-big--color: $placeholder-color;
+
+// .btn-small td a
+$btn-small-td-a--text-shadow: none;
+
+// .btn-small .left-td
+$btn-small-left-td--background: $button-secondary-light;
+
+// .btn-small .middle-td
+$btn-small-middle-td--background: $button-secondary-light;
+
+// .btn-small .right-td
+$btn-small-right-td--background: $button-secondary-light;
+
+// .header-big
+$header-big--font-weight: normal;
+
+// .header-small
+$header-small--color: $neutral-900;
+$header-small--font-size: 16px;
+
+// .header-small__last-updated
+$header-small__last-updated--color: $neutral-700;
+$header-small__last-updated--font-size: 12px;
+$header-small__last-updated--font-weight: normal;
+
+//.header-small__last-updated span
+$header-small__last-updated-span--color: $neutral-900;
+
+// .news-top
+$news-top--background: url('#{$brand-image-path}/news/news-bg-middle.png') repeat-y;
+
+// .news-middle
+$news-middle--background: url('#{$brand-image-path}/news/news-bg-middle.png') repeat-y;
+
+// .news-bottom
+$news-bottom--background: url('#{$brand-image-path}/news/news-bg-bottom.png') no-repeat;
+
+// .errors
+$errors--color: $error-500;
+$errors--font-size: 12px;
+
+// #birthyear, #birthmonth, #birthdate, #language, #country, #preferred_lang, .site_input
+$birthyear--border-color: $placeholder-color;
+
+// .registerform input[type="text"], .registerform input[type="tel"],
+// #registerform input[type="password"], .registerform input[type="password"],
+// .registerform input[type="date"], .registerform textarea,
+// .regform-field
+$registerform--background-color: $white;
+$registerform--border: none;
+
+//.registerform .reset-captcha
+$registerform-reset-captcha--color: $primary-600;
+
+// .default-input, .wide-input, .narrow-input, .medium-input
+$default-input--border-color: $placeholder-color;
+
+// .landing-bigbtn2
+$landing-bigbtn2--background: url('#{$brand-image-path}/knapp-yellow-big.png') no-repeat;
+
+// .landing2-hr
+$landing2-hr--background: url('#{$brand-image-path}/hr-bkg.png') no-repeat;
+
+// .vip-color
+$vip-color--color: $primary-500;
+
+// .landing-narrow-divider
+$landing-narrow-divider--background: url('#{$brand-image-path}/landing-narrow-divider.png') no-repeat;
+
+// .landing-wide-divider
+$landing-wide-divider--background: url('#{$brand-image-path}/landing-wide-divider.png') no-repeat;
+
+// a.tooltip
+$a-tooltip--color: $placeholder-color;
+
+// a.tooltip:hover span
+$a-tooltip-hover-span--background: url('#{$brand-image-path}/game-list-bg.png') $placeholder-color repeat-x;
+$a-tooltip-hover-span--color:  $placeholder-color;
+
+// .button-left-normal
+$button-left-normal--background: $placeholder-color;
+
+// .button-middle-normal
+$button-middle-normal--background: $placeholder-color;
+
+// .button-right-normal
+$button-right-normal--background: url('#{$brand-image-path}/buttons/orange-right-button.png') no-repeat;
+
+// .boxes-acc-container
+$boxes-acc-container--border-color: transparent;
+$boxes-acc-container--margin-top: 16px;
+
+// .acc-left-menu, .doc-left-menu
+$acc-left-menu--border-color: $frame-500;
+$acc-left-menu--background:  $frame-900;
+
+// .acc-left-menu ul li, .doc-left-menu ul li
+$acc-left-menu-ul-li--border-bottom: 1px solid $frame-500;
+
+//.acc-left-menu ul li a, .doc-left-menu ul li a
+$acc-left-menu--font-size: 12px;
+$acc-left-menu--font-weight: 700;
+$acc-left-menu--color: $neutral-900;
+
+// .acc-left-headline
+$acc-left-headline--font-size: 24px;
+$acc-left-headline--color: $primary-500;
+
+// .btn
+$btn--border-radius: 5px;
+$btn--color: $button-text-light;
+
+// .btn-xl
+$btn-xl--height: 43px;
+$btn-xl--font-size: 18px;
+
+// .btn-xxl
+$btn-xxl--font-size: 20px;
+
+// .btn-default-xs
+$btn-default-xs--background-color: $placeholder-color;
+
+// .btn-default-s
+$btn-default-s--background: $button-primary-light;
+
+// .btn-default-l
+$btn-default-l--background-color: $button-primary-light;
+
+// .btn-default-xl
+$btn-default-xl--background-color: $button-primary-light;
+
+// .btn-default-xxl
+$btn-default-xxl--background: $button-primary-light;
+
+// .btn-cancel-l
+$btn-cancel-l--background: $button-secondary-light; //url('#{$brand-image-path}/account/acc-grey-small.png') repeat-x;
+
+// .headline-default-s
+$headline-default-s--color: $placeholder-color;
+
+// .headline-default-m
+$headline-default-m--color: $neutral-900;
+
+// .headline-default-l
+$headline-default-l--color: $primary-500;
+$headline-default-l--font: bold;
+$headline-default-l--font-size: 24px;
+
+// .headline-default-xl
+$headline-default-xl--color: $primary-200;
+
+// .headline-s
+$headline-s--color: $neutral-900;
+
+// .headline-l
+$headline-l--color: $white;
+
+// .doc-btn
+$doc-btn--border-radius: 5px;
+$doc-btn--text-shadow: none;
+$doc-btn--font-weight: 500;
+$doc-btn--color: $neutral-900;
+
+// .requested-bkg .status
+$requested-bkg-verification-status--background: $error-500;
+
+// .requested-bkg
+$requested-bkg--background: url('#{$brand-image-path}/documents/requested_btn.svg') no-repeat;
+
+// .processing-bkg
+$processing-bkg--background: url('#{$brand-image-path}/documents/processing_btn.svg') no-repeat;
+
+// .rejected-bkg
+$rejected-bkg--background: url('#{$brand-image-path}/documents/rejected_btn.svg') no-repeat;
+
+// .approved-bkg
+$approved-bkg--background: url('#{$brand-image-path}/documents/accepted_btn.svg') no-repeat;
+
+// .deactivated-bkg
+$deactivated-bkg--background: url('#{$brand-image-path}/documents/deactivated_btn.svg') no-repeat;
+
+// .expired-bkg
+$expired-bkg--background: url('#{$brand-image-path}/documents/expired_btn.svg') no-repeat;
+
+// .document input[type=submit]
+$document-input-submit--background: $button-primary-light;
+
+// .selected-color
+$selected-color--color: $primary-500 !important;
+
+// .fakefile input
+$fakefile-input--border-color: $placeholder-color;
+
+// .mgchoose-article-headline
+$mgchoose-article-headline--font-size: 12px;
+$mgchoose-article-headline--color: $neutral-900;
+
+// .faq-left ul li
+$faq-left-ul-li--background: $frame-900;
+$faq-left-ul-li--border: solid 1px $frame-500;
+$faq-left-ul-li--font-size: 12px !important;
+
+// .faq-left ul li a
+$faq-left-ul-li-a--color: $neutral-900;
+
+// .faq-left ul li a:hover
+$faq-left-ul-li-a-hover--color: $neutral-900;
+
+// .faq-right .faq-right-image
+$faq-right-image--width: auto;
+$faq-right-image--text-align: right;
+
+// .faq-right .faq-right-image > img
+$faq-right-image-img--margin: 12px 10px 0 0;
+
+// .faq-right .faq-right-text
+$faq-right-text--width: 45%;
+$faq-right-text--padding: 1px 1px 10px;
+
+//.faq-right .help-live-chat > h3, .faq-right .help-talk-with-us > h3, .faq-right .help-send-us-an-email > h3,
+// .faq-right .help-FAQ-2 > h3, .faq-right table tbody:last-child h3
+$faq-right-help-live-chat--font-size: 12px;
+$faq-right-help-live-chat--margin: 12px 0 4px;
+$faq-right-help-live-chat--color: $neutral-900;
+
+// .section_button
+$section-button--background: url('#{$brand-image-path}/top-red-btn.png') no-repeat;
+
+// .crmenu-separator
+$crmenu-separator--background: url('#{$brand-image-path}/currencies/separator.png');
+
+// .game-payout-row
+$game-payout-row--border-color: transparent;
+$game-payout-row--border-radius: 0;
+$game-payout-row--background-color: $frame-700;
+
+// .game-payout-middle .btn
+$game-payout-middle-btn--color: $button-text-light !important;
+$game-payout-middle-btn--width: 246px;
+$game-payout-middle-btn--height: 38px;
+$game-payout-middle-btn--border-radius: 5px;
+
+// .game-payout-middle .headline-default-m
+$game-payout-middle-headline-default-m--font-size: 25px;
+
+// .game-payout-last-info
+$game-payout-last-info--align-items: center;
+$game-payout-last-info--width: 260px;
+
+// .game-payout-last-info .headline-default-xl
+$game-payout-last-info-headline-default-xl--font-size: 50px;
+
+// .game-payout-last-arrow
+$game-payout-last-arrow--align-items: end;
+$game-payout-last-arrow--justify-content: center;
+$game-payout-last-arrow--width: 40px;
+
+// .game-payout-last-arrow img
+$game-payout-last-arrow-img--width: 40px;
+
+// .cashier-top-bar
+$cashier-top-bar--font-size: 18px;
+$cashier-top-bar--padding: 8px;
+$cashier-top-bar--text-shadow: none;
+
+// .cashier2-close
+$cashier2-close--text-shadow: none;
+
+// .account-sub-box
+$account-sub-box--background: $frame-900;
+$account-sub-box--border: none;
+
+// .account-small-headline
+$account-small-headline--color: $placeholder-color;
+
+// .account-headline
+$account-headline--color: $primary-500;
+$account-headline--font-weight: 700;
+
+// .act-feed-headline
+$act-feed-headline--font-size: 15px;
+
+// .act-feed-content
+$act-feed-content--color: $neutral-300;
+
+// .thin-line
+$thin-line--background-color: $divider-light;
+
+// .award-progressbar-bkg
+$award-progressbar-bkg--background-color: $neutral-200;
+$award-progressbar-bkg--height: 10px;
+
+// .award-progressbar-bar
+$award-progressbar-bar--box-shadow: none;
+
+// .bonus-progressbar-bar
+$bonus-progressbar-bar--top: 0 !important;
+
+// .sitemap h1
+$sitemap-h1--color: $primary-500;
+
+// .sitemap > ul li:hover:before,
+// .sitemap a:hover
+$sitemap-ul-li--color: $primary-500;
+
+// .mboxloader-outer
+$mboxloader-outer--background-image: url('#{$brand-image-path}/logo.png');
+
+// #promotion-table
+$promotion-table--background: url('#{$brand-image-path}/gradient-bg.jpg') $placeholder-color repeat-x;
+
+// h1#promotion-title
+$h1-promotion-title--color: $placeholder-color;
+
+// #promotion-container .blocks > div > div > h2
+$promotion-container-blocks-div-div-h2--color: $placeholder-color;
+
+// .new-standard-input
+$new-standard-input--border: solid 1px $primary-600;
+$new-standard-input--border-radius: 2px;
+
+// .cookie-notification-header
+$cookie-notification-header--background-color: $frame-800;
+
+// #header .cookie-logo-stylefix
+$header-cookie-logo-stylefix--top: 25px;
+
+// .grey-bkg
+$grey-bkg--background-color: $button-secondary-light !important;
+
+// .rg-tspan-headline
+$rg-tspan-headline--color: $primary-500;
+
+// .rg-tspan-descr
+$rg-tspan-descr--font-style: normal;
+
+// .rg-popup-action__extra-text
+$rg-popup-action__extra-text--font-style: normal;
+$rg-popup-action__extra-text--color: $neutral-500;
+$rg-popup-action__extra-text--margin: 0 0 32px;
+$rg-popup-action__extra-text--padding: 0;
+$rg-popup-action__extra-text--font-size: 15px;
+
+// .rg-popup-action__extra-text a
+$rg-popup-action__extra-text-a--color: $primary-500 !important;
+
+// .verification-btn-DK
+$verification-btn-DK--background: url('#{$brand-image-path}/license/DK/verification-logo.png');
+
+// .verification-btn-SE
+$verification-btn-SE--background: url('#{$brand-image-path}/license/SE/verification-logo.png') no-repeat 98% 50% / auto 31px;
+
+// .verification-btn-SE div
+$verification-btn-SE-div--margin: 0 40px 0 0;
+
+// .good-green
+$good-green--background: $primary-500;
+
+// .lic-mbox-wrapper h3
+$lic-mbox-wrapper-h3--color: $neutral-900;
+
+// .big-input
+$big-input--height: 50px !important;
+
+//.rg-top-IT, .rg-top-SE, .rg-top-DK, .rg-top-GB, .rg-top-NL, .rg-top-CA
+$rg-top-border-bottom: solid 1px $divider-light;
+
+// .logged-in-time
+$logged-in-time--color: $white;
+
+// .logged-in-time__icon
+$logged-in-time__icon--font-size: 15px;
+
+// #login-box
+$login-box--width: 450px;
+
+// .version2 .registration-container
+$version2-registration-container--margin-top: 24px;
+
+// .lic-mbox-btn
+$lic-mbox-btn--margin-top: 24px;
+
+// .lic-mbox-container
+$lic-mbox-container--padding-horizontal: 32px;
+
+// .version2.cur-lang .sbTopCurrencyHolder
+$version2-cur-lang-sbTopCurrencyHolder--background: $primary-700;
+
+// .version2.cur-lang .sbSelector:link
+$version2-cur-lang-sbSelector-link--color: $button-text-light;
+
+// .icon.icon-vs-chevron-left:before
+$icon-icon-vs-chevron-left-before--color: $button-text-light;
+
+// .login-btn
+$login-btn--border-bottom: none;
+$login-btn--border-left: none;
+$login-btn--border-right: none;
+
+// #lic-login-username-field,
+// .style-email
+$lic-login-username-field--background-image: url('#{$brand-image-path}/registration-icons/username.png');
+
+// #lic-mbox-login-captcha input,
+// #lic-login-password-field,
+// .style-password
+$lic-mbox-login-captcha-input--background-image: url('#{$brand-image-path}/registration-icons/password.png');
+
+// .limits-deposit-set form label .right
+$limits-deposit-set-form-label-right--color: $neutral-700;
+
+// .limits-deposit-set form label
+$limits-deposit-set-form-label--color: $neutral-900;
+$limits-deposit-set-form-label--font-size: 15px;
+$limits-deposit-set-form-label--font-weight: 700;
+
+// .limits-deposit-set form
+$limits-deposit-set-form--border: 1px solid $neutral-800;
+$limits-deposit-set-form--border-radius: 2px;
+
+// .limits-deposit-set p
+$limits-deposit-set-p--color: $neutral-700;
+$limits-deposit-set-p--font-size: 15px;
+
+// .limits-deposit-set p span a
+$limits-deposit-set-p-span-a--color: $primary-200;
+
+// .limits-deposit-set__unit
+$limits-deposit-set__unit--color: $neutral-900;
+$limits-deposit-set__unit--font-weight: 700;
+$limits-deposit-set__unit--font-size: 15px;
+
+// .session-balance-popup__part
+$session-balance-popup-part--width: 100%;
+
+// .session-balance-popup__form
+$session-balance-popup__form--padding: 15px 15px;
+
+// .session-balance-popup__form-field label
+$session-balance-popup-form-field-label--margin-bottom: 10px;
+
+// .session-balance-popup__button-container
+$session-balance-popup-button-container--margin-top: 20px;
+
+// .limits-info .negative-number, .limits-info .positive-number
+$limits-info-negative-number-positive-number--background: $primary-50;
+$limits-info-negative-number-positive-number--color: $primary-700;
+$limits-info-negative-number-positive-number--border: 1px solid $primary-600;
+
+// .limits-info .rg-top__item.rg-logo
+$limits-info-rg-top-item-rg-logo--color: $placeholder-color;
+
+// .limits-info .lic-mbox-header
+$limits-info-lic-mbox-header--background: $placeholder-color;
+
+// .limits-info .winloss-container
+$limits-info-winloss-container--background: $neutral-50;
+$limits-info-winloss-container--border-radius: 8px;
+
+// .limits-info .winloss-container > .left > div:first-child
+$limits-info-winloss-container-left-div-first-child--color: $neutral-900;
+
+// .limits-info .winloss-container > .left > div:nth-child(2)
+$limits-info-winloss-container-left-div-nth-child--font-size: 12px;
+$limits-info-winloss-container-left-div-nth-child--color: $neutral-900;
+
+// .rg-login-popup .table-prefix h3, .rg-login-popup-mobile .table-prefix h3
+$rg-login-popup-rg-login-popup-mobile-h3--color: $neutral-900;
+
+// .rg-pop-lims-tbl > div > .vip-color
+$rg-pop-lims-tbl-div-vip-color--color: $neutral-900;
+$rg-pop-lims-tbl-div-vip-color--font-size: 12px;
+
+// .limits-info .rg-pop-lims-tbl .input-normal:disabled
+$limits-info-rg-pop-lims-tbl-input-normal-disabled--background: $white;
+$limits-info-rg-pop-lims-tbl-input-normal-disabled--color: $neutral-700;
+$limits-info-rg-pop-lims-tbl-input-normal-disabled--font-weight: normal;
+$limits-info-rg-pop-lims-tbl-input-normal-disabled--font-size: 15px;
+$limits-info-rg-pop-lims-tbl-input-normal-disabled--border: 1px solid $neutral-800 !important;
+
+// .limits-info .rg-pop-lims-tbl .rg-column > .left
+$limits-info-rg-pop-lims-tbl-rg-column-left--padding-left: 1px;
+$limits-info-rg-pop-lims-tbl-rg-column-left--color: $neutral-900;
+$limits-info-rg-pop-lims-tbl-rg-column-left--font-weight: bold;
+$limits-info-rg-pop-lims-tbl-rg-column-left--font-size: 10px;
+
+// .limits-info .rg-pop-lims-tbl .rg-column > .right
+$limits-info-rg-pop-lims-tbl-rg-column-right--font-weight: bold;
+
+// .limits-info .rg-footer
+$limits-info-rg-footer--font-size: 18px;
+
+//.limits-info .rg-footer > span
+$limits-info-rg-footer-span--font-weight: 400;
+$limits-info-rg-footer-span--color: $neutral-900;
+$limits-info-rg-footer-span--font-size: 15px;
+
+//.limits-info.mobile .winloss-container
+$limits-info-mobile-winloss-container--background: $neutral-50;
+
+// .limits-info.mobile .winloss-container > .left > div:first-child
+$limits-info-mobile-winloss-container-left-div-first-child--color: $neutral-900;
+
+// .limits-info.mobile .rg-pop-lims-tbl .last .left
+$limits-info-mobile-rg-pop-lims-tbl-last-left--color: $neutral-900;
+$limits-info-mobile-rg-pop-lims-tbl-last-left--font-size: 10px;
+$limits-info-mobile-rg-pop-lims-tbl-last-left--font-weight: bold;
+
+// #wheel-info-content
+$wheel-info-content--background-color: $mobile-background;
+
+// .jp-info-title
+$jp-info-title--font-size: 12px;
+
+// .jp-info-desc
+$jp-info-desc--font-size: 12px;
+
+// #jackpotvalues
+$jackpotvalues--border: none;
+
+// table.jackpot-prize
+$table-jackpot-prize--background-color: $frame-600;
+
+// table.jackpot-prize tbody > tr
+$table-jackpot-prize-tbody-tr--background-color: $frame-600;
+
+// div.jackpot-prize
+$div-jackpot-prize--font-size: 20px;
+
+// .#jackpot-prize__header tbody > tr
+$jackpot-prize-header-tbody-tr--background-color: $frame-600;
+
+// .jp-info-t-and-c
+$jp-info-t-and-c--font-size: 12px;
+
+//.vs-text-color-gold
+$vs-text-color-gold--color: $primary-500;
+
+// .progress-bar > .progress-bar-base
+$progress-bar-progress-bar-base--background-color: $primary-900;
+
+// .progress-bar > .progress-bar-trans > .progress-bar-fill
+$progress-bar-progress-bar-trans-fill--background-color: $primary-500;
+
+// .woj-info-latest-winners
+$woj-info-latest-winners--padding-top: 30px;
+
+// .woj-info-jp-amount
+$woj-info-jp-amount--padding: 13px 0;
+
+// .booster__total-label
+$booster-total-label--color: $placeholder-color;
+
+// .mobile-search-button
+$mobile-search-button--background-color: $button-primary-light;
+
+// .mobile-save-button
+$mobile-save-button--background-color: $button-deposit;
+
+// .jpinfo
+$jpinfo--border: 1px solid $frame-200;
+$jpinfo--background-color: $frame-200;
+
+// .register-button img,
+// .lic-mbox-btn-active img
+$register-button-img--height: 31px;
+$register-button-img--margin: 15px 15px 0 0;
+
+//.phone-us-form__header
+$phone-us-form__header--background: $popup-header-color;
+
+//.phone-us-form__header-title, .phone-us-form__input-container .btn
+$phone-us-form__header-title-btn--font-size: 18px;
+
+//.phone-us-form__input-container .btn
+$phone-us-form__input-container-btn--border-radius: 5px;
+$phone-us-form__input-container-btn--background: $button-primary-light;
+
+//.phone-us-form__input
+$phone-us-form__input--color: $neutral-800 !important;
+$phone-us-form__input--outline: 1px solid $neutral-800;
+$phone-us-form__input--font-size: 16px;
+
+// .phone-us-form__input-select
+$phone-us-form-input-select--background-image: url('#{$brand-image-path}/support/country.svg');
+$phone-us-form-input-select--background-position: 15px center;
+$phone-us-form-input-select--color: $neutral-800 !important;
+
+//.phone-us-form__input-container .styled-select::after
+$phone-us-form-input-container-select-after--color: $neutral-800;
+
+//.phone-us-form__input
+$phone-us-form__input-placeholder--color: $neutral-400 !important;
+
+//.phone-us-form__input-icon
+$phone-us-form-input-icon--background-image: url("#{$brand-image-path}/support/email.svg") !important;
+$phone-us-form-input-icon--background-position: 15px center !important;
+$phone-us-form-input-icon--padding-left: 50px;
+
+//.phone-us-form__input-prefix
+$phone-us-form__input-prefix--background: $primary-600 !important;
+$phone-us-form__input-prefix--color: $white !important;
+$phone-us-form__input-prefix--font-weight: 700;
+
+// .support-contact-info-right
+$support-contact-info-right--vertical-align: top;
+$support-contact-info-right--padding: 35px 0 0;
+
+//#send-email-form .btn
+$send-email-form__btn--border-radius: 5px;
+
+//#send-email-form .send-email-form__input
+$send-email-form__input--color: $neutral-800;
+$send-email-form__input--height: 26px;
+
+//.limits-deposit-set button span
+$limits-deposit-set-button-span--font-size: 18px;
+
+//.contact-us-form__input
+$contact-us-form__input--outline: 1px solid $neutral-800;
+$contact-us-form__input--font-size: 16px;
+
+//.contact-us-form__errors
+$contact-us-form__errors--color: $errors--color;
+
+// .progress-step-active
+$progress-step-active--background: $placeholder-color;
+
+// #nationality-popup-box .styled-select::after
+$nationality-styled-select-valid-after--background: url('#{$brand-image-path}/registration-icons/expand.png') no-repeat center center;
+
+// #nationality-main-popup #nationality-select
+$nationality-select--background: url('#{$brand-image-path}/registration-icons/country.png') no-repeat;
+
+// .login-popup__terms-link
+$login-popup__terms-link--color: $neutral-900;
+
+// .occupation-pop-container-GB, .occupation-popup-container-section .spending-limit-popup-heading
+$occupation-popup-container-section-heading--color: $neutral-900;
+$occupation-popup-container-section-heading--text-align: left;
+$occupation-popup-container-section-heading--font-size: 15px;
+
+// .occupation-pop-container-GB #select-industry-list, .occupation-pop-container-GB #occupation, .occupation-pop-container-GB #spending_amount
+$occupation-pop-container-GB-inputs--border: 1px solid $neutral-800;
+
+// .occupation-pop-container-GB .spending-limit-section .spending-limit-popup-field-label
+$occupation-pop-container-GB-spending-limit-section-label--text-align: left;
+$occupation-pop-container-GB-spending-limit-section-label--font-size: 15px;
+
+// .occupation-pop-container-GB .select-wrapper::after
+$occupation-pop-container-GB-select-wrapper-after--content: "";
+$occupation-pop-container-GB-select-wrapper-after--right: 6px;
+$occupation-pop-container-GB-select-wrapper-after--background-image: none;
+
+// .occupation-pop-container .spending-limit-popup-field-label
+$occupation-pop-container-spending-limit-popup-field-label--color: $neutral-900;
+
+//.ui-datepicker
+$ui-datepicker-widget-content--border: 1px $primary-800 solid;
+$ui-datepicker-widget-content--border-radius: 5px;
+$ui-datepicker-widget-content--color: $neutral-900;
+$ui-datepicker-widget-content--background: $frame-800;
+
+//.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all
+$ui-datepicker-header-ui-widget-header--border: 1px solid $divider-light;
+$ui-datepicker-header-ui-widget-header--border-radius: 5px;
+$ui-datepicker-header-ui-widget-header--background-color: $primary-500;
+$ui-datepicker-header-ui-widget-header--color: $white;
+
+//ui-datepicker-header a.ui-datepicker-prev.ui-corner-all
+$ui-datepicker-header-a-ui-datepicker-prev--background: url('#{$brand-image-path}/date-picker/prev.png');
+
+//ui-datepicker-header a.ui-datepicker-next.ui-corner-all
+$ui-datepicker-header-a-ui-datepicker-next--background: url('#{$brand-image-path}/date-picker/next.png');
+
+//.ui-datepicker-calendar a.ui-state-default
+$ui-datepicker-calendar-a-ui-state-default--border: 1px solid $divider-light;
+$ui-datepicker-calendar-a-ui-state-default--color: $white;
+$ui-datepicker-calendar-a-ui-state-default--border-radius: 5px;
+
+//.ui-datepicker-calendar .ui-state-default.ui-state-hover
+$ui-datepicker-calendar-state-hover--background: $primary-100;
+$ui-datepicker-calendar-state-hover--border-color: $primary-100;
+
+//.ui-datepicker-calendar .ui-datepicker-today a.ui-state-highlight
+$ui-datepicker-calendar-today-highlight--border: 1px solid $primary-100;
+$ui-datepicker-calendar-today-highlight--background: $primary-100;
+$ui-datepicker-calendar-today-highlight--color: $white;
+
+//.ui-datepicker-calendar .ui-datepicker-current-day a.ui-state-active
+$ui-datepicker-calendar-current-day-active--border: 1px solid $primary-400;
+$ui-datepicker-calendar-current-day-active--background: $primary-400;
+$ui-datepicker-calendar-current-day-active--color: $white;
+
+// #errorZone.email-success
+$errorZone-email-success--color: $success-500;
+
+//.voucher-box .errors
+$voucher-box-errors--color: $error-500;
+
+//.voucher-box .form-field label
+$voucher-box-form-field-label--color: $neutral-700;
+
+//.voucher-box .form-field input[type=text]
+$voucher-box-form-field-input-text--color: $black;
+$voucher-box-form-field-input-text--background-color: $white;
+$voucher-box-form-field-input-text--border: 1px solid $neutral-800;
+
+//.voucher-box .form-field input[type=submit]
+$voucher-box-form-field-input-submit--background-color: $button-primary-light;
+
+//.voucher-box .captcha-container .captcha-input
+$voucher-box-captcha-container-captcha-input--color: $black;
+$voucher-box-captcha-container-captcha-input--background-color: $white;
+$voucher-box-captcha-container-captcha-input--border: 1px solid $primary-600;
+
+//.voucher-box .captcha-container .captcha-reset
+$voucher-box-captcha-container-captcha-reset--color: $neutral-800;
+
+// .voucher-box .errors mobile
+$voucher-box-errors-mobile--color: $error-500;
+
+// #account-message-box
+$account-message-box--width: 450px !important;
+
+// #reg-dep-lim-prompt
+$reg-dep-lim-prompt--width: 450px !important;
+
+// .reg-dep-lim-prompt__text
+$reg-dep-lim-prompt__text--margin: 24px 0 14px;
+$reg-dep-lim-prompt__text--font-size: 18px;
+$reg-dep-lim-prompt__text--color: $neutral-900;
+
+// .reg-dep-lim-prompt__dropdown
+$reg-dep-lim-prompt__dropdown--font-size: 16px;
+$reg-dep-lim-prompt__dropdown--color: $neutral-400;
+$reg-dep-lim-prompt__dropdown--border-color: $neutral-800;
+
+// #dep-lim-info-box .limits-deposit-set
+$dep-lim-info-box-limits-deposit-set--display: flex;
+
+// #dep-lim-info-box p
+$dep-lim-info-box-p--margin: 0;
+
+// #dep-lim-info-box p span:first-child
+$dep-lim-info-box-p-span-first-child--margin: 0;
+
+// .jp-amount-badge
+$jp-amount-badge--background: $primary-500;
+$jp-amount-badge--color: $white;
+
+// .thumbnail-jp-amount-badge
+$thumbnail-jp-amount-badge--background: $primary-500;
+$thumbnail-jp-amount-badge--color: $white;
+
+// .game-choose-top-slider .game-choose-top-slider__header-link
+$game-choose-top-slider-header-link--color: $primary-500;
+
+//deposit-notification__actions .close-btn
+$exit-button: $button-secondary-light;
+
+// .cms-page
+$cms-page--color: $neutral-700;
+
+// .cms-page h1
+$cms-page-h1--color: $primary-500;
+
+// .cms-page h1 span
+$cms-page-h1-span--color: $primary-500;
+
+// .cms-page h2
+$cms-page-h2--color: $neutral-900;
+
+//.pnp-account-verification, .account-verification
+$account-verification__inner--color: #282828;
+$account-verification__info--background-color: #F4F4F4;
+$account-verification__input--border-color: #D0D0D0;
+$account-verification__input--background-color: #FFFFFF;
+$account-verification__input-placeholder--color: #EBEBEB;
+
+$account-verification-input-error--color: #C41620;
+$account-verification-input-error--background-color: #FFE0E0;
+$account-validation-message--color: #C41620;
+
+// .login-box--SE .verification-btn-SE::before
+$verification-btn-SE-before--background: url("#{$brand-image-path}/license/SE/verification-logo.png") no-repeat center / contain;

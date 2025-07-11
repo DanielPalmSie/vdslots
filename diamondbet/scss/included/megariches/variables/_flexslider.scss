@@ -1,0 +1,11 @@
+// .flex-control-nav a
+$flex-control-nav-a--background: url('#{$brand-image-path}/mobile/dot.png') no-repeat;
+
+// .flex-control-nav a.flex-active
+$flex-control-nav-a-active--background: url('#{$brand-image-path}/mobile/current_dot.png') no-repeat;
+
+// .flexslider-container
+$flexslider-container--background: $frame-600;
+
+// .big-flexslider-container
+$big-flexslider-container--background: url('#{$brand-image-path}/mobile/game_slider_bkg.png') repeat-x bottom;

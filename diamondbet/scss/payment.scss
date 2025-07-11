@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+.cashier-title-area {
+  border: 1px #636363 solid;
+  width: 920px;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cashier-title-area-bkg {
+  background-color: #4D4D4D;
+  position: relative;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+}
+
+.cashier-title-area-headline {
+  float: left;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #efbc4c;
+  font-weight: bold;
+}
+
+.icon_div_close, .icon_div_down {
+  float: left;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.cashier-expenses-color {
+  color: #fff6a7;
+}
+
+.cashier-bottom-area {
+  postion: relative;
+  width: 100%;
+  height: 55px;
+}
+
+.cashier-net-form {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+
+.cashier-dc-form {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.cashier-bank-form {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.cashier-net-form-inner {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.cashier-form-label {
+  float: left;
+  width: 190px;
+  padding-top: 10px;
+}
+
+.cashier-form-label-small {
+  width: 150px;
+}
+
+.button-fixed-size-quarter {
+  width: 65px;
+  height: 35px;
+  border: none;
+  padding-left: 10px;
+  background: url(../images/buttons/orange-input-normal-quarter.png) no-repeat;
+}
+
+.button-fixed-size-quarter:focus {
+  width: 65px;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background: url(../images/buttons/orange-input-selected-quarter.png) no-repeat;
+}
+
+.button-fixed-size-quarter:disabled {
+  width: 243px;
+  height: 35px;
+  border: none;
+  padding-left: 10px;
+  background: url(../images/buttons/orange-input_disabled-quarter.png) no-repeat;
+}
+
+.button-fixed-size-half {
+  width: 134px;
+  height: 35px;
+  border: none;
+  padding-left: 10px;
+  background: url(../images/buttons/orange-input-normal-half.png) no-repeat;
+}
+
+.button-fixed-size-half:focus {
+  width: 134px;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background: url(../images/buttons/orange-input-selected-half.png) no-repeat;
+}
+
+.button-fixed-size-half:disabled {
+  width: 134px;
+  height: 35px;
+  border: none;
+  padding-left: 10px;
+  background: url(../images/buttons/orange-input_disabled-half.png) no-repeat;
+}

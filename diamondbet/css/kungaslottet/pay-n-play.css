@@ -1,0 +1,1316 @@
+.deposit_popup {
+  font-size: 10px;
+  padding: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.deposit_popup * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.deposit_popup__amount {
+  width: 100%;
+}
+.deposit_popup__amount_title {
+  font-size: 15px;
+  line-height: 16px;
+  text-align: start;
+  font-weight: 700;
+  padding: 5px;
+}
+.deposit_popup__amount_value {
+  position: relative;
+  width: 100%;
+  border: 1px solid #016BB2;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #F3FAFF;
+  height: 50px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.deposit_popup__amount_value .amount_value {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border: 0;
+  background-color: #F3FAFF;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: right;
+}
+.deposit_popup__amount_value input.amount_value:focus, .deposit_popup__amount_value input.amount_value {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  text-align: right;
+}
+.deposit_popup__currency {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: right;
+  color: #016BB2;
+  position: absolute;
+  left: 50%;
+  margin-left: 10px;
+}
+.deposit_popup__change {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: right;
+  color: #016BB2 !important;
+  position: absolute;
+  right: 13px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border-left: 2px solid #016BB2;
+  padding-left: 7px;
+}
+.deposit_popup .margin-left {
+  margin-left: 5px;
+}
+.deposit_popup__amounts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  gap: 10px;
+}
+.deposit_popup__amounts_amount_text {
+  padding: 10px;
+  width: 100%;
+  background-color: #F9F9F9;
+  color: #474747;
+  border: 1px solid #EAEAEA;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.deposit_popup__amounts_radio_btn {
+  position: relative;
+}
+.deposit_popup__amounts_radio_btn input {
+  position: absolute;
+  visibility: hidden;
+}
+.deposit_popup__amounts_radio_btn label {
+  display: block;
+}
+input[type=radio]:checked + label > .deposit_popup__amounts_amount_text {
+  background-color: #016BB2;
+  border: 1px solid #016BB2;
+  color: #FFFFFF;
+}
+.deposit_popup__tnc {
+  padding: 10px;
+  border: 1px solid #E1E1E1;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 4px;
+}
+.deposit_popup__tnc img {
+  height: 100%;
+  width: auto;
+}
+.deposit_popup__tnc-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  padding: 0 20px;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .deposit_popup__tnc-layout {
+    padding: 0 40px;
+  }
+}
+.deposit_popup__tnc-vertical-line {
+  height: 100%;
+  border-right: 1px solid #E1E1E1;
+  margin: 0 12px;
+}
+.deposit_popup__tnc-info_icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.deposit_popup__tnc-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #282828;
+}
+.deposit_popup__tnc-description a {
+  color: #000 !important;
+}
+.deposit_popup__action_btn {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  /* this is to handle specific case Iphone 12 v14.1 flex gap is applied but not working  */
+  /* this will add margin-top to all direct children except the first child,
+  similar to what gap is doing adding space between children */
+}
+@supports (-webkit-touch-callout: none) {
+  .deposit_popup__action_btn {
+    gap: 0;
+  }
+  .deposit_popup__action_btn > * + * {
+    margin-top: 10px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .deposit_popup__action_btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+  }
+}
+.deposit_popup-btn {
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 43px;
+}
+.deposit_popup-btn--deposit-btn {
+  background-color: #006A14;
+}
+.deposit_popup-btn--no-deposit-btn {
+  border-radius: 5px;
+  border: 2px solid #C5BEBC;
+  color: #C5BEBC !important;
+  background-color: #FFFFFF;
+  font-weight: 400;
+}
+.deposit_popup-btn--cancel {
+  border-radius: 5px;
+  border: 2px solid #C5BEBC;
+  color: #C5BEBC !important;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+.deposit_popup-btn--cancel.primary-color {
+  background-color: #016BB2;
+  border: 1px solid #016BB2;
+  color: #FFF !important;
+}
+
+.pp_strategy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+.pp_strategy button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 8px;
+  height: 50px;
+  border: 1px solid #EAEAEA;
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.pp_strategy button .checkmark-icon {
+  position: absolute;
+  top: -8px;
+  left: -7px;
+  display: none;
+}
+.pp_strategy button:hover {
+  background-color: #E1E1E1;
+}
+.pp_strategy button.active {
+  background-color: #F3FAFF;
+  border: 1px solid #016BB2;
+  color: #00F;
+}
+.pp_strategy button.active .checkmark-icon {
+  display: block;
+}
+.pp_strategy button .checkmark-circle {
+  fill: #016BB2;
+}
+
+.confirm_popup {
+  font-size: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.confirm_popup * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.confirm_popup__body {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  margin-bottom: 24px;
+}
+.confirm_popup__body__logo img {
+  width: 100px;
+}
+.confirm_popup__body__message {
+  font-size: 16px;
+  font-weight: bold;
+}
+.confirm_popup__body__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.confirm_popup__body__amount__change {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #007BFF;
+  cursor: pointer;
+}
+.confirm_popup__message {
+  font-size: 15px;
+  font-weight: bold;
+}
+.confirm_popup__actions {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+.confirm_popup__actions .confirm_popup-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  height: 43px;
+}
+.confirm_popup__actions .confirm_popup-btn--deposit-btn {
+  background-color: #28A745;
+  color: #FFF;
+  border: none;
+}
+.confirm_popup__actions .confirm_popup-btn--cancel-btn {
+  background-color: #007BFF;
+  color: #FFF;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .confirm_popup {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .confirm_popup__body {
+    padding: 12px;
+  }
+  .confirm_popup__actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+}
+
+.deposit_popup_section .lic-mbox-container {
+  padding: 20px !important;
+}
+
+#deposit_popup_section,
+#deposit_success_section,
+#deposit_failure_section {
+  height: 100%;
+}
+
+/* bank details section css */
+.deposit_bank_details {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.deposit_bank_details * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.deposit_bank_details__main_content {
+  height: 100%;
+}
+.deposit_bank_details #paynplay_iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.deposit_bank_details_section .lic-mbox-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.deposit_bank_details_section .lic-mbox-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 !important;
+}
+
+.deposit_bank_details_section .lic-mbox-wrapper select {
+  padding: 0 10px;
+  height: 40px;
+  margin-top: 0;
+}
+
+#paynplay-box.deposit_bank_details_section {
+  height: 600px !important;
+}
+
+/* failure  & success popup */
+.deposit-response {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.deposit-response * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.deposit-response__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.deposit-response__logo-icon {
+  height: 180px;
+  width: 180px;
+}
+.deposit-response__logo-icon img {
+  height: 100%;
+  width: auto;
+}
+.deposit-response__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.deposit-response__title {
+  color: #016BB2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+.deposit-response__description {
+  color: #474747;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.deposit-response__actions {
+  width: 100%;
+  margin-top: auto;
+}
+@media screen and (min-width: 768px) {
+  .deposit-response__actions {
+    width: auto;
+  }
+}
+.deposit-response__actions .success-btn {
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .deposit-response__actions .success-btn {
+    width: 270px;
+  }
+}
+
+.deposit_failure_section .lic-mbox-container.country-SE,
+.deposit_success_section .lic-mbox-container.country-SE,
+.deposit_confirm_popup_section .lic-mbox-container.country-SE {
+  padding: 20px 16px !important;
+}
+@media screen and (min-width: 768px) {
+  .deposit_failure_section .lic-mbox-container.country-SE,
+.deposit_success_section .lic-mbox-container.country-SE,
+.deposit_confirm_popup_section .lic-mbox-container.country-SE {
+    padding: 20px 32px !important;
+  }
+}
+
+.flex-in-wrapper-popup .lic-mbox-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-in-wrapper-popup .lic-mbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* withdraw popup */
+.deposit-withdraw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.deposit-withdraw__main-content {
+  height: 90%;
+  overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.deposit-withdraw__amount {
+  width: 100%;
+}
+.deposit-withdraw__amount-title {
+  font-size: 15px;
+  line-height: 16px;
+  text-align: start;
+  font-weight: 700;
+  padding: 5px;
+}
+.deposit-withdraw__amount-value {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #016BB2;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #F3FAFF;
+  height: 50px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.deposit-withdraw__amount-value #amount_value {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border: 0;
+  background-color: #F3FAFF;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.deposit-withdraw__amount-value input#amount_value:focus, .deposit-withdraw__amount-value input#amount_value {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  text-align: right;
+}
+.deposit-withdraw__currency {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: right;
+  color: #016BB2;
+  position: absolute;
+  left: 50%;
+  margin-left: 10px;
+}
+.deposit-withdraw__description {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #282828;
+}
+
+/* withdrawal success & failed popup */
+.withdrawal-response {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+  padding: 0 12px;
+}
+.withdrawal-response__main-content {
+  display: grid;
+  gap: 24px;
+}
+
+/* paynPlay user details popup */
+.pnp-user-details__popup {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pnp-user-details__popup * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pnp-user-details__popup .lic-mbox-container {
+  padding: 9px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .pnp-user-details__popup .lic-mbox-container {
+    padding: 20px 23px 20px 16px;
+  }
+}
+.pnp-user-details__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .pnp-user-details__inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.pnp-user-details__image-wrapper {
+  margin-bottom: 27px;
+}
+@media screen and (min-width: 768px) {
+  .pnp-user-details__image-wrapper {
+    margin-right: 14px;
+    margin-bottom: 0;
+  }
+}
+.pnp-user-details__image {
+  width: 277px;
+  height: 334px;
+}
+@media screen and (min-width: 768px) {
+  .pnp-user-details__image {
+    width: 311px;
+    height: 374px;
+  }
+}
+.pnp-user-details__form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F4F4F4;
+}
+.pnp-user-details__form #mobile {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .pnp-user-details__form {
+    width: auto;
+    background-color: transparent;
+  }
+}
+.pnp-user-details__details {
+  width: 404px;
+  padding: 18px 20px 20px;
+  background-color: #F4F4F4;
+  border-radius: 5px;
+}
+.pnp-user-details__details-text {
+  margin-bottom: 25px;
+  color: #282828;
+  font-size: 15px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pnp-user-details__details-text {
+    text-align: left;
+  }
+}
+.pnp-user-details__label {
+  display: grid;
+}
+.pnp-user-details__label--email {
+  width: 100%;
+}
+.pnp-user-details__label--country {
+  width: 100%;
+}
+.pnp-user-details__label--country .styled-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translateY(calc(-50% + 5px));
+  transform: translateY(calc(-50% + 5px));
+  width: 20px;
+  height: 20px;
+  background: url("../../images/kungaslottet/pay-n-play/expand.png") no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+}
+.pnp-user-details__label--country optgroup, .pnp-user-details__label--country option {
+  color: #C5BEBC;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0 !important;
+}
+.pnp-user-details__label--country optgroup {
+  font-weight: 600;
+}
+.pnp-user-details__email-wrapper {
+  margin-bottom: 10px;
+}
+.pnp-user-details__country-wrapper {
+  margin-bottom: 10px;
+}
+.pnp-user-details__input {
+  padding: 14px 18px;
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #000;
+}
+.pnp-user-details__input::-webkit-input-placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+}
+.pnp-user-details__input::-moz-placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+}
+.pnp-user-details__input:-ms-input-placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+}
+.pnp-user-details__input::-ms-input-placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+}
+.pnp-user-details__input::placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+}
+.pnp-user-details__input.error {
+  color: #C41620;
+  background-color: #FFE0E0;
+  border: 1px solid #C41620;
+  font-weight: 400;
+}
+.pnp-user-details__input.error::-webkit-input-placeholder {
+  color: #C41620;
+}
+.pnp-user-details__input.error::-moz-placeholder {
+  color: #C41620;
+}
+.pnp-user-details__input.error:-ms-input-placeholder {
+  color: #C41620;
+}
+.pnp-user-details__input.error::-ms-input-placeholder {
+  color: #C41620;
+}
+.pnp-user-details__input.error::placeholder {
+  color: #C41620;
+}
+.pnp-user-details__input--email {
+  width: 100%;
+  padding-left: 55px;
+  background-image: url("../../images/pay-n-play/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 26px 18px;
+}
+.pnp-user-details__input--email.error {
+  background-image: url("../../images/pay-n-play/mail-red.svg");
+}
+.pnp-user-details__input--country {
+  width: 100%;
+  padding-left: 55px;
+  background-image: url("../../images/pay-n-play/country.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 26px 26px;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+  border: 1px solid #FF00FF;
+  color: #ADADAD;
+}
+.pnp-user-details__input--country.error {
+  background-image: url("../../images/pay-n-play/country-red.png");
+}
+.pnp-user-details__phone-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.pnp-user-details__input--country-prefix {
+  width: 66px;
+  margin-right: 10px;
+  color: #9C9C9C;
+  font-weight: 700;
+  background-color: #CFCFCF;
+}
+.pnp-user-details__label--phone {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.pnp-user-details__input--phone {
+  width: 100%;
+  padding-left: 55px;
+  background-image: url("../../images/pay-n-play/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 24px 24px;
+}
+.pnp-user-details__input--phone.error {
+  background-image: url("../../images/pay-n-play/phone-red.svg");
+}
+.pnp-user-details__wish-to-receive-wrapper {
+  margin-bottom: 28px;
+}
+.pnp-user-details__label--wish-to-receive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pnp-user-details__wish-to-receive-checkbox {
+  width: 17px;
+  height: 17px;
+  min-width: 17px;
+  min-height: 17px;
+  margin-right: 15px;
+  background-color: #EAE9E9;
+}
+.pnp-user-details__label-text--wish-to-receive {
+  text-align: left;
+  color: #5A5A5A;
+}
+.pnp-user-details__btn {
+  border-radius: 5px;
+}
+
+.is-ios .pnp-user-details__popup input:disabled::-webkit-input-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+.is-ios .pnp-user-details__popup input:disabled::-moz-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+.is-ios .pnp-user-details__popup input:disabled:-ms-input-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+.is-ios .pnp-user-details__popup input:disabled::-ms-input-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+.is-ios .pnp-user-details__popup input:disabled, .is-ios .pnp-user-details__popup input:disabled::placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+/* error popup */
+@media screen and (min-width: 768px) {
+  .pnp-error-popup-wrapper .lic-mbox-container {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}
+
+.withdrawal-error-popup-wrapper {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .withdrawal-error-popup-wrapper .lic-mbox-container {
+    padding: 20px 32px;
+  }
+}
+
+.pnp-error-popup {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  padding: 10px;
+}
+.pnp-error-popup.blocked-account, .pnp-error-popup.self-excluded {
+  padding: 0;
+}
+.pnp-error-popup.blocked-account .pnp-error-popup__description, .pnp-error-popup.self-excluded .pnp-error-popup__description {
+  letter-spacing: -0.02em;
+}
+.pnp-error-popup * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pnp-error-popup__main-content {
+  display: grid;
+  gap: 20px;
+}
+.pnp-error-popup__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pnp-error-popup__logo-wrapper {
+  height: 180px;
+  width: 180px;
+}
+.pnp-error-popup__logo-img {
+  height: 100%;
+  width: auto;
+}
+.pnp-error-popup__title {
+  color: #016BB2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+.pnp-error-popup__description {
+  color: #282828;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+.pnp-error-popup__description a {
+  color: #282828;
+  font-weight: 700;
+}
+.pnp-error-popup__actions {
+  width: 100%;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .pnp-error-popup__actions {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: auto;
+  }
+}
+.pnp-error-popup__btn {
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pnp-error-popup__btn--proceed {
+  background-color: #07A85B;
+}
+.pnp-error-popup__btn--request-limit-increase {
+  background-color: #006A14;
+  margin-bottom: 14px;
+}
+
+.withdrawal-error-popup.pnp-error-popup {
+  padding: 0;
+}
+
+.withdrawal-error-popup .pnp-error-popup__main-content {
+  gap: 24px;
+}
+.withdrawal-error-popup .pnp-error-popup__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+.withdrawal-error-popup .pnp-error-popup__logo {
+  margin-bottom: 24px;
+}
+.withdrawal-error-popup .pnp-error-popup__actions {
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .withdrawal-error-popup .pnp-error-popup__actions {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+}
+.withdrawal-error-popup .pnp-error-popup__btn {
+  height: 43px;
+}
+@media screen and (min-width: 768px) {
+  .withdrawal-error-popup .pnp-error-popup__btn {
+    width: 270px;
+  }
+}
+
+#pnp-gaming-experience-box {
+  width: 664px !important;
+}
+#pnp-gaming-experience-box .multibox-content {
+  border-radius: 0;
+}
+#pnp-gaming-experience-box .lic-mbox-container {
+  overflow-y: auto;
+}
+
+.limits-info .positive-action-btn {
+  margin: auto;
+  width: 100px;
+  background-color: #07A85B;
+  float: none !important;
+}
+.limits-info .rg-top__item.rg-logo {
+  margin-bottom: 20px;
+  float: none;
+}
+.limits-info .horizontal-line {
+  border: 1px solid #9A9A9A;
+  margin-bottom: 20px;
+  opacity: 20%;
+}
+.limits-info .title {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #016BB2;
+}
+.limits-info .positive-number {
+  background-color: #F2FAFF;
+  color: #342;
+  border-radius: 4px;
+  width: 260px;
+  padding: 10px 10px;
+  border: 1px solid #016BB2;
+  font-weight: bold;
+}
+.limits-info .rg-pop-lims-tbl .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+.limits-info .rg-pop-lims-tbl .rg-column > .left {
+  padding-left: 1px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.limits-info .vip-color {
+  color: #016BB2;
+}
+.limits-info .table-prefix {
+  margin-top: 0px;
+}
+.limits-info .winloss-container {
+  border-radius: 10px;
+}
+.limits-info .winloss-container > .left {
+  margin-top: 0px;
+  position: relative;
+  bottom: 7px;
+}
+.limits-info .result-amount {
+  font-size: 27px;
+}
+.limits-info .result-currency {
+  font-size: 18px;
+  color: #016BB2;
+  position: relative;
+  bottom: 2px;
+  padding-left: 8px;
+}
+.limits-info #show-sum-btn {
+  margin-top: 0px;
+}
+.limits-info #winloss-result {
+  margin-top: 0px;
+}
+@media only screen and (min-width: 1024px) {
+  .limits-info.rg-login-popup {
+    max-height: 570px;
+    height: 545px;
+  }
+}
+.limits-info .winloss-container > .left > div:first-child, .limits-info .table-prefix h3 {
+  color: #282828 !important;
+}
+.limits-info .rg-footer > span {
+  color: #474747;
+}
+.limits-info .rg-pop-lims-tbl .input-normal:disabled {
+  color: #595959;
+}
+.limits-info .last-login {
+  font-weight: bold;
+}
+.limits-info .total-desc {
+  color: #016BB2;
+  font-weight: bold;
+}
+.limits-info p > a {
+  font-weight: bold;
+}
+
+#rg-login-box .mobile .positive-number {
+  margin-top: 0px;
+}
+
+.mobile .winloss-container .result-amount {
+  font-size: 27px;
+}
+
+.mobile .winloss-container .result-currency {
+  font-size: 18px;
+  color: #016BB2;
+}
+
+@media screen and (min-width: 768px) {
+  #paynplay-box.deposit_failure_section,
+#paynplay-box.deposit_success_section {
+    width: 388px !important;
+  }
+}

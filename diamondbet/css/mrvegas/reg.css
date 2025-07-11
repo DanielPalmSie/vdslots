@@ -1,0 +1,414 @@
+.lightbox-content {
+  margin: 10px;
+}
+
+.step1 {
+  width: 378px;
+}
+
+.step2 {
+  width: 840px;
+}
+
+.step3 {
+  width: 300px;
+  height: 300px;
+}
+
+.poker_reg {
+  width: 400px;
+  height: 300px;
+}
+
+#fancybox-wrap label {
+  display: block;
+  color: #FFF;
+  width: 410px;
+  height: 30px;
+  margin: 7px 0px;
+  line-height: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+#fancybox-wrap label > input[type=text],
+#fancybox-wrap label > input[type=email],
+#fancybox-wrap label > input[type=tel],
+#fancybox-wrap label > input[type=password],
+#fancybox-wrap label > select#currency,
+#fancybox-wrap label > select#preferred_lang,
+#fancybox-wrap label > select#country,
+#birthyear-cont, #birthdate, #birthmonth {
+  float: right;
+}
+
+#fancybox-wrap label > select#preferred_lang {
+  margin-right: 88px;
+}
+
+#fancybox-wrap label > select#currency {
+  margin-right: 170px;
+}
+
+#fancybox-wrap label.gender {
+  width: 80px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+}
+
+#confirm-terms {
+  margin: 20px 0px;
+  color: #FFF;
+}
+
+#confirm-terms a {
+  color: #FFF;
+  ffont-weight: bold;
+}
+
+.input-normal {
+  border: 1px solid #18723C;
+  height: 26px;
+  width: 235px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 1px 1px 1px #888;
+  box-shadow: inset 1px 1px 1px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 13px;
+}
+
+.country_prefix {
+  margin-right: 5px;
+}
+
+.input-normal:focus {
+  border: 3px solid #18723C;
+}
+
+.input-normal:disabled {
+  background-color: #DFDFDF;
+}
+
+.button-left-normal {
+  width: 4px;
+  height: 43px;
+  float: left;
+  cursor: pointer;
+  background: url("../../images/mrvegas/buttons/orange-left-button.png") no-repeat;
+}
+
+.button-middle-normal {
+  width: 220px;
+  height: 43px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  background: #18723C;
+}
+
+.button-right-normal {
+  width: 4px;
+  height: 43px;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  background: url("../../images/mrvegas/buttons/orange-right-button.png") no-repeat;
+}
+
+.icon_fail {
+  margin-top: 7px;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../../images/mrvegas/dc-box/icon_fail.png") no-repeat;
+}
+
+.icon_ok {
+  margin-top: 2px;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../../images/mrvegas/dc-box/icon_ok.png") no-repeat;
+}
+
+.text_middle_form {
+  clear: both;
+  float: left;
+  font-weight: bold;
+  width: 120px;
+  margin-top: 7px;
+  height: 35px;
+  color: #FFF;
+}
+
+.icon_questionmark {
+  width: 21px;
+  height: 22px;
+  background: url("../../images/mrvegas/dc-box/info.png") no-repeat;
+}
+
+.loading {
+  position: absolute;
+  width: 220px;
+  height: 19px;
+  text-align: center;
+  background: url("../../images/mrvegas/dc-box/loading.gif") no-repeat;
+}
+
+.processing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-weight: bold;
+  z-index: 100;
+  display: none;
+  border-radius: 5px;
+  background: url("../../images/mrvegas/lightbox/background-content.png") repeat;
+}
+
+.info_box {
+  width: 225px;
+  height: 134px;
+  position: absolute;
+  z-index: 10000;
+  display: none;
+  left: 0px;
+  top: 0px;
+  background: url("../../images/mrvegas/dc-box/infobox.png") no-repeat;
+}
+
+.infotext_box {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  color: black;
+  width: 166px;
+  height: 94px;
+}
+
+.ui-dialog {
+  border-color: #705A2D;
+}
+
+.smsBox {
+  padding-bottom: 10px;
+}
+
+.cashierBtnOuter {
+  margin-bottom: 10px !important;
+}
+
+.register-big-btn {
+  width: 220px;
+  height: 43px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  clear: both;
+  position: relative;
+  margin: auto;
+  background: url("../../images/mrvegas/buttons/orange-middle-button.png") repeat-x;
+}
+
+.register-big-btn-txt {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.password-big-btn-txt {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+#submit_step_1 {
+  margin-top: 40px;
+}
+
+#submit_step_2 {
+  margin-top: 80px;
+}
+
+#submit_step_3 {
+  top: 150px;
+}
+
+.error-reg {
+  float: right;
+}
+
+#eighteen_error {
+  float: left;
+}
+
+.register1-info-txt {
+  height: 110px;
+}
+
+.register2-info-txt {
+  height: 86px;
+}
+
+.regstep2-left {
+  width: 378px;
+}
+
+.regstep2-right {
+  position: absolute;
+  top: 30px;
+  left: 440px;
+  width: 400px;
+}
+
+.step2-gender-lbl {
+  float: left;
+  width: 115px;
+  color: #FFF;
+  font-weight: bold;
+  height: 26px;
+  line-height: 28px;
+  width: 155px;
+}
+
+.step2-prlang-lbl {
+  float: left;
+  width: 120px;
+  height: 28px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.step2-dob-lbl {
+  float: left;
+  width: 160px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.step3-txt {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 360px;
+  height: 140px;
+}
+
+#submit_username {
+  margin-top: 100px;
+}
+
+.reg2-newsletter-label {
+  float: left;
+  font-weight: bold;
+  width: 350px;
+  position: relative;
+  top: 2px;
+}
+
+#registration-box {
+  max-height: 100vh;
+}
+
+body.registration-box-inside-iframe {
+  min-width: auto;
+}
+
+body.registration-box-inside-iframe #registration-wrapper {
+  min-height: auto;
+}
+
+body.registration-box-inside-iframe::-webkit-scrollbar {
+  display: none;
+}
+
+body.registration-box-inside-iframe {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html.registration-box-inside-iframe {
+  scrollbar-width: none;
+}
+
+body.scrollable-iframe .registration-container {
+  padding-bottom: 20px;
+}
+
+#lic-mbox-registration-captcha {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.registration-captcha-popup .clearfix {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.registration-captcha-popup label {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+#registration_captcha_msg {
+  width: 200px;
+  position: relative;
+  right: 15px;
+  margin-top: 0px;
+}
+
+#registration_captcha_input {
+  height: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  background-image: url(../images/registration-icons/password.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #C2BDB5;
+  padding-left: 50px;
+  width: 200px;
+}
+
+.registration-captcha-popup .btn-l {
+  height: 50px;
+  background-color: #18723C;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.registration-captcha-popup .error-msg {
+  margin-top: 10px;
+}
+
+.registration-captcha-popup .disable_captcha_btn {
+  background-color: #C2B8B8;
+}
+
+.timer-wrapper {
+  margin-top: 10px;
+}
+
+.time-icon {
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}

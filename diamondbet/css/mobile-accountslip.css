@@ -1,0 +1,77 @@
+.mobile-accountslip h3 {
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: none;
+  line-height: 40px;
+  padding-left: 45px;
+}
+
+.active-rewards-bg h3 {
+  background: url("/diamondbet/images/mobile/gift-flat.png") no-repeat 50% 0;
+  background-position: left 0px top 5px;
+  background-size: 30px 30px;
+}
+
+.latest-trophies-bg h3 {
+  background: url("/diamondbet/images/mobile/trophy-flat.png") no-repeat 50% 0;
+  background-position: left 0px top 5px;
+  background-size: 30px 30px;
+}
+
+.view-more-mobile {
+  height: 16px;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  background-color: #929292;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.zebra-tbl th {
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.recent_account_history-mobile tr {
+  border-top: 1px solid #292929;
+}
+
+.recent_account_history-mobile tr:first-child {
+  border-top: none;
+}
+
+.recent_account_history-mobile td {
+  color: #A1A1A1;
+  padding: 20px 5px 20px 0px;
+}
+
+.recent_account_history-mobile {
+  padding: 10px;
+  margin: 10px 0px 0px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 95.5%;
+}
+
+.recent_account_history-mobile h3 {
+  font-weight: normal;
+}
+
+.rewards-middle-box {
+  height: 410px;
+}
+
+.reward-detailed.simple-box {
+  width: 92%;
+}
+
+.rewards-middle-box {
+  width: 95%;
+}

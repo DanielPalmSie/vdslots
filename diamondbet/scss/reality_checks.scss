@@ -1,0 +1,527 @@
+.clear-fix {
+    content: "";
+    display: table;
+    clear: both;
+}
+#reality-check-popup {
+    position: fixed;
+    z-index: 2010;
+    top: $reality-check-popup--top;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+}
+
+.rc__top-part, .rc__body, .rc__actions {
+    float: left;
+    width: 100%;
+}
+.rc__body-container, .rc__body--title, .rc__body--text {
+    float: left;
+}
+
+.rc__body, .rc__actions {
+    background-color: #FFF;
+}
+
+.rc__top-part {
+    background-color: $rc-top-part--background-color;
+    box-shadow:  0 1px  1px rgba(0,0,0,0.41);
+    margin-top: 1px;
+
+    // /* Flex properties */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rc__top-part--close {
+    font-size: 16px;
+    margin-right: 22px;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    cursor: pointer;
+    color: $white;
+}
+
+.rc__top-part--title {
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-left: 16px;
+    font-weight: bold;
+    font-size: $rc-top-part-title--font-size;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 3 1 auto;
+    -ms-flex: 3 1 auto;
+    flex: 3 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: $white;
+}
+
+.rc__actions {
+   padding-bottom: 24px;
+}
+
+.rc__body-container, .rc__actions--container {
+    float: none;
+    margin: 16px 12px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.rc__body-container {
+    background-color: #fff;
+    padding: 24px 16px;
+}
+
+
+.rc__body--title {
+    color: $rc-body-title--color;
+    font-size: $rc-body-title--font-size;
+    padding-bottom: $rc-body-title--padding-bottom;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.rc__body--text {
+    color: $rc__body--text--color;
+    font-size: $rc__body--text--font-size;
+    text-align: $rc__body--text--text-align;
+}
+
+.rc__actions--buttons {
+    float: none;
+    margin: 0 12px;
+}
+.button-rc {
+    background-color: $button-rc--background-color;
+    width: 48.5%;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: $button-rc--border-radius;
+    margin-top: 14px;
+    cursor: pointer;
+    box-shadow: $button-rc--box-shadow;
+    color: $white;
+    font-weight: $button-rc--font-weight;
+}
+
+@include custom-code(kungaslottet) {
+    #dialogRcContinueButton.button-rc {
+        background-color: $kunga-blue-pop-ups;
+    }
+
+    #dialogRcLeaveGameButton.button-rc {
+        background-color: $kunga-dark-blue-pop-ups;
+    }
+}
+
+@include custom-code(megariches) {
+    #dialogRcGameHistoryButton.button-rc {
+        background-color: $button-deposit;
+    }
+
+    #dialogRcLeaveGameButton.button-rc {
+        background-color: $button-secondary-light;
+    }
+
+    #dialogRcResponsibleGamingButton.button-rc {
+        background-color: $button-deposit;
+    }
+}
+
+@include custom-code(dbet) {
+    #dialogRcGameHistoryButton.button-rc {
+        background-color: $button-deposit;
+    }
+
+    #dialogRcLeaveGameButton.button-rc {
+        background-color: $button-secondary-light;
+    }
+
+    #dialogRcResponsibleGamingButton.button-rc {
+        background-color: $button-deposit;
+    }
+}
+
+#extendedBy {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#extendedBy:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+.rc__actions--buttons {
+    display: flex;
+}
+
+.button-rc {
+    flex-grow: 1;
+}
+.button-rc:not(:first-child) {
+    margin-left: 10px;
+}
+
+#reality-check-interval {
+    display:block;
+    padding: $reality-check-interval--padding;
+    font-weight: 400;
+    background: #fff;
+    outline: none;
+    color: $reality-check-interval--color;
+    border: $reality-check-interval--border;
+    box-shadow: $reality-check-interval--box-shadow;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+
+    @include custom-code(megariches) {
+        height: 43px;
+        box-sizing: border-box;
+    }
+
+    @include custom-code(dbet) {
+        height: 43px;
+        box-sizing: border-box;
+    }
+}
+
+.reality-check-btn {
+    padding: $reality-check-btn--padding;
+    background-color: $reality-check-btn--background-color;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: $reality-check-btn--box-shadow;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: $white;
+
+    @include custom-code(megariches) {
+        height: 43px;
+        box-sizing: border-box;
+    }
+
+    @include custom-code(dbet) {
+        height: 43px;
+        box-sizing: border-box;
+    }
+}
+
+.reality-check-btn.right {
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.reality-check-btn.left {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+#dialogRcSetButton {
+    margin: 0 auto;
+
+}
+
+.reality-check-btn span {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+
+@media screen and (min-device-width: 1024px) {
+    // /* TODO check this rules with Richard to improve, currently the popup is not perfectly centered and looks bad */
+    #reality-check-popup {
+        position: absolute;
+        z-index: 2010;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+    }
+
+    .rc__top-part {
+        margin-top: 0px;
+
+        // /* Borders */
+        -webkit-border-top-left-radius: 7px;
+        -webkit-border-top-right-radius: 7px;
+        -moz-border-radius-topleft: 7px;
+        -moz-border-radius-topright: 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+    #reality-check-popup {
+        top: 0px;
+    }
+
+    #reality-check-popup.has-logos,
+    #multibox-overlay-rc-msg.has-logos {
+        margin-top: 24px;
+        height: calc(100% - 24px);
+    }
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+    ///**
+    // * Standard Mobile website
+    // */
+    #rc-msg {
+        z-index: 4000 !important;
+    }
+
+    .rc__top-part {
+        margin-top: 0px;
+        box-shadow: none;
+    }
+
+    .rc__top-part--title {
+        font-size: 12px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .rc__top-part--close {
+        font-size: 12px;
+    }
+
+    .rc__body-container{
+        margin: 0;
+        padding: 16px 7px;
+        border-radius: 0;
+    }
+
+    .rc__body--title {
+        font-size: 16px;
+        padding-bottom: 9px;
+    }
+
+    .rc__body--text {
+        font-size: 14px;
+    }
+    .rc__actions--container {
+        margin: 0 12px;
+    }
+    .rc__body-container {
+        margin: 0 auto;
+    }
+    .rc__actions {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 4px;
+        background-color: #282828;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    #reality-check-popup {
+        background-color: #fff;
+    }
+
+    #reality-check-popup.has-logos,
+    #multibox-overlay-rc-msg.has-logos {
+        margin-top: 24px;
+    }
+
+    .rg-top__item:last-child {
+        margin: 0;
+    }
+
+
+    .rg-mobile-top {
+        margin-right: 0;
+    }
+
+    .reality-check-btn {
+        padding: 1px 10px;
+        font-size: 33px;
+    }
+    .reality-check-btn.left {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #reality-check-interval {
+        padding: 12px 0;
+        font-size: 12px;
+    }
+
+    #dialogRcSetButton {
+        margin: 5px 7px;
+    }
+
+    .rc__actions.has-logos {
+        bottom: 24px;
+    }
+
+    .rc__actions--buttons {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+
+    }
+
+    ///**
+    // * Split game mode
+    // */
+
+    body.split-game-mode #reality-check-popup.has-logos,
+    body.split-game-mode #multibox-overlay-rc-msg.has-logos {
+        margin-top: 0px;
+        margin-left: 24px;
+        width: calc(100% - 24px);
+    }
+
+    body.split-game-mode .rc__actions.has-logos {
+        bottom: 0px;
+    }
+
+    body.split-game-mode .rc__top-part--title {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    body.split-game-mode .rc__body--title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    body.split-game-mode .rc__body--text {
+        font-size: 16px;
+
+    }
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+    .rc__body--title {
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+
+    .rc__body--text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rc__actions--buttons {
+        flex-direction: $rc-actions-buttons-mobile--flex-direction;
+    }
+
+    .rc__actions--buttons .button-rc {
+        width: $rc-actions-buttons-button-rc--width;
+
+        @include custom-code(kungaslottet) {
+            margin-left: 0px;
+        }
+
+        @include custom-code(megariches) {
+            margin-left: 0px;
+        }
+
+        @include custom-code(dbet) {
+            margin-left: 0px;
+        }
+    }
+
+    #dialogRcSetButton.button-rc {
+        width: $dialogRcSetButton-button-rc--width;
+        margin: $dialogRcSetButton-button-rc--margin;
+    }
+}

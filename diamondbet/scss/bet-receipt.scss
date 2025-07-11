@@ -1,0 +1,211 @@
+.bet-receipt {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bet-receipt .lic-mbox-header {
+    height: 58px;
+}
+
+.bet-receipt .lic-mbox-header .lic-mbox-title {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.bet-receipt .lic-mbox-header .lic-mbox-close-box {
+    top: 18px;
+    right: 20px;
+}
+
+.bet-receipt .lic-mbox-container {
+    padding-top: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.bet-receipt__general-info {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bet-receipt__general-info-item {
+    font-weight: bold;
+    color: #000000;
+    word-break: break-word;
+}
+
+.bet-receipt__general-info-item--left {
+    text-align: left;
+    padding-right: 10px;
+}
+
+.bet-receipt__general-info-item--right {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.bet-receipt__selections {
+    text-align: left;
+    padding: 0 10px;
+    background: #F6F6F6;
+}
+
+.bet-receipt__selection,
+.bet-receipt__summary {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bet-receipt-selection__labels,
+.bet-receipt-summary__labels {
+    margin-right: 10px;
+}
+
+.bet-receipt-selection__label,
+.bet-receipt-selection__value,
+.bet-receipt-summary__label,
+.bet-receipt-summary__value {
+    display: block;
+}
+
+.bet-receipt-selection__label,
+.bet-receipt-selection__value,
+.bet-receipt__result {
+    color: #8C8C8C;
+}
+
+.bet-receipt-selection__label,
+.bet-receipt-summary__label {
+    word-break: break-word;
+}
+
+.bet-receipt-selection__label--extended {
+    display: flex;
+    align-items: center;
+}
+
+.bet-receipt-selection__values,
+.bet-receipt-summary__values {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.bet-receipt-selection-label__name,
+.bet-receipt-selection-label__marker,
+.bet-receipt-selection__label--market,
+.bet-receipt-selection__value--name,
+.bet-receipt-selection__value--market {
+    font-weight: bold;
+}
+
+.bet-receipt-selection__value--dead-heat {
+    font-style: italic;
+}
+
+body .ui-tooltip {
+    box-shadow: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 7px 12px 6px;
+    margin-top: -10px;
+    &::before {
+        content: "";
+        border-color: #000 transparent;
+        border-style: solid;
+        border-width: 0 13px 13px 13px;
+        top: -13px;
+        display: block;
+        left: 47px;
+        position: absolute;
+        width: 0;
+    }
+}
+
+.bet-receipt-selection-label__name {
+    text-transform: capitalize;
+}
+
+.bet-receipt-selection-label__marker {
+    color: #fff;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px 6px;
+    margin-left: 5px;
+    background-color: #E72327;
+    flex-shrink: 0;
+}
+
+.bet-receipt-selection__label--market,
+.bet-receipt-selection__value--market {
+    margin-top: 10px;
+}
+
+.bet-receipt-selection__label--event,
+.bet-receipt-selection__value--event {
+    margin-top: 5px;
+}
+
+.bet-receipt-selection__label--status-win,
+.bet-receipt-selection__value--status-win,
+.bet-receipt__result--win {
+    color: #60A34E;
+}
+
+.bet-receipt-selection__label--status-lost,
+.bet-receipt-selection__value--status-lost,
+.bet-receipt__result--lost {
+    color: #E72327;
+}
+
+.bet-receipt-selection__label--status-void,
+.bet-receipt-selection__value--status-void,
+.bet-receipt__result--void {
+    color: #DD9E37;
+}
+
+.bet-receipt--single .bet-receipt__selections {
+    padding-top: 5px;
+}
+
+.bet-receipt--multi .bet-receipt__selection:not(:first-child) {
+    border-top: 1px solid #ededed;
+}
+
+.bet-receipt__summary {
+    background-color: #EAEAEA;
+    font-weight: bold;
+    color: #8C8C8C;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.bet-receipt-summary__label:not(:first-child),
+.bet-receipt-summary__value:not(:first-child) {
+    margin-top: 5px;
+}
+
+.bet-receipt__result {
+    text-align: right;
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+// /* Mobile customization: */
+
+.bet-receipt--mobile {
+    width: auto;
+    height: 100%;
+}
+
+.bet-receipt--mobile .lic-mbox-container {
+    max-height: initial;
+}

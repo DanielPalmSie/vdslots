@@ -1,0 +1,238 @@
+// .registration-header
+$registration-header--background-color: #DD9E37;
+
+// #step1 input
+$step1-input--color: #A0A0A0;
+
+// #step1 input[type=checkbox]
+$step1-input-checkbox--border: $primary-600;
+
+// #step1 input:focus, #step1 select:focus
+$step1-input-select-focus--border-color: $primary-600;
+
+// #step1 #country
+$step1-country--background-color: rgba(221, 158, 55, 0.2);
+$step1-country--border: $primary-900;
+$step1-country--color: #A0A0A0;
+
+// #step1 #country_prefix
+$step1-country_prefix--border: $primary-900;
+$step1-country_prefix--background-color: $primary-900;
+
+// #step1 #terms-span, #step1 #privacy-span
+$step1-span--color: $neutral-800;
+
+// #step1 #terms-span a, #step1 #privacy-span a
+$step1-span-a--color: $primary-900;
+
+// #step1 #mobile-container-select::after
+$step1-mobile-container-select-after--background: url('#{$brand-image-path}/registration-icons/expand_white.png');
+
+// #validation_step1 registration-content-right
+$validation_step1-registration-content-right--margin-top: 39px;
+
+// #validation_step1 registration-content-right h3
+$validation_step1-registration-content-right-h3--display: block;
+
+// .registration-container input, .registration-container select
+$registration-container-input--color: $neutral-400;
+
+// .registration-container input:webkit-autofill, .registration-container select:webkit-autofill
+$registration-container-input-webkit-autofill-box-shadow: 0 0 0 50px rgba(221, 158, 55, 0.2) inset !important;
+$registration-container-input-webkit-autofill-color: $neutral-400;
+
+// .registration-container select
+$registration-container-select--border: 1px solid $primary-600;
+
+// .register-button, .register-button-step2
+$register-button-step2--background-color: $button-primary-light;
+$register-button-step2--font-size: 18px;
+$register-button-step2--font-weight: 700;
+$register-button-step2--width: 398px;
+$register-button-step2--height: 43px !important;
+$register-button-step2--line-height: 43px;
+$register-button-step2--border-radius: 5px;
+
+// .register-button-second_denmark-img, .register-button-step2-second_denmark-img
+$register-button-img--margin: 7px !important;
+
+// .lic-mbox-btn-mit-id--disabled
+$mit-id--disabled: #706e6e;
+
+// .registration-banner-container
+$registration-banner-container--margin-top: 25px;
+
+// #country_prefix
+$country_prefix--color: #474747;
+
+// #secemail
+$secemail--background-image: url('#{$brand-image-path}/registration-icons/email.png');
+
+// #password
+$password--background-image: url('#{$brand-image-path}/registration-icons/password.png');
+
+// #password error
+$password_error--background-image: url('#{$brand-image-path}/registration-icons/password-error.png');
+
+// #secpassword
+$secpassword--background-image: url('#{$brand-image-path}/registration-icons/password.png');
+
+// #security_question
+$security-question--background-image: url('#{$brand-image-path}/registration-icons/sec-question.png');
+
+// #security_answer
+$security-answer--background-image: url('#{$brand-image-path}/registration-icons/sec-answer.png');
+
+// #country
+$country--background-image: url('#{$brand-image-path}/registration-icons/country.png');
+
+// #personal_number
+$personal-number--background-image: url('#{$brand-image-path}/registration-icons/nid.png');
+
+// .resend-button
+$resend-button--background-color: $primary-500;
+$resend-button--font-weight: 700;
+$resend-button--width: 100%;
+$resend-button--height: 43px;
+$resend-button--line-height: 43px;
+$resend-button--padding-top: 0px;
+$resend-button--border-radius: 5px;
+$resend-button--color: $button-text-light;
+$resend-button--margin-top: 14px;
+$resend-button--margin-left: 0px;
+
+// #change_email_mobile p
+$change-email-mobile-p--color: #dd9e37;
+$change-email-mobile-p--font-weight: 400;
+
+// #change_email_mobile p:hover
+$change-email-mobile-p-hover--color: #dd9e37;
+$change-email-mobile-p-hover--font-weight: 400;
+
+// .regstep2-right
+$regstep2-right--font-size: 20px;
+$regstep2-right--color: #ADADAD;
+$regstep2-right--padding-top: 35px;
+
+// .date-item,
+// #birthyear, #birthdate, #birthmonth
+$date-item--border-color: $primary-600;
+
+// .regstep2-right input[type="radio"]:checked + label
+$regstep2-right-gender-checked--color: $white;
+$regstep2-right-gender-checked--border: 1px solid $primary-600;
+$regstep2-right-gender-checked--background-color: $primary-600;
+
+// label[for=male], label[for=female]
+$label-male-female--width: 184px;
+$label-male-female--height: 50px;
+$label-male-female--color: $primary-500;
+$label-male-female--border: 1px solid $primary-600;
+$label-male-female--padding-bottom: 15px;
+$label-male-female--box-sizing: border-box;
+$label-male-female--border-radius: 2px;
+$label-male-female--font-size: 16px;
+$label-male-female--margin-bottom: 0px !important;
+
+// label[for=female]
+$label-for-female--background-image: url('#{$brand-image-path}/registration-icons/Female_Icon.png');
+
+// #female:checked + label
+$female-checked--background-image: url('#{$brand-image-path}/registration-icons/female-checked.svg');
+
+// label[for=male]
+$label-for-male--background-image: url('#{$brand-image-path}/registration-icons/Male_Icon.png');
+
+// #male:checked + label
+$male-checked--background-image: url('#{$brand-image-path}/registration-icons/male-checked.svg');
+
+// .registration-container .valid
+$registration-container-valid--border: 1px solid $primary-600 !important;
+$registration-container-valid--background-color: rgba(221, 158, 55, 0.2);
+$registration-container-valid--color: $neutral-400 !important;
+
+// .styled-select-valid select
+$styled-select-valid--background-color: rgba(221, 158, 55, 0.20) !important;
+
+// .styled-select::after
+$styled-select-after--background: rgba(221, 158, 55, 0) url('#{$brand-image-path}/registration-icons/expand.png');
+$styled-select-after--color: #474747;
+
+// .styled-select-valid::after, #step1 #mobile-container .styled-select-valid::after
+$styled-select-valid-after--background: rgba(221, 158, 55, 0) url('#{$brand-image-path}/registration-icons/expand.png');
+
+// .registration-container .input-normal:focus
+$registration-container-input-normal-focus--border: 1px solid #D0D0D0;
+
+// .input-with-icon .icon
+$input-with-icon-icon--background-image: url('#{$brand-image-path}/registration-icons/search-icon.svg');
+
+// .disabled-field select
+$disabled-field-select--border: 1px solid $neutral-600 !important;
+
+// #country, #preferred_lang, #occupation
+$country--width: 378px;
+$country--border-color: $primary-600;
+
+// #firstname, #lastname
+$name--icon-image: url('#{$brand-image-path}/registration-icons/username.png');
+$name--background-position: 16px center;
+
+// #address, #birth_province, #main_address, #main_province
+$address--icon-image: url('#{$brand-image-path}/registration-icons/address.svg');
+
+// #zipcode
+$zipcode--icon-image: url('#{$brand-image-path}/registration-icons/post-code.svg');
+
+// #city, #birth_city
+$city--icon-image: url('#{$brand-image-path}/registration-icons/city.svg');
+
+// #nationality
+$nationality--icon-image: url('#{$brand-image-path}/registration-icons/nationality.svg');
+
+// #place_of_birth, #birth_country, #main_country, #preferred_lang
+$place-of-birth--icon-image: url('#{$brand-image-path}/registration-icons/country-of-birth.svg');
+
+// #place_of_birth:disabled:not(.valid), #preferred_lang:disabled
+$place-of-birth-disabled--icon-image: url('#{$brand-image-path}/registration-icons/country-of-birth-disabled.png');
+
+// #firstname.error, #lastname.error
+$name-error--icon-image: url('#{$brand-image-path}/registration-icons/username-error.png');
+$name-error--background-position: 16px center;
+
+// #address.error
+$address-error--icon-image: url('#{$brand-image-path}/registration-icons/address-error.png');
+
+// #zipcode.error
+$zipcode-error--icon-image: url('#{$brand-image-path}/registration-icons/post-code-error.png');
+
+// #city.error
+$city-error--icon-image: url('#{$brand-image-path}/registration-icons/city-error.png');
+
+// #nationality.error
+$nationality-error--icon-image: url('#{$brand-image-path}/registration-icons/nationality-error.png');
+
+//#place_of_birth.error
+$place-of-birth-error--icon-image: url('#{$brand-image-path}/registration-icons/country-of-birth-error.svg');
+
+// #step2 .input-normal:disabled:not(.valid)
+$input-normal-disabled--border-color: $neutral-600 !important;
+
+// #firstname:disabled:not(.valid), #lastname:disabled:not(.valid)
+$name-disabled--icon-image: url('#{$brand-image-path}/registration-icons/username-disabled.png');
+$name-disabled--background-position: 16px center;
+
+// #address:disabled:not(.valid)
+$address-disabled--icon-image: url('#{$brand-image-path}/registration-icons/address-disabled.png');
+
+// #zipcode:disabled:not(.valid)
+$zipcode-disabled--icon-image: url('#{$brand-image-path}/registration-icons/post-code-disabled.png');
+
+// #city:disabled:not(.valid)
+$city-disabled--icon-image: url('#{$brand-image-path}/registration-icons/city-disabled.png');
+
+// #nationality:disabled:not(.valid)
+$nationality-disabled--icon-image: url('#{$brand-image-path}/registration-icons/nationality-disabled.png');
+
+// #lic-mbox-login-otp label[for="otp"] span
+$lic-mbox-login-otp-label-span-color: $primary-600;

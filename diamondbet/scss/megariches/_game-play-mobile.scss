@@ -1,0 +1,208 @@
+@include custom-code(megariches) {
+
+  #vs-licensing-strip {
+    background: $frame-1000;
+    border: none;
+    height: 25px;
+    flex: 0 0 25px;
+  }
+
+  .vs-game-info-strip {
+    @media screen and (orientation: portrait) {
+      border-top: none;
+    }
+
+    @media screen and (orientation: landscape) {
+      border-left: none;
+    }
+  }
+
+  .vs-game-info-strip__content {
+    color: $white;
+  }
+
+  .vs-game-info-strip__item-container--outlined {
+    font-size: 100%;
+  }
+
+  .vs-avatar__image {
+    width: 18px;
+    height: 18px;
+    border: none;
+  }
+
+  .vs-game-info-strip__item-container--outlined {
+    background: transparent;
+  }
+
+  .vs-game-info-strip__split-buttons-container {
+    background: $frame-200;
+  }
+
+  .vs-button__rewards {
+
+    // .vs-button__rewards #notification-count
+    #notification-count {
+      background: $frame-800;
+      width: 12px;
+      height: 12px;
+      font-size: 8px;
+    }
+  }
+
+  #vs-button__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    position: relative;
+
+    // #vs-button__user:after
+    &:after {
+      content: '\e94f';
+      font-family: 'videoslots-font';
+      display: block;
+      font-size: 12px;
+      line-height: 18px;
+      position: absolute;
+      left: 1px;
+      top: 0;
+    }
+
+    // we are not displaying the image, but displaying an icon instead
+    // just for Megariches. later this should be universal
+
+    // #vs-button__user img
+    img {
+      display: none;
+    }
+  }
+
+  .has-large-bottom-bar {
+
+    // .has-large-bottom-bar #vs-button__user
+    #vs-button__user {
+      width: 24px;
+      height: 24px;
+
+      // .has-large-bottom-bar #vs-button__user:after
+      &:after {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .vs-button__deposits {
+    background: $deposit-gradient;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .has-large-bottom-bar .vs-button__deposits {
+    font-size: 20px;
+    padding: 2px;
+  }
+
+
+  .vs-button__rewards {
+
+    // .vs-button__rewards.icon-vs-gift
+    &.icon-vs-gift {
+      color: $white;
+    }
+
+    // .vs-button__rewards .vs-mobile-rewards-count
+    .vs-mobile-rewards-count {
+      top: 4px;
+      right: -4px;
+
+      width: 10px;
+      height: 10px;
+
+      font-size: 6px;
+      line-height: 8px;
+
+      border: 1px solid &white;
+    }
+  }
+
+  .has-large-bottom-bar .vs-mobile-rewards-count {
+    top: 9px;
+    right: -4px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .has-large-bottom-bar .vs-game-info-strip__switch {
+    color: $white;
+
+    @media screen and (orientation: portrait) {
+      margin-top: -30px;
+    }
+
+    @media screen and (orientation: landscape) {
+      margin-left: -30px;
+    }
+  }
+
+  .vs-game-info-strip.gradient-normal {
+    background: $frame-800;
+  }
+
+  .vs-button__split-main, .vs-button__split-individual {
+    @media screen and (orientation: portrait) {
+      border-left: 1px solid $divider-light;
+    }
+
+    @media screen and (orientation: landscape) {
+      border-top: 1px solid $divider-light;
+    }
+  }
+
+  .vs-game-info-strip__item > .vs-button__split-individual-index {
+    color: $primary-500;
+  }
+
+  $vs-notification--margin: 8px;
+  .vs-notification {
+    width: calc(100% - 2*#{$vs-notification--margin});
+    margin: 0 $vs-notification--margin;
+    background: $black;
+  }
+
+  .vs-notification:nth-child(even) {
+    background: $frame-600;
+  }
+
+
+  // Game Search
+
+  .vs-game-search__input-container {
+    background: $frame-800;
+  }
+
+  .vs-game-search__input-search-container {
+    background: none;
+  }
+
+  .vs-game-search-strip {
+    background: $frame-800;
+  }
+
+  .vs-game-search__strip-item--active {
+    color: $primary-500;
+  }
+
+
+  // Split Submenu
+
+  .vs-button__split-individual-submenu {
+    color: $white;
+    border-radius: 5px;
+    padding-right: 30px;
+  }
+}

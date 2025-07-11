@@ -1,0 +1,402 @@
+.rtp-boxes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rtp-box {
+  width: 375px;
+  margin-top: 10px;
+}
+
+.rtp-item {
+  background: url(../../images/mrvegas/box-bg.png) #000 repeat-x;
+  border: 1px solid #2C2C2C;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  height: 65px;
+  width: calc(50% - 3px);
+}
+
+.rtp-item.rtp-item--big {
+  height: 135px;
+}
+
+.rpt-item_text {
+  padding-left: 5px;
+}
+
+.rtp-item--margin-five-bottom {
+  margin-bottom: 5px;
+}
+
+.rtp-item h6,
+.rtp-item h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.rtp-item h3,
+.rtp-g-item h3 {
+  font-size: 18px;
+}
+
+.rtp-g-item h3 {
+  margin: 13px 0 0 82px;
+}
+
+.rtp-item-avatar {
+  border: 1px solid #8B8B8B;
+  height: 35px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 35px;
+}
+
+.rtp-item-avatar--user {
+  float: none;
+  height: 50px;
+  margin: 10px auto;
+  width: 50px;
+}
+
+.rtp-score-table {
+  background: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.rtp-score-table--half {
+  width: 100%;
+  min-width: unset;
+  min-height: unset;
+}
+
+.rtp-table tbody tr {
+  border-top: 1px solid #262626;
+}
+
+.rtp-table tbody tr:first-child {
+  border-top: 1px solid #262626;
+}
+
+.rtp-table tbody tr td a {
+  position: relative;
+}
+
+.rtp-table tbody tr td {
+  border: none;
+}
+
+.rtp-more {
+  background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#515151));
+  background: linear-gradient(#909090, #515151);
+  margin: 10px 0;
+  border: none;
+}
+
+.rtp-filter h2 {
+  color: #18723C;
+  font: 14px/14px Arial, Helvetica, sans-serif;
+  margin: 0 0 12px 0;
+  float: left;
+  width: auto;
+}
+
+.rtp-filter-label {
+  margin: 4px 0;
+}
+
+.rtp-filter-label .rtp-search {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.rtp-filter-label input[type=text] {
+  border: none !important;
+  border-radius: 0px;
+  font: 400 10px/23px Arial, Helvetica, sans-serif !important;
+  height: 23px;
+}
+
+.rtp-buttons-wrapper {
+  width: 100%;
+  margin: 4px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.rtp-buttons-wrapper .rtp-btn.inactive[data-type=day],
+.rtp-buttons-wrapper .rtp-btn.inactive[data-type=week],
+.rtp-buttons-wrapper .rtp-btn.inactive[data-type=month] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#515151));
+  background: linear-gradient(#909090, #515151);
+  border: none;
+  color: #FFF;
+}
+
+.rtp-btn {
+  text-align: center;
+  border: none;
+  line-height: 27px;
+  height: 27px;
+  padding: 0;
+}
+
+.rtp-btn.active {
+  background: #18723C;
+  color: #FFF;
+}
+
+.rtp-btn.inactive {
+  background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#515151));
+  background: linear-gradient(#909090, #515151);
+  border: none;
+}
+
+.rtp-buttons-wrapper .rtp-btn {
+  width: calc(33% - 4px);
+}
+
+.rtp-button--search {
+  border-radius: 0;
+  margin-top: 4px;
+}
+
+.rtp-date-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+}
+
+.rtp-date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 0px;
+}
+
+.rtp-filter-label .rtp-date {
+  width: 120px;
+}
+
+.rtp-filter-label .rtp-time {
+  margin-left: 4px !important;
+  width: 48px;
+}
+
+.rtp-detail-btn {
+  width: 14px;
+  height: 14px;
+}
+
+.rtp-detail-btn.icon.icon-vs-chevron-left:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 8px;
+  color: white;
+  top: 0;
+  line-height: 14px;
+  width: 14px;
+  left: 0;
+  font-weight: normal;
+}
+
+.rtp-session-datetime {
+  position: absolute;
+  left: 22px;
+  padding-top: 48px;
+}
+
+.rtp-table-image {
+  height: 30px;
+  width: 30px;
+}
+
+.rtp-table-image img {
+  padding: 0;
+}
+
+.rtp-table tbody tr td {
+  padding-top: 10px;
+}
+
+#rtp_all_table tr td,
+#rtp_game_table tr td {
+  padding-bottom: 20px;
+}
+
+.rtp-crumbs {
+  padding: 0;
+}
+
+.rtp-g-wrapper {
+  margin: 0;
+}
+
+.rtp-g,
+.rtp-g-big {
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rtp-g-item,
+.rtp-g-item-big {
+  background: url(../../images/mrvegas/box-bg.png) #000 repeat-x;
+  border: 1px solid #3B3114;
+  margin: 5px 0;
+  padding: 10px;
+  width: calc(50% - 3px);
+}
+
+.rtp-g-item-avatar img,
+.rtp-g-item-avatar-big {
+  padding: 0;
+  position: relative;
+  float: left;
+}
+
+.rtp-g-item-text {
+  margin-left: 100px;
+  padding: 5px 20px;
+  height: 100%;
+}
+.rtp-g-graph,
+.graph-container {
+  background: none;
+  border: none;
+  width: 355px;
+}
+
+.rtp-g-item:last-of-type {
+  width: calc(50% - 3px);
+}
+
+.rtp-g-item-big h6 {
+  margin: 0;
+}
+
+.rpt-g-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.rpt-g-values_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.rpt-g-values_item strong {
+  font: 900 20px/20px Arial, Helvetica, sans-serif;
+  color: #5E5E5E;
+}
+
+.rtp-col-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0px;
+}
+
+.rtp-col-25 {
+  width: 25%;
+}
+
+.rtp-col-icon .icon {
+  font-size: 13px;
+}
+
+.rtp-col-icon .icon-vs-chevron-left::before {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 19px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.rtp-g-graph {
+  padding: 0;
+}
+
+.rtp-graph-box {
+  background: url(../../images/mrvegas/box-bg.png) #000 repeat-x;
+  width: 375px;
+  border: 1px solid #3B3114;
+}
+
+.rtp-graph-box .rtp-crumbs {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.graph-container > div {
+  left: 10px;
+}
+
+.rtp-table tbody tr td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rtp-table tbody tr td:last-child {
+  padding-right: 10px;
+}
+
+.rtp-table#rtp_game_table tbody tr td:last-child {
+  padding-left: 10px;
+}

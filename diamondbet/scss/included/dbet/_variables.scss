@@ -1,0 +1,8 @@
+// Variables specific across 'dbet' brand go here
+@import '_palette.scss';
+
+$brand: 'dbet'; // rename to brand folder name
+$brand-image-path: '../../images/#{$brand}';
+
+$main-color: $primary-500; // replace the placeholder color by true main color from the brand palette
+$body--color: $neutral-700;

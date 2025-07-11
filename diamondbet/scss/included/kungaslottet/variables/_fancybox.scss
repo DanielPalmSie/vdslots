@@ -1,0 +1,83 @@
+// .mbox-rewards-wrap
+$mbox-rewards-wrap--border-color: #18723C;
+
+// .mbox-loader-outer
+$mboxloader-outer--background-size: auto 200px;
+
+// .mbox-rewards-outer
+$mbox-rewards-outer--background: $black;
+
+// #fancybox-content, .multibox-content, .mboxloader-content, .mbox-deposit-content, .mbox-rewards-content
+$fancybox-content--color: $black;
+
+// #fancybox-close, .fancybox-close-orig, .mbox-rewards-close
+$fancybox-close--background: transparent url('#{$brand-image-path}/fancybox/fancybox.png') -40px 0px;
+
+// .mbox-rewards-close
+$mbox-rewards-close--background: url('#{$brand-image-path}/lightbox/close-lightbox.png');
+
+// #inhousefrb-container #inhousefrb-header
+$inhousefrb-header--background-color: #18723C;
+
+// #inhousefrb-container #inhousefrb-button
+$inhousefrb-button--background-color: #18723C;
+
+// #inhousefrb-text > span
+$inhousefrb-text-span--color: #18723C;
+
+// #inhousefrb-text > strong
+$inhousefrb-text-strong--color: #18723C;
+
+// .mbox-msg-title-bar
+$mbox-msg-title-bar--background-color: $popup-header-color;
+
+// .lic-mbox-header
+$lic-mbox-header--background-color: $primary-900;
+
+// .lic-mbox-container
+$lic-mbox-container--padding: 20px;
+$lic-mbox-container--color: #000;
+
+//#rg-login-box height of popup topbar in mobile
+$rg-login-box-top-bar--height: 63px;
+
+// .lic-mbox-container a
+$lic-mbox-container-a--color: #000000;
+
+// .lic-mbox-warning-icon
+$mbox-warning-icon--background: url('#{$brand-image-path}/warning.png');
+
+// .lic-mbox-input, .lic-mbox-input:focus
+$lic-mbox-input--border-color: $primary-500;
+
+// .lic-mbox-actions #dialog__button--ok,
+// .lic-mbox-actions #dialog__button--yes,
+// .lic-mbox-actions #dialog__button--no
+$lic-mbox-actions-dialog-button--button-color: #18723C;
+
+// .mbox-msg-container .text-container
+$mbox-msg-container-text-container--font-size: 14px;
+
+//.mbox-msg-container .mbox-ok-btn
+$mbox-msg-container-mbox-ok-btn--width: auto;
+
+// .rg-info-popup__description
+$rg-info-popup__description--color: $neutral-900;
+
+//.rg-info-popup__link a
+$rg-info-popup__link-a--color: $neutral-800;
+
+// .rg-info-popup__btn
+$rg-info-popup__btn--font-family: Roboto, sans-serif;
+
+// .rg-info-popup__btn--continue
+$rg-info-popup__btn-continue--background-color: $primary-900;
+
+// .rg-info-popup__btn--edit-limits
+$rg-info-popup__btn-edit-limits--background-color: $button-primary-light;
+
+// .rg-info-popup__btn--take-a-break
+$rg-info-popup__btn-take-a-break--background-color: $kunga-dark-blue-pop-ups;
+
+// .popup-v2-subtitle
+$popup-v2-subtitle--color: $primary-900;

@@ -1,0 +1,9 @@
+// Varibles specific across NEW brand go here
+@import '_palette.scss';
+
+// variable needed for conditional code loading
+$brand: 'megariches';
+$brand-image-path: '../../images/#{$brand}';
+
+$main-color: $primary-500;
+$body--color: $white;

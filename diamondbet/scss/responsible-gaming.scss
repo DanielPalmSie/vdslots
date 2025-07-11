@@ -1,0 +1,176 @@
+.rg-locked-game-category__popup-container .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rg-locked-game-category__popup-container .text-container p {
+    margin-top: auto;
+}
+
+@include custom-code(kungaslottet) {
+    $rg-lock-category-ok-btn--background-color: #07A85B;
+    $rg-lock-category-cancel-btn--background-color: #003E68;
+
+    .rg-limit-popup__container,
+    .rg-locked-game-category__popup-container {
+        * {
+            box-sizing: border-box;
+        }
+
+        .mbox-msg-container {
+            justify-content: space-between;
+            @media screen and (min-width: 768px) {
+                justify-content: center;
+                width: 450px;
+            }
+        }
+
+        .mbox-msg-content {
+            margin-bottom: 24px;
+        }
+
+        .mbox-button-strip {
+            flex-direction: column;
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+        }
+    }
+
+    .rg-locked-game-category__popup-container {
+        .text-container {
+            margin-bottom: 0 !important;
+            height: 100%;
+            width: 100%;
+        }
+
+        .mbox-ok-btn {
+            margin-top: 24px;
+            padding: 10px 84px !important;
+            height: auto;
+            width: 100% !important;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 5px;
+            background: $rg-lock-category-ok-btn--background-color;
+        }
+    }
+
+    .rg-limit-popup__btn {
+        padding: 10px 84px;
+        height: auto;
+        width: 100% !important;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 5px;
+
+        @media screen and (min-width: 768px) {
+            width: auto !important;
+        }
+    }
+
+    .rg-limit-popup__confirm-btn {
+        background: $rg-lock-category-ok-btn--background-color;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .rg-limit-popup__cancel-btn {
+        background: $rg-lock-category-cancel-btn--background-color;
+    }
+
+    .rg-locked-game-category__popup-container .popup-v2-subtitle {
+        margin-top: 24px;
+    }
+}
+
+@include custom-code(megariches) {
+    .rg-limit-popup__btn {
+        padding: 10px 84px;
+        height: auto;
+        width: 100% !important;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 5px;
+
+        @media screen and (min-width: 768px) {
+            width: auto !important;
+        }
+    }
+
+    .rg-limit-popup__confirm-btn {
+        background: $button-primary-light;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .rg-limit-popup__cancel-btn {
+        background: $button-secondary-light;
+    }
+
+    .rg-limit-popup__container .mbox-button-strip {
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+}
+
+@include custom-code(dbet) {
+    .rg-limit-popup__btn {
+        padding: 10px 84px;
+        height: auto;
+        width: 100% !important;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 5px;
+
+        @media screen and (min-width: 768px) {
+            width: auto !important;
+        }
+    }
+
+    .rg-limit-popup__confirm-btn {
+        background: $button-primary-light;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .rg-limit-popup__cancel-btn {
+        background: $button-secondary-light;
+    }
+
+    .rg-limit-popup__container .mbox-button-strip {
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .rg-locked-game-category__popup-container .mbox-ok-btn {
+        background-color: $button-primary-light;
+        color: $white;
+        padding: 0 20px;
+        height: 43px;
+        border-radius: 5px;
+
+        @media screen and (max-width: 768px)  {
+            width: 100% !important;
+        }
+    }
+
+    .rg-locked-game-category__popup-container .text-container h3 {
+        color: $neutral-900;
+    }
+}

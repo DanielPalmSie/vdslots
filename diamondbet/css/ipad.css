@@ -1,0 +1,255 @@
+body, .container-holder, #wrapper, #wrapper-container {
+  min-width: 500px;
+  width: 500px;
+}
+
+.full-width {
+  width: 500px;
+}
+
+.mobile-top {
+  height: 41px;
+}
+
+.wrapper-SE .mobile-top,
+.wrapper-DK .mobile-top,
+.wrapper-GB .mobile-top {
+  height: 67px;
+}
+
+.container-holder {
+  padding-top: 45px;
+}
+
+.footer-holder {
+  width: 480px;
+  padding: 10px;
+  color: #AAA;
+}
+
+.mobile-fold-btn {
+  width: 500px;
+  left: -600px;
+}
+
+.big-flexslider-container {
+  height: 140px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.big-flexslider img {
+  width: 240px;
+  height: 117px;
+}
+
+.big-flexslider, .flexslider {
+  margin-left: 8px;
+}
+
+.flexslider-container {
+  height: 120px;
+  background: url("../images/mobile/ipad_game_slider_bkg.jpg") repeat-x top;
+  margin-bottom: -32px;
+}
+
+.flex-control-nav {
+  bottom: -25px;
+}
+
+.flexslider img {
+  width: 240px;
+  height: 65px;
+}
+
+.mobile-news-slide {
+  margin-left: 0px !important;
+}
+
+.mobile-news-slide img {
+  width: unset;
+  float: left;
+}
+
+.mobile-news-slide li {
+  background-color: #2F2F2F;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flexslider-container-mobile-news {
+  background: unset !important;
+}
+
+.flexslider-item__button--centered {
+  position: absolute;
+  top: 90px;
+  left: calc(50% - 45px);
+  height: 16px;
+  font-size: 10px;
+}
+
+.game4-width {
+  width: 95px !important;
+}
+
+.game5-width {
+  width: 70px !important;
+}
+
+.game4-height {
+  height: 78px !important;
+}
+
+.game5-height {
+  height: 59px !important;
+}
+
+.game6-width {
+  width: 76px !important;
+}
+
+.game6-height {
+  height: 65px !important;
+}
+
+.game-top {
+  text-align: center;
+}
+
+.ribbon-pic {
+  left: 16px;
+}
+
+.game-tbl {
+  width: 525px !important;
+  float: left !important;
+  margin-left: -12px !important;
+}
+
+.game-choose-headline {
+  padding-right: 10px !important;
+}
+
+.game-choose-headline span {
+  margin-right: 10px !important;
+}
+
+.medium-input {
+  width: 159px !important;
+}
+
+.simple-box {
+  width: 455px !important;
+}
+
+.frame-block, .frame-block2, .profile-content, .news-container {
+  width: 490px !important;
+}
+
+.frame-holder, .forgot-password, .news-top {
+  width: 470px !important;
+  background: #000 !important;
+}
+
+.simple-box .registerform input[type=text], .simple-box .registerform input[type=tel],
+.simple-box .registerform select, .simple-box .registerform input[type=password] {
+  width: 200px !important;
+}
+
+.boxes-container .frame-block, .boxes-container .frame-block2,
+.boxes-container .profile-content, .boxes-container.news-container {
+  width: 490px !important;
+}
+
+.boxes-container {
+  width: 490px !important;
+}
+
+.boxes-container .frame-holder, .boxes-container .forgot-password,
+.boxes-container .news-top {
+  background-image: none !important;
+  background-color: #000000;
+}
+
+.infoArea ul {
+  width: 440px !important;
+}
+
+.cashierInput {
+  width: 230px;
+}
+
+.small {
+  width: 20px !important;
+}
+
+.cashierBtnInner {
+  margin: 0 0 0 170px;
+}
+
+.dynamic-image {
+  margin-top: -5px;
+}
+
+.dynamic-image img {
+  width: 500px;
+  height: 244px;
+}
+
+.active-reward-area .zebra-tbl {
+  width: 305px;
+}
+
+.rewards-middle-box {
+  width: 375px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.reward-detailed .simple-frame {
+  margin-left: 20px;
+}
+
+.bonus-entry-btn-holder {
+  top: -2px;
+}
+
+#bottom-sticky, .bottom-sticky__level {
+  width: 500px;
+}
+
+.ipad-width {
+  width: 475px !important;
+}
+
+#mobile-achievements > div {
+  width: 475px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input:-webkit-autofill.error,
+input:-webkit-autofill:focus.error {
+  background-color: #FED6D7;
+  -webkit-box-shadow: 0 0 0px 1000px #FED6D7 inset;
+  color: #FC282B !important;
+  -webkit-text-fill-color: #FC282B !important;
+}
+
+.moreinfo-info {
+  width: 453px !important;
+}
+
+.trophies-top .xp-progressbar-bkg {
+  width: 295px;
+}
+
+.trophies-top .trophy-status-txt {
+  left: 360px;
+}
+
+.profile-avatar-container {
+  width: 110px;
+}

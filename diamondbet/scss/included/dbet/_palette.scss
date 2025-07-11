@@ -1,0 +1,134 @@
+$placeholder-color: #FF00FF;
+$placeholder-gradient: linear-gradient($placeholder-color, white);
+
+// primary colors
+$primary-50: #8FB2FF;
+$primary-100: #5585F4;
+$primary-200: #3058B8;
+$primary-300: #254BA4;
+$primary-400: #1B3D90;
+$primary-500: #112F7C;
+$primary-600: #0E2A6E;
+$primary-700: #0B2560;
+$primary-800: #091F51;
+$primary-900: #061A43;
+$primary-1000: #031535;
+
+// secondary colors
+$secondary-50: #FFECAE;
+$secondary-100: #FDE38C;
+$secondary-200: #FBDA6A;
+$secondary-300: #F8D248;
+$secondary-400: #F6C926;
+$secondary-500: #F4C004;
+$secondary-600: #CFA204;
+$secondary-700: #AA8404;
+$secondary-800: #846504;
+$secondary-900: #5F4704;
+$secondary-1000: #3A2904;
+
+// tertiary colors
+$tertiary-50: #DEB6B8;
+$tertiary-100: #DE9599;
+$tertiary-200: #DE747A;
+$tertiary-300: #DE525A;
+$tertiary-400: #DE313B;
+$tertiary-500: #DE101C;
+$tertiary-600: #BC0E18;
+$tertiary-700: #9A0B13;
+$tertiary-800: #77090F;
+$tertiary-900: #55060A;
+$tertiary-1000: #330406;
+
+// neutral colors
+$white: #FFF;
+$neutral-50: #F4F4F4;
+$neutral-100: #E2E2E2;
+$neutral-200: #C1C1C1;
+$neutral-300: #AFAFAF;
+$neutral-400: #A0A0A0;
+$neutral-500: #8C8C8C;
+$neutral-600: #757575;
+$neutral-700: #5E5E5E;
+$neutral-800: #474747;
+$neutral-900: #232323;
+$neutral-1000: #111111;
+$black: #000;
+
+// frame colors
+$frame-50: #BBBBBB;
+$frame-100: #C1C1C1;
+$frame-200: #D4D4D4;
+$frame-300: #D1D1D1;
+$frame-400: #DBDBDB;
+$frame-500: #E4E4E4;
+$frame-600: #EAEAEA;
+$frame-700: #EEEEEE;
+$frame-800: #EFEFEF;
+$frame-900: #FAFAFA;
+$frame-1000: #FDFDFD;
+
+// gradient colors
+$primary-gradient: linear-gradient(180deg, #2196EB 0%, #1940A5 100%);
+$secondary-gradient: linear-gradient(0deg, #CF7C00 0%, #FFDC5B 100%);
+$tertiary-gradient: linear-gradient(180deg, #2B54BD 0%, #162D67 100%);
+$frame-gradient: linear-gradient(180deg, #E3E9F9 0%, #FDFDFD 100%);
+$neutral-gradient: linear-gradient(180deg, #191919 0%, #5E5E5E 100%);
+$deposit-gradient: linear-gradient(180deg, #00E082 0%, #076638 100%);
+
+// text colors
+$button-text-light: #FFFFFF;
+$button-text-dark: #031433;
+
+// button colors
+$button-primary-light: #4075FF;
+$button-primary-dark: #112F7C;
+$button-secondary-light: $secondary-500;
+$button-secondary-dark: #473D18;
+$button-deposit: #2ACA81;
+$button-cancel: $secondary-500;
+
+// divider colors
+$divider-light: #1A3469;
+
+// header variants
+$popup-header-color: #112F7C;
+
+// backgrounds
+$desktop-background: #061D4D;
+$mobile-background: #FDFDFD;
+
+// error colors
+$error-100: #FFE0E0;
+$error-200: #FFB2B2;
+$error-300: #E25B65;
+$error-400: #D33942;
+$error-500: #C41620;
+
+// warning colors
+$warning-100: #FFEAB5;
+$warning-200: #FAD991;
+$warning-300: #F4C86D;
+$warning-400: #EFB748;
+$warning-500: #EAA624;
+
+// success colors
+$success-100: #92CD9F;
+$success-200: #7AC68B;
+$success-300: #62BF76;
+$success-400: #49B862;
+$success-500: #31B14D;
+
+// info colors
+$info-100: #C9F0FF;
+$info-200: #97CDF3;
+$info-300: #65ABE8;
+$info-400: #3288DC;
+$info-500: #0065D0;
+
+// sportsbook colors
+$sportsbook-increase: #4CC015;
+$sportsbook-decrease: #E72327;
+$sportsbook-neutral: #112F7C;
+
+$extra-1: #2ACA81;

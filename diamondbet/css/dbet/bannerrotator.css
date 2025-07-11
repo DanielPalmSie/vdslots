@@ -1,0 +1,46 @@
+.carousel {
+  width: 9999px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner-cont {
+  width: 590px;
+  height: 274px;
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.banner-cont .btn {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+  bottom: 50px;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(#CF7C00), to(#FFDC5B));
+  background: linear-gradient(0deg, #CF7C00 0%, #FFDC5B 100%);
+  color: #FFF;
+}
+
+#fullFlashBox, .carousel li {
+  width: 590px;
+  height: 274px;
+  overflow: hidden;
+}
+#fullFlashBox img, .carousel li img {
+  min-height: 274px;
+  aspect-ratio: 590/274;
+}
+
+.carousel li {
+  position: relative;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+#fullFlashBox {
+  cursor: pointer;
+}

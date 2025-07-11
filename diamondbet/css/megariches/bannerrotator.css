@@ -1,0 +1,42 @@
+.carousel {
+  width: 9999px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner-cont {
+  width: 590px;
+  height: 274px;
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.banner-cont .btn {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+  bottom: 50px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2B77E9), to(#050D1A));
+  background: linear-gradient(180deg, #2B77E9 0%, #050D1A 100%);
+  border-radius: 4px;
+}
+
+#fullFlashBox, .carousel li {
+  width: 590px;
+  height: 274px;
+  overflow: hidden;
+}
+
+.carousel li {
+  position: relative;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+#fullFlashBox {
+  cursor: pointer;
+}

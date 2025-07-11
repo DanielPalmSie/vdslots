@@ -1,0 +1,42 @@
+<!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. -->
+<xs:schema xmlns:tns="http://gamesession.wallet.integration.eoc.edict.de" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           version="1.0" targetNamespace="http://gamesession.wallet.integration.eoc.edict.de">
+    <xs:element name="MarkGameSessionClosedFault" type="tns:MarkGameSessionClosedFault"/>
+    <xs:element name="markGameSessionClosedRequest" type="tns:markGameSessionClosedRequest"/>
+    <xs:element name="markGameSessionClosedResponse" type="tns:markGameSessionClosedResponse"/>
+    <xs:element name="markGameSessionClosed" type="tns:markGameSessionClosed"/>
+
+    
+    <xs:complexType name="markGameSessionClosed">
+        <xs:sequence>
+            <xs:element name="markGameSessionClosedRequest" type="tns:markGameSessionClosedRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="markGameSessionClosedRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="markGameSessionClosedResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:markGameSessionClosedAnswer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="markGameSessionClosedAnswer">
+<xs:sequence/>
+</xs:complexType>
+    <xs:complexType name="MarkGameSessionClosedFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    
+
+    
+    
+</xs:schema>

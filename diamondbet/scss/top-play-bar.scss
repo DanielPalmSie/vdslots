@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+.top-play-bar {
+  height: $top-play-bar--height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  background: $top-play-bar--background;
+  z-index: 2000;
+  border-bottom: solid 1px $top-play-bar--border-bottom-color;
+}
+
+.game-bottom-wrapper {
+  z-index: 2000;
+  position: relative;
+  top: 680px;
+}
+
+.game-bottom {
+  margin: auto;
+  width: 750px;
+}
+
+.game-bottom-button {
+  position: relative;
+  right: 200px;
+}
+
+.top-play-bar-content {
+  margin: auto;
+}
+
+.top-play-bar .login-form {
+  margin-top: 8px;
+}
+
+.top-play-bar .login-form .holder {
+  float: left;
+}
+
+.topbar-txt {
+  color: $topbar-txt--color;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.topbar-logo {
+  float: left;
+  margin-left: 20px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+}
+
+@include custom-code(mrvegas) {
+  .topbar-logo > img {
+    width: 100px;
+    height: 16px;
+  }
+}
+
+.topbar-help {
+  float: right;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.topbar-help .topbar-txt {
+  font-size: 14px;
+}
+
+.topbar-cashier {
+    margin-right: 16px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+@include custom-code(videoslots) {
+    @include topbar-cashier-button($background: $button-primary-light);
+}
+
+@include custom-code(mrvegas) {
+    @include topbar-cashier-button($background: $button-primary-light);
+}
+
+@include custom-code(kungaslottet) {
+  @include topbar-cashier-button($background: $deposit-gradient);
+}
+
+@include custom-code(megariches) {
+  @include topbar-cashier-button($background: $deposit-gradient);
+}
+
+@include custom-code(dbet) {
+  @include topbar-cashier-button($background: $button-deposit);
+}
+
+.topbar-rewards {
+  padding: 3px 12px;
+  background: $topbar-rewards--background-color;
+  border-radius: 4px;
+  margin-left: 0px;
+  margin-right: $topbar-rewards--margin-right;
+  margin-top: 7px;
+  float: right;
+  cursor: pointer;
+}
+.topbar-rewards .icon {
+  height: $topbar-rewards-icon--height;
+  width: $topbar-rewards-icon--width;
+  font-size: 22px;
+  color: $topbar-rewards-icon--color;
+}
+.topbar-rewards-counter {
+  position: relative;
+  z-index: 106;
+  float: right;
+  margin-top: 23px !important;
+  margin-right: -54px !important;
+  padding: $topbar-rewards-counter--padding;
+  border-radius: 5px;
+
+  @include custom-code(kungaslottet) {
+    left: -18px;
+    top: -4px;
+    background: $dark-blue-200;
+    font-weight: 800 !important;
+    border: 2px solid #FFFFFF;
+    line-height: 11px;
+    font-size: 10px;
+
+      //.topbar-rewards-counter.notifications-icon
+      &.notifications-icon {
+          min-width: 10px;
+          height: 10px;
+          font-size: 10px;
+      }
+  }
+
+  @include custom-code(megariches) {
+    left: -18px;
+    top: -3px;
+    color: $button-text-dark;
+    background: #CAA467;
+    font-weight: 800 !important;
+    line-height: 11px;
+    font-size: 10px;
+    border: 2px solid $button-text-dark;
+
+      //.topbar-rewards-counter.notifications-icon
+      &.notifications-icon {
+          min-width: 10px;
+          height: 10px;
+          font-size: 10px;
+      }
+  }
+
+  @include custom-code(dbet) {
+    left: -18px;
+    top: -3px;
+    color: $button-text-dark;
+    background: $button-secondary-light;
+    font-weight: 800 !important;
+    line-height: 11px;
+    font-size: 10px;
+    border: 2px solid $button-text-dark;
+  }
+}
+
+#game_top {
+  height: 40px;
+}
+
+#maximize {
+  background: $maximize--background;
+  cursor: pointer;
+  height: 33px;
+  float: right;
+  width: 33px;
+  z-index: 1103;
+  margin-right: 40px;
+}
+
+#maximize:hover {
+  background: $maximize-hover--background;
+}
+
+///*
+//#fancybox-close {
+//background: url("/diamondbet/images/game_page/close.png") no-repeat;
+//cursor: pointer;
+//display: none;
+//height: 33px;
+//position: absolute;
+//right: 10px;
+//top: 10px;
+//width: 33px;
+//z-index: 1103;
+//}
+//
+//#fancybox-close:hover{
+//background: url("/diamondbet/images/game_page/close_over.png") no-repeat;
+//}
+//*/
+
+#fancybox-frame {
+  width: 640px;
+  height: 480px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#games_select {
+  height: 33px;
+  font-size: 14px;
+  padding: 8px;
+  color: $games-select--color;
+}
+
+#game_top .sbHolder {
+  float: left;
+  color: $game-top-sbholder--color;
+  font-size: 14px;
+  font-weight: bold;
+  border: solid 1px $game-top-sbholder--border-color;
+  width: 230px;
+  background: #000;
+}
+
+#game_top .sbOptions {
+  border: solid 1px $game-top-sboptions--border-color;
+  width: 230px;
+  background: #000;
+  height: 460px;
+}
+
+#game_top .sbOptions a {
+  color: $game-top-sboptions-a--color;
+}
+
+#game_top .sbOptions a:hover {
+  color: $game-top-sboptions-a-hover--color;
+}
+
+#game_top .sbToggle {
+  background: $game-top-sbtoggle--background;
+}
+
+#game_top .sbToggleOpen {
+  background: $game-top-sbtoggleopen--background;
+}
+
+#fancybox-wrap {
+  // /*margin-top: -140px;*/
+}
+
+#fancybox-overlay {
+  display: block;
+  opacity: 1;
+  background-color: #000;
+}
+
+.fancy-game-overlay {
+  opacity: 1;
+  background-color: #000000;
+}
+
+.fancy-game-overlay-stretch {
+  height: auto;
+  width: 100%;
+}
+
+.top-bar-menuitem {
+  border-right: solid 1px #555;
+  float: right;
+  padding: $top-bar-menuitem--padding;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-menuitem .rg-top__item > a {
+    line-height: 0;
+}
+
+.top-bar-border-left {
+    border-left: solid 1px #555 !important;
+    border-right: none !important;
+}
+
+.top-bar-session-info-container{
+  height: 40px;
+  overflow: hidden;
+}
+
+.top-bar-session-info {
+  color: #999999;
+  font-weight: normal;
+  line-height: 40px;
+  font-size: 12px;
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+.top-bar-session-info strong {
+    color: $white;
+}
+
+.top-login {
+  background: $top-login--background;
+  width: 86px;
+  height: 25px;
+  padding-top: 5px;
+  font-weight: bold;
+  margin-top: -1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+///*
+//.top-login span{
+//padding: 5px;
+//}
+//*/
+
+.play-bkg-stretch-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.play-bkg-img {
+  ///*
+  //display: block;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //width: 100%;
+  //height: 100%;
+  //margin-top: -25%;
+  //margin-left: -25%;
+  //display: block;
+  //margin-left: auto;
+  //margin-right: auto;
+  //margin-top: 40px;
+  //*/
+}
+
+.top-bar-menuitem .big-top-item {
+  padding-top: 11px;
+  display: block;
+}
+
+.top-bar-menuitem span a {
+  text-decoration: none;
+}
+
+.top-bar-name {
+  color: $top-bar-name--color;
+  margin-top: 14px;
+  height: 20px;
+  float: left !important;
+  border: none !important;
+}
+
+.top-bar-pcontrols {
+  margin-top: 14px;
+  height: 20px;
+  float: left !important;
+
+  @include custom-code(dbet) {
+    .chgrd {
+      margin-right: 10px;
+    }
+  }
+}
+
+.top-bar-name-holder {
+  float: left;
+}
+
+.top-bar-input {
+  width: 140px;
+}
+
+.bottom-carousel {
+  margin-left: 40px;
+}
+
+.gpage-balance {
+  color: #ccc;
+  font-size: 12px;
+  float: left;
+}
+
+.top-play-login-btn {
+    height: 33px !important;
+    margin-top: -5px !important;
+}
+
+.top-bar-timer {
+  float: left;
+  margin-top: $top-bar-timer--margin-top;
+  margin-left: $top-bar-timer--margin-left;
+
+    //.top-bar-timer .rg-top__item
+    .rg-top__item {
+      gap: 11px
+    }
+
+    //.top-bar-timer .logged-in-time__icon
+    .logged-in-time__icon {
+      margin-right: 0px;
+    }
+}
+
+.over-age-play {
+  margin-top: 1px;
+  margin-left: 20px;
+}
+
+#top-bar-participation-id {
+  font-size: 12px;
+  height: 34px;
+  margin-top: 6px;
+}
+
+#top-bar-add-funds {
+  float: right;
+  font-size: 12px;
+  height: 27px;
+  margin-top: 6px;
+}
+
+.game-play-session {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 43px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+.game-play-session__icon {
+  float: left;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.game-play-session__icon.icon-balance-alt1 {
+    font-size: 19px;
+}
+
+.game-play-session__text {
+  margin-top: 1px;
+}
+
+.game-play-session__timer {
+  display: flex;
+  margin-top: 1px;
+  width: 60px;
+}
+

@@ -1,0 +1,251 @@
+.fast-deposit {
+  width: 400px;
+}
+
+.fast-deposit img {
+  width: 100px;
+  height: 35px;
+}
+
+.fast-deposit .lic-mbox-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fast-deposit .lic-mbox-close-box {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  height: auto;
+  top: 16px;
+}
+
+.fast-deposit_predefs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fast-deposit_predefs .cashier-predefined-amount:hover {
+  background: #C9E2BB;
+  border: 2px solid #373;
+  color: #225812;
+}
+
+.fast-deposit_predefs .cashier-predefined-amount.gradient-default {
+  background: #C9E2BB;
+  border: 2px solid #373;
+}
+
+.fast-deposit_predefs .cashier-predefined-amount.gradient-text-default {
+  color: #225812;
+  text-shadow: none;
+}
+
+.fast-deposit .fast-deposit-box,
+.fast-deposit .cashierInput,
+.fast-deposit .cashierInputLabel {
+  color: #7D7D7D;
+}
+
+.fast-deposit .cashierBoxInsertCol {
+  width: 100%;
+}
+
+.fast-deposit .small {
+  width: 40px !important;
+}
+
+.fast-deposit .medium {
+  width: 80px !important;
+}
+
+.fast-deposit .cvs_info {
+  color: black;
+  font-size: 10px;
+  left: 35px;
+  position: relative;
+  top: 15px;
+  width: 170px;
+}
+
+.fast-deposit .info_box {
+  background: url("../images/dc-box/infobox.png") no-repeat scroll 0 0 transparent;
+  display: none;
+  height: 134px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  width: 225px;
+  z-index: 10000;
+}
+
+.fast-deposit .card_back {
+  background: url("../images/dc-box/backcard.png") no-repeat scroll 0 0 transparent;
+  height: 52px;
+  left: 80px;
+  position: relative;
+  top: 10px;
+  width: 81px;
+}
+
+.fast-deposit .icon_questionmark {
+  background: url("../images/dc-box/info.png") no-repeat scroll 0 0 transparent;
+  width: 21px;
+  height: 22px;
+  position: relative;
+  left: 85px;
+  top: -25px;
+}
+
+.fast-deposit .fast-deposit-box,
+.fast-deposit .cashierInput {
+  border: 1px #E7E7E7 solid;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fast-deposit .cashier-predefined-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fast-deposit .amount-other-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fast-deposit .cashier-predefined-amount-other {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #DDD !important;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.fast-deposit .other-amount-field {
+  margin: 5px;
+  width: 63%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  cursor: pointer;
+}
+
+.fast-deposit .cashier-predefined-amount-number {
+  cursor: pointer;
+}
+
+.fast-deposit .cashier-predefined-amount,
+.fast-deposit .cashier-predefined-amount-other {
+  width: 30%;
+}
+
+.fast-deposit__form-area-deposit {
+  margin: 30px 5px;
+}
+
+.fast-deposit .cashierInput {
+  left: initial !important;
+  right: initial !important;
+  top: initial !important;
+  padding: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.fast-deposit .cashierInputLabel {
+  width: 100%;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.fast-deposit .cashierInput {
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.fast-deposit__action-area-btn.positive-action-btn {
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.fast-deposit__action-area-link {
+  text-decoration: underline;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #232323;
+}
+
+.zebra-tbl {
+  margin-top: 10px;
+  width: 97%;
+  margin-left: 5px;
+}
+
+.zebra-tbl .odd {
+  background-color: #CCC !important;
+}
+
+.zebra-tbl .fee-label {
+  text-align: left !important;
+}
+
+.dc-quick-deposit {
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+
+.zebra-header {
+  background: #CCC;
+}
+
+.dc_cv2 {
+  width: 50px !important;
+}
+
+.fast-deposit .cashier-predefined-amount-number {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.fast-deposit .amount-other-container {
+  position: relative;
+}
+
+.fast-deposit .other-amount-currency-symbol {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: grey;
+}

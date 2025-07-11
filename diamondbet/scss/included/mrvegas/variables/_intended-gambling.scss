@@ -1,0 +1,25 @@
+// .intended-gambling .left p
+$intended-gambling-left-p--padding: 0 30px;
+
+//.intended-gambling .right p
+$intended-gambling-right-p--font-size: 16px;
+$intended-gambling-right-p--font-weight: normal;
+$intended-gambling-right-p--color: $neutral-900;
+
+//.intended-gambling h3
+$intended-gambling-h3--font-size: 20px;
+
+// .intended-gambling .ranges .range &.is-checked input::placeholder, &.is-checked input
+$intended-gambling-ranges-range-is-checked-input--color: $black;
+
+// .intended-gambling .ranges .range input[type="radio"]:checked + label
+$intended-gambling-ranges-range-radio-checked-label--color: $black;
+$intended-gambling-ranges-range-radio-checked-label--background: $primary-50;
+$intended-gambling-ranges-range-radio-checked-label--border-color: $primary-600;
+
+//.intended-gambling .ranges .range label
+$intended-gambling-ranges-range-label--background: $white;
+$intended-gambling-ranges-range-label--border: 1px solid #9e9e9e;
+$intended-gambling-ranges-range-label--color: #9e9e9e;
+$intended-gambling-ranges-range-label--border-radius: 5px;
+$intended-gambling-ranges-range-label--font-weight: normal;

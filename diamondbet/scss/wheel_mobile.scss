@@ -1,0 +1,540 @@
+body {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.fix-bar-and-tabs-ios {
+    background-position: right 0 top 35%;
+}
+
+.mobile-jp-container-box{
+    border: #555 1px solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    text-align: center;
+    width: 110px;
+}
+
+.mobile-jp-container-box img{
+    max-width: 100px;
+}
+
+.mobile-jp-amount-txt{
+    font-size: 12px;
+    // /* Do NOT remove this double directive as it is needed for Safari on iOS */
+    font-weight: bolder;
+    font-weight: 1000;
+}
+
+.mobile-jp-name-txt{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mobile-jp-list-container{
+    position: absolute;
+}
+
+.jp-info-text-color{
+    // /* The color looks darker on mobile devices so we make it a bit brighter compared to desktop */
+    color:#fcb245 !important;
+}
+
+.woj-bottom-bar{
+    background: linear-gradient(#555555, #000000);
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    // /* We want to be on top of the overlay */
+    z-index: 999;
+}
+
+.woj-bottom-bar i{
+    margin-left: 26px;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.woj-yellow-bkg{
+    color:#fcb245 !important;
+}
+
+#woj-bottom-bar-icon-container{
+    ///*
+    //   To handle the rounded corners on iPhoneX
+    //   See: https://webkit.org/blog/7929/designing-websites-for-iphone-x/
+    // */
+    padding-left: env(safe-area-inset-left);
+}
+
+.fs-modal-content,
+.modal-content{
+    width: 100%;
+    height: 100%;
+    top: 0% !important;
+    left: 0% !important;
+    border-radius: 0px !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fs-modal-header,
+.modal-header{
+    width: 100%;
+    height: 70px !important;
+    border-radius: 0px !important;
+    text-align: center;
+    line-height: 70px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-modal-body,
+.modal-body {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 130px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: scroll;
+    padding: 5%;
+    box-sizing: border-box;
+
+}
+
+.fs-modal-title,
+.modal-title{
+    line-height: normal !important;
+    padding: 0px !important;
+}
+
+.fs-modal-footer, .modal-footer{
+    height: 60px;
+    margin-bottom: 10px;
+    position: static;
+}
+
+.winning-text-middle{
+    padding: 0;
+}
+
+#scrollUpBackgroundSymbol{
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-profile,
+.btn-affirmative,
+.btn-homepage{
+    cursor: none !important;
+}
+
+.clickable {
+    cursor: none !important;
+}
+
+
+// /* Overlay starts here */
+
+#woj-info-overlay{
+    position: absolute;
+}
+
+#woj-info-jp-info .mobile-jp-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#woj-info-jp-info .mobile-jp-container-box{
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+}
+
+#woj-info-jp-legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woj-info-overlay-close-btn{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+}
+
+.woj-overlay-legends{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.woj-overlay-legend-container{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+}
+
+.woj-overlay-legend-image img{
+    max-width: 100%;
+    align-self: center;
+}
+
+#woj-info-overlay .jp-info-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    width: 45%;
+}
+
+#woj-info-jp-info .mobile-jp-amount-txt{
+    font-size: 1.5em !important;
+}
+
+#woj-info-jp-info .mobile-jp-name-txt{
+    font-size: 1.3em !important;
+}
+
+
+#woj-info-jp-info .mobile-jp-container-box img{
+    max-width: 50%;
+    height: auto;
+    // /* Important to override the Flex cascade that has a default value of "stretch" which we do NOT want */
+    align-self: center;
+}
+
+// /* Overlay ends here */
+
+
+// /* Default landscape rules */
+
+@media screen and (orientation: landscape) {
+    .wheel_offset {
+        display: block;
+    }
+
+    .jackpotModal {
+        background-size: 70% auto;
+    }
+
+    .mobile-jp-list-container{
+        position: static;
+        padding: 3vw 0px 50px 5vw;
+    }
+
+    .mobile-jp-container-box{
+        margin-top: 10px;
+    }
+
+    body::backdrop{
+        background-size: cover !important;
+    }
+
+    // /* Overlay starts here */
+
+    #woj-info-jp-info{
+        width: 45%;
+    }
+
+    .woj-info-overlay-content{
+        display: flex;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    #woj-info-jp-info .mobile-jp-container-box{
+        width: 90%;
+        margin-bottom: 4%;
+        padding: 2%;
+    }
+
+    #woj-info-jp-info .mobile-jp-list{
+        margin-top: 0%;
+        width: 100%;
+    }
+
+    #woj-info-jp-legend{
+        width: 55%;
+    }
+
+    .woj-overlay-legends{
+        margin-top: 0%;
+        justify-content: center;
+        // /* border-left: #555 1px solid; */
+    }
+
+    .woj-overlay-legend-image img{
+        height: 60px;
+        width: auto;
+    }
+
+    .woj-info-overlay-close-btn{
+        top: 2%;
+        right: 1%;
+    }
+
+    #woj-info-jp-info{
+        margin-left: env(safe-area-inset-left);
+    }
+
+    #woj-info-jp-legend{
+        margin-right: env(safe-area-inset-left);
+    }
+
+    // /* Overlay ends here */
+
+    .fs-modal-body,
+    .modal-body {
+        align-items: flex-start;
+    }
+}
+
+.win-container-body img {
+    max-height: 140px !important;
+}
+
+
+@media screen and (orientation: portrait) {
+    body{
+        background-position: right 38% top 0px;
+        background-size: 250%;
+    }
+
+    .jackpotModal {
+        background-size: 90% auto;
+    }
+
+    .mobile-jp-list-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .mobile-jp-container-box{
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .mobile-jp-list-container:first-child{
+        margin-left: 0px !important;
+    }
+
+    .spinButton{
+        transform: scale(1.5);
+    }
+
+    .fs-modal-footer{
+        height: 10% !important;
+    }
+
+    .fs-modal-body,
+    .modal-body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .win-container-body{
+        padding-top: 5% !important;
+        padding-bottom: 5%;
+        width: 100% !important;
+        margin-left: 0%;
+    }
+
+    .winning-text{
+        width: 90% !important;
+    }
+
+    .btn-homepage{
+        margin-left: 5px !important;
+    }
+
+    .modal-image,
+    .modal-image img{
+        width: 100% !important;
+    }
+
+    body::backdrop{
+        background-size: 250%;
+        background-position: right 35% top 0px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+    // /* Overlay starts here */
+
+    #woj-info-jp-info .mobile-jp-container-box{
+        width: 90%;
+    }
+
+    .woj-info-overlay-content{
+        display: block;
+    }
+
+    #woj-info-jp-legend{
+        width: 100%;
+    }
+
+    .woj-overlay-legend-container{
+        width: 29%;
+    }
+
+    #woj-info-jp-info .mobile-jp-list{
+        margin-top: 10%;
+    }
+
+    .woj-overlay-legends{
+        margin-top: 2%;
+    }
+
+    .woj-overlay-legend-image img{
+        min-height: 60px;
+        width: auto;
+    }
+
+    .woj-info-overlay-close-btn{
+        top: 1%;
+        right: 3%;
+    }
+
+    #woj-info-overlay{
+        height: 120% !important;
+    }
+
+    // /* Overlay ends here */
+}
+
+@media screen and (max-width: 350px) and (orientation: portrait) {
+
+    .mobile-jp-container-box{
+        padding: 2px;
+        width: 85px;
+        margin-left: 2px !important;
+    }
+
+    .mobile-jp-amount-txt{
+        font-size: 10px !important;
+    }
+
+    .mobile-jp-container-box img{
+        max-width: 80px;
+    }
+
+    .mobile-jp-name-txt{
+        font-size: 10px !important;
+    }
+}
+
+///*
+//Small phones
+//Works for:
+//iPhone 5.
+//*/
+
+@media screen and (min-width: 351px ) and (max-width: 399px) and (orientation: portrait) {
+
+    .mobile-jp-container-box{
+        padding: 3px;
+        width: 100px;
+    }
+
+    .mobile-jp-amount-txt{
+        font-size: 10px !important;
+    }
+
+    .mobile-jp-container-box img{
+        max-width: 80px;
+    }
+}
+
+// /* iPhone 6/7/8 plus for instance */
+
+@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) {
+
+    .mobile-jp-amount-txt{
+        font-size: 12px !important;
+    }
+
+    .mobile-jp-container-box img{
+        max-width: 110px;
+    }
+}
+
+// /* iPads and tablets */
+
+@media screen and (min-width: 750px)  and (orientation: portrait) {
+
+    body{
+        background-position: right 19% top 0px;
+        background-size: 150%;
+    }
+
+    .mobile-jp-container-box{
+        width: 210px;
+        margin-left: 10px;
+    }
+
+    .mobile-jp-amount-txt{
+        font-size: 20px !important;
+    }
+
+    .mobile-jp-container-box img{
+        max-width: 200px;
+    }
+
+    .mobile-jp-name-txt{
+        font-size: 16px;
+    }
+}
+
+
+// /* iPads and tablets in landscape */
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+    body {
+        background-position: right 14% top 0px;
+        background-size: 110%;
+    }
+
+    .mobile-jp-container-box{
+        width: 210px;
+    }
+
+    .mobile-jp-amount-txt{
+        font-size: 20px !important;
+    }
+
+    .mobile-jp-container-box img{
+        max-width: 200px;
+    }
+
+    .mobile-jp-name-txt{
+        font-size: 16px;
+    }
+
+    .fs-modal-body,
+    .modal-body{
+        align-items: center;
+    }
+}
+

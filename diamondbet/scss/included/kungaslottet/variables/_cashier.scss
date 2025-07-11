@@ -1,0 +1,108 @@
+// cashier.scss variables
+
+// #cashierDepositWithdraw
+$cashier-deposit-withdraw--background: $mobile-background;
+
+// .cashierHeader
+$cashier-header--background-color: $dark-blue-200;
+$cashier-header--height: 30px;
+$cashier-header--color: $primary-500;
+$cashier-header--margin-top: 0px;
+
+// .cashierHeader .closed
+$cashier-header-closed--background: url('#{$brand-image-path}/slide_close_icon.png') no-repeat;
+
+// .cashierHeader .open
+$cashier-header-open--background: url('#{$brand-image-path}/slide_down_icon.png') no-repeat;
+
+// .cashierHeader h3
+$cashierHeader-h3--padding: 5px;
+
+// .cashierBox .noDepBox
+$cashier-box-no-dep-box--border: none;
+$cashier-box-no-dep-box--margin-bottom: 16px;
+
+// .infoArea
+$info-area--padding: 16px 8px;
+$info-area--font-size: 12px;
+
+// .infoArea ul
+$info-area-ul--width: 110px;
+$info-area--padding-left: 5px;
+
+// .infoImage
+$info-image--width: 160px;
+
+// .infoText
+$info-text--width: 520px;
+
+// .cashierBoxInsert
+$cashier-box-insert--padding: 20px;
+$cashier-box-insert--border-top: 2px $dark-blue-200 solid;
+
+// .cashierDefaultInput
+$cashier-default-input--border-color: #18723C;
+
+// .cashierDefaultInput:focus
+$cashier-default-input-focus--border-color: #18723C;
+
+// .cashierInput
+$cashier-input--border-color: $light-grey;
+$cashier-input--height: 30px;
+$cashier-input--width: 200px;
+$cashier-input--border-radius: 5px;
+$cashier-input--box-shadow: none;
+$cashier-input--padding-left: 5px;
+$cashier-input--padding-right: 5px;
+$cashier-input--position: relative;
+
+// .cashierInput:focus
+$cashier-input-focus--border-color: $primary-500;
+
+// .cashierSelect__container::after
+$cashierSelect-container-after--right: 10px;
+$cashierSelect-container-after--top: 50%;
+
+// .cashierSelect
+$cashier-select--border-color: $light-grey;
+$cashier-select--width: 210px;
+$cashier-select--position: relative;
+$cashier-select--left: 185px;
+$cashier-select--top: -25px;
+
+// .cashierSelect:focus
+$cashier-select-focus--border-color: $primary-500;
+
+// .cashierDefaultBtnInner
+$cashier-default-btn-inner--background: url('#{$brand-image-path}/account/transfer_btn_bg_yellow.png') repeat-x;
+
+// .cashierBtnInner
+$cashier-btn-inner--height: 43px;
+$cashier-btn-inner--width: 150px;
+$cashier-btn-inner--background: $deposit-gradient;
+
+// .cashierBtnInner h4
+$cashier-btn-inner-h4--font-size: 14px;
+$cashier-btn-inner-h4--margin-top: 8px;
+$cashier-btn-inner-h4--text-shadow: none;
+
+// .info_box
+$info-box--background: url('#{$brand-image-path}/dc-box/infobox.png') no-repeat scroll 0 0 transparent;
+
+// .card_back
+$card-back--background: url('#{$brand-image-path}/dc-box/backcard.png') no-repeat scroll 0 0 transparent;
+
+// .icon_questionmark
+$icon-questionmark--background: url('#{$brand-image-path}/dc-box/info.png') no-repeat scroll 0 0 transparent;
+
+// .cashierBoxInsertCol
+$cashier-box-insert-col--width: 440px;
+
+// .ulBig
+$ul-big--color: $white;
+
+// .cashierBoxInsert label.error
+$cashier-box-insert-label-error--margin: -20px 0px 25px 185px;
+
+// .bank-other-account-btn
+$bank-other-account-btn--top: -5px;

@@ -1,0 +1,290 @@
+.cashier-predefined-amount {
+  background-color: #FFF;
+  border-radius: 4px;
+  color: #888;
+  padding: 3px 0px 3px 0px;
+  margin: 5px 5px 5px 5px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gradient-text-default {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#amount_smsbill, #amount_siru {
+  margin-left: -9999px;
+}
+
+.cashier-fee-list {
+  padding: 5px 10px 5px 10px;
+  margin: 0px;
+}
+
+.cashier-fee-list li, .cashier-fee-list-right li {
+  list-style: none;
+  padding-top: 5px;
+  border-bottom: 1px #555 solid;
+}
+
+.cashier-fee-list li:last-child {
+  border-bottom: none !important;
+}
+
+#smsbillBox .cashier-expense,
+#siruBox .cashier-expense,
+#smsvoucherBox .cashier-expense {
+  margin-right: 10px;
+}
+
+.cashier-fee-list-right {
+  padding-left: 10px;
+  margin-top: 0;
+}
+
+.banks-selector {
+  width: 100%;
+  overflow: hidden;
+}
+
+.b-selector {
+  float: left;
+  position: relative;
+  display: block;
+  width: 81px;
+  height: 35px;
+  margin: 0 7px 10px 0;
+  cursor: pointer;
+}
+
+.b-selector input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.b-selector.bank200 span {
+  background-image: url(/file_uploads/alandsbanken-logo-small.png);
+}
+
+.b-selector.bank231 span {
+  background-image: url(/file_uploads/poppankki-logo-small.png);
+}
+
+.b-selector.bank232 span {
+  background-image: url(/file_uploads/aktia-logo-small.png);
+}
+
+.b-selector.bank233 span {
+  background-image: url(/file_uploads/saastopankki-logo-small.png);
+}
+
+.b-selector.bank208 span {
+  background-image: url(/file_uploads/skandia-logo-small.png);
+}
+
+.b-selector.bank234 span {
+  background-image: url(/file_uploads/s-pankki-small.png);
+}
+
+.b-selector.bank265 span {
+  background-image: url(/file_uploads/sparbanken-logo-small.png);
+}
+
+.b-selector.bank209 span {
+  background-image: url(/file_uploads/swedbank-small.png);
+}
+
+.b-selector.bank207 span {
+  background-image: url(/file_uploads/seb-small.png);
+}
+
+.b-selector.bank260 span {
+  background-image: url(/file_uploads/lansforsakringar-logo-small.png);
+}
+
+.b-selector.bank205 span {
+  background-image: url(/file_uploads/handelsbanken-small.png);
+}
+
+.b-selector.bank216 span {
+  background-image: url(/file_uploads/handelsbanken-small.png);
+}
+
+.b-selector.bank211 span {
+  background-image: url(/file_uploads/nordea-small.png);
+}
+
+.b-selector.bank206 span {
+  background-image: url(/file_uploads/nordea-small.png);
+}
+
+.b-selector.bank204 span {
+  background-image: url(/file_uploads/danske-bank-small.png);
+}
+
+.b-selector.bank213 span {
+  background-image: url(/file_uploads/op-pohjola-small.png);
+}
+
+.b-selector.bank600 span {
+  background-image: url(/file_uploads/ideal-small.png);
+}
+
+.b-selector.bank235 span {
+  background-image: url(/file_uploads/omasp-small.png);
+}
+
+.b-selector.bankTrustly span {
+  background-image: url(/file_uploads/trustly-small.png);
+}
+
+.b-selector.bankGiropay span {
+  background-image: url(/file_uploads/giropay-small.png);
+}
+
+.b-selector.bankIdeal span {
+  background-image: url(/file_uploads/ideal-small.png);
+}
+
+.b-selector.bankSofort span {
+  background-image: url(/file_uploads/sofort-small.png);
+}
+
+.b-selector.bankEuteller span {
+  background-image: url(/file_uploads/euteller-small.png);
+}
+
+.b-selector.bankInstadebit span {
+  background-image: url(/file_uploads/instadebit-small.png);
+}
+
+.b-selector.bankUms span {
+  background-image: url(/file_uploads/ums-small.png);
+}
+
+.b-selector.bankPoli span {
+  background-image: url(/file_uploads/poli-small.png);
+}
+
+.b-selector.bankCitadel span {
+  background-image: url(/file_uploads/citadel-small.png);
+}
+
+.b-selector.bankInterac span {
+  background-image: url(/file_uploads/interac_small.png);
+}
+
+.b-selector input:active + span, .b-selector input:active + span {
+  opacity: 0.7;
+}
+
+.b-selector input:checked + span, .b-selector input:checked + span {
+  -webkit-box-shadow: inset #60CC02 0px 0px 2px 3px;
+  box-shadow: inset #60CC02 0px 0px 2px 3px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+
+.b-selector div {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  width: 81px;
+  height: 35px;
+}
+
+.b-selector span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  width: 81px;
+  height: 35px;
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.forced-amounts-table {
+  margin-bottom: 30px;
+}
+
+.cashierBtnOuter {
+  margin-top: 10px;
+}
+
+.standard-quick-deposit {
+  margin-bottom: 10px !important;
+}
+
+.show-bonus-code-txt-mobile {
+  text-align: center;
+}
+
+.cashier-make-normal-wrapper {
+  padding-bottom: 10px;
+}
+
+#wrapper > .container-holder > p {
+  padding: 12px 8px 0px 8px;
+}
+
+.show-payment-msg .mbox-msg-container {
+  height: calc(100dvh - 40px) !important;
+}
+
+.cashier-help-table {
+  position: fixed;
+  top: 475px;
+  left: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: static;
+}
+.cashier-help-table tbody tr td:first-child > p {
+  margin-left: 48px;
+}
+
+.cashier-help-table h3 {
+  color: #FFF;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cashier-help-table td {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.privacy-confirmation-content {
+  border: none;
+  border-radius: 5px;
+  padding: 16px 16px;
+  background-color: #1A1814;
+  padding: 16px 20px;
+}
+.privacy-confirmation-content .faq-right-image {
+  margin-right: 20px;
+}
+
+.privacy-confirmation-container {
+  padding: 0 10px 10px 10px;
+}
+.privacy-confirmation-container .cashier-help-table {
+  position: static;
+  border-spacing: 20px 0;
+}

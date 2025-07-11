@@ -1,0 +1,915 @@
+body {
+  min-width: 100vw;
+}
+
+body .ui-menu, .sourceoffunds-box-inside-iframe .ui-menu {
+  border: 1px solid #D1D1D1;
+  background: #FFF;
+  color: #AFAFAF;
+  width: 314px;
+  height: 300px;
+  padding-left: 0;
+  z-index: 10000;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
+}
+body .ui-menu-item, .sourceoffunds-box-inside-iframe .ui-menu-item {
+  list-style-type: none;
+  color: #AFAFAF;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body .ui-menu-item-wrapper, .sourceoffunds-box-inside-iframe .ui-menu-item-wrapper {
+  padding: 8px 16px;
+}
+body .ui-state-active, .sourceoffunds-box-inside-iframe .ui-state-active {
+  color: #9A9A9A;
+}
+
+#sourceoffundsbox-wrapper, .source_of_funds_dialog {
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-header, .source_of_funds_dialog .sourceoffundsbox-header {
+  background-color: #18723C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 48px;
+  padding: 0 24px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-header #chat-registration, .source_of_funds_dialog .sourceoffundsbox-header #chat-registration {
+  width: 28px;
+  height: 28px;
+  background-position: initial;
+  margin-left: initial;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-header .sourceoffundsbox-header-center, .source_of_funds_dialog .sourceoffundsbox-header .sourceoffundsbox-header-center {
+  width: 700px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-header .sourceoffundsbox-header-right, .source_of_funds_dialog .sourceoffundsbox-header .sourceoffundsbox-header-right {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-header #close-sourceoffundsbox, .source_of_funds_dialog .sourceoffundsbox-header #close-sourceoffundsbox {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#sourceoffundsbox-wrapper .registration-container, .source_of_funds_dialog .registration-container {
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 15px;
+  width: 100%;
+  height: calc(100% - 62px);
+  scrollbar-width: thin;
+  color: #232323;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .registration-container, .source_of_funds_dialog .registration-container {
+    overflow: unset;
+    overflow-y: auto;
+  }
+}
+#sourceoffundsbox-wrapper .registration-container input, #sourceoffundsbox-wrapper .registration-container select, .source_of_funds_dialog .registration-container input, .source_of_funds_dialog .registration-container select {
+  padding-left: 16px;
+  font-size: 15px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #9A9A9A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 8px;
+}
+#sourceoffundsbox-wrapper .registration-container input:focus, #sourceoffundsbox-wrapper .registration-container select:focus, .source_of_funds_dialog .registration-container input:focus, .source_of_funds_dialog .registration-container select:focus {
+  outline: none;
+  outline-offset: 0;
+  border: 1px solid #9A9A9A;
+  border-radius: 0;
+}
+#sourceoffundsbox-wrapper .registration-container input::-webkit-input-placeholder, #sourceoffundsbox-wrapper .registration-container select::-webkit-input-placeholder, .source_of_funds_dialog .registration-container input::-webkit-input-placeholder, .source_of_funds_dialog .registration-container select::-webkit-input-placeholder {
+  color: #AFAFAF;
+}
+#sourceoffundsbox-wrapper .registration-container input::placeholder, #sourceoffundsbox-wrapper .registration-container input::-webkit-input-placeholder, #sourceoffundsbox-wrapper .registration-container input:-moz-placeholder, #sourceoffundsbox-wrapper .registration-container input::-moz-placeholder, #sourceoffundsbox-wrapper .registration-container input:-ms-input-placeholder, #sourceoffundsbox-wrapper .registration-container select::placeholder, #sourceoffundsbox-wrapper .registration-container select::-webkit-input-placeholder, #sourceoffundsbox-wrapper .registration-container select:-moz-placeholder, #sourceoffundsbox-wrapper .registration-container select::-moz-placeholder, #sourceoffundsbox-wrapper .registration-container select:-ms-input-placeholder, .source_of_funds_dialog .registration-container input::placeholder, .source_of_funds_dialog .registration-container input::-webkit-input-placeholder, .source_of_funds_dialog .registration-container input:-moz-placeholder, .source_of_funds_dialog .registration-container input::-moz-placeholder, .source_of_funds_dialog .registration-container input:-ms-input-placeholder, .source_of_funds_dialog .registration-container select::placeholder, .source_of_funds_dialog .registration-container select::-webkit-input-placeholder, .source_of_funds_dialog .registration-container select:-moz-placeholder, .source_of_funds_dialog .registration-container select::-moz-placeholder, .source_of_funds_dialog .registration-container select:-ms-input-placeholder {
+  color: #AFAFAF;
+}
+#sourceoffundsbox-wrapper .registration-container p, .source_of_funds_dialog .registration-container p {
+  color: #232323;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#sourceoffundsbox-wrapper .registration-content, .source_of_funds_dialog .registration-content {
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .registration-content, .source_of_funds_dialog .registration-content {
+    padding: 32px 24px;
+    float: left;
+  }
+}
+#sourceoffundsbox-wrapper .registration-content .sourceoffundsbox-footer-left, .source_of_funds_dialog .registration-content .sourceoffundsbox-footer-left {
+  margin-top: 20px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .registration-content .sourceoffundsbox-footer-left, .source_of_funds_dialog .registration-content .sourceoffundsbox-footer-left {
+    text-align: right;
+    float: left;
+  }
+}
+#sourceoffundsbox-wrapper .registration-content .sourceoffundsbox-footer-right, .source_of_funds_dialog .registration-content .sourceoffundsbox-footer-right {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .registration-content .sourceoffundsbox-footer-right, .source_of_funds_dialog .registration-content .sourceoffundsbox-footer-right {
+    text-align: right;
+    float: right;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-top, .source_of_funds_dialog .sourceoffundsbox-top {
+  float: right;
+  font-weight: 700;
+  font-style: normal;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox-content, .source_of_funds_dialog .sourceoffundsbox-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 24px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .sourceoffundsbox-content-left, .source_of_funds_dialog .sourceoffundsbox-content .sourceoffundsbox-content-left {
+  width: 100%;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .sourceoffundsbox-content-right, .source_of_funds_dialog .sourceoffundsbox-content .sourceoffundsbox-content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 161px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .sourceoffundsbox-content-right .register-button-emptydob, .source_of_funds_dialog .sourceoffundsbox-content .sourceoffundsbox-content-right .register-button-emptydob {
+  background-color: #DD9E37;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #FFF;
+  width: 360px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .formfield_note, .source_of_funds_dialog .sourceoffundsbox-content .formfield_note {
+  float: right;
+  font-size: 12px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .formfield_note-2, .source_of_funds_dialog .sourceoffundsbox-content .formfield_note-2 {
+  float: none;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .formfield_note-4, .source_of_funds_dialog .sourceoffundsbox-content .formfield_note-4 {
+  font-style: italic;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .input-label-1, .source_of_funds_dialog .sourceoffundsbox-content .input-label-1 {
+  width: 30px;
+  display: inline-block;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .input-label-2, .source_of_funds_dialog .sourceoffundsbox-content .input-label-2 {
+  display: inline-block;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .input-label-3, .source_of_funds_dialog .sourceoffundsbox-content .input-label-3 {
+  width: 100px;
+  display: inline-block;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .submit_source_button, .source_of_funds_dialog .sourceoffundsbox-content .submit_source_button {
+  background-color: #18723C;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #FFF;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #no_income_explanation, #sourceoffundsbox-wrapper .sourceoffundsbox-content #savings_explanation, .source_of_funds_dialog .sourceoffundsbox-content #no_income_explanation, .source_of_funds_dialog .sourceoffundsbox-content #savings_explanation {
+  width: 420px;
+  height: 115px;
+  border-color: #D0D0D0;
+  border-style: solid;
+  border-width: 1px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_day, .source_of_funds_dialog .sourceoffundsbox-content #submission_day {
+  min-width: 66px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_month, .source_of_funds_dialog .sourceoffundsbox-content #submission_month {
+  min-width: 150px;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_month, .source_of_funds_dialog .sourceoffundsbox-content #submission_month {
+    min-width: 169px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_year, .source_of_funds_dialog .sourceoffundsbox-content #submission_year {
+  min-width: 86px;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_year, .source_of_funds_dialog .sourceoffundsbox-content #submission_year {
+    min-width: 169px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_day, #sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_month, #sourceoffundsbox-wrapper .sourceoffundsbox-content #submission_year, .source_of_funds_dialog .sourceoffundsbox-content #submission_day, .source_of_funds_dialog .sourceoffundsbox-content #submission_month, .source_of_funds_dialog .sourceoffundsbox-content #submission_year {
+  border: 1px solid #9A9A9A;
+  height: 48px;
+  padding: 0 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #funding_methods.checkbox-group.error, #sourceoffundsbox-wrapper .sourceoffundsbox-content #annual_income.checkbox-group.error, .source_of_funds_dialog .sourceoffundsbox-content #funding_methods.checkbox-group.error, .source_of_funds_dialog .sourceoffundsbox-content #annual_income.checkbox-group.error {
+  border: none !important;
+  background-color: initial !important;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #date-container .styled-select, .source_of_funds_dialog .sourceoffundsbox-content #date-container .styled-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .styled-select, .source_of_funds_dialog .sourceoffundsbox-content .styled-select {
+  width: 100%;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content input:focus, #sourceoffundsbox-wrapper .sourceoffundsbox-content select:focus, .source_of_funds_dialog .sourceoffundsbox-content input:focus, .source_of_funds_dialog .sourceoffundsbox-content select:focus {
+  outline: 1px solid #9A9A9A;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .input-sourceoffunds-2, .source_of_funds_dialog .sourceoffundsbox-content .input-sourceoffunds-2 {
+  margin-top: 8px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .input-sourceoffunds-1, #sourceoffundsbox-wrapper .sourceoffundsbox-content .input-sourceoffunds-2, .source_of_funds_dialog .sourceoffundsbox-content .input-sourceoffunds-1, .source_of_funds_dialog .sourceoffundsbox-content .input-sourceoffunds-2 {
+  height: 48px;
+  color: #ADADAD;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content input[type=checkbox]:not(:checked), #sourceoffundsbox-wrapper .sourceoffundsbox-content input[type=radio]:not(:checked), .source_of_funds_dialog .sourceoffundsbox-content input[type=checkbox]:not(:checked), .source_of_funds_dialog .sourceoffundsbox-content input[type=radio]:not(:checked) {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px !important;
+  height: 18px;
+  border: 1px solid #9A9A9A;
+  border-radius: 5px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content input[type=checkbox]:checked, #sourceoffundsbox-wrapper .sourceoffundsbox-content input[type=radio]:checked, .source_of_funds_dialog .sourceoffundsbox-content input[type=checkbox]:checked, .source_of_funds_dialog .sourceoffundsbox-content input[type=radio]:checked {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content input[type=radio], .source_of_funds_dialog .sourceoffundsbox-content input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50% !important;
+  background-clip: content-box;
+  border: 1px solid #FFF;
+  background-color: #FFF;
+  margin-bottom: 3px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content input[type=radio]:checked, .source_of_funds_dialog .sourceoffundsbox-content input[type=radio]:checked {
+  background-color: #9A9A9A;
+  padding: 3px;
+  border: 1px solid #9A9A9A;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #no_income_explanation, .source_of_funds_dialog .sourceoffundsbox-content #no_income_explanation {
+  width: 100%;
+  height: 166px;
+  border-color: #9A9A9A;
+  outline: none;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content textarea:focus, .source_of_funds_dialog .sourceoffundsbox-content textarea:focus {
+  border: 2px solid #9A9A9A;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #your_savings, .source_of_funds_dialog .sourceoffundsbox-content #your_savings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 14px;
+  margin-top: 12px;
+  font-size: 15px;
+  gap: 18px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .radio-1, .source_of_funds_dialog .sourceoffundsbox-content .radio-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #submit_source_of_funds_form, .source_of_funds_dialog .sourceoffundsbox-content #submit_source_of_funds_form {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  padding: 1px 0;
+  margin-top: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #funding_methods, .source_of_funds_dialog .sourceoffundsbox-content #funding_methods {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 14px 24px;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox-content #funding_methods, .source_of_funds_dialog .sourceoffundsbox-content #funding_methods {
+    grid-template-columns: repeat(3, auto);
+    gap: 14px 13px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #annual_income, .source_of_funds_dialog .sourceoffundsbox-content #annual_income {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 14px;
+  font-size: 15px;
+  margin-top: 12px;
+  gap: 18px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #annual_income input[type=radio]:checked:after,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #your_savings input[type=radio]:checked:after, .source_of_funds_dialog .sourceoffundsbox-content #annual_income input[type=radio]:checked:after,
+.source_of_funds_dialog .sourceoffundsbox-content #your_savings input[type=radio]:checked:after {
+  background: none;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .checkbox-float-left, .source_of_funds_dialog .sourceoffundsbox-content .checkbox-float-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+  margin-right: 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .checkbox-float-left input:focus, .source_of_funds_dialog .sourceoffundsbox-content .checkbox-float-left input:focus {
+  border: 1px solid #9A9A9A;
+  outline: none;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .other-optional span, .source_of_funds_dialog .sourceoffundsbox-content .other-optional span {
+  font-size: 12px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content #date-container select:focus, .source_of_funds_dialog .sourceoffundsbox-content #date-container select:focus {
+  border: 2px solid #9A9A9A;
+  outline: none;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.password-container,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.name-container,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.other-optional,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.occupation-input,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.industry-container,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.job-title, .source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.password-container,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.name-container,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.other-optional,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.occupation-input,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.industry-container,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.job-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.occupation-input,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.industry-container,
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .account-holder-field.job-title, .source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.occupation-input,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.industry-container,
+.source_of_funds_dialog .sourceoffundsbox-content .account-holder-field.job-title {
+  margin-top: 12px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .job-title .select-wrapper, .source_of_funds_dialog .sourceoffundsbox-content .job-title .select-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-content .job-title .select-wrapper::after, .source_of_funds_dialog .sourceoffundsbox-content .job-title .select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 4px;
+  display: block;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  background-image: url(/diamondbet/images/select-arrow.svg);
+  background-repeat: no-repeat;
+}
+#sourceoffundsbox-wrapper .formfield_note, .source_of_funds_dialog .formfield_note {
+  margin: 6px 0 6px 0;
+}
+#sourceoffundsbox-wrapper .formfield_margin, .source_of_funds_dialog .formfield_margin {
+  margin-top: 15px;
+}
+#sourceoffundsbox-wrapper .registration-container .styled-select::after, .source_of_funds_dialog .registration-container .styled-select::after {
+  line-height: 42px;
+  width: 24px;
+}
+#sourceoffundsbox-wrapper #submission_day:focus, #sourceoffundsbox-wrapper #submission_month:focus, #sourceoffundsbox-wrapper #submission_year:focus, .source_of_funds_dialog #submission_day:focus, .source_of_funds_dialog #submission_month:focus, .source_of_funds_dialog #submission_year:focus {
+  border: 2px solid #9A9A9A;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .no-password-field, .source_of_funds_dialog .no-password-field {
+    margin-top: 100px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__header, .source_of_funds_dialog .sourceoffundsbox__header {
+  width: 100%;
+  margin: 12px 0 24px 0;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox__header, .source_of_funds_dialog .sourceoffundsbox__header {
+    margin-right: 20px;
+    margin: 8px 0 24px 0;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__declare, .source_of_funds_dialog .sourceoffundsbox__declare {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox__declare, .source_of_funds_dialog .sourceoffundsbox__declare {
+    margin-bottom: 12px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__declaration, .source_of_funds_dialog .sourceoffundsbox__declaration {
+  margin: 18px 0 12px 0;
+  width: auto;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__signature, .source_of_funds_dialog .sourceoffundsbox__signature {
+  margin: 15px 20px 30px 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__legit-text, .source_of_funds_dialog .sourceoffundsbox__legit-text {
+  margin: 24px 0 12px 0 !important;
+  width: 100% !important;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__declare-text, .source_of_funds_dialog .sourceoffundsbox__declare-text {
+  margin-bottom: 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__signature-text, .source_of_funds_dialog .sourceoffundsbox__signature-text {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  padding: 24px 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__signature-text p, .source_of_funds_dialog .sourceoffundsbox__signature-text p {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__password-text, .source_of_funds_dialog .sourceoffundsbox__password-text {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  line-height: normal;
+  margin-top: 6px;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox__password-text, .source_of_funds_dialog .sourceoffundsbox__password-text {
+    margin: 6px 0;
+    height: 18px;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__no-income-text, .source_of_funds_dialog .sourceoffundsbox__no-income-text {
+  margin: 24px 0 8px 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__income-title, .source_of_funds_dialog .sourceoffundsbox__income-title {
+  font-size: 15px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox__income-title, .source_of_funds_dialog .sourceoffundsbox__income-title {
+    margin: 0;
+  }
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__income-title p, .source_of_funds_dialog .sourceoffundsbox__income-title p {
+  margin: 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__income-title span, .source_of_funds_dialog .sourceoffundsbox__income-title span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__other-income-title, .source_of_funds_dialog .sourceoffundsbox__other-income-title {
+  margin-top: 24px;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__other-income-title p, .source_of_funds_dialog .sourceoffundsbox__other-income-title p {
+  margin: 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__other-income-title span, .source_of_funds_dialog .sourceoffundsbox__other-income-title span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__no_income_text_area, .source_of_funds_dialog .sourceoffundsbox__no_income_text_area {
+  width: 100%;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox__no_income_text_area label, .source_of_funds_dialog .sourceoffundsbox__no_income_text_area label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#sourceoffundsbox-wrapper .sourceoffundsbox-footer-right, #sourceoffundsbox-wrapper .sourceoffundsbox-footer-left, .source_of_funds_dialog .sourceoffundsbox-footer-right, .source_of_funds_dialog .sourceoffundsbox-footer-left {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper .sourceoffundsbox-footer-right, #sourceoffundsbox-wrapper .sourceoffundsbox-footer-left, .source_of_funds_dialog .sourceoffundsbox-footer-right, .source_of_funds_dialog .sourceoffundsbox-footer-left {
+    margin-top: 24px;
+  }
+}
+#sourceoffundsbox-wrapper .optional-text, .source_of_funds_dialog .optional-text {
+  margin: 0 0 12px 0 !important;
+}
+#sourceoffundsbox-wrapper .account-holder-field, .source_of_funds_dialog .account-holder-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sourceoffundsbox-wrapper #date-container, .source_of_funds_dialog #date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  #sourceoffundsbox-wrapper #date-container, .source_of_funds_dialog #date-container {
+    margin: 12px 0 0 0;
+  }
+}
+#sourceoffundsbox-wrapper #date-container label, .source_of_funds_dialog #date-container label {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+#sourceoffundsbox-wrapper #date-container select, .source_of_funds_dialog #date-container select {
+  color: #ADADAD;
+}
+#sourceoffundsbox-wrapper #address, #sourceoffundsbox-wrapper #password, .source_of_funds_dialog #address, .source_of_funds_dialog #password {
+  background-image: none;
+}
+
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw !important;
+  height: 100%;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-header {
+  position: fixed;
+  top: 0 !important;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 58px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1000;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-header-center-mobile {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-top {
+  font-size: 15px;
+  margin-right: 0;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .registration-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 74px;
+  padding-bottom: 100px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .registration-container-mobile {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .registration-container-mobile p {
+  margin: 8px 0 20px 0;
+  width: 100%;
+  color: #232323;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content #annual_income input[type=radio]:checked:after, #sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content #your_savings input[type=radio]:checked:after {
+  background: none;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-block-1 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-label-1 {
+  width: 10%;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-sourceoffunds-1, #sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-sourceoffunds-2 {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #9A9A9A;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-block-2 {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content #funding_methods {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .pocket-money {
+  width: auto;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-block-3 {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-label-2 {
+  width: 100%;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .other-optional, #sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .occupation {
+  position: static;
+  padding-top: 0;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .other-optional span {
+  font-size: 12px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .no-income {
+  margin: 30px 0 8px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .optional {
+  margin: 8px 4px;
+  font-size: 12px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content #no_income_explanation {
+  border-color: #9A9A9A;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-name-label {
+  width: 18%;
+  padding-top: 0;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .input-name {
+  width: 73%;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content #date-container label {
+  width: 100%;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content #date-title {
+  width: 18%;
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .account-password {
+  text-align: right;
+  margin: 30px 30px 0;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .styled-select select option {
+  font-size: 16px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-content .sourceoffundsbox__declaration {
+  margin: 24px 0;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .account-holder-field.password-container {
+  margin-top: 12px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile #errorZone {
+  margin-left: 25px;
+  font-size: 20px;
+  line-height: 30px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox__legit-text {
+  margin: 24px 0 12px 0 !important;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox__signature-text {
+  font-size: 15px;
+}
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-footer-right,
+#sourceoffundsbox-wrapper.sourceoffundsbox-wrapper-mobile .sourceoffundsbox-footer-left {
+  margin: 16px 0;
+}
+
+#proofofwealth-popup-wrapper {
+  background: #FFF !important;
+  width: 669px;
+  min-height: 700px;
+}
+
+#proofofwealth-popup-wrapper-mobile {
+  background: #FFF !important;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.proofofwealth-popup-top {
+  float: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.proofofwealth-popup-header {
+  background-color: #18723C;
+  height: 62px;
+}
+
+.proofofwealth-popup-header-left {
+  width: 100px;
+  height: 62px;
+  float: left;
+}
+
+.proofofwealth-popup-header-center {
+  width: 400px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.proofofwealth-popup-header-right {
+  width: 100px;
+  height: 62px;
+  float: right;
+}
+.proofofwealth-popup-header-right .icon-vs-close {
+  color: #FFF;
+}
+
+#close-proofofwealth-popup {
+  height: 30px;
+  cursor: pointer;
+  padding: 10px 0 10px 10px;
+  margin: 10px 30px 0 30px;
+  font-size: 22px;
+}
+
+.sow-android p, .sow-android .optional, .sow-android .other-saving, .sow-android .sourceoffundsbox-footer-right, .sow-android .sourceoffundsbox-footer-left {
+  font-size: 15px !important;
+}
+.sow-android #errorZone {
+  font-size: 12px;
+}
+
+.source_of_funds_dialog {
+  width: 969px !important;
+  height: auto;
+}
+.source_of_funds_dialog .source_of_funds_modal_header {
+  background-color: #18723C;
+  height: 62px;
+}
+.source_of_funds_dialog #funding_methods input {
+  margin-top: 0;
+}
+.source_of_funds_dialog .radio-1 input[type=radio] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 4px;
+}
+.source_of_funds_dialog #occupation {
+  width: 100%;
+  border: 1px solid #9A9A9A;
+  padding-left: 16px;
+}

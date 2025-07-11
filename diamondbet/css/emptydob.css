@@ -1,0 +1,68 @@
+#dobbox-wrapper {
+  background: #FFF !important;
+  width: 400px;
+  min-height: 373px;
+}
+
+.dobbox-header {
+  background-color: #DD9E37;
+  height: 62px;
+}
+
+.dobbox-header-left {
+  width: 100px;
+  height: 62px;
+  float: left;
+}
+
+.dobbox-header-center {
+  width: 200px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.dobbox-header-right {
+  width: 100px;
+  height: 62px;
+  float: right;
+}
+
+#close-emptydobbox {
+  height: 30px;
+  cursor: pointer;
+  padding: 10px 0px 10px 10px;
+  margin: 10px 30px 0px 30px;
+  font-size: 22px;
+}
+
+.birthdate-emptydob {
+  width: 113px !important;
+}
+
+.register-button-emptydob {
+  background-color: #DD9E37;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #FFF;
+  width: 360px !important;
+}
+
+.dobbox-content-left h3 {
+  color: #474747;
+}
+
+.dobbox-content-left p {
+  color: #474747;
+}
+
+.register-button-emptydob-mobile {
+  padding-top: 0px !important;
+}

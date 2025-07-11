@@ -1,0 +1,107 @@
+.verification-reminder__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.verification-reminder__body {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.verification-reminder__part {
+  width: 100%;
+}
+
+.verification-reminder__text {
+  text-align: center;
+}
+
+.verification-reminder-timer__circle {
+  position: relative;
+}
+
+.verification-reminder-timer__circle text {
+  font-size: 45px;
+}
+
+.verification-reminder__buttons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.verification-reminder__buttons button {
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+.verification-reminder__text h3 {
+  margin: 5px;
+}
+
+.verification-reminder__text p {
+  margin: 5px;
+}
+
+@media screen and (orientation: landscape) {
+  .verification-reminder__timers {
+    padding: 0 0;
+    height: 75px;
+  }
+
+  .verification-reminder-timer span {
+    margin-top: -20px;
+  }
+
+  .verification-reminder__buttons {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 0;
+  }
+
+  .verification-reminder__buttons button {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .verification-reminder__buttons button:first-child {
+    margin-right: 5px;
+  }
+
+  .verification-reminder__text h3 {
+    padding-top: 15px;
+  }
+
+  .verification-reminder-timer__over-circle {
+    -webkit-transform: rotate(-90deg) scale(0.75, 0.75);
+            transform: rotate(-90deg) scale(0.75, 0.75);
+  }
+
+  .verification-reminder-timer__bag-circle {
+    -webkit-transform: scale(0.75, 0.75);
+            transform: scale(0.75, 0.75);
+  }
+}
+@media screen and (orientation: landscape) {
+  #enhanced-timer .verification-reminder__timers {
+    height: 150px;
+  }
+}
+.game-play-paused-popup .is-android.multibox-content[style],
+.game-play-paused-popup .is-ios.multibox-content[style] {
+  height: -moz-available !important;
+  height: -webkit-fill-available !important;
+  /* autoprefixer: ignore next */
+  height: fill-available !important;
+}
+
+.game-play-paused-popup .is-android .verification-reminder__buttons {
+  bottom: 100px !important;
+}

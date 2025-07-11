@@ -1,0 +1,30 @@
+// input[type="file"]::file-selector-button
+$document-input-file-type--border-color: $primary-400;
+
+// .document-status
+$document-status--color: $neutral-900;
+
+// .document h3
+$document-h3--color: $primary-500;
+
+// .choose-file-container > span
+$choose-file-container-span--font-weight: 400;
+$choose-file-container-span--font-size: 16px;
+
+// .choose-file-field
+$choose-file-field--color: $button-primary-dark;
+
+// .add-file-field
+$document-add-file-field--background: $button-primary-dark;
+$document-add-file-field--border: none;
+
+// .account-documents-holder
+$account-documents-holder--border: 1px solid $neutral-800;
+$account-documents-holder--background-color: $white;
+$account-documents-holder--color: $neutral-900;
+
+// .document-status-section .upload-instructions-headline
+$document-status-section-upload-instructions-headline--color: $neutral-700;
+
+// .document-status .document-status-info
+$document-status-document-status-info--color: $neutral-700;

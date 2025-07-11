@@ -1,0 +1,23 @@
+// Generic name since variable is to be used in multiple classes,
+// otherwise use naming convention detailed in https://wikijs.videoslots.com/en/home/development/general-processes/SASS-based-branding
+$tournament-brand--color: #18723C;
+
+// .right-fixed
+$right-fixed--background-color: #922;
+$right-fixed--border-radius: 0px 0px 4px 4px;
+$right-fixed--border: solid 1px #c00;
+$right-fixed--text-shadow: 1px 1px 1px $black;
+
+// .mp-activity-t-right > span
+$mp-activity-t-right-span--color: #ccc;
+$mp-activity-t-right-span--font-size: 13px;
+
+// .mp-activity-t-name
+$mp-activity-t-name--color: #eee;
+$mp-activity-t-name--font-size: 16px;
+
+// .mp-activity-btn
+$mp-activity-btn--background: url("/diamondbet/images/mrvegas/tournament/playbtn.png");
+
+// .mp-activity-view-link
+$mp-activity-view-link--color: #ff5555;

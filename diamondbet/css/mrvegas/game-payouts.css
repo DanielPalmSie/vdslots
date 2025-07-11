@@ -1,0 +1,29 @@
+.gch-left {
+  width: 170px;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+
+#search_payout {
+  width: 170px;
+  border: none;
+  height: 25px;
+  color: #555;
+  padding-left: 8px;
+  margin-left: 1px;
+}
+
+.gch-right {
+  float: left;
+  margin-left: 15px;
+  max-width: 750px;
+}
+
+.gch-right-top .gch-txt {
+  margin-left: 14px;
+}
+
+.gch-payout-top2 .gch-item {
+  float: left;
+  margin-left: 8px;
+}

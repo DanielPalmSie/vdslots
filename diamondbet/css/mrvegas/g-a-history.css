@@ -1,0 +1,509 @@
+@charset "UTF-8";
+.g-a-container {
+  margin: 5px 6px;
+  clear: both;
+  overflow: auto;
+}
+
+.g-a-btn {
+  font: 15px Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  height: 19px;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  background: #18723C;
+  background: -webkit-gradient(linear, left top, left bottom, from(#18723C), to(#18723C));
+  background: linear-gradient(to bottom, #18723C 0%, #18723C 100%);
+}
+
+.g-a-btn:hover {
+  background: #18723C;
+  background: -webkit-gradient(linear, left top, left bottom, from(#18723C), to(#18723C));
+  background: linear-gradient(to bottom, #18723C 0%, #18723C 100%);
+}
+
+.g-a-btn-search.icon-vs-search {
+  color: #FFF;
+}
+
+.g-a-btn-arrow,
+.g-a-btn-search {
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  border: 0;
+  margin: 20px 0 0 0px;
+}
+
+.g-a-btn-search--mobile {
+  margin-top: 0;
+}
+
+.g-a-btn-arrow {
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  outline: none;
+}
+
+.g-a-btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.g-a-container-mobile {
+  width: 100%;
+  display: table;
+}
+
+.g-a-item-mobile {
+  margin-top: 13px;
+  float: left;
+  width: 100%;
+  display: block;
+  text-align: left;
+  background: url("../../images/mrvegas/threeuro/front-bkg.png") repeat-x;
+  background-color: #201D1C;
+  border: 1px solid #2C2C2C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.g-a-item-mobile span {
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 3%;
+}
+.g-a-item-mobile span:first-child {
+  width: 40%;
+  font: 700 16px/18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-style: normal;
+}
+.g-a-item-mobile span:last-child {
+  width: 54%;
+  text-align: center;
+  font: normal 16px/18px Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #8C8C8C;
+}
+
+.g-a-item {
+  float: left;
+  width: 204px;
+  height: 105px;
+  position: relative;
+  background: url("../../images/mrvegas/threeuro/front-bkg.png") repeat-x;
+  background-color: #201D1C;
+  border: 1px solid #2C2C2C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 5px;
+}
+
+.g-a-item h6 {
+  margin: 0 0 0 0;
+  text-align: center;
+  font: normal 11px/11px Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #898887;
+}
+.g-a-item h3 {
+  margin: 25px 0 0 0;
+  text-align: center;
+  font: 900 23px/23px Arial, Helvetica, sans-serif;
+  color: #FFF;
+}
+
+.g-a-container_sports-history .g-a-item h3 {
+  font-size: 17px !important;
+}
+
+.g-a-filter {
+  margin: 10px 0 15px 0 !important;
+  padding: 0;
+}
+
+.g-a-filter {
+  margin-top: 3px;
+}
+
+.g-a-filter fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.g-a-filter-label {
+  float: left;
+  margin: 0 0 20px 6px;
+}
+
+.g-a-filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-a-filter-label--mobile {
+  display: block;
+  position: relative;
+  line-height: 24px;
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.login-history .login-history--form-wrapper .login-history-mobile-search-button.login-history-mobile-search-button {
+  margin-top: 20px;
+}
+
+.g-a-filter-label--mobile:has(select), .g-a-filter-label--mobile select {
+  width: 100%;
+}
+
+.g-a-filter-label__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.g-a-filter-label__block > .g-a-filter-label__search--mobile {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.g-a-filter-label__block > .g-a-filter-label__search--mobile .g-a-btn-arrow, .g-a-filter-label__block > .g-a-filter-label__search--mobile .g-a-btn-search {
+  width: 100%;
+}
+
+.g-a-filter-label__select {
+  display: block;
+  width: 100%;
+}
+
+.g-a-filter-label label {
+  color: #8C8C8C;
+  font: 12px/20px Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  display: block;
+  margin: 0 2px;
+  text-transform: capitalize;
+}
+
+.g-a-filter-label input[type=text] {
+  color: #595959;
+  font: 10px/23px Arial, Helvetica, sans-serif;
+  height: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #434343;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 4px;
+  margin: 0;
+  outline: none;
+  float: left;
+}
+
+.g-a-filter-label input[type=text]:focus, .g-a-filter-label input[type=text]:active {
+  border-color: #18723C;
+}
+
+.g-a-filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-a-filter-container--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.g-a-select {
+  height: 24px;
+  width: 150px;
+  color: #000;
+  font: 11px/27px Arial, Helvetica, sans-serif;
+}
+.g-a-select select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFF;
+  font: 11px/27px Arial, Helvetica, sans-serif;
+}
+
+.g-a-filter-label .g-a-date {
+  text-align: center;
+}
+
+.g-h-btn-search--mobile {
+  background: #18723C;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.g-a-container {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.g-a-title {
+  padding: 6px 0px 0px 0px;
+}
+
+.g-a-filter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+}
+
+.game-type.g-a-filter-form select[name=game_category] {
+  width: 112px;
+}
+
+.game-type.g-a-filter-form select[name=provider] {
+  width: 140px;
+}
+
+.game-type.g-a-filter-form select[name=game_id] {
+  width: 160px;
+}
+
+.game-type.g-a-filter-form input[name=start_date],
+.game-type.g-a-filter-form input[name=end_date] {
+  width: 83px;
+}
+
+.account-history-form {
+  display: block;
+}
+
+.g-a-select--mobile--wrapper {
+  position: relative;
+}
+.g-a-select--mobile--wrapper::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  background: url("/diamondbet/images/chevron-down.png") no-repeat center/12px 6px;
+  width: 12px;
+  height: 6px;
+}
+
+.g-a-select--mobile {
+  display: block;
+  width: 149px;
+  height: 24px;
+  border: 1px solid #434343;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#818181));
+  background: linear-gradient(180deg, #F9F9F9 0%, #818181 100%);
+  border-radius: 5px;
+  text-align: left;
+  font: 12px/14px Arial, Helvetica, sans-serif;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 5px;
+}
+
+.g-a-filter-label--mobile select {
+  width: 100%;
+}
+
+.g-a-filter-label__select-tab--mobile:before {
+  content: "▼";
+  text-align: center;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 24px;
+  height: 22px;
+  top: 20px;
+  right: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#939393), to(#5D5D5D));
+  background: linear-gradient(180deg, #939393 0%, #5D5D5D 100%);
+  border: 1px solid #434343;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  pointer-events: none;
+  border-left: 1px solid #201D1C;
+}
+
+.g-a-download-cell {
+  padding: 3px 5px;
+  text-align: left;
+  border: none;
+}
+
+.g-a-download-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.g-a-download-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.g-a-download-icon {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 12px;
+  height: 12px;
+}
+
+.login-history .login-history--form-wrapper {
+  padding: 0;
+}
+.login-history .login-history--form-wrapper .g-a-filter-label {
+  margin: 0 8px 24px 0;
+}
+.login-history .login-history--form-wrapper .g-a-filter-label:last-child {
+  margin-right: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+.login-history .login-history--form-wrapper .g-a-filter-label .g-a-btn-search--mobile {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .general-account-holder {
+    margin: 10px 8px;
+  }
+
+  .pad-stuff-ten {
+    padding: 15px 8px;
+  }
+  .pad-stuff-ten:first-child {
+    margin-bottom: 47px;
+  }
+
+  .g-a-filter-form {
+    display: inline-block;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .g-a-filter-label__block .g-a-filter-label:last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .g-a-filter-form.account-history-form > div:nth-child(2),
+.g-a-filter-form > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .g-a-filter-form.account-history-form > div:nth-child(2) button.g-a-btn-search--mobile,
+.g-a-filter-form > div:nth-child(2) button.g-a-btn-search--mobile {
+    margin-left: 0px;
+  }
+
+  .g-a-filter-form.account-history-form > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+
+  .g-a-filter-form > div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+
+  .game-type.g-a-filter-form {
+    display: block;
+    padding-left: 0;
+  }
+
+  .game-type.g-a-filter-form select[name=provider] {
+    width: 172px;
+  }
+
+  .game-type.g-a-filter-form select[name=game_category],
+.game-type.g-a-filter-form select[name=game_id] {
+    width: 140px;
+  }
+
+  .game-type .g-a-filter-label {
+    margin-bottom: 7px;
+  }
+
+  .game-type .g-a-title {
+    margin-top: 5px;
+  }
+
+  .g-a-filter-label .g-a-date {
+    width: 100%;
+    height: 24px;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B4B4B4), to(#FFFFFF));
+    background: linear-gradient(180deg, #B4B4B4 0%, #FFFFFF 100%);
+  }
+}

@@ -1,0 +1,70 @@
+.sn-main-container {
+  float: left;
+  width: 290px;
+  height: 252px;
+  margin: 20px 10px 20px 14px;
+  overflow: hidden;
+}
+
+.sn-container {
+  position: relative;
+  top: -260px;
+  width: 290px;
+  height: 252px;
+  z-index: 80;
+}
+
+.sn-img {
+  width: 290px;
+  height: 252px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sn_go {
+  background: top center no-repeat url("../images/bg-snurra.png") transparent;
+  width: 290px;
+  height: 45px;
+  margin-top: -45px;
+}
+
+.sn_go .sn-btn-cont {
+  margin-left: 150px;
+  margin-top: 5px;
+}
+
+.spin-btn, .play-btn {
+  cursor: pointer;
+}
+
+.big-text-shadow {
+  text-shadow: 4px 4px 4px #000;
+}
+
+.withdraw-deposit-headline {
+  background: #555;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.withdraw-deposit-headline a {
+  text-decoration: none;
+}
+
+.pd-info-table {
+  padding: 0;
+  margin: 0;
+}
+
+.pd-info-table td {
+  padding: 2px;
+}
+
+.gch-right .show-own-favs-btn {
+  margin-top: 1px !important;
+  margin-right: 1px !important;
+}
+
+.gch-right-top-table {
+  margin: -3px 0 0 -2px !important;
+}

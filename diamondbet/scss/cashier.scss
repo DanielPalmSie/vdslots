@@ -1,0 +1,1007 @@
+#content {
+  background: #fff;
+}
+
+#cashierDepositWithdraw {
+  background: $cashier-deposit-withdraw--background;
+  padding: 20px;
+}
+
+
+#cashierDepositWithdraw a{
+  text-decoration: none;
+}
+
+
+//.cashierTop {
+//  padding-left: 5px;
+//  margin-bottom: 20px;
+//}
+
+.cashierHeader {
+  background-color: $cashier-header--background-color;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  height: $cashier-header--height;
+  color: $cashier-header--color;
+  margin-top: $cashier-header--margin-top;
+}
+
+.cashierHeader .arrow {
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+  top: -36px;
+  right: 10px;
+}
+
+.cashierHeader .closed {
+  background: $cashier-header-closed--background;
+
+  @include custom-code(kungaslottet) {
+    margin-top: 2px;
+    left: -4px;
+  }
+  @include custom-code(dbet) {
+    margin-top: -2px;
+  }
+}
+
+.cashierHeader .open {
+  background: $cashier-header-open--background;
+
+  @include custom-code(kungaslottet) {
+    margin-top: 4px;
+    left: -8px;
+  }
+}
+
+.cashierHeader h3 {
+  padding: $cashierHeader-h3--padding;
+
+  @include custom-code(megariches) {
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  @include custom-code(dbet) {
+    font-size: 15px;
+    margin-top: 0;
+  }
+}
+
+.cashierBoxInsert {
+  display: none;
+  zoom: 1;
+}
+
+.cashierBox, .noDepBox {
+  border: $cashier-box-no-dep-box--border;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: $cashier-box-no-dep-box--margin-bottom;
+
+  @include custom-code(kungaslottet) {
+    background-color: $dark-blue-400;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @include custom-code(megariches) {
+    background-color: $frame-800;
+  }
+
+  @include custom-code(dbet) {
+    background-color: $frame-700;
+  }
+}
+
+.infoArea {
+  padding: $info-area--padding;
+  font-size: $info-area--font-size;
+
+  @include custom-code(kungaslottet) {
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    // .infoArea ul
+    ul {
+      margin-bottom: 0px;
+
+      // .infoArea ul li
+      li {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  // .infoArea
+  @include custom-code(megariches) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // .infoArea .infoText
+    .infoText {
+      flex: 1 1 60%;
+    }
+
+    // .InfoArea .infoImage, .cashier-fee-list
+    .infoImage, .cashier-fee-list {
+      flex: 1 1 20%;
+    }
+  }
+
+  @include custom-code(dbet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // .infoArea .infoText
+    .infoText {
+      flex: 1 1 60%;
+    }
+
+    // .InfoArea .infoImage, .cashier-fee-list
+    .infoImage, .cashier-fee-list {
+      flex: 1 1 20%;
+    }
+
+    // .infoArea .cashier-fee-list
+    .cashier-fee-list {
+      color: $neutral-900;
+    }
+  }
+}
+
+.infoArea ul {
+  color: #fff;
+  list-style-type: none;
+  width: $info-area-ul--width;
+  float: left;
+  margin-top: 0px;
+  padding-left: $info-area--padding-left;
+
+  @include custom-code(kungaslottet) {
+    margin-left: auto;
+    padding-right: 22px;
+  }
+}
+
+.infoArea ul li {
+  margin-bottom: 5px;
+}
+
+.infoImage {
+  width: $info-image--width;
+  float: left;
+
+  @include custom-code(kungaslottet) {
+
+    // .infoImage img
+    img {
+      display: block;
+    }
+  }
+}
+
+.infoText {
+  width: $info-text--width;
+  float: left;
+  height: 50px;
+  margin-top: -10px;
+}
+
+.cashierBoxInsert {
+  padding: $cashier-box-insert--padding;
+  border-top: $cashier-box-insert--border-top;
+  font-size: 12px;
+
+  @include custom-code(kungaslottet) {
+    margin: 0px 5px;
+  }
+
+  @include custom-code(megariches) {
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  @include custom-code(dbet) {
+    margin: 0 10px;
+    padding: 0;
+  }
+}
+
+.cashierDefaultInput {
+  border: 1px solid $cashier-default-input--border-color;
+  height: 30px;
+  width: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 2px 2px 2px #888;
+  -webkit-box-shadow: inset 2px 2px 2px #888;
+  box-shadow: inset 2px 2px 2px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: -25px;
+}
+
+.cashierDefaultInput:focus {
+  border: 3px solid $cashier-default-input-focus--border-color;
+  height: 26px;
+}
+
+.cashierDefaultInput:disabled {
+  background-color:#C2C0C0;
+}
+
+.cashierInput {
+  border: 1px solid $cashier-input--border-color;
+  height: $cashier-input--height;
+  width: $cashier-input--width;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: $cashier-input--border-radius;
+  -moz-box-shadow: inset 2px 2px 2px #888;
+  -webkit-box-shadow: inset 2px 2px 2px #888;
+  box-shadow: $cashier-input--box-shadow;
+  padding-left: $cashier-input--padding-left;
+  padding-right: $cashier-input--padding-right;
+  position: $cashier-input--position;
+  left: 185px;
+  top: -25px;
+}
+
+.cashierInput.error{
+  border: 3px solid #993300;
+  height: 26px;
+}
+
+.input-error{
+    border: 3px solid #993300;
+}
+
+.cashierInput:focus {
+  border: 2px solid $cashier-input-focus--border-color;
+  height: 28px;
+}
+
+.cashierInput:disabled {
+  background-color:#C2C0C0;
+}
+
+.cashierSelect__container {
+  display: inline-block;
+  position: relative;
+  left: 185px;
+  top: -25px;
+  height: 32px;
+  width: 200px;
+
+  //. cashierSelect__container::after
+  &::after {
+      content: "";
+      position: absolute;
+      right: $cashierSelect-container-after--right;
+      top: $cashierSelect-container-after--top;
+      transform: translateY(-50%);
+      pointer-events: none;
+      background: url('/diamondbet/images/registration-icons/expand.png') no-repeat center / 16px 16px;
+      width: 16px;
+      height: 16px;
+  }
+
+  @include custom-code(dbet) {
+    //. cashierSelect__container .cashierSelect2
+    .cashierSelect2 {
+      box-sizing: content-box;
+      background-color: $white;
+    }
+
+    //. cashierSelect__container .select2-selection__arrow
+    .select2-selection__arrow {
+      display: none;
+    }
+  }
+}
+
+.cashierSelect {
+  border: 1px solid $cashier-select--border-color;
+  height: 32px;
+  width: $cashier-select--width;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 2px 2px 2px #888;
+  -webkit-box-shadow: inset 2px 2px 2px #888;
+  box-shadow: inset 2px 2px 2px #888;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: $cashier-select--position;
+  left: $cashier-select--left;
+  top: $cashier-select--top;
+
+  @include custom-code(megariches) {
+    appearance: none;
+  }
+
+  @include custom-code(dbet) {
+    appearance: none;
+  }
+}
+
+.cashierSelect:focus {
+  border: 3px solid $cashier-select-focus--border-color;
+  height: 32px;
+}
+
+.cashierSelect:disabled {
+  background-color:#C2C0C0;
+}
+
+.cashierInputLabel {
+  width: 600px;
+}
+
+.cashierDefaultBtnInner {
+  color: #fff;
+  height: 43px;
+  width: 150px;
+  background: $cashier-default-btn-inner--background;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+.cashierDefaultBtnInner h4 {
+  padding: 0px;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+
+.cashierBtnInner {
+  color: #fff;
+  height: $cashier-btn-inner--height;
+  width: $cashier-btn-inner--width;
+  background: $cashier-btn-inner--background;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  margin-top: -30px;
+  z-index: 1000;
+
+  @include custom-code(kungaslottet) {
+
+    // .cashierBtnInner.withdrawPost
+    &.withdrawPost {
+      background: $kunga-blue;
+      height: 32px;
+    }
+  }
+
+  @include custom-code(megariches) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .cashierBtnInner.withdrawPost
+    &.withdrawPost {
+      background: $button-primary-light;
+      height: 32px;
+      margin-top: -15px
+    }
+  }
+
+  @include custom-code(dbet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .cashierBtnInner.withdrawPost
+    &.withdrawPost {
+      background: $button-primary-light;
+      height: 32px;
+      margin-top: -15px
+    }
+  }
+}
+
+.cashierBtnInner h4 {
+  padding: 0px;
+  margin: 0px;
+  font-size: $cashier-btn-inner-h4--font-size;
+  margin-top: $cashier-btn-inner-h4--margin-top;
+  text-shadow: $cashier-btn-inner-h4--text-shadow;
+  cursor: pointer;
+}
+
+.medium {
+  width: 50px;
+}
+
+.small {
+  width: 20px;
+}
+
+.info_box {
+  background: $info-box--background;
+  display: none;
+  height: 134px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  width: 225px;
+  z-index: 10000;
+}
+
+.cvs_info {
+  color: black;
+  font-size: 10px;
+  left: 35px;
+  position: relative;
+  top: 15px;
+  width: 170px;
+}
+
+.card_back {
+  background: $card-back--background;
+  height: 52px;
+  left: 80px;
+  position: relative;
+  top: 10px;
+  width: 81px;
+}
+
+.icon_questionmark {
+  background: $icon-questionmark--background;
+  width: 21px;
+  height: 22px;
+  position: relative;
+  left: 255px;
+  top: -50px;
+}
+
+.cashierBoxInsertCol {
+  float: left;
+  width: $cashier-box-insert-col--width;
+}
+
+.complete {
+  float:left;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#deposit_complete,
+#withdraw_complete {
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+#bankBox .cashierBtnOuter{
+  top: -30px;
+  right: 0px;
+}
+
+.ulBig {
+  font-weight: bold;
+  color: $ul-big--color;
+}
+
+.slideTrigger {
+  cursor: pointer;
+}
+
+.error{
+  color: #a00;
+  font-weight: bold;
+}
+
+.error a{
+    color: #c22 !important;
+    font-weight: bold;
+}
+
+.cashierBoxInsert label.error{
+  display: block;
+  width: 200px;
+  margin: $cashier-box-insert-label-error--margin;
+}
+
+.maxWidth{
+  width: 600px;
+}
+
+
+#pugglepay-verification, #pugglepay-authorize{
+  padding: 0px 0px 20px 200px;
+}
+
+.ccardBtn .cashierBtnInner{
+  position: relative;
+
+}
+
+.bank-other-account-btn{
+    width: 200px;
+    left: 185px;
+    top: $bank-other-account-btn--top;
+    position: relative;
+    margin-bottom: 15px;
+
+    @include custom-code(megariches) {
+      background: $deposit-gradient;
+    }
+
+    @include custom-code(dbet) {
+      background: $button-deposit;
+    }
+}
+
+.cashier-init-hidden{
+    display: none;
+}
+
+.cashierCVCInput{
+}
+
+.cashierCVCLabel{
+    padding: 5px;
+}
+
+.withdraw-error-popup {
+  max-width: 362px;
+}
+
+.withdraw-error-popup span, .withdraw-error-popup p {
+  align-self: start;
+  text-align: left;
+}
+
+.withdraw-error-popup-resume {
+  background-color: #fbcfcf;
+  margin: 20px 0;
+  padding: 15px 0;
+}
+
+.withdraw-error-popup-resume ul {
+  margin: 0 15px;
+  padding: 0;
+}
+
+.withdraw-error-popup-resume li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.withdraw-error-popup-resume li:first-child {
+  padding-bottom: 15px;
+}
+
+.withdraw-error-popup-resume li div {
+  text-align: left;
+  flex: 1 1 0px;
+}
+
+.withdraw-error-popup-resume, .withdraw-error-popup-button {
+  width: 94%;
+}
+
+input[type="number"],
+input[type="tel"] {
+    font-size: 16px;
+}
+
+@include custom-code(kungaslottet) {
+  .withdraw-disabled-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .cashierBtnInner {
+      background: $kunga-blue;
+    }
+  }
+}
+
+// .withdraw_complete_success
+.withdraw_complete_success {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#cashierDepositWithdraw {
+  .withdrawal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+
+    .withdrawal-text {
+      flex-grow: 1;
+
+      h1 {
+        margin-top: 0;
+      }
+    }
+
+    .withdrawal-images {
+      flex-shrink: 0;
+      width: 300px;
+      height: 237px;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        // .withdrawal-content .withdrawal-images img
+        @include custom-code(megariches) {
+          width: 221px;
+          height: 235px;
+        }
+
+        // .withdrawal-content .withdrawal-images img
+        @include custom-code(dbet) {
+          width: 221px;
+          height: 235px;
+        }
+      }
+    }
+  }
+
+  // #cashierDepositWithdraw .cashierBox
+  @include custom-code(megariches) {
+
+    .cashierBox {
+      margin-bottom: 17px;
+      background-color: $frame-500;
+
+      // #cashierDepositWithdraw .cashierBox .cashierBoxInsert
+      .cashierBoxInsert {
+        padding: 20px;
+        margin: 0;
+
+        // #cashierDepositWithdraw .cashierBox .cashierBoxInsert .withdrawForm .cashierInput
+        .withdrawForm > .cashierInput {
+          position: relative;
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  @include custom-code(dbet) {
+    // #cashierDepositWithdraw .withdrawal-text h1
+    .withdrawal-content .withdrawal-text h1 {
+      color: $primary-500;
+    }
+
+     // #cashierDepositWithdraw .cashierBox
+    .cashierBox {
+      margin-bottom: 17px;
+      background-color: $frame-700;
+
+      // #cashierDepositWithdraw .cashierBox .cashierBoxInsert
+      .cashierBoxInsert {
+        padding: 20px;
+        margin: 0;
+
+        // #cashierDepositWithdraw .cashierBox .cashierBoxInsert .withdrawForm .cashierInput
+        .withdrawForm > .cashierInput {
+          position: relative;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+// Define breakpoints
+$breakpoint-mobile: 768px; // Mobile (max-width: 768px)
+$breakpoint-desktop: 769px; // Desktop (min-width: 769px)
+
+// Mixin for media queries
+@mixin respond-to($media) {
+    @if $media == 'mobile' {
+        @media screen and (max-width: $breakpoint-mobile) {
+            @content;
+        }
+    } @else if $media == 'desktop' {
+        @media screen and (min-width: $breakpoint-desktop) {
+            @content;
+        }
+    }
+}
+
+.cashierSelect2 {
+    padding: unset;
+    height: auto;
+
+    .select2-selection--single {
+        border: unset !important;
+    }
+
+    @include respond-to('desktop') {
+        width: 212px !important;
+        margin-top: 3px !important;
+
+        .select2-selection--single {
+            width: 210px;
+        }
+    }
+
+    @include respond-to('mobile') {
+        width: 142px !important;
+    }
+}
+
+.select2-results__options {
+    .select2-results__option {
+        color: black;
+    }
+
+    .custom-disabled-option {
+        color: gray !important;
+        background-color: #f2f2f2 !important;
+    }
+}
+
+.bankAccountsDropdown {
+    .select2-results__options {
+        .select2-results__option.dropdown-option-btn {
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+
+            &[aria-selected=true] {
+                color: black;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+#withdrawForm-trustly label.error {
+    @include respond-to('desktop') {
+        margin-left: 185px !important;
+    }
+
+    @include respond-to('mobile') {
+        width: 155px !important;
+    }
+}
+
+.verify_document__withdrawal {
+    .verify_document__body {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .verify_document__body-image {
+        width: 100%;
+        height: 200px;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .verify_document__body-description {
+        width: 100%;
+        height: auto;
+        line-height: 21px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .verify_document-body-btn {
+        margin-top: 10px;
+        position: relative;
+        border-radius: 6px;
+        height: 43px;
+        width: 70%;
+    }
+
+    .verify_document-body-btn-txt {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    @include respond-to('mobile') {
+        .verify_document__body-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(100vh - 445px);
+        }
+    }
+}
+
+#general_info_popup-box {
+    .general_info__action {
+        .mbox-ok-btn {
+            margin-top: 15px;
+            width: 15%;
+        }
+    }
+
+    @include respond-to('mobile') {
+        .general_info {
+            margin-top: 35vh;
+        }
+    }
+}
+
+#verify-code {
+    // #verify-code .cashierBtnOuter
+    .cashierBtnOuter {
+        width: 150px;
+        margin: auto;
+    }
+}
+
+.invalid-account-selected-popup {
+    @mixin text-style($font-family, $font-size, $font-weight: 400, $line-height: normal) {
+        font-family: $font-family;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        font-style: normal;
+        line-height: $line-height;
+    }
+
+    .lic-mbox-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .general_info {
+            margin-top: unset !important;
+        }
+    }
+
+    .lic-mbox-container,
+    .general_info__body-description .description {
+        @include text-style(Roboto, 15px);
+        text-align: center;
+
+        @include respond-to('mobile') {
+            padding-bottom: unset !important;
+            margin-bottom: unset !important;
+        }
+    }
+
+    .valid-account-details {
+        @include thin-scrollbar;
+        overflow-y: auto;
+        margin: 24px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        @include respond-to('desktop') {
+            max-height: 302px; // Shows three cards without scrolling.
+        }
+
+        @include respond-to('mobile') {
+            // 100vh: Total height of the popupx
+            // 48px: Height of the header
+            // 160px: Includes footer and other fixed content
+            max-height: calc(100vh - 48px - 160px);
+        }
+
+        &.scrollbar-overflow-adjustment {
+            @include respond-to('desktop') {
+                margin-right: -10px;
+            }
+        }
+
+        .valid-account-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+
+            padding: 20px;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #EEEEEE;
+            gap: 10px;
+
+            .valid-account-option-context {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                span {
+                    @include text-style(Arial, 15px, 400, 25px);
+
+                    &:nth-of-type(2) {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            button {
+                width: 90px;
+                height: 36px;
+                padding: 0 9px 0 7px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: $extra-1;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                @include text-style(Arial, 12px, 700);
+            }
+        }
+    }
+
+    .general_info__action {
+        // stick ok button to the bottom
+        @include respond-to('mobile') {
+            margin: auto;
+            width: calc(100% - 40px); // 20 + 20 padding on right and left
+            position: absolute;
+            bottom: 20px;
+        }
+
+        button {
+            margin-top: unset !important;
+            width: 300px !important;
+            height: 43px;
+            border-radius: 5px;
+
+            @include text-style(Arial, 18px, 700);
+            text-align: center;
+
+            @include respond-to('mobile') {
+                display: flex;
+                padding: 1px 0px;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+
+                width: 100% !important;
+            }
+        }
+    }
+}

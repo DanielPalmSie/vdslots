@@ -1,0 +1,70 @@
+// .landing-page__main-section .top-game-section
+$landing-page-top-game-section--background: $placeholder-color;
+
+// .landing-page__main-section .top-title .text-desc
+$landing-page-top-game-section-title--color: white;
+$landing-page-top-game-section-text-desc--drop-shadow: drop-shadow(0 2px 0 $placeholder-color);
+
+
+// .landing-page__main-section .top-title .text-gradient
+$landing-page-top-game-section-title--background: $placeholder-gradient;
+$landing-page-top-game-section-title--drop-shadow: drop-shadow(0 4px 0 $placeholder-color);
+
+// .landing-page__main-section .top-desc
+$landing-page-top-game-section-description--color: white;
+$landing-page-top-game-section-description--drop-shadow: drop-shadow(0 2px 0 $placeholder-color);
+
+
+// .landing-page__main-section .top-action button
+$landing-page-top-game-section-action-btn--background: $placeholder-gradient;
+
+$landing-page-top-game-section-action-btn--color: white;
+$landing-page-top-game-section-action-btn--drop-shadow: drop-shadow(0 3px 0 $placeholder-color);
+
+
+// .landing-page__main-section .bottom
+$landing-page-bottom-section--background: $placeholder-gradient;
+
+// .landing-page__main-section .bottom-title
+$landing-page-bottom-section-title--color: white;
+$landing-page-bottom-section-title--drop-shadow: drop-shadow(0 2px 0 $placeholder-color);
+
+// .landing-page__main-section .game-filter li
+
+$landing-page-bottom-section-game-filter-list--color: $placeholder-color;
+$landing-page-bottom-section-game-filter-list--border-color: $placeholder-color;
+
+// .landing-page__main-section .game-filter #secondary-nav li a
+$landing-page-bottom-section-game-filter-list-a--color: $placeholder-color;
+
+// .landing-page__main-section .game-list li
+$landing-page-bottom-section-game-list-item--color: $placeholder-color;
+$landing-page-bottom-section-game-list-item--box-shadow: 0px 0px 4px 0px $placeholder-color;
+
+
+// .landing-page .footer-desc
+$landing-page-footer-description--background: $placeholder-color;
+$landing-page-footer-description--color: $placeholder-color;
+
+// .landing-page .footer-menu-links
+$landing-page-footer-menu-links--background: $placeholder-color;
+
+// .landing-page .footer-menu-links .footer-links li
+$landing-page-footer-menu-links-list--color: $placeholder-color;
+$landing-page-footer-menu-links-list--border-color: $placeholder-color;
+
+// .landing-page .footer-menu-links .footer-links a
+$landing-page-footer-menu-links-list-a--color: $placeholder-color;
+
+// .landing-page .customer-service-section
+$landing-page-customer-service-section--border-color: $placeholder-color;
+
+// .landing-page .vertical-separator
+$landing-page-vertical-separator--background: $placeholder-color;
+$landing-page-vertical-separator--border-color: $placeholder-color;
+
+// .landing-page .opening-soon
+$landing-page-opening-soon--background: $placeholder-gradient;
+$landing-page-opening-soon--drop-shadow: drop-shadow(0 4px 4px $placeholder-color);
+
+$customer-service--background-image: url('#{$brand-image-path}/mobile/cust-service.png');

@@ -1,0 +1,10 @@
+// Varibles specific across Videoslots brand go here
+@import '_palette.scss';
+
+// variable needed for conditional code loading
+$brand: 'videoslots';
+$brand-image-path: '../images';
+
+// main brand color
+$main-color: #EFBC4C;
+$body--color: $white;

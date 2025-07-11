@@ -1,0 +1,384 @@
+.account-documents-holder input[type='file'] {
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* file upload button */
+.account-documents-holder input[type="file"]::file-selector-button {
+    cursor: pointer;
+    margin-right: 16px;
+    border-radius: 5px;
+    border: 1px solid $document-input-file-type--border-color;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 5px 16px;
+    background-color: transparent;
+    color: $white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    display:block;
+    @media screen and (min-width: 768px) {
+        width: 200px;
+        display: inline-block;
+    }
+}
+
+.doc-status-btn {
+    background: none;
+    display: flex;
+    width: 128px;
+    padding: 4px 0px;
+    align-items: center;
+    gap: 12px;
+}
+
+.document-status-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.doc-status-btn .status,
+.document-status-btn .status {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 24px;
+    background-position: 1px;
+}
+
+// .document-status-section
+.document-status-section {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 10px;
+    @media screen and ( min-width: 768px) {
+        padding: 12px 16px;
+    }
+
+    // .document-status-section p
+    p {
+        font-size: 12px;
+    }
+}
+
+.file-upload-title {
+    font-size: 14px;
+    font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @include custom-code(dbet) {
+        color: $neutral-900;
+    }
+}
+
+.document-status {
+    text-align: center;
+    line-height: 29px;
+    color: $document-status--color !important;
+    font-weight: 400;
+    // .document-status td
+    td {
+        text-align: left;
+    }
+    //.document-status button
+    button {
+        font-weight: 500;
+    }
+}
+
+.document-row .document {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.document h3 {
+    color: $document-h3--color;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+}
+
+.document-row {
+    overflow: hidden;
+}
+
+.filename {
+    width: 280px;
+    float: left;
+}
+
+// .account-documents-holder .document .filename, .account-documents-holder .document-mobile .filename-mobile
+.account-documents-holder .document .filename,
+.account-documents-holder .document-mobile .filename-mobile {
+    font-size: 13px;
+}
+
+// .account-documents-holder .document .filestatus, .account-documents-holder .document-mobile .filestatus-mobile
+.account-documents-holder .document .filestatus,
+.account-documents-holder .document-mobile .filestatus-mobile {
+    line-height: normal;
+    margin: 10px 0 0 0;
+}
+
+.filename-mobile {
+    width: 200px;
+    float: left;
+}
+
+.filestatus {
+    float: right;
+    width: 100px;
+    margin: 20px 0 0 0;
+    line-height: 25px;
+    text-align: center;
+    height: 25px;
+    font-size: 13px;
+}
+
+.filestatus-mobile {
+    float: right;
+    width: 100px;
+    margin: 10px 0 0 0;
+    line-height: 25px;
+    text-align: center;
+    height: 25px;
+    font-size: 13px;
+}
+
+.clear {
+    clear: both;
+}
+
+.choose-file-container {
+    display: block;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.choose-file-container > span {
+    margin-left: 0px;
+    font-weight: $choose-file-container-span--font-weight;
+    font-size: $choose-file-container-span--font-size;
+    min-width: 0;
+    user-select: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 85vw;
+    display: block;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 15px;
+        max-width: unset;
+        display: unset;
+        text-overflow: unset;
+        overflow: unset;
+    }
+}
+
+.choose-file-field-container {
+    border: 1px solid $document-input-file-type--border-color;
+    border-radius: 5px;
+    height: 32px;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        width: 200px;
+    }
+}
+
+.choose-file-field {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: transparent;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    color: $choose-file-field--color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        width: 200px;
+    }
+}
+
+.add-file-field {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 5px;
+    background: $document-add-file-field--background;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: $document-add-file-field--border;
+
+    @media screen and (min-width: 768px) {
+        width: 200px;
+    }
+}
+
+.document-uploadform {
+    width: 300px;
+}
+
+.deactivate_button {
+    float:right; margin-top: 104px;
+}
+.account-documents-holder {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    //.account-documents-holder td
+    td {
+        padding: 0 25px 24px 0;
+        @media screen and (min-width: 768px) {
+            padding: 0 12px 24px 0;
+        }
+    }
+}
+
+// .verification-status-container
+.verification-status-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+// .verification-status
+.verification-status {
+    width: 100%;
+    display: flex;
+    height: 28px;
+    padding: 6px 67px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+
+    color: $white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.account-documents-holder select {
+    -webkit-appearance: none;
+    display: flex;
+    width: 100%;
+    height: 28px;
+    padding: 4px 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: $account-documents-holder--border;
+    background-color: $account-documents-holder--background-color;
+    color: $account-documents-holder--color;
+    position: relative;
+
+    // select::after
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        right: 0px;
+        display: block;
+        font-size: 10px;
+        color: #ADADAD;
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+        background-image: url('/diamondbet/images/arrow-down.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+#source_of_income {
+    width: 100%;
+    @media screen and (min-width: 768px){
+        width: 50%;
+    }
+}
+
+#source_of_income .uploadfields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.account-documents-holder .submit {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.account-documents-holder .errors {
+    float: none;
+}
+
+.upload-instructions p {
+    line-height: 25px;
+}
+
+.document-status-section .document-status-headline {
+    font-size: 14px;
+}
+
+.document-status-section .upload-instructions-headline {
+    font-weight: 400;
+    font-size: 12px;
+    color: $document-status-section-upload-instructions-headline--color;
+}
+
+.document-status .document-status-info {
+    color: $document-status-document-status-info--color;
+}

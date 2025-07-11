@@ -1,0 +1,64 @@
+.css-flex-container {
+    display: flex;
+}
+
+.css-flex-valing-center {
+  align-self: center;
+}
+
+.css-flex-container-valign-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.css-flex-grow-50 {
+  flex-grow: 50;
+}
+
+.css-flex-grow-10 {
+  flex-grow: 10;
+}
+
+.css-flex-grow-4 {
+  flex-grow: 4;
+}
+
+.css-flex-grow-1 {
+  flex-grow: 1;
+}
+
+.css-flex-uniform-section {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content:center;
+  text-align: center;
+}
+
+.css-flex-container-valign-center-halign-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.css-flex-container-valign-center-halign-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.css-flex-align-end {
+  align-self: flex-end;
+}
+
+.css-flex-v-stretch {
+  align-items: stretch;
+}
+
+.css-flex-stretch {
+    align-self: stretch;
+}
+
+.css-flex-column {
+  flex-direction: column;
+}

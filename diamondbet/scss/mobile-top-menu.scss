@@ -1,0 +1,596 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#mobile-top{
+    // /* Sticky header styles*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+    background-color: #000;
+}
+
+.vs-mobile-menu__container {
+    padding: 6px 0;
+    height: $vs-mobile-menu-container--height;
+    width: 100%;
+    color: $vs-mobile-menu-container--color;
+    font-size: 22px;
+    border-bottom: 1px solid $vs-mobile-menu-container--border-bottom-color;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    background: $vs-mobile-menu-container--background;
+}
+
+.vs-mobile-menu__container a,
+.vs-mobile-menu__container a:visited,
+.vs-mobile-menu__container a:active,
+.vs-mobile-menu__container a:focus {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  line-height: 0;
+}
+
+///**
+// *
+// * Menu Strip: Container main parts
+// *
+//**/
+
+.vs-mobile-menu__part {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.vs-mobile-menu__part .vs-mobile-menu__item,
+.vs-mobile-menu__item-bos-logo {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .vs-mobile-menu__part .vs-mobile-menu__item,
+  .vs-mobile-menu__item-bos-logo {
+    margin-left: 8px;
+  }
+}
+
+.vs-mobile-menu__part--right {
+  text-align: right;
+  padding-right: 12px;
+}
+
+///**
+// *
+// * Menu Strip: Container items
+// *
+//**/
+
+.vs-mobile-menu__item {
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 0;
+  width: 28px;
+  height: 24px;
+  text-align: center;
+  @include custom-code(kungaslottet) {
+    color: #c0c0c0;
+  }
+}
+
+.vs-mobile-menu__item--active {
+  color: $vs-mobile-menu-item-active--color;
+}
+
+.vs-mobile-menu__item-register {
+  background: $vs-mobile-menu-item-register--background;
+  color: $vs-mobile-menu-item-register--color;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.vs-mobile-menu__item-login.vs-mobile-menu__item-login {
+  background: $vs-mobile-menu-item-login--background;
+  color: $vs-mobile-menu-item-login--color;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 480px) {
+  .vs-mobile-menu__item-login.vs-mobile-menu__item-login {
+    margin-left: 10px;
+  }
+}
+
+.mobile-gradient-login-btn {
+  @include custom-code(kungaslottet) {
+    background: linear-gradient(180deg, #1D6CD5 0%, #073D81 50%, #06264D 100%) !important;
+  }
+}
+
+.vs-mobile-menu__item-deposit {
+  box-sizing: border-box;
+  padding: 3px;
+  margin-left: 6px;
+  background: $vs-mobile-menu-item-deposit--background;
+  color: $vs-mobile-menu-item-deposit--color;
+  font-size: 19px;
+}
+
+.vs-mobile-menu__item-rewards {
+    margin-left: 6px;
+    background: $vs-mobile-menu-item-rewards--background;
+    color: $vs-mobile-menu-item-rewards--color;
+    position: relative;
+}
+
+.mobile_reward-count {
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    font-size: 8px;
+    line-height: 14px;
+    border-radius: 12px;
+    margin-top: 1px;
+    color: #ffffff;
+    position: absolute;
+    right: -4px;
+    bottom: -6px;
+    border: 1px solid #000;
+}
+
+///**
+// *
+// * Upcoming battles strip
+// *
+//**/
+
+.vs-mobile__bos-upcoming {
+    height: 60px;
+    background: $vs-mobile__bos-upcoming--background;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: $vs-mobile__bos-upcoming--border-bottom;
+
+    @include custom-code(dbet) {
+      margin-bottom: 4px;
+    }
+}
+
+///**
+// *
+// * Upcoming battles strip: Logo
+// *
+//**/
+
+.vs-mobile__bos-upcoming-logo-container {
+  padding: 0 12px;
+  height: 100%;
+  border-right: $vs-mobile__bos-upcoming-logo-container--border-right;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.vs-mobile__bos-upcoming-logo {
+  width: 80px;
+  height: auto;
+  max-width: 100%;
+  @include fix-image-rendering;
+}
+
+///**
+// *
+// * Upcoming battles strip: Battles list
+// *
+//**/
+
+.vs-mobile__bos-upcoming-battles {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  // /* Lets it scroll lazy */
+}
+
+.vs-mobile__bos-upcoming-battle {
+    padding: 0 12px 0 0;
+    width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    color: white;
+    border-right: $vs-mobile__bos-upcoming-battle--border-right;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 568px) {
+  .vs-mobile__bos-upcoming-battle {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    max-width: 300px;
+  }
+}
+
+.vs-mobile__bos-upcoming-battle:last-child {
+  border-right: none;
+}
+
+///**
+// *
+// * Upcoming battles strip: Thumbnail
+// *
+//**/
+
+.vs-mobile__bos-upcoming-battle-thumbnail-container {
+  padding: 0 6px;
+  width: 100%;
+  height: 100%;
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.vs-mobile__bos-upcoming-battle-thumbnail {
+  width: 51px;
+  height: auto;
+  @include fix-image-rendering;
+}
+
+///**
+// *
+// * Upcoming battles strip: Name
+// *
+//**/
+
+.vs-mobile__bos-upcoming-battle-name {
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include custom-code(dbet) {
+    color: $neutral-900;
+  }
+}
+
+///**
+// *
+// * Upcoming battles strip: Button
+// *
+// **/
+
+.vs-mobile__bos-upcoming-battle-button-container {
+  height: 100%;
+  width: 100%;
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.vs-mobile__bos-upcoming-battle-button {
+  background: $vs-mobile__bos-upcoming-battle-button--background;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 0;
+}
+
+.button-arrow {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: $button-arrow--border-left;
+
+  @include custom-code(kungaslottet) {
+    margin-left: 2px;
+  }
+}
+
+
+#bottom-sticky{
+    // /*z-index: 3000; TODO I've lowered it so the popups will go above the bottom bar, check if this may cause issues. /Paolo*/
+    z-index: 2000;
+    line-height: 1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #262626;
+}
+.bottom-sticky__level {
+    float: left;
+    width: 100%;
+
+    @include custom-code(dbet) {
+      color: $white;
+    }
+}
+.bottom-sticky__level-left {
+    text-align: center;
+    display: inline-block;
+    background-color: $bottom-sticky-level-left--background-color;
+}
+.bottom-sticky__level-left--60 {
+    width: 60%;
+}
+.bottom-sticky__level-right {
+    text-align: center;
+    display: inline-block;
+    background-color: $bottom-sticky__level-right--background-color;
+}
+.bottom-sticky__level-right--40 {
+    width: 40%;
+}
+.bottom-sticky__level__item {
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.bottom-sticky__level__item--green {
+    background-color: #3e6a1d;
+
+    @include custom-code(kungaslottet) {
+        background: linear-gradient(180deg, #66C72A 0%, #238500 100%);
+    }
+    @include custom-code(megariches) {
+        background: $deposit-gradient;
+    }
+    @include custom-code(dbet) {
+        background: $button-deposit;
+    }
+}
+.bottom-sticky__level-left, .bottom-sticky__level-right {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-sticky-item__icon {
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.bottom-sticky-item__text {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.bottom-sticky__level .footer-icons a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+  background-color: black;
+  flex: 1;
+}
+
+// /* Mobile news feed */
+
+.vs-mobile__news-feed {
+  align-items: center;
+  background: #1b1b1b;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 70px;
+}
+.vs-mobile__news-feed-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  overflow-x: scroll;
+  width: 100%;
+}
+.vs-mobile__news-feed__news {
+  color: white;
+  border-right: 2px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  padding: 0 8px;
+  overflow-y: hidden;
+}
+.vs-mobile__news-feed__news--2 {
+  flex: 0 0 50%;
+  justify-content: space-between;
+}
+.vs-mobile__news-feed__news--1 {
+  flex: 0 0 100%;
+}
+.vs-mobile__news-feed__news--1 .vs-mobile__news-feed__news-text {
+  flex: initial;
+}
+.vs-mobile__news-feed__news--1 .vs-mobile__news-feed__news-title {
+  font-size: 12px;
+}
+.vs-mobile__news-feed__news--1 .vs-mobile__news-feed__news-subtitle {
+  font-size: 10px;
+}
+.vs-mobile__news-feed__news-thumbail {
+  align-items: center;
+  display: flex;
+  float: left;
+  width: unset;
+}
+.vs-mobile__news-feed__news-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 8px 10px 16px;
+}
+.vs-mobile__news-feed__news-title {
+  font-size: 11px;
+  line-height: 1.2;
+  margin: 0 0 3px 0;
+}
+.vs-mobile__news-feed__news-subtitle {
+  font-size: 10px;
+  margin: 0;
+}
+.vs-mobile__news-feed__news-link {
+  color: $vs-mobile-news-feed-news-link--color;
+  font-size: 9px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#secondary-nav {
+  width: 100%;
+  @include custom-code(mrvegas) {
+    margin: 0;
+    border-left: none;
+  }
+
+  @include custom-code(kungaslottet) {
+    margin: 0;
+  }
+
+  @include custom-code(megariches) {
+    margin: 0;
+  }
+
+  @include custom-code(dbet) {
+    margin: 0;
+  }
+}
+
+#secondary-nav ul {
+  display: flex;
+}
+
+@include custom-code(videoslots) {
+  #secondary-nav ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  #secondary-nav ul li {
+    white-space: nowrap;
+  }
+}
+@include custom-code(mrvegas) {
+  #secondary-nav ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0 10px;
+  }
+}
+
+@include custom-code(kungaslottet) {
+  #secondary-nav ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0 10px;
+  }
+}
+
+@include custom-code(megariches) {
+  #secondary-nav ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0 10px;
+  }
+}
+
+@include custom-code(dbet) {
+  #secondary-nav ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0 10px;
+  }
+}
+
+#secondary-nav ul li a .icon {
+  margin: 0;
+}
+
+.mobile-logo {
+  @include custom-code(videoslots) {
+    aspect-ratio: 50/35;
+  }
+
+  @include custom-code(mrvegas) {
+    aspect-ratio: 130/21;
+  }
+
+  @include custom-code(kungaslottet) {
+    width: 47px;
+
+    aspect-ratio: 47/33;
+  }
+
+  @include custom-code(megariches) {
+    width: 47px;
+    margin-left: 8px;
+
+    aspect-ratio: 47/33;
+  }
+
+  @include custom-code(dbet) {
+    width: 47px;
+    margin-left: 16px;
+
+    aspect-ratio: 47/33;
+  }
+}

@@ -1,0 +1,17 @@
+@include custom-code(mrvegas) {
+  .vs-button__rewards {
+    color: #18723C;
+  }
+
+  .vs-game-info-strip__item > .vs-button__split-individual-index {
+    color: #18723C;
+  }
+
+  #jackpotwinners .nano-content table > tbody > tr:nth-child(odd) {
+    background-color: #000 !important;
+  }
+
+  #jackpotwinners .nano-content table > tbody > tr:nth-child(even) {
+    background-color: #000 !important;
+  }
+}

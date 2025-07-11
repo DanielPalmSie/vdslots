@@ -1,0 +1,13 @@
+.fat-stats {
+  font-size: 14px;
+  width: 460px;
+  font-weight: bold;
+}
+
+.vs-semiwide-input {
+  background-color: #000000;
+  border: 1px solid #FF00FF;
+  color: #FFFFFF;
+  width: 440px;
+  margin: 5px;
+}

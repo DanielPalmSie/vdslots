@@ -1,0 +1,379 @@
+<!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. -->
+<xs:schema xmlns:tns="http://www.videoslots.loc" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://www.videoslots.loc">
+    <xs:element name="AuthorizationFault" type="tns:AuthorizationFault"/>
+    <xs:element name="AuthorizationRequest" type="tns:authorizationRequest"/>
+    <xs:element name="authorizationResponse" type="tns:authorizationResponse"/>
+    <xs:element name="authorizeAnonymous" type="tns:authorizeAnonymous"/>
+    <xs:element name="authorizeAnonymousResponse" type="tns:authorizeAnonymousResponse"/>
+    <xs:element name="authorizePlayer" type="tns:authorizePlayer"/>
+    <xs:element name="authorizePlayerResponse" type="tns:authorizePlayerResponse"/>
+    <xs:complexType name="authorizeAnonymous">
+        <xs:sequence>
+            <xs:element name="authorizationRequest" type="tns:authorizationRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorizationRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="sessionToken" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorizeAnonymousResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:authorizationResponse" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorizationResponse">
+        <xs:sequence>
+            <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AuthorizationFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorizePlayer">
+        <xs:sequence>
+            <xs:element name="authorizationRequest" type="tns:authorizationRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="authorizePlayerResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:authorizationResponse" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="MarkGameSessionClosedFault" type="tns:MarkGameSessionClosedFault"/>
+    <xs:element name="markGameSessionClosedRequest" type="tns:markGameSessionClosedRequest"/>
+    <xs:element name="markGameSessionClosedResponse" type="tns:markGameSessionClosedResponse"/>
+    <xs:element name="markGameSessionClosed" type="tns:markGameSessionClosed"/>
+    <xs:complexType name="markGameSessionClosed">
+        <xs:sequence>
+            <xs:element name="markGameSessionClosedRequest" type="tns:markGameSessionClosedRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="markGameSessionClosedRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="markGameSessionClosedResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:markGameSessionClosedAnswer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="markGameSessionClosedAnswer">
+        <xs:sequence/>
+    </xs:complexType>
+    <xs:complexType name="MarkGameSessionClosedFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+     <xs:element name="BonusProgram" type="tns:bonusProgram"/>
+    <xs:element name="DepositFault" type="tns:DepositFault"/>
+    <xs:element name="GetBalanceFault" type="tns:GetBalanceFault"/>
+    <xs:element name="GetPlayerCurrencyFault" type="tns:GetPlayerCurrencyFault"/>
+    <xs:element name="JackpotContribution" type="tns:jackpotContribution"/>
+    <xs:element name="RollbackTransactionFault" type="tns:RollbackTransactionFault"/>
+    <xs:element name="Tournament" type="tns:tournament"/>
+    <xs:element name="WithdrawAndDepositFault" type="tns:WithdrawAndDepositFault"/>
+    <xs:element name="WithdrawFault" type="tns:WithdrawFault"/>
+    <xs:element name="balanceRequest" type="tns:balanceRequest"/>
+    <xs:element name="balanceResponse" type="tns:balanceResponse"/>
+    <xs:element name="deposit" type="tns:deposit"/>
+    <xs:element name="depositAnswer" type="tns:depositAnswer"/>
+    <xs:element name="depositRequest" type="tns:depositRequest"/>
+    <xs:element name="depositResponse" type="tns:depositResponse"/>
+    <xs:element name="getBalance" type="tns:getBalance"/>
+    <xs:element name="getBalanceResponse" type="tns:getBalanceResponse"/>
+    <xs:element name="getPlayerCurrency" type="tns:getPlayerCurrency"/>
+    <xs:element name="getPlayerCurrencyResponse" type="tns:getPlayerCurrencyResponse"/>
+    <xs:element name="playerCurrencyRequest" type="tns:playerCurrencyRequest"/>
+    <xs:element name="playerCurrencyResponse" type="tns:playerCurrencyResponse"/>
+    <xs:element name="rollbackTransaction" type="tns:rollbackTransaction"/>
+    <xs:element name="rollbackTransactionAnswer" type="tns:rollbackTransactionAnswer"/>
+    <xs:element name="rollbackTransactionRequest" type="tns:rollbackTransactionRequest"/>
+    <xs:element name="rollbackTransactionResponse" type="tns:rollbackTransactionResponse"/>
+    <xs:element name="withdraw" type="tns:withdraw"/>
+    <xs:element name="withdrawAndDeposit" type="tns:withdrawAndDeposit"/>
+    <xs:element name="withdrawAndDepositAnswer" type="tns:withdrawAndDepositAnswer"/>
+    <xs:element name="withdrawAndDepositRequest" type="tns:withdrawAndDepositRequest"/>
+    <xs:element name="withdrawAndDepositResponse" type="tns:withdrawAndDepositResponse"/>
+    <xs:element name="withdrawAnswer" type="tns:withdrawAnswer"/>
+    <xs:element name="withdrawRequest" type="tns:withdrawRequest"/>
+    <xs:element name="withdrawResponse" type="tns:withdrawResponse"/>
+    <xs:complexType name="deposit">
+        <xs:sequence>
+            <xs:element name="DepositRequest" type="tns:depositRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="depositRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="amount" type="xs:double"/>
+            <xs:element name="bonusPrograms" type="tns:bonusProgram" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="tournaments" type="tns:tournament" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="bigWin" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="jackpotAmount" type="xs:double" minOccurs="0"/>
+            <xs:element name="bonusWin" type="xs:double" minOccurs="0"/>
+            <xs:element name="currency" type="xs:string"/>
+            <xs:element name="transactionRef" type="xs:string"/>
+            <xs:element name="gameRoundRef" type="xs:string" minOccurs="0"/>
+            <xs:element name="gameId" type="xs:string" minOccurs="0"/>
+            <xs:element name="reason" type="xs:string" minOccurs="0"/>
+            <xs:element name="source" type="xs:string" minOccurs="0"/>
+            <xs:element name="startDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="sessionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="bonusProgram">
+        <xs:sequence>
+            <xs:element name="bonusProgramId" type="xs:long" minOccurs="0"/>
+            <xs:element name="depositionId" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tournament">
+        <xs:sequence>
+            <xs:element name="tournamentId" type="xs:long"/>
+            <xs:element name="tournamentOccurrenceId" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="depositResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:depositAnswer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="depositAnswer">
+        <xs:sequence>
+            <xs:element name="balance" type="xs:double"/>
+            <xs:element name="transactionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DepositFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rollbackTransaction">
+        <xs:sequence>
+            <xs:element name="RollbackTransactionRequest" type="tns:rollbackTransactionRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rollbackTransactionRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="transactionRef" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="gameId" type="xs:string" minOccurs="0"/>
+            <xs:element name="sessionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rollbackTransactionResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:rollbackTransactionAnswer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rollbackTransactionAnswer">
+        <xs:sequence/>
+    </xs:complexType>
+
+    <xs:complexType name="RollbackTransactionFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdraw">
+        <xs:sequence>
+            <xs:element name="WithdrawRequest" type="tns:withdrawRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="amount" type="xs:double"/>
+            <xs:element name="bonusBet" type="xs:double" minOccurs="0"/>
+            <xs:element name="jackpotContributions" type="tns:jackpotContribution" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="currency" type="xs:string"/>
+            <xs:element name="transactionRef" type="xs:string"/>
+            <xs:element name="gameRoundRef" type="xs:string" minOccurs="0"/>
+            <xs:element name="gameId" type="xs:string" minOccurs="0"/>
+            <xs:element name="reason" type="xs:string"/>
+            <xs:element name="sessionId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="jackpotContribution">
+        <xs:sequence>
+            <xs:element name="jackpotId" type="xs:string"/>
+            <xs:element name="contribution" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:withdrawAnswer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawAnswer">
+        <xs:sequence>
+            <xs:element name="balance" type="xs:double"/>
+            <xs:element name="transactionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="WithdrawFault">
+        <xs:sequence>
+            <xs:element name="balance" type="xs:double" minOccurs="0"/>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawAndDeposit">
+        <xs:sequence>
+            <xs:element name="WithdrawAndDepositRequest" type="tns:withdrawAndDepositRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawAndDepositRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="withdraw" type="xs:double"/>
+            <xs:element name="deposit" type="xs:double"/>
+            <xs:element name="bigWin" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="jackpotAmount" type="xs:double" minOccurs="0"/>
+            <xs:element name="bonusWin" type="xs:double" minOccurs="0"/>
+            <xs:element name="bonusBet" type="xs:double" minOccurs="0"/>
+            <xs:element name="bonusPrograms" type="tns:bonusProgram" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="tournaments" type="tns:tournament" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="jackpotContributions" type="tns:jackpotContribution" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="currency" type="xs:string"/>
+            <xs:element name="transactionRef" type="xs:string"/>
+            <xs:element name="gameRoundRef" type="xs:string" minOccurs="0"/>
+            <xs:element name="gameId" type="xs:string" minOccurs="0"/>
+            <xs:element name="reason" type="xs:string"/>
+            <xs:element name="source" type="xs:string" minOccurs="0"/>
+            <xs:element name="startDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="sessionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawAndDepositResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:withdrawAndDepositAnswer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawAndDepositAnswer">
+        <xs:sequence>
+            <xs:element name="newBalance" type="xs:double"/>
+            <xs:element name="transactionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="WithdrawAndDepositFault">
+        <xs:sequence>
+            <xs:element name="balance" type="xs:double" minOccurs="0"/>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getBalance">
+        <xs:sequence>
+            <xs:element name="BalanceRequest" type="tns:balanceRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="balanceRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="currency" type="xs:string"/>
+            <xs:element name="gameId" type="xs:string" minOccurs="0"/>
+            <xs:element name="sessionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getBalanceResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:balanceResponse" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="balanceResponse">
+        <xs:sequence>
+            <xs:element name="balance" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GetBalanceFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPlayerCurrency">
+        <xs:sequence>
+            <xs:element name="PlayerCurrencyRequest" type="tns:playerCurrencyRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="playerCurrencyRequest">
+        <xs:sequence>
+            <xs:element name="callerId" type="xs:string"/>
+            <xs:element name="callerPassword" type="xs:string"/>
+            <xs:element name="playerName" type="xs:string"/>
+            <xs:element name="sessionId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPlayerCurrencyResponse">
+        <xs:sequence>
+            <xs:element name="return" type="tns:playerCurrencyResponse" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="playerCurrencyResponse">
+        <xs:sequence>
+            <xs:element name="currencyIsoCode" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GetPlayerCurrencyFault">
+        <xs:sequence>
+            <xs:element name="errorCode" type="xs:int"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

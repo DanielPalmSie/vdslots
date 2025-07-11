@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3058b8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <path id="Vector" class="cls-1" d="M1,1h26M1,1v18h26V1M1,1l13,9L27,1"/>
+  </g>
+</svg>

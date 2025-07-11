@@ -1,0 +1,10 @@
+// Varibles specific across MrVegas brand go here
+@import '_palette.scss';
+
+// variable needed for conditional code loading
+$brand: 'mrvegas';
+$brand-image-path: '../../images/#{$brand}';
+
+// main brand color
+$main-color: #18723C; //$primary-500
+$body--color: $white;

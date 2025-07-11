@@ -1,0 +1,34 @@
+body {
+  width: 100% !important;
+  min-width: auto;
+  background: none #FFF;
+  color: #000;
+}
+
+body #wrapper2 {
+  background: none;
+}
+
+body .container-holder {
+  background-color: #FFF;
+}
+
+.swish-qr-container {
+  text-align: center;
+  height: 100vh;
+}
+
+.swish-qr-container .swish-logo {
+  width: 320px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.swish-qr-container .swish_deposit_qrcode {
+  height: 300px;
+  width: 300px;
+}
+
+.scan-qr-text {
+  font-size: 13px;
+}

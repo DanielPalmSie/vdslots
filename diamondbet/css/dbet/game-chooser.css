@@ -1,0 +1,628 @@
+@charset "UTF-8";
+.gch-left {
+  float: left;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.gch-left div {
+  float: left;
+}
+
+.gch-left ul li {
+  list-style: none;
+  height: 40px;
+  background: #FAFAFA;
+  border: solid 1px #E4E4E4;
+  margin-top: -1px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.gch-left ul li a {
+  display: block;
+  padding: 10px 0px 0px 10px;
+  text-decoration: none;
+  color: #232323;
+}
+
+.gch-left ul li a:hover {
+  color: #4075FF;
+}
+
+.gch-left ul li a img {
+  display: block;
+  float: right;
+  margin-right: 20px;
+}
+
+.gch-left ul {
+  margin: 50px 0px 0px 0px;
+  padding: 0px;
+}
+
+.game-bkg .gch-left ul {
+  margin: 80px 0px 0px 0px;
+}
+
+.gch-left #freeplay ~ #search-result {
+  float: left;
+  width: 100%;
+  margin: 9px 0 14px 0;
+}
+
+.gch-left .magnifying-glass {
+  background: url("../../images/dbet/game_chooser/search_bkg.jpg") repeat-x;
+  height: 26px;
+  padding: 8px 8px 0px 0px;
+}
+
+.gch-right hr {
+  border: none;
+  border-top: 1px solid rgba(26, 52, 105, 0.5);
+}
+
+.gch-right {
+  float: left;
+  margin-left: 15px;
+  max-width: 645px;
+}
+
+.gch-right .game img {
+  margin-bottom: 10px;
+}
+
+.game-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.game-row .game {
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 0px;
+  padding-left: 8px;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game-row .game.col-size-3 {
+  font-size: 14px;
+}
+
+.game-row .game.col-size-4 {
+  font-size: 12px;
+}
+
+.game-row .game.col-size-5 {
+  font-size: 10px;
+}
+
+.game-row .game.col-size-5 .game-text a {
+  display: block;
+  padding-top: 1px;
+}
+
+.game-row .game.col-size-6 {
+  font-size: 7px;
+}
+
+.game-row .game.col-size-6 .game-text a {
+  display: block;
+  padding-top: 2px;
+}
+
+.game-row .game:first-child {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.game .game-top .icon {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.game .game-top {
+  position: relative;
+  width: 100%;
+}
+
+.game .game-top img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-style: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (-webkit-min-device-pixel-ratio: 0), screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .game .game-top img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .game .game-top img {
+      image-rendering: auto;
+    }
+  }
+}
+
+.game .game-top-with-high-thumbnail .game-image {
+  aspect-ratio: 125/166;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.game-top .img-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.game-top .game-over {
+  width: 100%;
+  height: 45px;
+  background: url(/phive/images/half-transparent.png) repeat;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  opacity: 0;
+  z-index: 2;
+}
+
+.game-top-with-jp .game-over {
+  bottom: 24px;
+}
+
+.game-top .game-over div {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+}
+
+.game .game-text {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.game .game-top-with-high-thumbnail .game-text,
+.game .game-top-with-jp .game-text {
+  display: none;
+}
+
+.game .game-text a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.game .game-text a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.gch-right .gch-grey-btn {
+  color: #222;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #474747;
+  height: 28px;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.a-to-z {
+  padding: 0px 5px 0px 5px;
+}
+
+.gch-right .show-own-favs-btn {
+  height: 27px;
+  width: 32px;
+  background: url("../../images/dbet/game_chooser/starred.png");
+  padding: 0px 5px 0px 5px;
+  border: 0;
+  cursor: pointer;
+  padding: 0px 0px 0px 0px;
+  margin-top: -1px;
+}
+
+.gch-right-top {
+  height: 30px;
+}
+
+.gch-right-top .gch-txt {
+  float: left;
+  font-weight: bold;
+  height: 23px;
+  padding-top: 5px;
+}
+
+.gch-payout-top .gch-item {
+  float: left;
+  margin-left: 5px;
+}
+
+#fav-btn-section .dynamic-mini-yellow {
+  width: 100px;
+}
+
+.gch-right-top .gch-item:first-child {
+  margin-left: 0px;
+}
+
+.gch-right-top-table {
+  width: 652px;
+  margin: -2px 0px 0px -4px;
+}
+
+.gch-right-top-table td {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+#gch-list {
+  margin-top: 15px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar .icon-vs-search:before {
+  color: #8C8C8C;
+  font-size: 16px;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+}
+
+#search_str {
+  height: 28px;
+  color: #A0A0A0;
+  padding-left: 8px;
+  width: 240px;
+  margin-left: 1px;
+  border: 1px solid #474747;
+}
+
+.gch-item .sbHolder, .gch-item .sbSmallHolder, .gch-item .sbMediumHolder {
+  float: left;
+  color: #8C8C8C;
+  font-size: 12px;
+  font-weight: normal;
+  border: 1px solid #474747;
+  height: 30px;
+  background: #FFF;
+}
+
+.gch-item .sbSmallHolder {
+  width: 100px;
+}
+
+.gch-item .sbMediumHolder {
+  width: 145px;
+}
+
+.gch-item .sbHolder {
+  width: 200px;
+}
+
+.gch-item .sbOptions, .gch-item .sbSmallOptions, .gch-item .sbMediumOptions {
+  border: solid 1px #3C3214;
+  background: #EEE;
+  width: 100px;
+  top: 26px !important;
+  height: auto;
+}
+
+.gch-item .sbSmallOptions {
+  width: 100px;
+  z-index: 100;
+}
+
+.gch-item .sbMediumOptions {
+  width: 145px;
+  z-index: 100;
+}
+
+.gch-item .sbOptions {
+  width: 200px;
+  position: absolute;
+  z-index: 100;
+}
+
+.gch-item .sbOptions a, .gch-item .sbSmallOptions a, .gch-item .sbMediumOptions a {
+  color: #222 !important;
+}
+
+.gch-item .sbOptions a:hover, .gch-item .sbSmallOptions a:hover,
+.gch-item .sbMediumOptions a:hover {
+  color: #555 !important;
+}
+
+.gch-item .sbToggle {
+  height: 30px;
+  z-index: 1;
+  background: none;
+  text-decoration: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gch-item .sbToggle:after {
+  font-family: "videoslots-font";
+  content: "";
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #8C8C8C;
+  border-left: 1px solid #8C8C8C;
+  padding-left: 4px;
+}
+
+.gch-item .sbToggleOpen {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gch-item .sbToggleOpen:after {
+  font-family: "videoslots-font";
+  content: "";
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #8C8C8C;
+  border-left: 1px solid #8C8C8C;
+  padding-left: 4px;
+}
+
+.gch-item .sbSelector:link, .gch-item .sbSelector:visited, .gch-item .sbSelector:hover {
+  color: #8C8C8C;
+  outline: medium none;
+  text-decoration: none;
+}
+
+.gch-item .sbOptions li:last-child a, .gch-item .sbSmallOptions li:last-child a,
+.gch-item .sbMediumOptions li:last-child a {
+  border-bottom: none;
+}
+
+.paginator {
+  float: right;
+  width: 220px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.paginator .current_link {
+  background: none;
+  font-weight: bold;
+}
+
+.paginator .page_link {
+  background: none;
+}
+
+.paginator .arrow {
+  font-size: large;
+  line-height: 6px;
+  margin-bottom: 5px;
+}
+
+.gch-top-right {
+  float: right;
+}
+
+.mg-choose-winners-container div, .mg-choose-jackpots div {
+  float: none;
+}
+
+.mg-choose-winners-container ul, .mg-choose-jackpots ul {
+  margin: 0px;
+}
+
+.mg-choose-winners-container ul li, .mg-choose-jackpots ul li {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: normal;
+  height: auto;
+  margin-top: 0px;
+}
+
+.mg-choose-jackpots {
+  width: 260px;
+}
+
+.mg-choose-winners-container {
+  width: 260px;
+  height: 415px;
+  overflow: hidden;
+}
+
+.mg-choose-winners-container .img-left, .mg-choose-jackpots .img-left {
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  border-style: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (-webkit-min-device-pixel-ratio: 0), screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .mg-choose-winners-container .img-left, .mg-choose-jackpots .img-left {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .mg-choose-winners-container .img-left, .mg-choose-jackpots .img-left {
+      image-rendering: auto;
+    }
+  }
+}
+
+.jp-amount {
+  float: left;
+  color: #112F7C;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.mg-choose-jackpots .winner-line {
+  margin-top: 10px;
+}
+
+.mg-choose-jackpots li {
+  float: left;
+  list-style: none;
+  width: 260px;
+  cursor: pointer;
+}
+
+#fav-btn-section button {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2B54BD), to(#162D67));
+  background: linear-gradient(180deg, #2B54BD 0%, #162D67 100%);
+}
+
+.gchoose-fav-icon {
+  height: 14px;
+  width: 13px;
+  margin: 0px 4px 2px 0px !important;
+  float: left;
+  cursor: pointer;
+}
+
+.ystar {
+  background: url("../../images/dbet/game_chooser/ystar.png");
+}
+
+.gstar {
+  background: url("../../images/dbet/game_chooser/gstar.png");
+}
+
+.fav-top-btn {
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 3px 5px 2px 5px;
+  width: 100%;
+  text-shadow: none;
+  border-radius: 5px;
+}
+
+#fav-mode {
+  background: #4075FF;
+}
+
+#add-mode {
+  background: #2ACA81;
+}
+
+#remove-mode {
+  background: #E72327;
+}
+
+.red-btn {
+  /* autoprefixer: off */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #CE1F00), color-stop(1, #720A00));
+  background-image: -o-linear-gradient(bottom, #CE1F00 0%, #720A00 100%);
+  background-image: -moz-linear-gradient(bottom, #CE1F00 0%, #720A00 100%);
+  background-image: -webkit-linear-gradient(bottom, #CE1F00 0%, #720A00 100%);
+  background-image: -ms-linear-gradient(bottom, #CE1F00 0%, #720A00 100%);
+  background-image: linear-gradient(to bottom, #CE1F00 0%, #720A00 100%);
+}
+
+.green-btn {
+  /* autoprefixer: off */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4E8A00), color-stop(1, #2A5400));
+  background-image: -o-linear-gradient(bottom, #4E8A00 0%, #2A5400 100%);
+  background-image: -moz-linear-gradient(bottom, #4E8A00 0%, #2A5400 100%);
+  background-image: -webkit-linear-gradient(bottom, #4E8A00 0%, #2A5400 100%);
+  background-image: -ms-linear-gradient(bottom, #4E8A00 0%, #2A5400 100%);
+  background-image: linear-gradient(to bottom, #4E8A00 0%, #2A5400 100%);
+}
+
+.fav-table {
+  width: 100%;
+  margin-left: 1px;
+}
+
+.fav-table td {
+  width: 33%;
+}
+
+#gch-list {
+  min-height: 500px;
+}
+
+.overlay-marker {
+  position: absolute;
+}
+
+.overlay-remove {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.4)), to(rgba(40, 40, 40, 0.8)));
+  background: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.8));
+}
+
+.overlay-add {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.4)), to(rgba(40, 40, 40, 0.8)));
+  background: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.8));
+}
+
+.overlay-remove-default {
+  background: -webkit-gradient(linear, left top, left bottom, from(#CE1F00), to(#720A00));
+  background: linear-gradient(#CE1F00 0%, #720A00 100%);
+}
+
+.overlay-add-action {
+  background: #112F7C;
+}
+
+.game-under-construction {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ribbon-pic {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fullFlashBox .carousel .ribbon-pic {
+  left: 435px;
+}

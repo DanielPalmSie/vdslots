@@ -1,0 +1,19 @@
+.mobile-top-list ul li {
+  font-size: 12px !important;
+}
+
+#country {
+  padding-left: 53px !important;
+}
+
+input:-webkit-autofill.error,
+input:-webkit-autofill:focus.error {
+  background-color: #FED6D7;
+  -webkit-box-shadow: 0 0 0px 1000px #FED6D7 inset;
+  color: #FC282B !important;
+  -webkit-text-fill-color: #FC282B !important;
+}
+
+.ios15 #bonus_code {
+  color: #000 !important;
+}

@@ -1,0 +1,431 @@
+#registration-wrapper {
+  background: #FFF !important;
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  /* autoprefixer: ignore next */
+  height: fill-available;
+  height: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: auto !important;
+}
+
+.registration-header {
+  padding-bottom: 5px;
+  height: 48px;
+}
+.registration-header .registration-header-left, .registration-header .registration-header-right {
+  width: 100px;
+}
+
+#close-registration-box {
+  margin: 3px 30px 0px 80px;
+  padding: 0;
+}
+#close-registration-box #chat-registration {
+  background-image: none;
+}
+#close-registration-box #close-registration-box {
+  margin: 5px 30px 0 40px;
+  font-size: 16px;
+}
+
+.registration-container {
+  height: 100vh;
+}
+.registration-container p {
+  width: 100%;
+}
+.registration-container input, .registration-container select {
+  margin-top: 4px;
+}
+.registration-container .styled-select::after, .registration-container .styled-select-valid::after, .registration-container .styled-select-error::after {
+  line-height: 47px;
+}
+.registration-container #step1 {
+  margin-left: 0px;
+  position: relative;
+  min-height: calc(100% - 100px);
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.registration-container #step1 #mobile {
+  width: 100%;
+  right: 1px;
+}
+.registration-container #step1 #mobile-container, .registration-container #step1 #mobile-container label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.registration-container #step1 #submit_step_1 {
+  position: absolute;
+  margin: 0;
+  bottom: -80px;
+}
+.registration-container #step1 #password_holder > label {
+  width: 100%;
+}
+.registration-container #step1 .password-field-icon-mobile {
+  margin-left: 0;
+  margin-top: -33px;
+}
+.registration-container #step1 #second-register-button .register-button {
+  position: absolute;
+  margin: 0;
+  bottom: -80px;
+}
+.registration-container form {
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.iphone #step1 #country_prefix {
+  padding-left: 25px;
+}
+
+.iphone #step1 .password-field-icon-mobile {
+  margin-right: 8px;
+}
+
+.registration-box-inside-iframe .registration-content-left {
+  padding-bottom: 10px;
+}
+
+#validation_step1 .registration-content-left {
+  width: 100%;
+  height: 100%;
+}
+
+#step2 label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.show-registration-footer .registration-header {
+  min-height: 48px;
+}
+
+#country, #preferred_lang, #occupation {
+  width: 360px;
+}
+
+#mobile {
+  width: 275px;
+}
+
+.register-button {
+  width: 360px;
+}
+
+.info-message {
+  width: 360px;
+}
+
+.styled-select::after, .styled-select-valid::after, .styled-select-error::after {
+  line-height: 47px;
+  top: 18px;
+}
+
+.registration-content-right .registration-step-2-control {
+  margin: 0 0 24px 0;
+}
+
+.registration-content-right .registration-step-2-control.field-email_code {
+  margin: 0;
+}
+
+.registration-wrapper-IT .step2,
+.step2 {
+  width: 360px;
+}
+
+.regstep2-right {
+  padding: 0;
+}
+
+.regstep2-middle,
+.regstep2-left, .regstep2-right {
+  margin-left: 0px;
+  width: 360px;
+}
+
+label[for=male], label[for=female] {
+  width: 177px;
+}
+
+#submit_step_2 {
+  left: 0;
+  position: static;
+  top: 0;
+}
+
+.resend-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#infotext {
+  width: 350px;
+  margin-left: 0px;
+}
+
+.step2-gender-lbl {
+  width: 360px;
+}
+
+label[for=newsletter] {
+  display: inline-block;
+  width: 360px;
+}
+
+#occupation option {
+  width: 340px;
+}
+
+.date-item,
+#birthdate, #birthmonth, #birthyear, #birthyear-cont, #currency, #birthdate-title, #birth_country {
+  width: 360px;
+}
+
+#birthdate-title, #currency-title, #birth_country-title {
+  margin-bottom: 10px;
+}
+
+#birthdate-container span {
+  width: 32% !important;
+}
+
+#birthdate, #birthmonth, #birthyear, #preferred_lang, #step2 #country, #currency, #birthyear-cont, #country, #occupation, #birth_country {
+  margin: 0px;
+}
+
+.date-item,
+#birthdate, #birthmonth, #birthyear {
+  margin-bottom: 20px;
+}
+
+#preferred_lang, #city {
+  margin-bottom: 12px;
+}
+
+#birthdate-container select,
+#language-currency select,
+#language-currency .currency {
+  width: 100%;
+}
+
+.styled-select-valid,
+.field-birthdate > label,
+.styled-select-valid > #birthdate,
+.styled-select-valid > #birthmonth,
+.styled-select-valid > #birthyear,
+.styled-select-valid > #currency,
+.styled-select-valid > #preferred_lang {
+  width: 100%;
+}
+
+.label-birth_country,
+.label-birthdate {
+  padding-bottom: 10px;
+}
+
+.registration-wrapper-IT#registration-wrapper {
+  width: 100%;
+}
+
+.registration-country-IT .field-doc_type,
+.registration-country-IT .field-doc_number,
+.registration-country-IT .field-doc_type select,
+.registration-country-IT .field-doc_number input {
+  width: 360px;
+  float: none;
+}
+
+.registration-country-IT .field-doc_type {
+  width: 48% !important;
+  float: left;
+  margin-right: 10px;
+}
+
+.registration-country-IT .field-doc_number {
+  width: 48% !important;
+  float: right;
+}
+
+.registration-country-IT .field-sex,
+.registration-country-IT .field-doc_issue_date .styled-select {
+  margin-bottom: 14px;
+}
+
+.registration-country-IT .styled-select::after,
+.registration-country-IT .styled-select-valid::after,
+.registration-country-IT .styled-select-error::after {
+  line-height: 45px;
+  top: 2px;
+}
+
+.registration-container input, .registration-container select {
+  margin-top: 0;
+}
+
+.regform-field,
+.default-input,
+.wide-input,
+.narrow-input,
+.input-normal,
+.medium-input {
+  height: auto;
+  padding: 3px;
+  width: 275px;
+  text-indent: 4px;
+}
+
+.input-with-icon input {
+  width: 300px;
+}
+
+.input-with-icon .icon {
+  margin-top: 0;
+}
+
+.field-currency .label {
+  width: 100%;
+  display: none;
+  margin-top: 0;
+}
+
+#preferred_lang,
+#city {
+  margin-bottom: 0;
+}
+
+.field-doc_issue_date > label > .styled-select,
+.field-doc_issue_date > label > .styled-select-valid,
+.field-doc_issue_date > label > .styled-select-error,
+.field-birthdate > label > .styled-select,
+.field-birthdate > label > .styled-select-valid,
+.field-birthdate > label > .styled-select-error {
+  width: 32% !important;
+  float: left;
+}
+
+.field-doc_issue_date > label > .styled-select:nth-child(3),
+.field-doc_issue_date > label > .styled-select-valid:nth-child(3),
+.field-doc_issue_date > label > .styled-select-error:nth-child(3),
+.field-birthdate > label > .styled-select:nth-child(3),
+.field-birthdate > label > .styled-select-valid:nth-child(3),
+.field-birthdate > label > .styled-select-error:nth-child(3) {
+  margin-left: 2% !important;
+  margin-right: 2% !important;
+}
+
+.date-item,
+#birthdate,
+#birthmonth,
+#birthyear {
+  margin-bottom: 0;
+}
+
+.styled-select,
+.styled-select-valid,
+.styled-select-error,
+.styled-select > select {
+  max-width: 100%;
+}
+
+.registration-country-NL .registration-step-2-control.field-iban .description-top {
+  margin-bottom: 5px;
+}
+
+.registration-country-NL .field-preferred_lang {
+  margin-left: 0;
+}
+
+.registration-country-NL .field-currency {
+  float: right;
+}
+
+.registration-country-NL .registration-step-2-control #doc_issued_by {
+  padding-left: 16px !important;
+}
+
+.registration-wrapper-NL #submit_step_2 {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.registration-country-NL .registration-step-2-control.field-opt_in_promotions > br,
+.registration-country-NL .registration-step-2-control.field-honest_player > br {
+  display: none;
+}
+
+.registration-country-NL .registration-step-2-control .label-email_code,
+.registration-country-NL #infotext,
+.registration-country-NL .registration-step-2-control.field-honest_player label,
+.registration-country-NL .registration-step-2-control.field-opt_in_promotions label,
+.registration-country-NL .registration-step-2-control.field-eighteen label,
+.registration-country-NL .registration-step-2-control.field-honest_player,
+.registration-country-NL .registration-step-2-control.field-opt_in_promotions,
+.registration-country-NL .registration-step-2-control.field-eighteen {
+  margin: 0;
+}
+
+.registration-country-NL .input-normal:disabled {
+  background-color: #C2C0C0 !important;
+  color: #211C1C !important;
+}
+
+input#country_prefix:disabled::-webkit-input-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+input#country_prefix:disabled::-moz-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+input#country_prefix:disabled:-ms-input-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+input#country_prefix:disabled::-ms-input-placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+input#country_prefix:disabled,
+input#country_prefix:disabled::placeholder {
+  opacity: 1;
+  /* correct opacity on iOS */
+}
+
+.version2 #nid-field {
+  height: 47px;
+}
+
+.version2 .lic-mbox-btn {
+  position: absolute;
+  bottom: 100px;
+  width: 92% !important;
+}

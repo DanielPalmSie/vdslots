@@ -1,0 +1,444 @@
+.trophy-category-headline {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #5E5E5E;
+}
+
+.trophies-top {
+  padding: 10px;
+  position: relative;
+  width: 653px;
+}
+
+.trophies-top-section {
+  padding: 10px;
+  width: 653px;
+}
+
+.trophy-category-section {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.activity-category-description {
+  font-size: 12px;
+  margin-bottom: -17px;
+  font-weight: 400;
+}
+
+.activity-progress-image {
+  padding: 0px !important;
+  margin-left: -5px;
+}
+
+.activity-progress-txt {
+  margin-top: 7px;
+  font-weight: 400;
+  float: right;
+}
+
+.big-award-star {
+  width: 118px;
+  margin: auto;
+  min-height: 200px;
+}
+
+.trophy-level-txt {
+  position: absolute;
+  bottom: 50px;
+}
+
+.trophy-status-txt {
+  position: absolute;
+  bottom: 50px;
+  right: 350px;
+}
+
+.xp-progressbar-bkg {
+  position: absolute;
+  bottom: 18px;
+  height: 14px;
+  width: 310px;
+  background-color: #C1C1C1;
+  border-radius: 4px;
+}
+
+.xp-progressbar-bar {
+  border-radius: 4px;
+  position: absolute;
+  bottom: 20px;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.trophy-progressbar-bkg {
+  position: absolute;
+  bottom: 5px;
+  height: 7px;
+  width: 85%;
+  background-color: #222;
+  border-radius: 2px;
+}
+
+.trophy-progressbar-bar {
+  border-radius: 4px;
+  position: absolute;
+  bottom: 6px;
+  height: 5px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 2px #ADF;
+          box-shadow: 0px 0px 2px #ADF;
+}
+
+.text-medium-bold {
+  font-size: 14px;
+  font-weight: bold;
+  color: #232323;
+}
+
+.trophy-search-area #search_str {
+  width: 220px !important;
+  background-position: -20px 0px !important;
+}
+
+.trophy-search-area #search_str, .trophy-search-area .gch-item div {
+  border-radius: 5px;
+}
+.trophy-search-area #search_str::-webkit-input-placeholder, .trophy-search-area .gch-item div::-webkit-input-placeholder {
+  color: #8C8C8C;
+}
+.trophy-search-area #search_str::-moz-placeholder, .trophy-search-area .gch-item div::-moz-placeholder {
+  color: #8C8C8C;
+}
+.trophy-search-area #search_str:-ms-input-placeholder, .trophy-search-area .gch-item div:-ms-input-placeholder {
+  color: #8C8C8C;
+}
+.trophy-search-area #search_str::-ms-input-placeholder, .trophy-search-area .gch-item div::-ms-input-placeholder {
+  color: #8C8C8C;
+}
+.trophy-search-area #search_str::placeholder, .trophy-search-area .gch-item div::placeholder {
+  color: #8C8C8C;
+}
+
+.trophy-infobox {
+  position: absolute;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 4px #000;
+          box-shadow: 0px 0px 4px #000;
+  min-height: 40px;
+  border: 1px solid #BBBBBB;
+  padding: 10px;
+  background: #E4E4E4;
+  color: #232323;
+  z-index: 101;
+}
+
+.reward-infobox {
+  width: 200px;
+  margin-top: -12px;
+}
+
+.reward-img {
+  cursor: pointer;
+}
+
+.trophy-infobox:before {
+  border-color: #333 transparent;
+  border-style: solid;
+  border-width: 15px 15px 0;
+  bottom: -15px;
+  content: "";
+  display: block;
+  left: 45px;
+  position: absolute;
+  width: 0;
+}
+
+.trophy-infobox:after {
+  border-color: #000 transparent;
+  border-style: solid;
+  border-width: 13px 13px 0;
+  bottom: -13px;
+  content: "";
+  display: block;
+  left: 47px;
+  position: absolute;
+  width: 0;
+}
+
+.trophy-infobox .text-medium-bold {
+  margin-bottom: 5px;
+}
+
+.cnt-icon {
+  min-width: 16px;
+  height: 14px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 4px 2px 2px;
+  border-radius: 2px;
+  text-shadow: 1px 1px 1px #000;
+  position: absolute;
+  z-index: 99;
+  max-width: 50px;
+  top: -5px;
+  left: 26px;
+  -webkit-box-shadow: 0px 0px 2px #000;
+          box-shadow: 0px 0px 2px #000;
+}
+
+.trophy-container {
+  display: inline;
+  position: relative;
+}
+
+.trophy-container-tab {
+  display: block;
+  position: relative;
+}
+
+.trophy-top-left {
+  vertical-align: top;
+  width: 300px;
+}
+
+.rewards-middle-box {
+  width: 330px;
+  margin-top: 10px;
+}
+
+.rewards-middle-box .trophy-container {
+  margin-left: 2px;
+}
+
+.rewards-middle-box h3 {
+  border-bottom: none;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+.trophy-top-right .deposit-btn {
+  background: #2ACA81;
+  color: #FFFFFF;
+}
+.trophy-top-right .withdraw-btn {
+  background: #4075FF;
+  color: #FFFFFF;
+}
+.trophy-top-right .documents-btn {
+  background: #112F7C;
+  color: #FFFFFF;
+}
+.trophy-top-right .zebra-tbl td {
+  font-weight: 700;
+}
+
+.trophy-top-right .simple-box {
+  background: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.active-reward-area {
+  position: relative;
+  width: calc(100% - 103px);
+}
+
+.active-reward-area .zebra-tbl {
+  border-collapse: separate;
+  width: 543px;
+}
+
+.forfeit-award-btn {
+  float: right;
+  margin: 10px 3px 0px 0px;
+}
+
+.trademark-txt {
+  float: right;
+  color: #555;
+  margin-top: 75px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container .icon-vs-search:before {
+  color: #8C8C8C;
+  font-size: 16px;
+  right: 13px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+}
+
+.trophy-search-area {
+  position: absolute;
+  z-index: 100;
+}
+
+.trophy-area {
+  padding-top: 20px;
+}
+
+.moreinfo {
+  float: right;
+  margin-top: -40px;
+}
+
+.moreinfo-info {
+  display: none;
+  width: 150px;
+  z-index: 501;
+}
+
+.reward-history-container {
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.reward-history-empty {
+  float: left;
+  margin: 20px 0 0 10px;
+  color: #112F7C;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.award-progressbar-bkg {
+  top: 90px;
+  left: 3px;
+}
+
+.active-reward-area .award-progressbar-bar {
+  top: 92px;
+  left: 3px;
+}
+
+.big-xp-progress {
+  margin-left: 10px;
+}
+
+.big-xp .big-award-star {
+  height: 118px !important;
+  min-height: 118px !important;
+  width: 131px !important;
+  padding-bottom: 25px;
+}
+
+.big-xp .xp-progressbar-bkg {
+  width: 490px !important;
+}
+
+.big-xp .trophy-status-txt {
+  right: 20px !important;
+}
+
+.big-xp .trophy-category-headline {
+  margin-left: 0px !important;
+}
+
+.award-section-line {
+  float: left;
+  width: 303px;
+  clear: both;
+  color: #232323;
+}
+
+.progress-absolute {
+  padding-top: 5px;
+  float: right;
+}
+
+.reward-action-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 8px 2px;
+}
+.reward-action-area .btn-default-s {
+  background: #4075FF;
+}
+.reward-action-area .btn-cancel-default-l {
+  background: #C41620;
+}
+
+.reward-action-area button {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+}
+
+.mission-graph {
+  color: #000;
+  outline-color: #C1C1C1;
+  accent-color: #3058B8;
+}
+
+.new-reset-icon {
+  all: unset;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  background: #112F7C;
+  border: 1px solid #112F7C;
+}
+.new-reset-icon .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-top: 2px;
+  font-size: 12px;
+  color: #FFF;
+  text-shadow: 0 0 1px currentColor;
+}
+.new-reset-icon:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: 2px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: #000;
+  z-index: 1;
+  opacity: 0.4;
+}
+.new-reset-icon.zero-opacity:before {
+  opacity: 0;
+}

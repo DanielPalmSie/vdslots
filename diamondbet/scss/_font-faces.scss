@@ -1,0 +1,9 @@
+// file is added to root of scss folder because any partial under _includes are included in multiple files
+// and that would result in unneccessary code duplication for the font-face definitions
+@include font-face('Luckiest Guy', luckiest-guy-v22-latin-regular, 400, $common: true);
+@include font-face('videoslots-font', videoslots-font, 400, $common: true);
+
+@include font-face(Roboto, roboto-v30-latin-regular, 400, $common: true);
+@include font-face(Roboto, roboto-v30-latin-500, 500, $common: true);
+@include font-face(Roboto, roboto-v30-latin-700, 700, $common: true);
+@include font-face(Roboto, roboto-v30-latin-900, 900, $common: true);

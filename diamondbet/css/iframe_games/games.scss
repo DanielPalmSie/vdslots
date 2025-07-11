@@ -1,0 +1,487 @@
+// ============
+//
+//  Variables
+//
+// ============
+
+$sticky-bar-height: 24px;
+$sticky-bar-border-height: 1px;
+$sticky-bar-width: $sticky-bar-height;
+
+// we set sticky bar box sizing to border-box, so no need to add border height here
+$sticky-bar-full-width: $sticky-bar-width;
+$sticky-bar-full-height: $sticky-bar-height;
+
+$sticky-bar-border-color: #555555;
+
+$scroll-up-background-symbol-zindex: 999;
+$scroll-up-background-zindex: $scroll-up-background-symbol-zindex + 1;
+$vs-sticky-bar-zindex: $scroll-up-background-zindex + 1000;
+
+
+// ============
+//
+// Default styling reset
+//
+// ============
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #111;
+
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+
+  user-select: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+// ============
+//
+// Utils
+//
+// ============
+
+.gradient-normal {
+  background: #333333;
+  background: -moz-linear-gradient(top, #333333 0%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #333333 0%, #000000 100%);
+  background: -o-linear-gradient(top, #333333 0%, #000000 100%);
+  background: -ms-linear-gradient(top, #333333 0%, #000000 100%);
+  background: linear-gradient(to bottom, #333333 0%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000', GradientType=0);
+}
+
+// https://stackoverflow.com/questions/23083462/how-to-get-an-iframe-to-be-responsive-in-ios-safari
+// https://github.com/ampproject/amphtml/issues/11133
+// we are seeting max-width and max-height for the iframe in our JS code then
+.responsive-iframe-fix {
+  height: 0;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 0;
+}
+
+
+// ============
+//
+// Sticky bar
+//
+// ============
+
+#vs-sticky-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  z-index: $vs-sticky-bar-zindex;
+
+  @media screen and (orientation: portrait) {
+    height: $sticky-bar-height;
+    padding: 2px 10px;
+    color: #ffffff;
+
+    border-bottom: $sticky-bar-border-height solid $sticky-bar-border-color;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (orientation: landscape) {
+    position: relative;
+
+    width: $sticky-bar-width;
+    height: 100%;
+
+    border-right: $sticky-bar-border-height solid $sticky-bar-border-color;
+
+    overflow: hidden;
+
+    float: left;
+
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+// Sticky bar: Sticky bar content
+
+.vs-sticky-bar__content {
+  font-size: 12px;
+
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (orientation: portrait) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  @media screen and (orientation: portrait) and (max-width: 308px) {
+    font-size: 11px;
+  }
+
+  @media screen and (orientation: landscape) {
+    // position: fixed;
+    // right: 10px;
+    // top: 0px;
+    // padding: 4px;
+    // background: white;
+
+    color: #eee;
+    transform: rotate(-90deg);
+    padding-left: 10px;
+
+    font-size: 12px;
+  }
+}
+
+.vs-button-home {
+  display: none;
+
+  font-size: 16px;
+
+  @media screen and (orientation: portrait) {
+    margin-left: 6px;
+  }
+
+  @media screen and (orientation: portrait) and (max-width: 260px) {
+    margin-left: 6px;
+  }
+
+  @media screen and (orientation: landscape) {
+    margin-right: 6px;
+  }
+}
+
+.vs-timer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.vs-clock-icon {
+  margin-right: 4px;
+}
+
+
+// Sticky bar: Sticky bar images
+
+.vs-sticky-bar__images {
+  display: flex;
+  align-items: center;
+
+  @media screen and (orientation: landscape) {
+    // position: absolute;
+    // left: -24px;
+
+    // height: 100%;
+    max-height: 350px;
+
+    flex: 0 0 75%;    
+
+    flex-direction: column-reverse;
+    justify-content: space-around;    
+  }
+
+  // @media screen and (orientation: landscape) and (max-height: 320px) {
+  //   left: -23px;
+  // }  
+
+  // iPhone 6 Plus, 6s Plus, 7 Plus, 8 Plus landscape, XS Max Landscape, XR Landscape
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
+    padding-top: 35px;
+    max-height: 200px;
+  }
+
+  @media screen and (orientation: portrait) {
+    a:nth-child(2) {
+      margin-left: 1px;
+    }
+  }  
+}
+
+.vs-sticky-bar-vertical__small .vs-sticky-bar__images {
+  @media screen and (orientation: landscape) {
+    flex: 0 0 70%;
+  } 
+}
+
+.vs-sticky-bar__image {
+  max-height: 20px;
+
+  @media screen and (orientation: portrait) {
+    margin-left: 3px;
+    margin-top: -3px;
+
+    @media screen and (max-width: 320px) {
+      height: 22px;
+    }
+    @media screen and (max-width: 308px) {
+      max-height: 18px;
+    }
+    @media screen and (max-width: 260px) {
+      max-height: 16px;
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    transform: rotate(-90deg);
+
+    @media screen and (max-height: 320px) {
+      max-height: 20px;
+    }
+    @media screen and (max-height: 360px) {
+      max-height: 20px;
+    }
+  }
+}
+
+.vs-sticky-bar-vertical__small .vs-sticky-bar__image {
+  @media screen and (orientation: landscape) {
+    max-height: 16px;
+  } 
+}
+
+
+// ============
+//
+// Main container
+//
+// ============
+
+#vs-game-container {
+  width: 100%;
+  height: 100%;
+  
+  overflow: hidden;  
+  // overflow-y: scroll;
+  // -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch !important;
+
+  // TODO?
+  // tweak for iPad resizing gesture?
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: rotate3d(0,0,0);
+}
+
+#vs-game-container__iframe {
+  border: none;
+  outline: none;
+
+  @media screen and (orientation: landscape) {
+    display: inline-block;
+    float: left;
+  }
+}
+
+#vs-game-mode-overlap {
+  height: 1px;
+  width: 100%;
+  background: #111;
+}
+
+
+// ============
+//
+// Fullscreen button
+//
+// ============
+
+#vs-fullscreen-button {
+  position: absolute;
+  top: 0;
+  left: 8;
+
+  display: none;
+}
+
+
+// ============
+//
+// Swipe overlay
+//
+// ============
+
+// https://d1k6j4zyghhevb.cloudfront.net/mcasino/videoslots/divinedreams/index.html?gameid=divinedreams&language=en_US&ticket=&moneymode=fun&mode=prod&partnerid=12
+
+.scroll-up-background {
+  position: absolute;
+  //top: -500px;
+  top: 0;
+  left: 0;
+  height: 100000px;
+
+  box-sizing: border-box;
+  z-index: $scroll-up-background-zindex;
+
+  background: rgba(256, 256, 256, 0.4);
+  //opacity: .5;
+
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+
+  @media screen and (orientation: portrait) {
+    top: $sticky-bar-full-height;
+
+    width: 100%;
+  }
+
+  @media screen and (orientation: landscape) {
+    left: $sticky-bar-full-width;
+
+    width: calc(100% - #{$sticky-bar-full-width});
+  }
+}
+
+.fullscreen .scroll-up-background {
+  visibility: hidden;
+}
+
+.scroll-up-background-symbol {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: $scroll-up-background-symbol-zindex;
+
+  color: white;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: none;
+
+  font-size: 100px;
+
+  box-sizing: border-box;
+}
+
+.fa-hand-point-up {
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: white; 
+
+  animation: MoveUpDown 2s linear infinite;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;  
+}
+
+@media screen and (orientation: portrait) {
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 40%;
+    }
+    50% {
+      bottom: 60%;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 30%;
+    }
+    50% {
+      bottom: 50%;
+    }
+  }
+}
+
+.fullscreen .scroll-up-background-symbol {
+  display: none;
+}
+
+
+// ============
+//
+// Logged-in time
+//
+// ============
+
+.logged-in-time {
+  color: #aaa;
+  margin-left: 4px;
+  display: flex;
+
+  .logged-in-time__icon {
+    float: left;
+    height: 15px;
+    display: inline-flex;
+    margin-right: 4px;
+  }
+
+  .logged-in-time__time {
+    float: left;
+    display: inline-flex;
+    margin-left: 6px;
+  }
+
+  .logged-in-time__time--label {
+    float: left;
+    margin-right: 10px;
+    margin-top: 1px;
+  }
+
+  .digital-clock {
+    margin-top: 5px;
+    padding: 0 0 0 10px;
+    display: flex;
+    float: left;
+  }
+
+  .digital-full-clock {
+    display: flex;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 12px;
+      margin-top: 1px;
+    }
+  }
+
+  .digital-clock li,
+  .digital-full-clock li {
+    display: flex;
+    list-style: none;
+    float: left;
+    font-size: 12px;
+  }
+}
+
+
