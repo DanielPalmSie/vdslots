@@ -1,0 +1,23 @@
+@import "../colors";
+
+.skin-purple {
+    .main-header {
+        background-color: $purple;
+        .nav-item > a {
+            background-color: $purple;
+        }
+        .nav-item > a:hover {
+            background-color: darken($purple, 5%);
+        }
+    }
+    .main-sidebar {
+        .logo-switch {
+            background-color: darken($purple, 5%) !important;
+            color: #fff !important;
+            border-bottom: none;
+            &:hover {
+                background-color: darken($purple, 6%) !important;
+            }
+        }
+    }
+}

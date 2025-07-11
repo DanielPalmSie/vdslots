@@ -1,0 +1,1079 @@
+<style><!--
+
+:root {
+    /*videoslots*/
+    --primary-text-color: #DD9E37;
+    --primary-bg-color: #DD9E37;
+    --clue--today-bg-color: #00002C;
+    --clue--today-bg-color-hover: #97092D;
+    --clue--today-bg-color-pressed: #4D0517;
+
+    --today-button-text-color: #DD9E37;
+    --today-button-bg-color: #97092D;
+    --today-button-bg-color-hover: #97092D;
+    --today-button-bg-color-active: #4D0517;
+
+    ---text-color: #1E1E1E;
+}
+
+/*Banner, intro text and image decoration. */
+[class*="christmas-calendar__"] {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.christmas-calendar__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.christmas-calendar__container::after {
+    content: "";
+    clear: both;
+}
+
+.christmas-calendar__content-info {
+    display: flex;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.christmas-calendar__content-info__text {
+    width: 84%;
+}
+
+.christmas-calendar__content-info__text .christmas-calendar_h2 {
+    font-size: 32px !important;
+    line-height: 37px !important;
+    margin: 0 !important;
+}
+
+.christmas-calendar__content-info__closing {
+    padding: 60px 0;
+}
+
+.christmas-calendar_p {
+    font-size: 20px !important;
+    line-height: 32px !important;
+    /*color: #FFFFFF;*/
+    padding: 20px 0 !important;
+    margin: 0 !important;
+}
+
+.christmas-calendar__content-info__closing .christmas-calendar_p:last-child {
+    padding-bottom: 0px !important;
+}
+
+.christmas-calendar__content-info__image {
+    /*width: 16%;*/
+    height: auto;
+}
+
+.christmas-calendar__content-info:nth-child(odd) .christmas-calendar__content-info__image {
+    padding-left: 10px;
+}
+
+.christmas-calendar__content-info:nth-child(even) .christmas-calendar__content-info__image {
+    padding-right: 10px;
+}
+
+/*CTA, Calendar, Clue box*/
+.christmas-calendar__clue-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-justify-content: center;
+    /* Safari */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.christmas-calendar__clue-box__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.christmas-calendar__clue-box__button_today {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--today-button-bg-color);;
+    width: 328px;
+    /* height: 57px;*/
+    font-size: 32px;
+    color: var(--today-button-text-color);
+    padding: 10px;
+    border: thin dashed white;
+    border-radius: 4px;
+    box-shadow: 4px 4px var(--primary-bg-color);
+    margin: 70px auto;
+    cursor: pointer;
+}
+
+.christmas-calendar__clue-box__button_today:hover {
+    background-color: var(--today-button-bg-color-hover);
+    transform: translateY(2px);
+}
+
+.christmas-calendar__clue-box__button_today:active {
+    background-color: var(--today-button-bg-color-active);
+    transform: translateY(2px);
+    /*cursor: progress;*/
+}
+
+.christmas-calendar__clue-box__hero {
+    position: relative;
+    display: block;
+    background-color: none;
+    /*width: calc(100% + 300px)*/
+    width: 960px;
+    height: 720px;
+    margin: 20px -22px;
+}
+
+.christmas-calendar__clue-box__hero__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-justify-content: center;
+    /* Safari */
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("/file_uploads/videoslots_xmaspromo2022_christmascalendarbackground_01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.christmas-calendar__clue-box__hero__text {
+    text-align: center;
+    position: absolute;
+    color: white;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    padding-top: 10px;
+    column-gap: 6px;
+    row-gap: 6px;
+    justify-content: center;
+    -webkit-justify-content: center;
+    /* Safari */
+    align-items: center;
+}
+
+
+.christmas-calendar__clue-box_day {
+    display: grid;
+    text-align: center;
+    border-spacing: 1px;
+    float: none;
+    color: var(--primary-text-color);
+}
+
+.calender-button__clue-box_day, .clue-box_day__back {
+    grid-area: 1 / 1;
+    text-align: center;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    background-color: var(--clue--today-bg-color);
+    border: none;
+    border-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: 4px 4px;
+    width: 75px;
+    height: 75px;
+}
+
+.clue-box_day__back {
+    /*visibility: hidden;*/
+    background: #29281c;
+    z-index: 1;
+    border-spacing: 1px;
+    border-radius: 4px;
+    border: 2px solid #ffffd9;
+    box-shadow: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.clue-box_day__back img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.calender-button__clue-box_day:hover {
+    background-color: var(--clue--today-bg-color-hover);;
+    transform: translateY(2px);
+    border: dashed;
+    border-color: white;
+    border-width: thin;
+}
+
+.calender-button__clue-box_day:active {
+    background-color: var(--clue--today-bg-color-pressed);
+    font-size: xx-large;
+    text-align: center;
+    outline-style: dashed;
+    outline-color: var(--clue--today-bg-color-hover);
+    outline-width: thin;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 3px 3px;
+    transform: translateY(2px);
+}
+
+
+.christmas-calendar__clue-box__info label {
+    display: inline-block;
+    color: var(--primary-text-color) !important;
+    padding: 70px 0 20px 0 !important;
+    text-align: center;
+    font-size: 32px !important;
+}
+
+.clue-section {
+    padding-top: 5px;
+}
+
+.christmas-calendar__clue-box__info-textarea {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 10px;
+    color: var(---text-color);
+    background-color: var(--primary-bg-color);
+    min-width: 328px;
+    max-width: 80%;
+    min-height: 60px;
+    max-height: 700px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    display: block;
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    overflow: auto;
+    resize: none;
+    outline: none;
+}
+
+
+/* Mobile css*/
+@media only screen and (max-width: 600px) {
+
+    .christmas-calendar__content {
+        padding-bottom: 44px;
+    }
+
+    .christmas-calendar__content-info {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding-top: 44px;
+        margin: 0;
+    }
+
+    .christmas-calendar__content-info__text {
+        width: 100%;
+    }
+
+    .christmas-calendar__content-info__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        /* Safari */
+        margin: 44px auto 0 auto;
+        padding: 0;
+        height: 150px;
+    }
+
+    .christmas-calendar__content-info:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .christmas-calendar__content-info__closing {
+        padding: 44px 0 0 0;
+    }
+
+    .christmas-calendar__clue-box__hero {
+        order: 1;
+        width: 420px;
+        height: 310px;
+        margin: 40px -20px 20px -20px !important;
+        transform: scale(1.6);
+    }
+
+    .christmas-calendar__clue-box__button {
+        order: 2;
+    }
+
+    .christmas-calendar__clue-box__button_today {
+        margin: 25px 0;
+        z-index: 100;
+    }
+
+    .christmas-calendar__clue-box__info {
+        order: 3;
+    }
+
+    .christmas-calendar__clue-box__hero__image {
+        background-image: url("/file_uploads/videoslots_xmaspromo2022_christmascalendarbackground_mobile_01.png");
+    }
+
+    .christmas-calendar__clue-box__hero__text {
+        column-gap: 3px;
+        row-gap: 3px;
+        padding-top: 5px;
+    }
+
+    .christmas-calendar__clue-box_day {
+        font-size: 16px !important;
+    }
+
+    .calender-button__clue-box_day, .clue-box_day__back {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        width: 32px !important;
+        height: 32px !important;
+        box-shadow: 1px 1px;
+    }
+
+    .clue-box_day__back {
+        border: 1px solid #ffffd9;
+        box-shadow: none;
+    }
+
+    .christmas-calendar__clue-box__info-textarea {
+        width: 328px;
+    }
+
+    .christmas-calendar__clue-box__info label {
+        display: none;
+    }
+}
+
+/*css rule content editing */
+.show-all {
+    display: flex;
+    flex-direction: column;
+
+    visibility: visible;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+
+--></style>
+
+<div class="christmas-calendar__container">
+    <div class="christmas-calendar__content">
+        <div class="christmas-calendar__content-info">
+            <div class="christmas-calendar__content-info__text">
+                <h2 class="christmas-calendar_h2">Lorem ipsum dolor sit amet</h2>
+                <p class="christmas-calendar_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit. Nunc sed velit dignissim
+                    sodales ut eu. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Interdum velit euismod
+                    in pellentesque massa. Fusce id velit.</p>
+            </div>
+            <div class="christmas-calendar__content-info__image">
+                <img src="/file_uploads/thumbs/videoslots_xmaspromo2022_decorations_01.png" alt=""/>
+            </div>
+        </div>
+        <div class="christmas-calendar__content-info">
+            <div class="christmas-calendar__content-info__image">
+                <img src="/file_uploads/thumbs/videoslots_xmaspromo2022_decorations_02.png" alt=""/>
+            </div>
+            <div class="christmas-calendar__content-info__text">
+                <h2 class="christmas-calendar_h2">Lorem ipsum dolor sit amet</h2>
+                <p class="christmas-calendar_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit. Nunc sed velit dignissim
+                    sodales ut eu. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Interdum velit euismod
+                    in pellentesque massa. Fusce id velit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="christmas-calendar__clue-box">
+        <div class="christmas-calendar__clue-box__button">
+            <button class="christmas-calendar__clue-box__button_today">Open Today's Gift</button>
+        </div>
+        <div class="christmas-calendar__clue-box__hero">
+            <div class="christmas-calendar__clue-box__hero__image">
+                <div class="christmas-calendar__clue-box__hero__text">
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">01</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 1 -->
+                            <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">02</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 2 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">03</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 3 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">04</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 4 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">05</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 5 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">06</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 6 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">07</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 7 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">08</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 8 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">09</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 9 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">10</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 10 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">11</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 11 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">12</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 12 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">13</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 13 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">14</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 14 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">15</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 15 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">16</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 16 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">17</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 17 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">18</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 18 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">19</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 19 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">20</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 20 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">21</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 21 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">22</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 22 -->
+                          <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">23</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 23 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">24</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 24 -->
+                          <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+
+                    <div class="christmas-calendar__clue-box_day">
+                        <button class="calender-button__clue-box_day">25</button>
+                        <span class="clue-box_day__back">
+                            <!--trophy img 25 -->
+                           <img src="/file_uploads/trophies/videoslots_xmaspromo2022_clue_background.png" alt=""/>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div align="center" class="christmas-calendar__clue-box__info">
+            <label><strong>Your Clue:</strong></label>
+
+            <!--            default-clue-box-->
+            <div class="clue-section-default">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box first -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span> clue-box first Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box second -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box second  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box third-->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span> clue-box third Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box fourth -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box fourth Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box fifth -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box fifth Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box sixth -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box sixth Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box seventh -->
+            <div class="clue-section">
+                <div class="clue-box seventh christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box seven Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box eighth -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box eighth Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box ninth -->
+            <div class="clue-section">
+                <div class="clue-box ninth christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box nine Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box ten-->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box ten Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box eleven -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box eleven Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twelve -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box twelve Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box thirteen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box thirteen clue-box twelve Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box fourteen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box fourteen clue-box thirteen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box fifteen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>Fifteen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box sixteen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box sixteen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box seventeen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box seventeen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box eighteen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box eighteen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box nineteen -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box nineteen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twenty -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box twenty Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twenty-one -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box twenty-one Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twenty-two -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box twenty-two Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twenty-three -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box twenty-three Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twenty-four -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>clue-box twenty-four Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+            <!--clue-box twenty-five -->
+            <div class="clue-section">
+                <div class="christmas-calendar__clue-box__info-textarea" contenteditable>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum erat, non faucibus nisl.</span>
+                    <p contenteditable="false"><strong> Bet:</strong> €0.20 / <strong>Spin:</strong> 15x</p>
+                    <img contenteditable="false" src="/file_uploads/thumbs/playngo-200x56.png"
+                         width="136" height="50"/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="christmas-calendar__content-info__closing">
+        <p class="christmas-calendar_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum
+            erat, non faucibus nisl.
+            Phasellus nec lacus quis lacus tincidunt efficitur vel sed lacus. Duis non commodo tortor. Ut quis
+            pellentesque est. Duis laoreet mi lacus, sit amet volutpat est efficitur vitae. Maecenas mollis elit non
+            sapien vehicula placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae.</p>
+
+        <p class="christmas-calendar_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum
+            erat, non faucibus nisl.
+            Phasellus nec lacus quis lacus tincidunt efficitur vel sed lacus. Duis non commodo tortor. Ut quis
+            pellentesque est. Duis laoreet mi lacus, sit amet volutpat est efficitur vitae. Maecenas mollis elit non
+            sapien vehicula placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae.</p>
+
+        <p class="christmas-calendar_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum
+            erat, non faucibus nisl.
+            Phasellus nec lacus quis lacus tincidunt efficitur vel sed lacus. Duis non commodo tortor. Ut quis
+            pellentesque est. Duis laoreet mi lacus, sit amet volutpat est efficitur vitae. Maecenas mollis elit non
+            sapien vehicula placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae.</p>
+    </div>
+</div>
+
+<script type="text/javascript">// <![CDATA[
+(function ($) {
+
+    // year full; month 0-11; day: 1-31; hours: 0-23
+    // for test purpose start day
+    var startDay = Date.UTC(2022, 10, 1, 10);
+
+    // final start day
+    //  var startDay = Date.UTC(2022, 10, 29, 7);
+    var endDay = Date.UTC(2022, 11, 30, 23);
+    var today = Date.now();
+
+    var fullDate = new Date();
+    var todayDay = fullDate.getDate();
+
+    var SAVE_TROPHY_ACTIVE_STATE = true;
+
+
+    if (startDay <= today && today <= endDay) {
+        $(".clue-box_day__back").css("visibility", "hidden");
+
+        function setCookie(cName, cValue, exDays) {
+            var day = new Date();
+            day.setTime(day.getTime() + (exDays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + day.toUTCString();
+            document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cName) {
+            var name = cName + "=";
+            var cValues = document.cookie.split(";");
+            for (var i = 0; i < cValues.length; i++) {
+                var cookie = cValues[i];
+                while (cookie.charAt(0) == " ") {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(name) == 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+            return "";
+        };
+
+        function inEditMode() {
+            var queryString = window.location.search;
+            var editContentString = "?editcontent";
+            var inEditMode = queryString.indexOf(editContentString) > -1;
+
+            return inEditMode;
+        };
+
+
+        function showOpenTrophy(index) {
+            $("#calendar-button__id-" + index).css("display", "hidden");
+            $("#clue-box-day__id-" + index).css("visibility", "visible");
+
+            disableDoubleClick($("#clue-box-day__id-" + index));
+        };
+
+        function saveActiveTrophyIndexList(index) {
+            var activeTrophy = (getCookie("activeTrophy") != "") ? JSON.parse(getCookie("activeTrophy")) : [];
+
+            if (activeTrophy.indexOf(index) === -1)
+                activeTrophy.push(index);
+
+            setCookie("activeTrophy", JSON.stringify(activeTrophy), 300);
+        };
+
+        function setActiveTrophy() {
+            var activeTrophy = (getCookie("activeTrophy") != "") ? JSON.parse(getCookie("activeTrophy")) : null;
+            if (activeTrophy == null) {
+                $("div.clue-section").hide();
+                return;
+            } else {
+                $("div.clue-section").hide();
+                $.each(activeTrophy, function (index, trophy) {
+                    showOpenTrophy(trophy);
+                    christmasClue(trophy);
+                });
+
+            }
+
+        };
+
+        function processToOpenTrophy(e) {
+            var $clueBox = $(e.target);
+            var $clueDayBoxIndex = $clueBox.closest(".christmas-calendar__clue-box_day").index();
+
+            showOpenTrophy($clueDayBoxIndex);
+            christmasClue($clueDayBoxIndex);
+
+            if (SAVE_TROPHY_ACTIVE_STATE) {
+                saveActiveTrophyIndexList($clueDayBoxIndex);
+            }
+        };
+
+        // click to open today gift
+        $(".christmas-calendar__clue-box__button_today").one("click", function (e) {
+            e.preventDefault();
+            var $todayDate = todayDay;
+            var $todayIndex = $todayDate - 1;
+
+            showOpenTrophy($todayIndex);
+            christmasClue($todayIndex);
+
+            if (SAVE_TROPHY_ACTIVE_STATE) {
+                saveActiveTrophyIndexList($todayIndex);
+            }
+
+            disableDoubleClick($(this));
+            e.preventDefault();
+
+        });
+
+
+        function christmasClue($index) {
+            var $prevClue = $("div.clue-section-default");
+            var $currentSelection = $("div#clue-section__id-" + $index);
+            $prevClue.html($currentSelection.html());
+        };
+
+
+        function setEventListeners(index) {
+            $("#calendar-button__id-" + index).on("click", processToOpenTrophy);
+        };
+
+
+        for (var i = 0; i < $(".christmas-calendar__clue-box_day").length; i++) {
+            // calendar day
+            var $calendarDayBox = $(".christmas-calendar__clue-box_day")[i];
+            $($($calendarDayBox).find(".calender-button__clue-box_day")[0]).attr("id", "calendar-button__id-" + i);
+            $($($calendarDayBox).find(".clue-box_day__back")[0]).attr("id", "clue-box-day__id-" + i);
+
+            // clue day
+            var $clueDayBox = $(".clue-section")[i];
+            $($($clueDayBox)).attr("id", "clue-section__id-" + i);
+        }
+        ;
+
+
+        function setAllVisibility() {
+            $("body").addClass("show-all");
+
+            $(".clue-box_day__back").css("visibility", "visible");
+
+            $("div.clue-section-default").show();
+            $("div.clue-section").show();
+        };
+
+        function disableDoubleClick($this) {
+            $($this).prop("disabled", true);
+            $($this).css({"cursor": "not-allowed"});
+        };
+
+
+        function makeClueBoxClickable() {
+            var $todayDate = todayDay;
+            var $todayIndex = $todayDate - 1;
+
+            $(".christmas-calendar__clue-box_day").each(function (index, value) {
+                if (index <= $todayIndex) {
+                    setEventListeners(index);
+                }
+                if (index > $todayIndex) {
+                    $("#clue-box-day__id-" + index).remove();
+                    $("#clue-section__id-" + index).remove();
+
+                    disableDoubleClick($("#calendar-button__id-" + index));
+                }
+            })
+
+        };
+
+        function main() {
+            if (inEditMode()) {
+                return setAllVisibility();
+            }
+
+            if (SAVE_TROPHY_ACTIVE_STATE) {
+                setActiveTrophy();
+            }
+
+            makeClueBoxClickable();
+        };
+
+        main();
+    } else {
+        $("div.clue-section").hide();
+        $(".clue-box_day__back").css("visibility", "hidden");
+    }
+
+})(jQuery);
+
+
+// ]]></script>

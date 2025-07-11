@@ -1,0 +1,10 @@
+<report>
+    <rentity_id></rentity_id>
+    <rentity_branch></rentity_branch>
+    <submission_code></submission_code>
+    <report_code></report_code>
+    <entity_reference></entity_reference>
+    <report_date></report_date>
+    <currency_code_local></currency_code_local>
+    <reporting_person></reporting_person>
+</report>

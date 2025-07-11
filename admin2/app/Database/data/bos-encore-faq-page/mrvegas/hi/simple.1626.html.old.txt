@@ -1,0 +1,421 @@
+<style><!--
+    .mrvegas-encores-faq {
+            color: #cccccc;
+            background: #131313;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .mrvegas-encores-faq__title {
+            font-size: 24px;
+            padding: 0px 0px 20px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__title--secondary {
+            font-size: 18px;
+            padding: 30px 0px 0px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__question,
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq a,
+        .mrvegas-encores-faq__title,
+        .mrvegas-encores-faq__title--secondary {
+            color: #ffffff;
+        }
+    
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__normal-text,
+        .mrvegas-encores-faq__promo-text,
+        .mrvegas-encores-faq__offer-text,
+        .mrvegas-encores-faq li {
+            font-size: 14px;
+    
+        }
+    
+        .mrvegas-encores-faq__content {
+            width: 100%;
+            padding: 0px 20px;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__normal-text {
+            line-height: 24px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        .mrvegas-encores-faq__main-banner {
+            background: #131313;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    
+        .mrvegas-encores-faq__offer-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            width: 100%;
+            display: inline-flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__offer-snippet {
+            display: flex;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__right-container {
+            width: 78%;
+        }
+    
+        .mrvegas-encores-faq__offer-title {
+            width: 95%;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+    
+        .mrvegas-encores-faq__offer-text {
+            width: 95%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+            text-align: left !important;
+        }
+    
+        img.mrvegas-encores-faq__offer-logo {
+            max-width: 90%;
+            margin: 10px 20px 10px 0px;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__clean-link {
+            text-decoration: none;
+            color: #999999;
+        }
+    
+        .mrvegas-encores-faq__section {
+            padding-top: 20px;
+        }
+    
+        .mrvegas-encores-faq__video-desktop {
+            margin: 20px 20px 20px 20px;
+        }
+    
+        .mrvegas-encores-faq__video-mobile {
+            margin: 20px 20px 20px 20px;
+            width: 100%;
+            display: none;
+        }
+    
+        .mrvegas-encores-faq__promo-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .mrvegas-encores-faq__promo-snippet {
+            width: 48%;
+            max-width: 430px;
+            margin-bottom: 20px;
+            ;
+        }
+    
+        .mrvegas-encores-faq__promo-title {
+            width: 100%;
+            font-weight: bold;
+        }
+    
+        .mrvegas-encores-faq__promo-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        img.mrvegas-encores-faq__promo-logo {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__reward-main-container {
+            margin: 0px;
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            box-sizing: border-box
+        }
+    
+        .mrvegas-encores-faq__reward-snippet {
+            flex: 0 25%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    
+        .mrvegas-encores-faq__reward-title {
+            width: 100%;
+            font-weight: bold;
+            padding: 0px 20px 0px 0px;
+            text-align: center !important;
+        }
+    
+        .mrvegas-encores-faq__reward-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 20px 10px 0px;
+            text-align: center !important;
+        }
+    
+        img.mrvegas-encores-faq__reward-logo {
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__question {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            border: 1px solid #666666;
+            cursor: pointer;
+        }
+    
+        /* Mobile */
+        @media only screen and (max-width: 600px) {
+            .mrvegas-encores-faq__promo-snippet {
+                width: 100%;
+                max-width: 100%;
+            }
+    
+            .mrvegas-encores-faq__reward-snippet {
+                flex: 0 50%;
+            }
+    
+            img.mrvegas-encores-faq__offer-logo {
+                margin: 0;
+            }
+    
+            .mrvegas-encores-faq__offer-text {
+                margin-top: 5px;
+            }
+    
+            .mrvegas-encores-faq__offer-title {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .mrvegas-encores-faq__video-desktop {
+                display: none;
+            }
+    
+            .mrvegas-encores-faq__video-mobile {
+                display: block;
+            }
+        }
+--></style>
+<!-- page banner ends -->
+<p>&nbsp;</p>
+<!-- H1 and intro paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h1 class="mrvegas-encores-faq__override">एनकॉर के लिए Mr Vegas की गाइड</h1>
+<p class="mrvegas-encores-faq__normal-text">एनकॉर में आपका स्वागत है, Mr Vegas से एक रोमांचक मल्टीप्लेयर अनुभव।</p>
+<p class="mrvegas-encores-faq__normal-text">एनकॉर आपको प्रतिस्पर्धी स्लॉट चुनौतियों में रील को घुमाते हुए दूसरे खिलाड़ियों के साथ घुलने-मिलने का मौका देता है। सबसे अच्छी बात यह है कि आप अतिरिक्त स्पिन, नकद पुरस्कार और यहां तक कि अन्य ईवेंट के प्रवेश टिकट भी जीत सकते हैं!</p>
+<p class="mrvegas-encores-faq__normal-text">भाग लेना सरल है। बस एनकॉर की लॉबी में प्रवेश करें और हर व्यक्तिगत प्रतियोगिता पर सभी प्रासंगिक जानकारी देखें। इसमें स्पिन की कुल संख्या, पुरस्कार पूल संरचना, बाय-इन शुल्क, बेट राशि और समय सीमा शामिल है। एक बार जब आप अपनी पसंद बना लेते हैं, तो आपको बस इतना करना है कि रजिस्टर बटन पर क्लिक करें और एक्शन का मज़ा लें।</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">एनकॉर के फ़ीचर और विविधताएं</h2>
+<p class="mrvegas-encores-faq__normal-text">हम पहले खेलने योग्य मोड शेड्यूल्ड एनकॉर लाए हैं, जो एक निर्धारित समय पर शुरू होने वाली प्रतियोगिताएं हैं, बशर्ते कम से कम 10 खिलाड़ी पंजीकरण करते हैं। दूसरे मोड को सिट एंड गो कहा जाता है, जो पर्याप्त खिलाड़ियों के साइन अप होते ही शुरू होने वाली प्रतियोगिताएं हैं।</p>
+<p class="mrvegas-encores-faq__normal-text">दिलचस्प लगता है? फिर एनकोर की पेशकश के बारे में अधिक जानने के लिए पढ़ना जारी रखें।</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-main-container">
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Normal_Encores_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">सामान्य एनकॉर</h3>
+<p class="mrvegas-encores-faq__offer-text">एक सामान्य एनकॉर या तो शेड्यूल्ड एनकॉर ईवेंट या सिट एंड गो ईवेंट हो सकता है और हमेशा भाग लेने के लिए बाय-इन शुल्क के साथ आएगा।</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Guaranteed_Battles_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">गारंटीकृत एनकॉर</h3>
+<p class="mrvegas-encores-faq__offer-text">इन एनकॉर में भुगतान के लिए हमेशा एक गारंटीकृत पुरस्कार पूल होता है, लेकिन पूल तब और भी बड़ा हो जाएगा जब प्रत्येक प्रतिभागी बाय-इन करेगा।</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freeroll_Tournaments_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">फ़्रीरोल टूर्नामेंट</h3>
+<p class="mrvegas-encores-faq__offer-text">फ़्रीरोल टूर्नामेंट आपको प्रवेश शुल्क का भुगतान किए बिना एनकॉर में प्रवेश करने की अनुमति देते हैं। हालांकि, भाग लेने के लिए, आपको पिछले 30 दिनों के दौरान कुल कम से कम &euro;20 जमा करना होगा और 1.000 XP अंक अर्जित करने होंगे।</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Re-Buys_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">पुनर्खरीद</h3>
+<p class="mrvegas-encores-faq__offer-text">कुछ एनकॉर में जब आपके स्पिन समाप्त हो जाते हैं तो अतिरिक्त स्पिन खरीदना संभव होता है। स्पिन की संख्या मूल के बराबर होती है और इसकी लागत बाय-इन के समान होती है।</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freezeout_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">फ़्रीज़आउट</h3>
+<p class="mrvegas-encores-faq__offer-text">यह एक एनकॉर मोड है जहां आप केवल एक ही बाय-इन कर सकते हैं, जिसका मतबल है कि भाग लेने वाले सभी प्रतिभागी समान परिस्थितियों में प्रतिस्पर्धा करेंगे। इसलिए एक बार सभी स्पिन समाप्त हो जाने के बाद, कोई भी पुनर्खरीद करना संभव नहीं है।</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Wild_West_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">वाइल्ड वेस्ट</h3>
+<p class="mrvegas-encores-faq__offer-text">वाइल्ड वेस्ट मोड उसी तरह काम करता है जैसे पुनर्खरीद करते हैं, लेकिन प्रति खिलाड़ी 25 पुनर्खरीद करने की संभावना के साथ।</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_The_Joker_Feature_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">जोकर फ़ीचर</h3>
+<p class="mrvegas-encores-faq__offer-text">अगर आप एनकॉर के लिए पूर्व-पंजीकरण करते हैं, तो आपको गेम लिए जोकर बनने के लिए ड्रॉ में रखा जाएगा। अगर जोकर अंत में जीत जाता है, तो पुरस्कार दोगुना हो जाएगा।</p>
+</div>
+</div>
+</div>
+<!-- Info section ends -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">मुख्य एनकॉर ईवेंट</h2>
+</div>
+<!-- New paragraph starts -->
+<div><img class="mrvegas-encores-faq__promo-logo" style="text-align: center; width: 100%;" src="/file_uploads/FAQ_BattleBanners_EncoreSplash_880x164px.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">एनकॉर स्पलैश</h3>
+<p class="mrvegas-encores-faq__promo-text">एनकॉर स्पलैश प्रत्येक शुक्रवार को 17:00 से 20:59 GMT तक होने वाला एक सिट एंड गो ईवेंट है। हर घंटे बदलने वाले आठ गेम्स में 12 मिनट की प्रतियोगिताओं में सभी एक्शन होते हैं। भाग लेने से आपको अतिरिक्त स्पिन जीतने का मौका मिलेगा!</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-main-container">
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreMania.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">एनकॉर का उन्माद</h3>
+<p class="mrvegas-encores-faq__promo-text">हर सोमवार आपके लिए एनकॉर का उन्माद लेकर आता है। इस शेड्यूल्ड एनकॉर ईवेंट में, सभी प्रतिभागियों को एक दूसरे के खिलाफ प्रतिस्पर्धा करने के लिए 100 स्पिन प्राप्त होंगे। क्या आपके अतिरिक्त स्पिन लेने का दमखम है?</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreBlast.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">एनकॉर ब्लास्ट</h3>
+<p class="mrvegas-encores-faq__promo-text">एनकॉर ब्लास्ट एक सिट एंड गो टूर्नामेंट है जो प्रत्येक मंगलवार को 18:00 से 22:00 GMT तक होता है, जब 15 खिलाड़ी पंजीकृत हो जाते हैं। अगर आप अन्य एनकॉर ईवेंट की प्रवेश टिकट जीतने का मौका चाहते हैं तो भाग लेना सुनिश्चित करें।</p>
+</div>
+<!-- New paragraph starts --> <!--<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreRush.jpg" alt="" />
+    <h3 class="mrvegas-encores-faq__promo-title">एनकॉर रश</h3>
+    <p class="mrvegas-encores-faq__promo-text">गुरुवार को आप 17:00 GMT से Encore Rush में भाग ले सकते हैं। हम पहले घंटे के लिए हर 10 मिनट में नए फ्रीरोल शुरू करेंगे और सभी कम से कम छह घंटे तक चलेंगे। कुल 6 अलग-अलग खेलों में अपने 100 स्पिन का उपयोग करें!</p>
+    </div>--></div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">एनकॉर के इनाम</h2>
+</div>
+<div class="mrvegas-encores-faq__reward-main-container">
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_EncoreTickets_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">एनकॉर टिकटें</p>
+<p class="mrvegas-encores-faq__reward-text">एकाधिक मान</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_FreeSpins_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">अतिरिक्त स्पिन</p>
+<p class="mrvegas-encores-faq__reward-text">एकाधिक मान</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_CashWinnings_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">नकद जीत</p>
+<p class="mrvegas-encores-faq__reward-text">आपके खाते में भुगतान की जाएंगी</p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">आज ही एनकॉर का अनुभव लें!</h2>
+<p class="mrvegas-encores-faq__normal-text"><strong>डेस्कटॉप पर:</strong> स्क्रीन के दाईं ओर लाल "एनकॉर" टैब पर क्लिक करें। इससे एक पॉप-अप आता है जो आपको दिखाता है कि एनकॉर कैसे काम करता है। फिर आप "जारी रखें" पर क्लिक करके देख सकते हैं कि वर्तमान में कौन से एनकॉर चल रहे हैं।</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>मोबाइल पर:</strong> स्क्रीन के ऊपर दाईं ओर "एनकॉर" लोगो दबाएं। फिर आप वर्तमान में हो रहे सभी एनकॉर की सूची के साथ एनकॉर लॉबी में प्रवेश करेंगे।</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>याद रखें, एनकॉर में भाग लेने के लिए आपको सबसे पहले Mr Vegas पर एक खाता बनाना होगा।</strong></p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">एनकॉर FAQ</h2>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">एक एनकॉर क्या है?</h2>
+<div>एक एनकॉर एक प्रतियोगिता है जो आपको विशेष रूप से चयनित गेम्स में अन्य खिलाड़ियों को चुनौती देने देती है। पहले स्थान का विजेता हमेशा प्रत्येक एनकॉर राउंड के अंत में सबसे अधिक संचित जीत वाला खिलाड़ी होता है।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">क्या आप एनकॉर खेलने के लिए कैसीनो इनाम प्राप्त कर सकते हैं?</h2>
+<div>हां! एनकॉर में भागीदारी कई अलग-अलग तरीकों से कैसीनो इनाम ला सकती है, जैसे कि अतिरिक्त स्पिन, नकद पुरस्कार और प्रवेश टिकट। हमारा सुझाव है कि एनकॉर लॉबी में जाकर देखें कि आप प्रत्येक ईवेंट के लिए कौन से इनाम जीत सकते हैं।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question"><strong>क्या आप मोबाइल डिवाइस पर एनकॉर खेल सकते हैं?</strong></h2>
+<div>हां, आप मोबाइल डिवाइस पर एनकॉर का मज़ा ले सकते हैं, चाहे वह स्मार्टफ़ोन हो या टैबलेट। नतीजतन, आप अपने हाथों की हथेली से Mr Vegas कैसीनो में अपने दोस्तों और अन्य खिलाड़ियों को चुनौती दे सकते हैं।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">एनकॉर कब तक चलते हैं?</h2>
+<div style="text-align: justify;">यह खुद एनकॉर पर निर्भर करता है। आप एनकॉर लॉबी में अवधि सहित सभी विवरण देख सकते हैं।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">क्या होता है अगर दो खिलाड़ियों का स्कोर समान हो?</h2>
+<div style="text-align: justify;">तब एक एकल स्पिन से सबसे बड़ी जीत वाला खिलाड़ी विजेता होगा। अगर दो खिलाड़ियों के स्कोर और बड़ी जीत दोनों समान होते हैं, तो जो अपने स्कोर पर सबसे पहले पहुंचने वाला विजेता अंतिम पुरस्कार प्राप्त करेगा।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">क्या आप एनकॉर टूर्नामेंट खेलकर असली पैसे जीत सकते हैं?</h2>
+<div style="text-align: justify;">हां, एनकॉर टूर्नामेंट में भाग लेने पर आप वास्तविक धनराशि के पुरस्कार जीत सकते हैं। खेलने से पहले आप कभी भी पुरस्कार विवरण देख सकते हैं।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">क्या आपका ऑनलाइन कैसीनो नियमित रूप से एनकॉर की मेजबानी करता है?</h2>
+<div style="text-align: justify;">हां, हम Mr Vegas पर पूरे दिन एनकॉर की मेजबानी करते हैं।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">मैं एनकॉर के नियम और शर्तों के बारे में कहां पढ़ सकता/सकती हूं?</h2>
+<div style="text-align: justify;">आप एनकॉर टूर्नामेंट के नियम और शर्तें<a href="/hi/terms-and-conditions/mga-games-specific/#casino-and-bonuses/">यहां</a>पढ़ सकते हैं।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">क्या एनकॉर का अधिकतम भुगतान है?</h2>
+<div style="text-align: justify;">नहीं, एनकॉर में कोई अधिकतम भुगतान नहीं है।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">क्या मुझे एनकॉर पर खेलने में सक्षम होने के लिए एक नया खाता पंजीकृत करने की आवश्यकता है?</h2>
+<div style="text-align: justify;">आप अपने मौजूदा Mr Vegas खाते के साथ एनकॉर पर खेल सकते हैं। कृपया ध्यान दें कि mrvegas.com पर आपको केवल एक खाता रखने की अनुमति है।</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">अगर मुझे कोई समस्या आ रही है तो मुझे किससे संपर्क करना चाहिए?</h2>
+<div style="text-align: justify;">अगर आप समस्याओं का सामना कर रहे हैं या एनकॉर के बारे में कोई प्रश्न हैं, तो आप हमेशा लॉबी से हमारे ग्राहक सहायता से संपर्क कर सकते हैं।</div>
+</div>
+</div>
+<!-- Updated EN CONTENT END-->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">सामान्य नियम और शर्तें।</h2>
+<div class="mrvegas-encores-faq__normal-text">
+<div class="mrvegas-encores-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Mrvegas.com पर खेलना केवल 18 वर्ष से अधिक उम्र के लोगों तक ही सीमित है। और, हम सट्टेबाजी को वयस्कों का मनोरंजन मानते हैं और यह सुनिश्चित करते हैं कि आप भरोसेमंद तरीके से खेलें।</li>
+<li style="text-align: justify;">प्रस्ताव के माध्यम से निर्धारित राशियाँ विभिन्न पड़ोस के मौद्रिक मानकों में बदली गई राशि का केवल एक संकेत हैं। ध्यान दें कि, शर्तों में दर्शाई गई यूरो रकम अन्य राशियों को मात देती है, जिसे भुगतान के समय नकद परिवर्तन दर द्वारा नियंत्रित किया जाएगा।</li>
+<li style="text-align: justify;">आप किसी भी नकद परिवर्तन दर या विनिमय शुल्क के लिए जिम्मेदार होंगे जो आपके अपने बैंक के साथ लागू हो सकते हैं।</li>
+<li style="text-align: justify;">साइट पर समझौते<a href="/hi/terms-and-conditions/">लागू</a>होते हैं।</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () {
+                $(".faq-cat-accordion").accordion({ collapsible: true, active: true });
+            });
+// ]]></script>
+</div>

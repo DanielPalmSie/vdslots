@@ -1,0 +1,214 @@
+/* CSS rules for document page and for document list */
+
+.verification-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.verification-status-verified, .verification-status-not-verified {
+    width: 400px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+}
+
+.verification-status-verified {
+    background-color: green;
+}
+
+.verification-status-not-verified {
+    background-color: orange;
+}
+
+.verify-btn {
+    width: 300px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+.create-btn {
+    width: 320px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.document {
+    float: left;
+    margin: 20px;
+    width: 335px;
+    min-height: 350px;
+    display: block;
+}
+
+h5 {
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+.document-status {
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.document-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.requested {
+    color: white;
+    text-align: center;
+
+    background-color: orange;
+}
+
+.processing {
+    color: white;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+.rejected {
+    color: white;
+    text-align: center;
+    background-color: red;
+}
+
+.expired {
+    color: black;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+
+.approved {
+    background-color: green;
+}
+
+.cpnn {
+    background-color: lightgray;
+}
+
+.deactivated {
+    background-color: purple;
+}
+
+.add-more-files-container {
+    overflow: hidden;
+    margin: 10px 0px 10px 0px;
+}
+
+.add-more-files {
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 5px;
+}
+
+input {
+    margin: 5px 0px;
+}
+
+.filestatus {
+    text-align: center;
+    color: #fff;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.file-status-buttons {
+    float: right;
+    margin-top: 20px;
+}
+
+.file-image {
+    width: 250px;
+    height: 200px;
+    border: 1px solid lightgrey;
+}
+
+.pdf-file {
+    width: 250px;
+    height: 200px;
+    border: 1px solid lightgrey;
+    padding: 75px 0px 0px 75px;
+    font-size: 22px;
+}
+
+.btn-group-documents {
+    margin-bottom: 25px;
+}
+
+#image-front-container, #image-back-container {
+    margin: 10px 0px 10px 0px;
+}
+
+.uploaded_at {  /* todo: maybe use only 1 class */
+    float: left;
+    border: 1px solid lightgrey;
+    margin: 0px 5px 5px 0px;
+    padding: 0px 5px 0px 5px;
+    color: grey;
+}
+
+.last_status_change {
+    float: left;
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px 5px;
+    color: grey;
+}
+
+#verify-user-account-container {
+    width: 450px;
+    float: left;
+}
+
+#create_document_source_of_wealth,
+#create_internal_document,
+#create_proofofwealth_document,
+#create_proofofsourceoffunds_document,
+#rerequest_document_source_of_wealth,
+#create_document_source_of_income{  /*  TODO make sure this looks nice responsive  */
+    /*width: 450px;*/
+    float: right;
+    margin: 20px 20px 0px 0px;
+    margin-left: 0px !important;
+}
+
+/* Document list */
+.document-list {
+    padding: 10px;
+}
+
+.document-list-item {
+    float: left;
+    padding: 10px;
+    width: 300px;
+}
+
+.legenda_document_list {
+    padding: 30px 10px 10px 10px;
+}
+
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.modal-dialog.source_of_funds_dialog {
+  max-width: 969px;
+  width: 100%
+}

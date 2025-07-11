@@ -1,0 +1,44 @@
+@import "../colors";
+
+.skin-black-light {
+    .main-header {
+        background-color: #ffffff;
+
+        .nav-item > a > span, .nav-item > a > i {
+            color:  $gray-900 !important;
+        }
+        .nav-item > a:hover {
+            background-color: #ffffff;
+        }
+        .nav-item > a > span:hover, .nav-item > a > i:hover {
+            color: lighten($gray-900, 40%) !important;
+        }
+        .navbar-nav .nav-item:first-child > a {
+            border-right: 1px solid #eee;
+        }
+        .navbar-nav:nth-child(2) .nav-item > a {
+            border-left: 1px solid #eee;
+        }
+    }
+    .main-sidebar {
+        background-color: #f9fafc;
+        li > a {
+            color: lighten($gray-900, 6.5%);
+        }
+        li > a:hover {
+            color: #000000 !important;
+            background-color: #f4f4f5 !important;
+        }
+        li > p {
+            color: lighten($gray-900, 31.6%);
+        }
+        .logo-switch {
+            background-color: #ffffff !important;
+            color: $gray-900 !important;
+            border-bottom: 1px solid #dee2e6;
+            &:hover {
+                background-color: #fcfcfc !important;
+            }
+        }
+    }
+}

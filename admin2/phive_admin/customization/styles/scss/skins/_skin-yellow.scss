@@ -1,0 +1,23 @@
+@import "../colors";
+
+.skin-yellow {
+    .main-header {
+        background-color: $yellow;
+        .nav-item > a {
+            background-color: $yellow;
+        }
+        .nav-item > a:hover {
+            background-color: darken($yellow, 5%);
+        }
+    }
+    .main-sidebar {
+        .logo-switch {
+            background-color: darken($yellow, 5%) !important;
+            color: #fff !important;
+            border-bottom: none;
+            &:hover {
+                background-color: darken($yellow, 6%) !important;
+            }
+        }
+    }
+}

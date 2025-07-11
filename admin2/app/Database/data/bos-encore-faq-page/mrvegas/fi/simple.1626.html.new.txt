@@ -1,0 +1,434 @@
+<style><!--
+    .mrvegas-encores-faq {
+            color: #cccccc;
+            background: #131313;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .mrvegas-encores-faq__title {
+            font-size: 24px;
+            padding: 0px 0px 20px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__title--secondary {
+            font-size: 18px;
+            padding: 30px 0px 0px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__question,
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq a,
+        .mrvegas-encores-faq__title,
+        .mrvegas-encores-faq__title--secondary {
+            color: #ffffff;
+        }
+    
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__normal-text,
+        .mrvegas-encores-faq__promo-text,
+        .mrvegas-encores-faq__offer-text,
+        .mrvegas-encores-faq li {
+            font-size: 14px;
+    
+        }
+    
+        .mrvegas-encores-faq__content {
+            width: 100%;
+            padding: 0px 20px;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__normal-text {
+            line-height: 24px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        .mrvegas-encores-faq__main-banner {
+            background: #131313;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    
+        .mrvegas-encores-faq__offer-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            width: 100%;
+            display: inline-flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__offer-snippet {
+            display: flex;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__right-container {
+            width: 78%;
+        }
+    
+        .mrvegas-encores-faq__offer-title {
+            width: 95%;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+    
+        .mrvegas-encores-faq__offer-text {
+            width: 95%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+            text-align: left !important;
+        }
+    
+        img.mrvegas-encores-faq__offer-logo {
+            max-width: 90%;
+            margin: 10px 20px 10px 0px;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__clean-link {
+            text-decoration: none;
+            color: #999999;
+        }
+    
+        .mrvegas-encores-faq__section {
+            padding-top: 20px;
+        }
+    
+        .mrvegas-encores-faq__video-desktop {
+            margin: 20px 20px 20px 20px;
+        }
+    
+        .mrvegas-encores-faq__video-mobile {
+            margin: 20px 20px 20px 20px;
+            width: 100%;
+            display: none;
+        }
+    
+        .mrvegas-encores-faq__promo-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .mrvegas-encores-faq__promo-snippet {
+            width: 48%;
+            max-width: 430px;
+            margin-bottom: 20px;
+            ;
+        }
+    
+        .mrvegas-encores-faq__promo-title {
+            width: 100%;
+            font-weight: bold;
+        }
+    
+        .mrvegas-encores-faq__promo-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        img.mrvegas-encores-faq__promo-logo {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__reward-main-container {
+            margin: 0px;
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            box-sizing: border-box
+        }
+    
+        .mrvegas-encores-faq__reward-snippet {
+            flex: 0 25%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    
+        .mrvegas-encores-faq__reward-title {
+            width: 100%;
+            font-weight: bold;
+            padding: 0px 20px 0px 0px;
+            text-align: center !important;
+        }
+    
+        .mrvegas-encores-faq__reward-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 20px 10px 0px;
+            text-align: center !important;
+        }
+    
+        img.mrvegas-encores-faq__reward-logo {
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__question {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            border: 1px solid #666666;
+            cursor: pointer;
+        }
+
+        .faq_button_app {
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			text-decoration: none;
+  			color: inherit;
+		}
+    
+        /* Mobile */
+        @media only screen and (max-width: 600px) {
+            .mrvegas-encores-faq__promo-snippet {
+                width: 100%;
+                max-width: 100%;
+            }
+    
+            .mrvegas-encores-faq__reward-snippet {
+                flex: 0 50%;
+            }
+    
+            img.mrvegas-encores-faq__offer-logo {
+                margin: 0;
+            }
+    
+            .mrvegas-encores-faq__offer-text {
+                margin-top: 5px;
+            }
+    
+            .mrvegas-encores-faq__offer-title {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .mrvegas-encores-faq__video-desktop {
+                display: none;
+            }
+    
+            .mrvegas-encores-faq__video-mobile {
+                display: block;
+            }
+        }
+--></style>
+<!-- page banner ends -->
+<p>&nbsp;</p>
+<!-- H1 and intro paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h1 class="mrvegas-encores-faq__override">Mr Vegasin ohje Encoreihin</h1>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;">Tervetuloa Encoreen, Mr Vegasin ainutlaatuiseen multipelaajakokemukseen.</p>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;">Encoressa pelaajat p&auml;&auml;sev&auml;t kommunikoimaan keske&auml;&auml;n samalla kun he osallistuvat Encore-kamppailuihin. Encoreista voit voittaa ilmaiskierroksia, rahapalkintoja sek&auml; p&auml;&auml;sylippuja muihin tapahtumiin!</p>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;">Osallistuminen on eritt&auml;in helppoa. Siirry vain Encore-aulaan, josta n&auml;et kaikkiin tapahtumiin liittyv&auml;t perustiedot. Perustiedot sis&auml;lt&auml;v&auml;t kierrosten m&auml;&auml;r&auml;n, palkintorakenteen, osallistumismaksun, panostason sek&auml; aikarajat. Kun olet p&auml;&auml;tt&auml;nyt, mihin Encoreen haluat osallistua, sinun on ainoastaan klikattava &rdquo;Rekister&ouml;idy&rdquo; -painiketta, jonka j&auml;lkeen p&auml;&auml;set nauttimaan vauhdikkaasta tapahtumasta.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<div class="faq__button-container-mobile">
+<div class="faq__button-container">
+<a href="/tournament" class="btn btn-xl btn-default-xl gradient-default faq__button faq_button_app">Mene Encore aulaan</a>
+</div>
+</div>
+<h2 class="mrvegas-encores-faq__override">Encore variaatiot ja toiminnot</h2>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;">Kutsumme ensimm&auml;ist&auml; Encore-tyyppi&auml; <strong>Aikataulutetuiksi Encoreiksi</strong>, jotka k&auml;ynnistyv&auml;t m&auml;&auml;ritetyll&auml; ajallaan kun pelaajia on rekister&ouml;itynyt vaadittava m&auml;&auml;r&auml;. Seuraava Encore-tyyppi on <strong>Sit & Go</strong>, joka k&auml;ynnistyy heti kun pelaajia on rekister&ouml;itynyt tarpeellinen m&auml;&auml;r&auml;.</p>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;">Kiinnostuitko? Jatka lukemista saadaksesi lis&auml;&auml; tietoa siit&auml;, mit&auml; Encore voi tarjota.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-main-container">
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Normal_Encores_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Normaalit Encoret</h3>
+<p class="mrvegas-encores-faq__offer-text">Normaalit Encoret voivat olla Aikataulutettuja Encoreja tai Sit & Go -tapahtumia ja osallistuminen edellytt&auml;&auml; sis&auml;&auml;nostoa.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Guaranteed_Battles_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Takuu Encoret</h3>
+<p class="mrvegas-encores-faq__offer-text" style="text-align: justify;">N&auml;m&auml; Encoret sis&auml;lt&auml;v&auml;t takuupotin, joka maksetaan Encoren p&auml;&auml;ttyess&auml;. Takuupotti my&ouml;s kasvaa suuremmaksi jokaisen sis&auml;&auml;noston my&ouml;t&auml;.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freeroll_Tournaments_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freeroll Turnajaiset</h3>
+<p class="mrvegas-encores-faq__offer-text" style="text-align: justify;">Freeroll Turnajaiset mahdollistavat pelaajan osallistumisen Encoreen ilman p&auml;&auml;symaksua kunhan vaatimukset t&auml;yttyv&auml;t. Sinun on tullut tallettaa v&auml;hint&auml;&auml;n 20 &euro; ja tienata 1000 XP-pistett&auml; viimeisen 30 p&auml;iv&auml;n aikana.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Re-Buys_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Re-Buy</h3>
+<p class="mrvegas-encores-faq__offer-text" style="text-align: justify;">Joissakin Encoreissa on mahdollista ostaa ylim&auml;&auml;r&auml;isi&auml; kierroksia varsinaisten kierrosten j&auml;lkeen. Ylim&auml;&auml;r&auml;isten kierrosten m&auml;&auml;r&auml; ja hinta on sama kuin alkuper&auml;inen sis&auml;&auml;nostohinta.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freezeout_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freezeout</h3>
+<p class="mrvegas-encores-faq__offer-text" style="text-align: justify;">T&auml;ss&auml; Encoressa pelaajat tekev&auml;t ainoastaan yhden sis&auml;&auml;noston, jolloin kaikki ovat samalla linjalla. Kun kaikki pelaajat ovat k&auml;ytt&auml;neet kierroksensa, uudelleen osto ei ole mahdollinen.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Wild_West_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Wild West</h3>
+<p class="mrvegas-encores-faq__offer-text" style="text-align: justify;">Wild West -Encoret toimivat kuten Re-Buy -Encoret, mutta n&auml;iss&auml; Encoreissa voit tehd&auml; jopa 25 uutta sis&auml;&auml;nostoa yht&auml; pelaajaa kohden.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_The_Joker_Feature_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Jokeri-ominaisuus</h3>
+<p class="mrvegas-encores-faq__offer-text" style="text-align: justify;">Pelaajat, jotka rekister&ouml;ityv&auml;t Encoreen ennakkoon saattavat saada Encoreen jokerin statuksen. Jos kyseinen jokeripelaaja voittaa Encoren, h&auml;n voittaa Encoren palkinnon tuplana.</p>
+</div>
+</div>
+</div>
+<!-- Info section ends -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Suuret Encore-tapahtumat</h2>
+</div>
+<!-- New paragraph starts -->
+<div><img class="mrvegas-encores-faq__promo-logo" style="text-align: center; width: 100%;" src="/file_uploads/FAQ_BattleBanners_EncoreSplash_880x164px.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Splash</h3>
+<p class="mrvegas-encores-faq__promo-text" style="text-align: left;">Encore Splash on Sit & Go -tapahtuma, joka j&auml;rjestet&auml;&auml;n perjantaisin kello 17.00-20.59 GMT v&auml;lisen&auml; aikana. Kysymyksess&auml; on tapahtuma, jossa useat pelaajat ottavat osaa 12 minuuttia kest&auml;viin Enroreihin, joissa peli vaihtuu jokaisella tunnilla. Voittajille on luvassa ilmaiskierroksia.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-main-container">
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreMania.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Mania</h3>
+<p class="mrvegas-encores-faq__promo-text" style="text-align: justify;">Joka maanantai pelataan Encore Mania. T&auml;m&auml; on Aikataulutettu Encore, jossa jokainen osallistuja kilpailee muita pelaajia vastaan 100 kierroksen avulla. Voitatko osan ilmaiskierroksista?</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreBlast.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Blast</h3>
+<p class="mrvegas-encores-faq__promo-text" style="text-align: justify;">Encore Blast on Sit & Go -tyyppinen Encore, joka pelataan tiistaisin kello 18.00-22.00 GMT v&auml;lill&auml;. Encore k&auml;ynnistyy heti kun siihen on osallistunut 15 pelaajaa. T&auml;h&auml;n tapahtumaan kannattaa osallistua jos haluat mahdollisuuden voittaa ilmaislippuja muihin Encore-tapahtumiin.</p>
+</div>
+<!-- New paragraph starts --> <!--<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreRush.jpg" alt="" />
+    <h3 class="mrvegas-encores-faq__promo-title">Encore Rush</h3>
+    <p class="mrvegas-encores-faq__promo-text" style="text-align: justify;">Joka torstai pelataan Encore Rush alkaen kello 17.00 GMT. J&auml;rjest&auml;mme uuden Freeroll Encoren joka 10 minuutti ensimm&auml;isen tunnin ajan ja jokainen Encore kest&auml;&auml; v&auml;hint&auml;&auml;n kuusi tuntia. K&auml;yt&auml; 100 kierrostasi 6:sta erilaisessa peliss&auml;!</p>
+    </div>--></div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore palkinnot</h2>
+</div>
+<div class="mrvegas-encores-faq__reward-main-container">
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_EncoreTickets_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Encore liput</p>
+<p class="mrvegas-encores-faq__reward-text">useita arvoja</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_FreeSpins_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Ilmaiskierrokset</p>
+<p class="mrvegas-encores-faq__reward-text">useita arvoja</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_CashWinnings_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Rahapalkinnot</p>
+<p class="mrvegas-encores-faq__reward-text">maksetaan suoraan pelitilille</p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Koe Encore t&auml;n&auml;&auml;n!</h2>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;"><strong>PC:ll&auml;:</strong> klikkaa ruudun oikealla puolella olevaa punaista Encore-painiketta. T&auml;m&auml;n j&auml;lkeen ruutuun ilmestyy pop up -ikkuna, josta selvi&auml;&auml;, miten Encore toimii. Paina Jatka-painiketta n&auml;hd&auml;ksesi, mitk&auml; Encoret ovat juuri k&auml;ynniss&auml;.</p>
+<p class="mrvegas-encores-faq__normal-text" style="text-align: justify;"><strong>Mobiliilaitteella:</strong> paina ruudun oikeassa yl&auml;kulmassa olevaa Encore-logoa. P&auml;&auml;set Encore-aulaan, jossa n&auml;et listan k&auml;ynniss&auml; olevista Encoreista.</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>Jotta voit osallistua Encoreihin, sinun on luotava ensin pelitili Mr Vegasille.</strong></p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore FAQ</h2>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Mik&auml; on Encore?</h2>
+<div style="text-align: justify;">Encore on kilpailu, jossa p&auml;&auml;set haastamaan kanssapelaajat valituissa kolikkopeleiss&auml;. Encoren voittaja on pelaaja, joka on onnistunut ker&auml;&auml;m&auml;&auml;n eninten voittoja jokaisen Encore kierroksen j&auml;lkeen.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Saanko kasinopalkintoja osallistumalla Encoreen?</h2>
+<div style="text-align: justify;">Kyll&auml;! Encoreen osallistumalla voit voittaa useita erilaisia kasinopalkintoja. Voit saada esimerkiksi ilmaiskierroksia, rahapalkintoja sek&auml; p&auml;&auml;sylippuja. Suosittelemme tutustumaan Encore-aulaan, josta voit n&auml;hd&auml;, millaisia voittoja erilaiset tapahtumat sis&auml;lt&auml;v&auml;t.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question"><strong>Voinko pelata Encoreja mobiililaitteilla?</strong></h2>
+<div style="text-align: justify;">Vastaus t&auml;h&auml;n kysymykseen on kyll&auml;. Voit pelata Encoreja mill&auml; tahansa mobiililaitteella, oli t&auml;m&auml; sitten &auml;lypuhelin tai tabletti. N&auml;in voit haastaa yst&auml;v&auml;t ja kanssapelaajat Mr Vegas kasinolla n&auml;pp&auml;r&auml;sti miss&auml; vain liikutkaan.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Kuinka kauan Encoret kest&auml;&auml;?</h2>
+<div style="text-align: justify;">T&auml;m&auml; riippuu kyseisest&auml; Encoresta. Voit tarkistaa Encoren yksityiskohdat sek&auml; keston Encore-aulasta.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Mit&auml; tapahtuu jos kaksi pelaajaa saa saman pistem&auml;&auml;r&auml;n?</h2>
+<div style="text-align: justify;">T&auml;ss&auml; tapauksessa voittaja on se pelaaja, joka on saanut suurimman voiton yhdest&auml; ykstt&auml;isest&auml; kierroksesta. Jos kaksi pelaajaa saa saman pistem&auml;&auml;r&auml;n ja saman suuren voiton silloin pelaaja, joka saavutti pistem&auml;&auml;r&auml;n ensin voittaa p&auml;&auml;palkinnon.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Voinko voittaa oikeaa rahaa pelaamalla Encoreja?</h2>
+<div style="text-align: justify;">Kyll&auml;, voit voittaa oikeita rahapalkintoja Encoreista. Muistathan tarkistaa kyseisen Encoren palkintorakenteen ennen pelaamista.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Is&auml;nn&ouml;ik&ouml; nettikasinonne Encoreja s&auml;&auml;nn&ouml;llisesti?</h2>
+<div style="text-align: justify;">Kyll&auml;, Mr Vegasilla j&auml;rjestet&auml;&auml;n Encoreja koko p&auml;iv&auml;n.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Mist&auml; voin lukea Encoren s&auml;&auml;nn&ouml;t ja ehdot</h2>
+<div style="text-align: justify;">Voit lukea Encoren s&auml;&auml;nn&ouml;t ja ehdot <a href="/terms-and-conditions/mga-games-specific/#casino-and-bonuses/">t&auml;&auml;lt&auml;</a>.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Onko Encoressa maksimim&auml;&auml;r&auml;&auml; voitonmaksulle?</h2>
+<div style="text-align: justify;">Encoressa ei ole maksimim&auml;&auml;r&auml;&auml; voitonmaksulle.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Onko minun rekister&ouml;it&auml;v&auml; uusi pelitili, jotta voin pelata Encoreja?</h2>
+<div style="text-align: justify;">Voit pelata Encoreja Mr Vegas pelitilisi kautta. Muistathan, ett&auml; sinulla voi olla ainoastaan yksi pelitili mrvegas.com:lla.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Keneen voin ottaa yhteytt&auml; ongelmatilanteissa?</h2>
+<div style="text-align: justify;">Jos kohtaat ongelmia tai sinulla on kysytt&auml;v&auml;&auml; johonkin Encoreen liittyen, voit olla yhteydess&auml; asiakaspalveluumme, johon saat yhteyden aulan kautta.</div>
+</div>
+</div>
+<!-- Updated EN CONTENT END-->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Yleiset s&auml;&auml;nn&ouml;t ja ehdot</h2>
+<div class="mrvegas-encores-faq__normal-text">
+<div class="mrvegas-encores-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Mrvegas.comilla pelaaminen on sallittua ainoastaan yli 18-vuotiaille pelaajille. Uhkapelaaminen on aikuisille tarkoitettua viihdett&auml;. Pelaa vastuullisesti.</li>
+<li style="text-align: justify;">Voitoissa mainitut summat paikallisessa valuutassa ovat suuntaa antavia. Voitonmaksussa sovelletaan ensisijaisesti eurom&auml;&auml;r&auml;&auml;. Mik&auml;li voitto maksetaan muussa valuutassa, k&auml;ytet&auml;&auml;n voiton maksuhetkell&auml; k&auml;yt&ouml;ss&auml; olevaa valuuttakurssia.</li>
+<li style="text-align: justify;">Olet vastuussa pankkisi palveluihin ja valuutanvaihtoon liittyvist&auml; maksuista.</li>
+<li style="text-align: justify;">Sivuston <a href="/fi/terms-and-conditions/">s&auml;&auml;nn&ouml;t ja ehdot</a> p&auml;tev&auml;t.</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () {
+                $(".faq-cat-accordion").accordion({ collapsible: true, active: true });
+            });
+// ]]></script>
+</div>

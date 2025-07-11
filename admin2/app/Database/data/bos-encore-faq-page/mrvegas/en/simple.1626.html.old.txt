@@ -1,0 +1,420 @@
+<style><!--
+    .mrvegas-encores-faq {
+            color: #cccccc;
+            background: #131313;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .mrvegas-encores-faq__title {
+            font-size: 24px;
+            padding: 0px 0px 20px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__title--secondary {
+            font-size: 18px;
+            padding: 30px 0px 0px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__question,
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq a,
+        .mrvegas-encores-faq__title,
+        .mrvegas-encores-faq__title--secondary {
+            color: #ffffff;
+        }
+    
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__normal-text,
+        .mrvegas-encores-faq__promo-text,
+        .mrvegas-encores-faq__offer-text,
+        .mrvegas-encores-faq li {
+            font-size: 14px;
+    
+        }
+    
+        .mrvegas-encores-faq__content {
+            width: 100%;
+            padding: 0px 20px;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__normal-text {
+            line-height: 24px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        .mrvegas-encores-faq__main-banner {
+            background: #131313;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    
+        .mrvegas-encores-faq__offer-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            width: 100%;
+            display: inline-flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__offer-snippet {
+            display: flex;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__right-container {
+            width: 78%;
+        }
+    
+        .mrvegas-encores-faq__offer-title {
+            width: 95%;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+    
+        .mrvegas-encores-faq__offer-text {
+            width: 95%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+            text-align: left !important;
+        }
+    
+        img.mrvegas-encores-faq__offer-logo {
+            max-width: 90%;
+            margin: 10px 20px 10px 0px;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__clean-link {
+            text-decoration: none;
+            color: #999999;
+        }
+    
+        .mrvegas-encores-faq__section {
+            padding-top: 20px;
+        }
+    
+        .mrvegas-encores-faq__video-desktop {
+            margin: 20px 20px 20px 20px;
+        }
+    
+        .mrvegas-encores-faq__video-mobile {
+            margin: 20px 20px 20px 20px;
+            width: 100%;
+            display: none;
+        }
+    
+        .mrvegas-encores-faq__promo-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .mrvegas-encores-faq__promo-snippet {
+            width: 48%;
+            max-width: 430px;
+            margin-bottom: 20px;
+            ;
+        }
+    
+        .mrvegas-encores-faq__promo-title {
+            width: 100%;
+            font-weight: bold;
+        }
+    
+        .mrvegas-encores-faq__promo-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        img.mrvegas-encores-faq__promo-logo {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__reward-main-container {
+            margin: 0px;
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            box-sizing: border-box
+        }
+    
+        .mrvegas-encores-faq__reward-snippet {
+            flex: 0 25%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    
+        .mrvegas-encores-faq__reward-title {
+            width: 100%;
+            font-weight: bold;
+            padding: 0px 20px 0px 0px;
+            text-align: center !important;
+        }
+    
+        .mrvegas-encores-faq__reward-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 20px 10px 0px;
+            text-align: center !important;
+        }
+    
+        img.mrvegas-encores-faq__reward-logo {
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__question {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            border: 1px solid #666666;
+            cursor: pointer;
+        }
+    
+        /* Mobile */
+        @media only screen and (max-width: 600px) {
+            .mrvegas-encores-faq__promo-snippet {
+                width: 100%;
+                max-width: 100%;
+            }
+    
+            .mrvegas-encores-faq__reward-snippet {
+                flex: 0 50%;
+            }
+    
+            img.mrvegas-encores-faq__offer-logo {
+                margin: 0;
+            }
+    
+            .mrvegas-encores-faq__offer-text {
+                margin-top: 5px;
+            }
+    
+            .mrvegas-encores-faq__offer-title {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .mrvegas-encores-faq__video-desktop {
+                display: none;
+            }
+    
+            .mrvegas-encores-faq__video-mobile {
+                display: block;
+            }
+        }
+--></style>
+<!-- page banner ends -->
+<p>&nbsp;</p>
+<!-- H1 and intro paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h1 class="mrvegas-encores-faq__override">Mr Vegas' Guide to Encores</h1>
+<p class="mrvegas-encores-faq__normal-text">Welcome to Encore, a thrilling multiplayer experience from Mr Vegas.</p>
+<p class="mrvegas-encores-faq__normal-text">Encore offers you the chance to socialize with other players while spinning the reels in competitive slot challenges. The best part is that you can win Extra Spins, cash prizes, and even entry tickets to other events!</p>
+<p class="mrvegas-encores-faq__normal-text">Taking part is simple. Just enter the Encore Lobby and check out all the relevant information on each individual competition. This includes the total number of spins, prize pool structure, buy-in fee, bet amount and Time Limits. Once you have made your pick, all you need to do is click the register button and enjoy the action.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore Features & Variations</h2>
+<p class="mrvegas-encores-faq__normal-text">We call the first playable mode <strong>Scheduled Encores</strong>, which are competitions starting at a set time as long as the required numbers of players sign up. The second mode is called <strong>Sit & Go</strong>, which are competitions starting as soon as enough players sign up.</p>
+<p class="mrvegas-encores-faq__normal-text">Sounds interesting? Then keep on reading to learn more about what Encore has to offer.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-main-container">
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Normal_Encores_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Normal Encores</h3>
+<p class="mrvegas-encores-faq__offer-text">A Normal Encore can either be a Scheduled Encore event or a Sit & Go event and will always come with a buy-in fee to participate.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Guaranteed_Battles_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Guaranteed Encores</h3>
+<p class="mrvegas-encores-faq__offer-text">These Encores always have a guaranteed prize pool to be paid out, but the pool will grow even bigger when each participant makes a buy-in.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freeroll_Tournaments_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freeroll Tournaments</h3>
+<p class="mrvegas-encores-faq__offer-text">Freeroll Tournaments allow you to enter the Encore without paying an entry fee. However, in order to take part, you must have deposited a total of at least &euro;20 and earned 1.000 XP points during the past 30 days.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Re-Buys_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Re-Buys</h3>
+<p class="mrvegas-encores-faq__offer-text">In some Encores it is possible to buy additional spins when you run out. The number of spins is equal to the original and costs the same as the buy-in.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freezeout_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freezeout</h3>
+<p class="mrvegas-encores-faq__offer-text">This is an Encore mode where you can only make one single buy-in, meaning that all participants taking part will compete under the exact same conditions. Once all spins have been exhausted, it is not possible to make any re-buys.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Wild_West_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Wild West</h3>
+<p class="mrvegas-encores-faq__offer-text">The Wild West mode works the same way as re-buys do, but with the possibility of making up to 25 re-buys per player.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_The_Joker_Feature_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">The Joker Feature</h3>
+<p class="mrvegas-encores-faq__offer-text">If you pre-register to an Encore, you will be placed into a draw to become The Joker for the game. If The Joker ends up winning, the prize will be doubled.</p>
+</div>
+</div>
+</div>
+<!-- Info section ends -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Major Encore Events</h2>
+<!-- [JT NOTE 31/05/24] TASK2A. Moved to top under title. removed from this the <div class="mrvegas-encores-faq__promo-snippet" to stretch across 100%>. Need to stretch across.To request banner from design. --> <img class="mrvegas-encores-faq__promo-logo" style="text-align: center; width: 100%;" src="/file_uploads/FAQ_BattleBanners_EncoreSplash_880x164px.jpg" alt="encore_splash" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Splash</h3>
+<p class="mrvegas-encores-faq__promo-text">Encore Splash is a Sit & Go event taking place every Friday from 17:00 to 20:59 GMT. All the action plays out in <!--[JT NOTE 31/05/24] TASK2B. Updated 10min to 12min --> 12-minute competitions across eight games that change every hour. Taking part will give you the chance to win some Extra Spins.</p>
+</div>
+<div class="mrvegas-encores-faq__promo-main-container">
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreMania.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Mania</h3>
+<p class="mrvegas-encores-faq__promo-text">Every Monday brings you Encore Mania. In this Scheduled Encore event, all participants will receive 100 spins to compete against each other. Do you have what it takes to win the Extra Spins up for grabs?</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreBlast.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Blast</h3>
+<p class="mrvegas-encores-faq__promo-text">Encore Blast is a Sit & Go Tournament that takes place every Tuesday from 18:00 to 22:00 GMT, once <!-- [JT NOTE 31/05/24] TASK4B Updated from 10 player to 15 --> 15 players have registered. Make sure to participate if you want a chance at winning entry tickets to other Encore events.</p>
+</div>
+<!--[JT NOTE 31/05/24] TASK1. Remove Encore Rush completely
+    <div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreRush.jpg" alt="" />
+    <h3 class="mrvegas-encores-faq__promo-title">Encore Rush</h3>
+    <p class="mrvegas-encores-faq__promo-text">On Thursdays you can take part in Encore Rush from 17:00 GMT. We will set off new Freerolls every ten minutes during the first hour, and all will last for a minimum of six hours. Use your 100 spins in a total of 6 different games!</p>
+    </div> -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore Rewards</h2>
+</div>
+<div class="mrvegas-encores-faq__reward-main-container">
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_EncoreTickets_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Encore Tickets</p>
+<p class="mrvegas-encores-faq__reward-text">Multiple Values</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_FreeSpins_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Free Spins</p>
+<p class="mrvegas-encores-faq__reward-text">Multiple Values</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_CashWinnings_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Cash Winnings</p>
+<p class="mrvegas-encores-faq__reward-text">Paid to your account</p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Experience Encore Today!</h2>
+<p class="mrvegas-encores-faq__normal-text"><strong>On desktop:</strong> click the red "Encore" tab on the right-hand side of the screen. This brings a pop-up that shows you how Encore works. You can then click "Continue" to check which Encores are currently going on.</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>On mobile:</strong> press the "Encore" logo on the upper right-hand side of the screen. You will then enter the Encore lobby with a list of all Encores currently taking place.</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>Remember, to take part in Encores you will first need to create an account at Mr Vegas.</strong></p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore FAQ</h2>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">What is an Encore?</h2>
+<div>An Encore is a competition that lets you challenge other players in specifically selected games. The-first place winner is always the player with the most accumulated winnings at the end of each Encore round.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Can I get Casino rewards for playing Encore?</h2>
+<div>Yes! Participation in Encore may bring casino rewards in a number of different ways, such as Extra Spins, cash prizes and entry tickets. We recommend visiting the Encore Lobby to discover what rewards you can win for each event.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question"><strong>Can I play Encore on mobile devices? </strong></h2>
+<div>Yes, you can enjoy Encore on mobile devices, be it a smartphone or a tablet. As a result, you can challenge your friends and other players at Mr Vegas Casino from the palm of your hands.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">How long do Encores last?</h2>
+<div style="text-align: justify;">That depends on the Encore itself. You can check all the details, including the duration, in the Encore Lobby.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">What happens if two players finish with the same score?</h2>
+<div style="text-align: justify;">The winner will then be the player with the biggest win from a single spin. Should two players end with the same score and the same big win, the winner who reached their score first will take the ultimate prize.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Can I win real money playing Encore tournaments?</h2>
+<div style="text-align: justify;">Yes, you can win real money prizes when participating in Encore tournaments. You can always check the prize details before playing.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Does your online casino host Encores regularly?</h2>
+<div style="text-align: justify;">Yes, we host Encores all throughout the day at Mr Vegas.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Where can I read up on the terms and rules of Encore?</h2>
+<div style="text-align: justify;">You can read the Terms and Conditions for Encore tournaments <a href="/terms-and-conditions/mga-games-specific/#casino-and-bonuses/"> here</a>.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Does Encore have a maximum pay out?</h2>
+<div style="text-align: justify;">No, there is no maximum payout in Encore.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Do I need to register a new account to be able to play on the Encores?</h2>
+<div style="text-align: justify;">You can play on Encore with your existing Mr Vegas account. Please note that you are allowed to have only one account at mrvegas.com.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Who should I contact if I am experiencing any issues?</h2>
+<div style="text-align: justify;">In case you are facing issues or have any questions regarding the Encore, you can always contact our customer support from the lobby.</div>
+</div>
+</div>
+<!-- Updated EN CONTENT END-->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">General Terms and Conditions</h2>
+<div class="mrvegas-encores-faq__normal-text">
+<div class="mrvegas-encores-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Playing at mrvegas.com is restricted to people over the age of 18. We see gambling as adult entertainment. Play responsibly.</li>
+<li style="text-align: justify;">The amounts specified throughout the competition are just an indication of the amounts converted in the various local currencies. The euro amounts specified in the terms prevail over any other amounts, which will be determined by the currency conversion rate at the time of payout.</li>
+<li style="text-align: justify;">You are responsible for any currency conversion rates or transaction fees that may apply with your own bank.</li>
+<li style="text-align: justify;"><a href="/terms-and-conditions/">Terms and Conditions</a> on the website apply.</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () {
+                $(".faq-cat-accordion").accordion({ collapsible: true, active: true });
+            });
+// ]]></script>
+</div>
+</div>

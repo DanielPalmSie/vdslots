@@ -1,0 +1,436 @@
+<style><!--
+.mrvegas-encores-faq {
+        color: #cccccc;
+        background: #131313;
+        width: 100%;
+        margin: auto;
+    }
+
+    .mrvegas-encores-faq__title {
+        font-size: 24px;
+        padding: 0px 0px 20px 0px;
+        width: 100%;
+    }
+
+    .mrvegas-encores-faq__title--secondary {
+        font-size: 18px;
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .mrvegas-encores-faq__question,
+    .mrvegas-encores-faq__reward-title,
+    .mrvegas-encores-faq__promo-title,
+    .mrvegas-encores-faq__offer-title,
+    .mrvegas-encores-faq a,
+    .mrvegas-encores-faq__title,
+    .mrvegas-encores-faq__title--secondary {
+        color: #ffffff;
+    }
+
+    .mrvegas-encores-faq__reward-title,
+    .mrvegas-encores-faq__offer-title,
+    .mrvegas-encores-faq__promo-title,
+    .mrvegas-encores-faq__normal-text,
+    .mrvegas-encores-faq__promo-text,
+    .mrvegas-encores-faq__offer-text,
+    .mrvegas-encores-faq li {
+        font-size: 14px;
+
+    }
+
+    .mrvegas-encores-faq__content {
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+
+    .mrvegas-encores-faq__normal-text {
+        line-height: 24px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .mrvegas-encores-faq__main-banner {
+        background: #131313;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .mrvegas-encores-faq__offer-main-container {
+        margin: 0px;
+        padding: 0px 20px;
+        width: 100%;
+        display: inline-flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+
+    .mrvegas-encores-faq__offer-snippet {
+        display: flex;
+        width: 100%;
+    }
+
+    .mrvegas-encores-faq__right-container {
+        width: 78%;
+    }
+
+    .mrvegas-encores-faq__offer-title {
+        width: 95%;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    .mrvegas-encores-faq__offer-text {
+        width: 95%;
+        line-height: 21px;
+        padding: 0px 0px 10px 0px;
+        text-align: left !important;
+    }
+
+    img.mrvegas-encores-faq__offer-logo {
+        max-width: 90%;
+        margin: 10px 20px 10px 0px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .mrvegas-encores-faq__clean-link {
+        text-decoration: none;
+        color: #999999;
+    }
+
+    .mrvegas-encores-faq__section {
+        padding-top: 20px;
+    }
+
+    .mrvegas-encores-faq__video-desktop {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .mrvegas-encores-faq__video-mobile {
+        margin: 20px 20px 20px 20px;
+        width: 100%;
+        display: none;
+    }
+
+    .mrvegas-encores-faq__promo-main-container {
+        margin: 0px;
+        padding: 0px 20px;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mrvegas-encores-faq__promo-snippet {
+        width: 48%;
+        max-width: 430px;
+        margin-bottom: 20px;
+        ;
+    }
+
+    .mrvegas-encores-faq__promo-title {
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .mrvegas-encores-faq__promo-text {
+        width: 100%;
+        line-height: 21px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    img.mrvegas-encores-faq__promo-logo {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .mrvegas-encores-faq__reward-main-container {
+        margin: 0px;
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: row;
+        box-sizing: border-box
+    }
+
+    .mrvegas-encores-faq__reward-snippet {
+        flex: 0 25%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .mrvegas-encores-faq__reward-title {
+        width: 100%;
+        font-weight: bold;
+        padding: 0px 20px 0px 0px;
+        text-align: center !important;
+    }
+
+    .mrvegas-encores-faq__reward-text {
+        width: 100%;
+        line-height: 21px;
+        padding: 0px 20px 10px 0px;
+        text-align: center !important;
+    }
+
+    img.mrvegas-encores-faq__reward-logo {
+        max-width: 120px;
+        max-height: 120px;
+        border-radius: 5px;
+    }
+
+    .mrvegas-encores-faq__question {
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px;
+        border: 1px solid #666666;
+        cursor: pointer;
+    }
+
+    .faq_button_app {
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			text-decoration: none;
+  			color: inherit;
+		}
+
+    /* Mobile */
+    @media only screen and (max-width: 600px) {
+        .mrvegas-encores-faq__promo-snippet {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .mrvegas-encores-faq__reward-snippet {
+            flex: 0 50%;
+        }
+
+        img.mrvegas-encores-faq__offer-logo {
+            margin: 0;
+        }
+
+        .mrvegas-encores-faq__offer-text {
+            margin-top: 5px;
+        }
+
+        .mrvegas-encores-faq__offer-title {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mrvegas-encores-faq__video-desktop {
+            display: none;
+        }
+
+        .mrvegas-encores-faq__video-mobile {
+            display: block;
+        }
+    }
+--></style>
+<!-- page banner ends -->
+<p>&nbsp;</p>
+<!-- H1 and intro paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h1 class="mrvegas-encores-faq__override">Mr Vegas－Encore徹底ガイド</h1>
+<p class="mrvegas-encores-faq__normal-text">Mr Vegasがお届けするにスリルあふれるプレイヤーエクスペリエンス、Encore（アンコール）へようこそ！</p>
+<p class="mrvegas-encores-faq__normal-text">Encoreでは、競争型スロットチャレンジでリールを回しながら、他プレイヤーとの交流が楽しめちゃう！エクストラスピン、キャッシュプライズ、さらには他イベントへのエントリーチケットまで当たるチャンスがあるのがヤバい！</p>
+<p class="mrvegas-encores-faq__normal-text">参加方法はいたってシンプル。Encoreロビーを開いて各コンペティションの該当情報のすべてを確認するだけ。この中には、スピン数、賞金プール分配、buy-in料金と制限時間も含まれているので、チェックは必須。どれに参加するかを選んだら、あとは登録ボタンを押すだけ、イベントをとことん楽しもう！</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<div class="faq__button-container-mobile">
+<div class="faq__button-container">
+<a href="/tournament" class="btn btn-xl btn-default-xl gradient-default faq__button faq_button_app">アンコールロビー</a>
+</div>
+</div>
+<h2 class="mrvegas-encores-faq__override">Encoreの特徴とバリエーション</h2>
+<p class="mrvegas-encores-faq__normal-text">まず1つ目のプレイモードはその名も<strong>Scheduled Encores</strong>、必要規定数のプレイヤーがサインアップしていることを条件に、既定時刻に始まるコンペティションがコレ。2つ目のモードは<strong>Sit &amp; Go</strong>、必要数のプレイヤーがサインアップすると同時にコンペティション開始</p>
+<p class="mrvegas-encores-faq__normal-text">このまま読み進めて、Encore でできるすべてのことを見つけてください!</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-main-container">
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Normal_Encores_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Normal Encores</h3>
+<p class="mrvegas-encores-faq__offer-text">Normal Encoreは、Scheduled Encoreイベントとしても、Sit &amp; Goとしても開催され、常に参加にはbuy-inが必要です。</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Guaranteed_Battles_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Guaranteed Encores</h3>
+<p class="mrvegas-encores-faq__offer-text">このEncoresでは常に、確実に払い出される確約賞金プールがある一方、参加者がbuy-inするごとに賞金プールがどんどん増えていくタイプです。</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freeroll_Tournaments_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freerollトーナメント</h3>
+<p class="mrvegas-encores-faq__offer-text">Freerollトーナメントでは、エントリーフィーを払うことなくEncoreイベントに参加可能です。ただし、参加するには過去30日以内に&euro;20以上の入金実績があり、1,000 XPポイントを獲得していることが条件！</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Re-Buys_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Re-Buys</h3>
+<p class="mrvegas-encores-faq__offer-text">一部のEncoresでは、スピンを使い果たした時点で追加スピンの購入も可能です。スピン数は、buy-in当初の規定数およびコストと同数・同額です。</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freezeout_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freezeout</h3>
+<p class="mrvegas-encores-faq__offer-text">このEncoresモードでは、1度のバイインのみ可能で、すべての参加者が正確な同じ条件で競うことになります。すべてのスピンを使い果たすと、re-buysはできません。</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Wild_West_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Wild West</h3>
+<p class="mrvegas-encores-faq__offer-text">Wild Westモードでは、re-buysと同じ仕組みながらも、プレイヤー1名当たり最大25回のre-buysが可能になります。</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_The_Joker_Feature_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Jokerフィーチャー</h3>
+<p class="mrvegas-encores-faq__offer-text">Encoreに事前登録すると、ゲームでJokerとなれるチャンスの抽選に参加可能です。Jokerが入選すると、プライズがまさかの倍に！</p>
+</div>
+</div>
+</div>
+<!-- Info section ends -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">メジャーEncoreルイベント</h2>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-main-container">
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreMania.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Mania</h3>
+<p class="mrvegas-encores-faq__promo-text">毎週月曜日に開催されるのが、Encore Mania。このScheduled Encoreイベントでは、すべての参加者が100スピンを手にし、お互い競い合います。さあ、エクストラスピンを手に入れることができるか？！</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreBlast.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Blast</h3>
+<p class="mrvegas-encores-faq__promo-text">Encore Blastは、毎週火曜日18:00～22:00 GMTに10プレイヤーの登録が揃うと開催されるSit &amp; Go です。他Encoreイベントへのエントリーチケット当選チャンスを懸けて参加しよう！</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreRush.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Rush</h3>
+<p class="mrvegas-encores-faq__promo-text">木曜日には、17:00 GMTから開催のEncore Rushにご参加あれ！最初の1時間、10分おきに新たにFreerollsを大放出、6時間以上続く激アツイベントがコレ。合計6種のゲームで、スピン100回を駆使しよう！</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreSplash.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Splash</h3>
+<p class="mrvegas-encores-faq__promo-text">Encore Splashは、毎週金曜日の17:00～20:59 GMTに開催されるSit &amp; Goアンコールイベントです。毎時間替わる8つのゲームで10分間にわたって繰り広げられる激アツアクション満載！エクストラスピン獲得チャンスのあるこのイベントをお見逃しなく！</p>
+</div>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encoreリワード</h2>
+</div>
+<div class="mrvegas-encores-faq__reward-main-container">
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_EncoreTickets_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Encoreチケット</p>
+<p class="mrvegas-encores-faq__reward-text">倍率値</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_FreeSpins_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">エクストラスピン</p>
+<p class="mrvegas-encores-faq__reward-text">倍率値</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_CashWinnings_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">キャッシュ賞金</p>
+<p class="mrvegas-encores-faq__reward-text">アカウントに進呈済</p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">今日さっそく、Encoreをその肌で感じよう！</h2>
+<p class="mrvegas-encores-faq__normal-text"><strong>デスクトップ版:</strong> 画面右側の赤の「Encore」タブをクリックしてください。Encoreの仕組みを解説するポップアップが表示されます。「続行」をクリックすると、現在開催中のEncoreを確認できます。</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>モバイル版:</strong> 画面右側のの「Encore」タブを押してください。Encoreロビーに移動し、現在開催中のEncoresすべてが一覧表示されます。</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>Encoresに参加するには、まずMr Vegasでアカウント開設が必要です。 </strong></p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore よくある質問</h2>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoreって何？</h2>
+<div>Encoreは、厳選された指定ゲームで他プレイヤーと競い合うコンペティションです。Encoreラウンド終了時、最も獲得賞金の多いプレイヤーが1等賞となります。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoreでのプレイには、カジノリワードはもらえる？</h2>
+<div>もちろん！Encoreに参加すると、エクストラスピン、キャッシュプライズ、エントリーチケットなど各種カジノリワードが手に入る場合があります。Encoreロビーで、各イベントで手に入るリワードが確認できます。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question"><strong>Encoreはモバイルでもプレイできる？</strong></h2>
+<div>スマホでもタブレットでも、モバイルでEncoreを楽しめます。結果的に、Mr Vegasカジノ全体のお友達や他プレイヤーとの競い合いを、いつでもどこでも手のひらから楽しめちゃう！</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoreの開催期間の長さはどれくらい？</h2>
+<div style="text-align: justify;">Encoreの種類によって変わります。開催時間を吹くすべての詳細は、Encoreロビーでご確認ください。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">2人のプレイヤーが同スコアで終了した場合どうなる？</h2>
+<div style="text-align: justify;">1回のスピンでより大きい最大賞金を出したプレイヤーがより上位となります。2名のプレイヤーが同額の高額賞金で終了した場合、そのスコアを最初に出したほうのプレイヤーが特賞を手にします。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoreトーナメントではリアルマネーが手に入る？</h2>
+<div style="text-align: justify;">当サイトEncoreトーナメントでは、リアルマネーでの賞金を用意しています。プレイ前に必ず、賞金情報の詳細をご確認ください。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">このオンラインカジノではEncoreを定期的に開催してる？</h2>
+<div style="text-align: justify;">当サイトのMr Vegasでは、毎日Encoreを開催しています。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoreの利用規約はどこで確認できる？</h2>
+<div style="text-align: justify;">Encoreトーナメントの利用規約は、<a href="/terms-and-conditions/mga-games-specific/#casino-and-bonuses/">ココで</a>お読みいただけます。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoreには賞金上限がある？</h2>
+<div style="text-align: justify;">Encoreでは、賞金上限はありません。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">Encoresでプレイするには、新しいアカウント登録が必要？</h2>
+<div style="text-align: justify;">Encoreは、既存のMr Vegasアカウントでプレイできます。mrvegas.comでお持ちになれるアカウントは、1つのみです。</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">問題発生時、どこに連絡すればよい？</h2>
+<div style="text-align: justify;">Encoreに関して、問題が発生したりご質問がある場合、いつでもロビーから当サイトカスタマーサポートにご連絡ください。</div>
+</div>
+</div>
+<!-- Updated EN CONTENT END-->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">一般的な利用規約</h2>
+<div class="mrvegas-encores-faq__normal-text">
+<div class="mrvegas-encores-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Mrvegas.comでのプレイは、18歳以上の方に限られています。当社ではギャンブルは成人向けの娯楽の一種とみています。責任を持ってプレイしましょう。</li>
+<li style="text-align: justify;">このオファーを通じて指定された金額は、さまざまな現地通貨で換算された金額のあくまでも指標です。条件により指定されたユーロの金額が他の金額よりも優先されます。これは、支払い時の通貨換算レートによって決まります。</li>
+<li style="text-align: justify;">お客様の銀行が決める通貨換算レートや手数料は自己責任となります旨、ご理解いただけますようお願いいたします。</li>
+<li style="text-align: justify;">このウェブサイト上の<a href="/terms-and-conditions/">利用規約</a>が適用されます。</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () {
+            $(".faq-cat-accordion").accordion({ collapsible: true, active: true });
+        });
+// ]]></script>
+</div>

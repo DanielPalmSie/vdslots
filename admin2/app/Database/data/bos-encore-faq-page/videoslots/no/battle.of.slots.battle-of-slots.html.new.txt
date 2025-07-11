@@ -1,0 +1,677 @@
+<style><!--
+.battle-of-slots-faq { 
+    
+            color: #cccccc; 
+    
+            background: #131313; 
+    
+            width: 100%; 
+    
+            margin: auto; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__title { 
+    
+            font-size: 24px; 
+    
+            padding: 0px 0px 20px 0px; 
+    
+            width: 100%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__title--secondary { 
+    
+            font-size: 18px;F 
+    
+            padding: 30px 0px 0px 0px; 
+    
+            width: 100%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__question, 
+    
+        .battle-of-slots-faq__reward-title, 
+    
+        .battle-of-slots-faq__promo-title, 
+    
+        .battle-of-slots-faq__offer-title, 
+    
+        .battle-of-slots-faq a, 
+    
+        .battle-of-slots-faq__title, 
+    
+        .battle-of-slots-faq__title--secondary { 
+    
+            color: #ffffff; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-title, 
+    
+        .battle-of-slots-faq__offer-title, 
+    
+        .battle-of-slots-faq__promo-title, 
+    
+        .battle-of-slots-faq__normal-text, 
+    
+        .battle-of-slots-faq__promo-text, 
+    
+        .battle-of-slots-faq__offer-text, 
+    
+        .battle-of-slots-faq li { 
+    
+            font-size: 14px; 
+    
+      
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__content { 
+    
+            width: 100%; 
+    
+            padding: 0px 20px; 
+    
+            box-sizing: border-box; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__normal-text { 
+    
+            line-height: 24px; 
+    
+            padding: 0px 0px 10px 0px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__main-banner { 
+    
+            background: #131313; 
+    
+            max-width: 100%; 
+    
+            height: auto; 
+    
+            margin-bottom: 20px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-main-container { 
+    
+            margin: 0px; 
+    
+            padding: 0px 20px; 
+    
+            width: 100%; 
+    
+            display: inline-flex; 
+    
+            -webkit-flex-wrap: wrap; 
+    
+            flex-wrap: wrap; 
+    
+            flex-direction: row; 
+    
+            margin-right: auto; 
+    
+            margin-left: auto; 
+    
+            box-sizing: border-box; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-snippet { 
+    
+            display: flex; 
+    
+            width: 100%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__right-container { 
+    
+            width: 78%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-title { 
+    
+            width: 95%; 
+    
+            font-weight: bold; 
+    
+            padding: 10px 0; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-text { 
+    
+            width: 95%; 
+    
+            line-height: 21px; 
+    
+            padding: 0px 0px 10px 0px; 
+    
+            text-align: left !important; 
+    
+        } 
+    
+      
+    
+        img.battle-of-slots-faq__offer-logo { 
+    
+            max-width: 90%; 
+    
+            margin: 10px 20px 10px 0px; 
+    
+            height: auto; 
+    
+            border-radius: 5px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__clean-link { 
+    
+            text-decoration: none; 
+    
+            color: #999999; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__section { 
+    
+            padding-top: 20px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__video-desktop { 
+    
+            margin: 20px 20px 20px 20px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__video-mobile { 
+    
+            margin: 20px 20px 20px 20px; 
+    
+            width: 100%; 
+    
+            display: none; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-main-container { 
+    
+            margin: 0px; 
+    
+            padding: 0px 20px; 
+    
+            display: flex; 
+    
+            -webkit-flex-wrap: wrap; 
+    
+            flex-wrap: wrap; 
+    
+            margin-right: auto; 
+    
+            margin-left: auto; 
+    
+            flex-direction: row; 
+    
+            justify-content: space-between; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-snippet { 
+    
+            width: 48%; 
+    
+            max-width: 430px; 
+    
+            margin-bottom: 20px; 
+    
+            ; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-title { 
+    
+            width: 100%; 
+    
+            font-weight: bold; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-text { 
+    
+            width: 100%; 
+    
+            line-height: 21px; 
+    
+            padding: 0px 0px 10px 0px; 
+    
+        } 
+    
+      
+    
+        img.battle-of-slots-faq__promo-logo { 
+    
+            max-width: 100%; 
+    
+            border-radius: 5px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-main-container { 
+    
+            margin: 0px; 
+    
+            padding: 10px 20px; 
+    
+            width: 100%; 
+    
+            display: flex; 
+    
+            -webkit-flex-wrap: wrap; 
+    
+            flex-wrap: wrap; 
+    
+            margin-right: auto; 
+    
+            margin-left: auto; 
+    
+            flex-direction: row; 
+    
+            box-sizing: border-box 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-snippet { 
+    
+            flex: 0 25%; 
+    
+            box-sizing: border-box; 
+    
+            text-align: center; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-title { 
+    
+            width: 100%; 
+    
+            font-weight: bold; 
+    
+            padding: 0px 20px 0px 0px; 
+    
+            text-align: center !important; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-text { 
+    
+            width: 100%; 
+    
+            line-height: 21px; 
+    
+            padding: 0px 20px 10px 0px; 
+    
+            text-align: center !important; 
+    
+        } 
+    
+      
+    
+        img.battle-of-slots-faq__reward-logo { 
+    
+            max-width: 120px; 
+    
+            max-height: 120px; 
+    
+            border-radius: 5px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__question { 
+    
+            font-weight: bold; 
+    
+            font-size: 15px; 
+    
+            padding: 5px; 
+    
+            border: 1px solid #666666; 
+    
+            cursor: pointer; 
+    
+        } 
+
+        .faq_button_app {
+  				display: flex;
+  				justify-content: center;
+  				align-items: center;
+  				text-decoration: none;
+  				color: inherit;
+			}
+    
+      
+    
+        /* Mobile */ 
+    
+        @media only screen and (max-width: 600px) { 
+    
+            .battle-of-slots-faq__promo-snippet { 
+    
+                width: 100%; 
+    
+                max-width: 100%; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__reward-snippet { 
+    
+                flex: 0 50%; 
+    
+            } 
+    
+      
+    
+            img.battle-of-slots-faq__offer-logo { 
+    
+                margin: 0; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__offer-text { 
+    
+                margin-top: 5px; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__offer-title { 
+    
+                margin: 0; 
+    
+                padding: 0; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__video-desktop { 
+    
+                display: none; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__video-mobile { 
+    
+                display: block; 
+    
+            } 
+    
+        }
+--></style>
+<div class="battle-of-slots-faq"><!-- page banner -->
+<div><img class="battle-of-slots-faq__main-banner" src="/file_uploads//BOS_920x294_Banners_EN.jpg" alt="" /></div>
+<!-- page banner ends --> <!-- H1 and intro paragraph starts -->
+<div class="battle-of-slots-faq__content">
+<h1 class="battle-of-slots-faq__override">Videoslots' guide til Battle of Slots</h1>
+<p class="battle-of-slots-faq__normal-text">Velkommen til Battle of Slots, verdens første spilleautomatturnering for flere spillere.</p>
+<p class="battle-of-slots-faq__normal-text">Battle of Slots gir deg sjansen til å sosialisere med andre spillere mens du snurrer hjulene i konkurrerende spilleautomatutfordringer. Det beste er at du kan vinne ekstraspinn, pengepremier og til og med inngangsbilletter til andre arrangementer!</p>
+<p class="battle-of-slots-faq__normal-text">Det er enkelt å delta. Bare gå inn i Battle of Slots-lobbyen og sjekk ut all relevant informasjon om hver enkelt konkurranse. Dette inkluderer totalt antall spinn, premiepottstruktur, innkjøpsavgift, innsatsbeløp og tidsbegrensninger. Når du har gjort ditt valg, er alt du trenger å gjøre å klikke på registreringsknappen og nyte handlingen.</p>
+<div class="battle-of-slots-faq__video-desktop"><iframe title="YouTube video player" src="https://www.youtube.com/embed/guH5exu7ZJI" frameborder="0" width="100%" height="495"></iframe></div>
+<div class="faq__button-container-mobile">
+<div class="faq__button-container">
+<a href="/tournament" class="btn btn-xl btn-default-xl gradient-default faq__button faq_button_app">Gå til Battle Lobby</a>
+</div>
+</div>
+<h2 class="battle-of-slots-faq__override">Battle of Slots-funksjoner og -variasjoner</h2>
+<div class="battle-of-slots-faq__video-mobile"><iframe title="YouTube video player" src="https://www.youtube.com/embed/guH5exu7ZJI" frameborder="0" width="90%" height="185"></iframe></div>
+<p class="battle-of-slots-faq__normal-text">Vi kaller den første spillbare modusen <strong>Scheduled Battles</strong>, som er konkurranser som starter på et bestemt tidspunkt så lenge det nødvendige antall spillere melder seg på. Den andre modusen kalles <strong>Sit & Go</strong>, som er konkurranser som starter så snart nok spillere melder seg på.</p>
+<p class="battle-of-slots-faq__normal-text">Høres dette interessant ut? Fortsett å lese for å lære mer om hva Battle of Slots har å tilby.</p>
+</div>
+<div class="battle-of-slots-faq__offer-main-container">
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-normal-battles.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Normale kamper</h3>
+<p class="battle-of-slots-faq__offer-text">En normal kamp kan enten være et planlagt kamparrangement eller et Sit & Go-arrangement, og det vil alltid være en innkjøpsavgift for å delta.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-guaranteed.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Garanterte kamper</h3>
+<p class="battle-of-slots-faq__offer-text">Disse kampene har alltid en garantert premiepott som skal utbetales, men potten vil vokse seg enda større hvis nok spillere kjøper seg inn.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-freeroll-tournaments.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Freeroll-turneringer</h3>
+<p class="battle-of-slots-faq__offer-text">Freeroll-turneringer lar deg delta i Battles uten å betale en påmeldingsavgift. For å kunne delta må du imidlertid ha satt inn minst 200 kr og tjent 1 000 XP-poeng i løpet av de siste 30 dagene.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-rebuys.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Gjenkjøp</h3>
+<p class="battle-of-slots-faq__offer-text">I noen Battles er det mulig å kjøpe ekstra spinn når du går tom. Antall spinn er det samme som det opprinnelige og koster det samme som innskuddet.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-freezeout.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Freezeout</h3>
+<p class="battle-of-slots-faq__offer-text">Dette er en Battle-modus der du bare kan gjøre ett enkelt innkjøp, noe som betyr at alle deltakerne konkurrerer under nøyaktig samme vilkår. Når alle spinnene er brukt opp, er det derfor ikke mulig å gjøre nye kjøp.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-wild-west.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Ville Vesten</h3>
+<p class="battle-of-slots-faq__offer-text">Wild West-modusen fungerer på samme måte som re-buys, men med muligheten til å gjøre opptil 25 re-buys per spiller.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-joker-feature.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Joker-funksjonen</h3>
+<p class="battle-of-slots-faq__offer-text">Hvis du forhåndsregistrerer deg til en Battle, vil du bli med i en trekning om å bli Jokeren i spillet. Hvis Jokeren ender opp med å vinne, vil premien bli doblet.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-heads-up.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Heads Up</h3>
+<p class="battle-of-slots-faq__offer-text">I denne Battle-modusen kan du konkurrere mot én spiller, med sjansen til å doble innsatsen din. Den avsluttes enten når tiden er ute eller når begge spillerne har fullført alle spinnene sine.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-jackpot-chases.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Jackpot-jakt</h3>
+<p class="battle-of-slots-faq__offer-text">I disse konkurransene jakter du på jackpotten i totalt 5 runder. Hvis du vinner en runde, får du en inngangsbillett til neste runde, men du kan også kjøpe deg inn for å nå hvilken som helst runde du ønsker. Hvis du ikke går videre fra runde 2, 3 eller 4, kan du gå tilbake til forrige runde og prøve på nytt. Jackpot-premien deles ut blant de tre beste spillerne helt til slutt.</p>
+</div>
+</div>
+</div>
+<div class="battle-of-slots-faq__content"> </div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Viktige Battle of Slots-hendelser</h2>
+<div class="battle-of-slots-faq__promo-main-container">
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Battle%20Weekend_new.jpg" alt="battle weekend" /> <!--removed img style entirely--> <!--replaced image-->
+<h3 class="battle-of-slots-faq__promo-title">Battle Weekend</h3>
+<p class="battle-of-slots-faq__promo-text">Hver måned hos Videoslots avsluttes på en sterk måte med vår Battle Weekend. Dette arrangementet finner sted fredag, lørdag og søndag mellom 16:00 GMT og 01:00 GMT, hvor vi arrangerer både 15- og 30-mannskamper på to forskjellige spilleautomater. Premiene kommer i form av ekstra spinn, så husk å sjekke dette ut!</p>
+</div>
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Frenzy%20Mondays_new.jpg" alt="frenzy Mondays" /> <!--replaced image-->
+<h3 class="battle-of-slots-faq__promo-title">Frenzy Mondays</h3>
+<p class="battle-of-slots-faq__promo-text">Hver mandag gir vi deg sjansen til å kjempe om ekstraspinn i løpet av to timer med ubegrensede Battles! Disse 15- og 30-manns kampene finner sted i fire forskjellige spill, og starter kl. 18:00 og slutter kl. 20:00 GMT.</p>
+</div>
+<!--moved main-container div to top-->
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Tuesday Madness Battle_new.jpg" alt="tuesday madness" />
+<h3 class="battle-of-slots-faq__promo-title">Tuesday Madness</h3>
+<p class="battle-of-slots-faq__promo-text">Tuesday Madness er en enkelt kamp som finner sted hver tirsdag med en massiv premiepott på {{csym}} {{modm:5000}}. Denne vil deretter fortsette å vokse med {{csym}} {{modm:2}} med hvert innkjøp! For eksempel: Hvis 1,000 spillere blir med i kampen, vil premiepotten være verdt {{csym}} {{modm:7000}}.</p>
+</div>
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Epic Thursdays_new.jpg" alt="epic thursdays" />
+<h3 class="battle-of-slots-faq__promo-title">Epic Thursdays</h3>
+<p class="battle-of-slots-faq__promo-text">Hver torsdag gir vi deg sjansen til å kjempe om ekstra spinn i løpet av fire timer med ubegrensede kamper! Disse finner sted i to forskjellige spill, og starter kl. 18:00 og slutter kl. 22:00 GMT.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Belønninger i Battle of Slots</h2>
+</div>
+<div class="battle-of-slots-faq__reward-main-container">
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-battletickets.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Battle-billetter</p>
+<p class="battle-of-slots-faq__reward-text">Flere verdier</p>
+</div>
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-freespins.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Ekstra spinn</p>
+<p class="battle-of-slots-faq__reward-text">Flere verdier</p>
+</div>
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-prize-winner.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Kontantgevinster</p>
+<p class="battle-of-slots-faq__reward-text">Utbetalt til kontoen din</p>
+</div>
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-prize-rounder-tickets.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Rounder Billetter</p>
+<p class="battle-of-slots-faq__reward-text">Gratis inngang til Jackpot Chase</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Opplev Battle of Slots i dag!</h2>
+<p class="battle-of-slots-faq__normal-text"><strong>På skrivebordet:</strong> Klikk på den røde "Battle of Slots"-fanen på høyre side av skjermen. Da får du opp et popup-vindu som viser deg hvordan Battle of Slots fungerer. Du kan deretter klikke på "Fortsett" for å sjekke hvilke kamper som pågår for øyeblikket.</p>
+<p class="battle-of-slots-faq__normal-text"><strong>På mobil:</strong> Trykk på "Battle of Slots"-logoen øverst til høyre på skjermen. Du kommer da inn i Battle of Slots-lobbyen med en liste over alle Battles som pågår for øyeblikket.</p>
+<p class="battle-of-slots-faq__normal-text"><strong>Husk at for å delta i Battle of Slots må du først opprette en konto hos Videoslots.</strong></p>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Vanlige spørsmål om Battle of Slots</h2>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Hva er en Battle?</h2>
+<div>En Battle er en konkurranse som lar deg utfordre andre spillere i spesielt utvalgte spill. Førsteplassen vinnes alltid av den spilleren som har flest akkumulerte gevinster ved slutten av hver Battle-runde.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Kan jeg få casinobelønninger for å spille Battle of Slots?</h2>
+<div>Ja, det kan du! Deltakelse i Battle of Slots kan gi casinobelønninger på en rekke forskjellige måter, for eksempel ekstraspinn, pengepremier og inngangsbilletter. Vi anbefaler at du besøker Battle of Slots-lobbyen for å finne ut hvilke belønninger du kan vinne for hvert arrangement.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Kan jeg spille Battle of Slots på mobile enheter?</h2>
+<div>Ja, du kan nyte Battle of Slots på mobile enheter, enten det er en smarttelefon eller et nettbrett. Dermed kan du utfordre vennene dine og andre spillere på Videoslots Casino fra håndflaten din.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Hvor lenge varer kampene?</h2>
+<div style="text-align: justify;">Det avhenger av selve kampen. Du kan sjekke alle detaljer, inkludert varigheten, i Battle of Slots-lobbyen.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Hva skjer hvis to spillere ender med samme poengsum?</h2>
+<div style="text-align: justify;">Vinneren vil da være spilleren med den største gevinsten fra ett enkelt spinn. Hvis to spillere ender med samme poengsum og samme storgevinst, vil vinneren som nådde sin poengsum først ta den endelige premien.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Kan jeg vinne ekte penger i Battle of Slots-turneringer?</h2>
+<div style="text-align: justify;">Ja, du kan vinne ekte pengepremier når du deltar i Battle of Slots-turneringer. Du kan alltid sjekke premiedetaljene før du spiller.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Arrangerer nettcasinoet deres Battle of Slots regelmessig?</h2>
+<div style="text-align: justify;">Ja, vi arrangerer Battles hele dagen på Videoslots.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Hvor kan jeg lese om vilkårene og betingelsene for Battle of Slots?</h2>
+<div style="text-align: justify;">Du kan lese vilkårene og betingelsene for Battle of Slots-turneringer <a href="/no/terms-and-conditions/mga-games-specific/#casinoandbonuses">her.</a></div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Har Battle of Slots en maksimal utbetaling?</h2>
+<div style="text-align: justify;">Nei, det er ingen maksimal utbetaling i Battle of Slots.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Må jeg registrere en ny konto for å kunne spille på Battle of Slots?</h2>
+<div style="text-align: justify;">Du kan spille på Battle of Slots med din eksisterende Videoslots-konto. Vær oppmerksom på at du kun har lov til å ha én konto på videoslots.com.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Hvem skal jeg kontakte hvis jeg opplever problemer?</h2>
+<div style="text-align: justify;">Hvis du opplever problemer eller har spørsmål angående Battle of Slots, kan du alltid kontakte vår kundestøtte fra lobbyen.</div>
+</div>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Generelle vilkår og betingelser</h2>
+<div class="battle-of-slots-faq__normal-text">
+<div class="battle-of-slots-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Å spille på videoslots.com er begrenset til personer over 18 år. Vi ser på gambling som underholdning for voksne. Spill ansvarlig.</li>
+<li style="text-align: justify;">Beløpene som er spesifisert i konkurransen er bare en indikasjon på beløpene omregnet til de ulike lokale valutaene. Eurobeløpene som er spesifisert i vilkårene, har forrang over alle andre beløp, som vil bli bestemt av valutaomregningskursen på utbetalingstidspunktet.</li>
+<li style="text-align: justify;">Du er selv ansvarlig for eventuelle valutakonverteringskurser eller transaksjonsgebyrer som kan påløpe hos din egen bank.</li>
+<li style="text-align: justify;"><a href="/no/terms-and-conditions">Vilkår og betingelser</a> på nettstedet gjelder.</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () { 
+    
+                $(".faq-cat-accordion").accordion({ collapsible: true, active: true }); 
+    
+            });
+// ]]></script>
+</div>
+</div>

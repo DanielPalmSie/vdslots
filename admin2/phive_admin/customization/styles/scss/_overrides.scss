@@ -1,0 +1,171 @@
+body {
+    font-size: 14px;
+}
+
+.main-header #navbar-search-input.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: transparent;
+}
+
+.main-header #navbar-search-input.form-control::placeholder{
+    color: #b1cacc;
+}
+
+.main-header .nav-item > a:hover {
+    background-color: #367fa9;
+}
+
+.main-header #navbar-search-input.form-control:focus, .main-header #navbar-search-input.form-control:active {
+    border-color: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+a:hover, a:active, a:focus {
+    color: #72afd2;
+}
+
+.content-header .breadcrumb > li > a {
+    color: #444;
+    font-size: 12px;
+}
+
+.content-header .breadcrumb > li {
+    font-size: 12px;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.content-header h1 {
+    font-size: 24px;
+}
+
+.card-header {
+    color: #444;
+}
+
+.main-footer {
+    color: #444;
+}
+
+.page-link {
+    color: #666;
+}
+
+.page-item .page-link {
+    background-color: #fafafa;
+}
+
+.page-item .page-link:hover {
+    background-color: #eee;
+    color: #23527c;
+}
+
+.page-item.active .page-link {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #ffffff;
+}
+
+.page-item.disabled {
+  color: #777777;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.btn-primary {
+    border-color: #367fa9;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+}
+
+.nav-tabs-custom .nav-tabs .nav-link.active,
+.nav-tabs-custom .nav-item .nav-link,
+.nav-tabs-custom .nav-tabs .nav-link.active:hover,
+.nav-pills .nav-link {
+   color: #444444;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #337AB7;
+    color: #fff;
+}
+
+.nav-item .nav-link:hover {
+    color: #999999;
+}
+
+.progress-bar-red, .progress-bar-danger {
+    background-color: #dd4b39;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    background-color: #3b5998;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-facebook:hover {
+    color: #ffffff;
+    background-color: #2d4373;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+span.bg-blue {
+    background-color: #0073b7 !important;
+}
+
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+    background-color: #31b131;
+}
+
+.info-box {
+  padding: 0;
+  height: 90px;
+
+  .info-box-icon {
+    width: 90px;
+    border-radius: .25rem 0 0 .25rem;
+  }
+
+  .info-box-content {
+    justify-content: flex-start;
+  }
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[aria-selected]:hover {
+  background-color: #3C8DBC;
+}
+
+#normal-bonus-sub-form, #deposit-bonus-sub-form, #transfer-cash-form, #add-deposit-form, #insert-withdrawal-form {
+    .card {
+        border: 1px solid #bce8f1;
+        &.card-info:not(.card-outline)>.card-header {
+            color: #31708f;
+            background-color: #D9EDF7;
+        }
+    }
+}
+
+.form-control:disabled {
+    background-color: #EEEEEE;
+}
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false">
+    <testsuite name="Admin Unit Tests">
+        <directory>tests/unit/Phpunit</directory>
+    </testsuite>
+    <php>
+        <env name="test_username" value="devtest"/>
+    </php>
+</phpunit>

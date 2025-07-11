@@ -1,0 +1,140 @@
+#!/usr/bin/env php
+<?php
+
+use App\Commands;
+use Phpmig\Console\Command;
+
+require_once __DIR__ . '/vendor/autoload.php';
+/** @var Silex\Application $app */
+require_once __DIR__ . '/bootstrap.php';
+require_once __DIR__ . '/global_functions.php';
+
+set_time_limit(0);
+
+/* Console init */
+$app->register(new \Ivoba\Silex\Provider\ConsoleServiceProvider(), array(
+    'console.name'              => 'Backoffice',
+    'console.version'           => '0.0.1',
+    'console.project_directory' => __DIR__.'/..'
+));
+
+$database_checks = [
+    new Commands\Checks\EmptyGameSessionsCheck(),
+    new Commands\Checks\NoParentBetRollbackCheck(),
+    new Commands\Checks\WrongFreeSpinGameSessionCheck(),
+    new Commands\Checks\WrongGameRefBetCheck(),
+    new Commands\Checks\WrongGameRefGameSessionCheck(),
+];
+
+//Let's import PHPMig's commands into our own Application
+$phpmig_commands = [
+    new Command\DownCommand(),
+    new Command\GenerateCommand(),
+    new Command\InitCommand(),
+    new Command\MigrateCommand(),
+    new Command\RollbackCommand(),
+    new Command\StatusCommand(),
+    new Command\UpCommand(),
+    new Command\CheckCommand()
+];
+
+$migrate_cmd = new Command\MigrateCommand();
+$migrate_cmd->setName('migrate');
+
+$application = $app['console'];
+$application->add(new Commands\Liability\LiabilityTestCommand());
+$application->add(new Commands\Liability\LiabilityLastCommand());
+$application->add(new Commands\Liability\LiabilityCurrentCommand());
+$application->add(new Commands\Liability\LiabilityRecalculateAllCommand());
+$application->add(new Commands\Liability\LiabilityRecalculatePRCommand());
+$application->add(new Commands\Liability\LiabilityRecalculateCommand());
+$application->add(new Commands\Liability\LiabilityRecalculateBetsWinsFRBs());
+$application->add(new Commands\Liability\LiabilityCheckUserCommand());
+$application->add(new Commands\Liability\LiabilityCheckAutoUserCommand());
+$application->add(new Commands\Liability\LiabilityCountryFixCommand());
+$application->add(new Commands\Liability\RecalculateBalanceStats());
+$application->add(new Commands\DailyCommand());
+$application->add(new Commands\HourlyCommand());
+$application->add(new Commands\NightlyCommand());
+$application->add(new Commands\MessagingCommand());
+$application->add(new Commands\MailerCommand());
+$application->add(new Commands\ExportCommand());
+$application->add(new Commands\RescheduleStuckExportCommand());
+$application->add(new Commands\CloseStuckExportCommand());
+$application->add(new Commands\Helpers\ViewsCommand());
+$application->add(new Commands\Helpers\PostInstallCommand());
+$application->add(new Commands\Sharding\ShardTableCommand());
+$application->add(new Commands\Sharding\TestCommand());
+$application->add(new Commands\Helpers\UpdateTournamentsForDesktopOrMobileCommand());
+$application->add(new Commands\Helpers\CalculateDailyBoosterVaultCommand());
+$application->add(new Commands\UserMonthlyInteractionReportCommand());
+$application->add(new Commands\FiauCommand());
+$application->add(new Commands\HalfYearReportCommand());
+$application->add(new Commands\Seeders\SeederGenerateCommand());
+$application->add(new Commands\Seeders\SeederRunCommand());
+$application->add(new Commands\Seeders\SeederUpCommand());
+$application->add(new Commands\Seeders\SeederDownCommand());
+$application->add(new Commands\UnitTestCommand());
+$application->add(new Commands\RecalculateExtraBalance());
+$application->add(new Commands\RefreshUsersGRSCommand());
+$application->add(new Commands\CashierConfigCommand());
+$application->add(new Commands\RgEvaluation\RgEvaluationFirstIterationCommand());
+$application->add(new Commands\RgEvaluation\RgEvaluationSecondIterationCommand());
+$application->add(new Commands\RgEvaluation\GenerateRgEvaluationFilesCommand());
+$application->add(new Commands\Import\Import());
+$application->add(new Commands\Import\ImportTriggersData());
+$application->add(new Commands\Import\ImportRiskProfileRatingData());
+$application->add(new Commands\Import\ImportConfigData());
+$application->add(new Commands\AffordabilityScoreCommand());
+$application->add(new Commands\RecalculateUsersDailyUniqueBets());
+
+//Regulation related commands
+  //ICS related
+$application->add(new Commands\Export\ExportICS());
+$application->add(new Commands\Regulations\ICS\GenerateReports());
+$application->add(new Commands\Regulations\ICS\GenerateDraft());
+$application->add(new Commands\Regulations\ICS\RectifyReport());
+  //DGA
+$application->add(new Commands\Export\ExportDGA());
+$application->add(new Commands\Regulations\SAFE\RegenerateByToken());
+$application->add(new Commands\Regulations\SAFE\GenerateReportsAndUnlock());
+//AGCO
+$application->add(new Commands\Regulations\AGCO\ExportDataGGR());
+$application->add(new Commands\Regulations\AGCO\ExportDataGA());
+$application->add(new Commands\Regulations\AGCO\ExportDataPA());
+$application->add(new Commands\Regulations\AGCO\ExportDataJpContrib());
+$application->add(new Commands\Regulations\AGCO\ExportDataJpWins());
+
+//Checks
+$application->add(new Commands\Checks\DatabaseIntegrityReportCommand($database_checks));
+$application->add(new Commands\Checks\DatabaseIntegrityNotifyCommand($database_checks));
+
+  //PGDA
+$application->add(new Commands\Regulations\PGDA\Regenerate580MessageCommand());
+
+  //Daily reports generation
+$application->add(new Commands\DailyReportCommand());
+
+//General
+$application->add(new Commands\Regulations\CalculateBalances());
+
+// SCV
+$application->add(new Commands\SCV\ExportUsersToSCV());
+
+$application->add(new Commands\Helpers\CleanupPTOCommand);
+
+$application->add(new Commands\Export\UserExport());
+$application->add(new Commands\UsersPayoutAllCommand());
+
+// SCV
+$application->add(new Commands\SCV\ImportCustomerIdFromSCV());
+
+foreach ($phpmig_commands as $command) {
+    $command->setName('mig:'.$command->getName());
+}
+$application->addCommands($phpmig_commands);
+$application->add($migrate_cmd);
+if (class_exists('\\App\\Commands\\MiscCommand')) {
+    $application->add(new Commands\MiscCommand());
+}
+$application->run();

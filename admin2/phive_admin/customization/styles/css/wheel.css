@@ -1,0 +1,74 @@
+/* background image(s) for the wheel */
+.canvas_box
+{
+	background: url(/file_uploads/wheel/wheelfortune_outsiderim_2.png) center no-repeat;
+	background-size: 100%;
+}
+
+
+div.spin_box { float: left; }
+div.canvas_box { float: left; }
+
+div.spin_box input {
+    background: red; font-size: 22px; border-radius: 12px;
+}
+
+#canvasContainer {
+    position: relative;
+    width: 901px;
+    height: 901px;
+}
+
+#canvas {
+    z-index: 1;
+    margin: 20px 0 0 -3px;
+}
+
+#prizePointer {
+    position: absolute;
+    left: 413px;
+    top: 15px;
+    z-index: 999;
+}
+
+
+.clickable
+{
+    cursor: pointer;
+}
+
+
+.orderNum
+{
+	color:#3c8dbc;
+}
+
+
+/* This is a fix for the sortable row when dragging */
+.ui-sortable-helper {
+    display: table;
+}
+
+.pUpdate:hover
+{
+	cursor:pointer;
+}
+
+
+.fa-trash-o:hover
+{
+	cursor:pointer;
+}
+
+.fa-sort:hover
+{
+	cursor:move;
+}
+
+.not_clickable{
+	pointer-events: none;
+}
+
+.clickable{
+	pointer-events: auto;
+}

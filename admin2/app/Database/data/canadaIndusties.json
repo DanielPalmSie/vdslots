@@ -1,0 +1,74 @@
+[
+  {
+    "name" : "Administration"
+  },
+  {
+    "name" : "Business"
+  },
+  {
+    "name" : "Marketing"
+  },
+  {
+    "name" : "Finance"
+  },
+  {
+    "name" : "Art & Culture"
+  },
+  {
+    "name" : "Recreation & Sport"
+  },
+  {
+    "name" : "Education"
+  },
+  {
+    "name" : "Law"
+  },
+  {
+    "name" : "Social/Government services"
+  },
+  {
+    "name" : "Health"
+  },
+  {
+    "name" : "Homemaker"
+  },
+  {
+    "name" : "Manufacturing/Utilities"
+  },
+  {
+    "name" : "Agriculture"
+  },
+  {
+    "name" : "Retired"
+  },
+  {
+    "name" : "Sales"
+  },
+  {
+    "name" : "Hospitality"
+  },
+  {
+    "name" : "Science"
+  },
+  {
+    "name" : "Technology"
+  },
+  {
+    "name" : "Engineering"
+  },
+  {
+    "name" : "Student"
+  },
+  {
+    "name" : "Trades"
+  },
+  {
+    "name" : "Transport"
+  },
+  {
+    "name" : "Construction"
+  },
+  {
+    "name" : "Unemployed"
+  }
+]

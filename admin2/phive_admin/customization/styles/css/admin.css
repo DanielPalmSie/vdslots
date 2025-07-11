@@ -1,0 +1,347 @@
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 13px 13px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .navbar-form .form-control {
+        width: 70px;
+    }
+}
+
+/*
+@media only screen and (min-width: 768px) {
+    .table-responsive {
+        overflow-x: hidden;
+    }
+}
+*/
+
+@media (min-width: 768px) {
+    .main-header > .logo{
+        width: 150px;
+    }
+    .main-header > .navbar {
+        margin-left: 170px;
+    }
+    .content-wrapper,
+    .right-side,
+    .main-footer{
+        margin-left: 170px;
+    }
+    .navbar-form .form-control {
+        min-width: 170px;
+    }
+}
+
+table.dataTable thead > tr > th {
+    vertical-align: text-top;
+}
+
+/* todo remove bottom line at last li in ul up-box (margin bottom added for now)*/
+
+#follow-up-box label {
+    margin-left: 10px;
+}
+
+#follow-up-box .nav-tabs-custom > .tab-content,
+#comments-box .nav-tabs-custom > .tab-content {
+    padding: 0;
+}
+
+#follow-up-box .nav > li > a,
+#comments-box .nav > li > a {
+    padding: 4px 7px 4px 7px;
+}
+
+#follow-up-box .nav,
+#comments-box .nav {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.main-header #quick-search-form .btn {
+    /*background: rgba(255, 255, 255, 0.2);*/
+    background: rgba(58, 115, 160, 0.27);
+    border-color: transparent;
+    color: #b1cacc;
+}
+
+.up-box li {
+    display: inline-block;
+    min-width: 100%;
+    padding-bottom: 0;
+    min-height: 38px;
+}
+
+.up-box .list-group-item {
+    padding-top: 8px;
+}
+
+.up-box p {
+    margin-bottom: 8px;
+}
+
+.up-box .double {
+    min-height: 76px;
+}
+
+.up-box .warning-element {
+    color: red;
+    font-weight: bold;
+}
+
+.up-box .list-group {
+    margin-bottom: 5px;
+}
+
+.to-clip {
+    color: darkslategray;
+    border-bottom: 1px dotted darkslategray;
+}
+
+.sub-table {
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.cell-no-padding {
+    padding: 0 !important;
+}
+
+.empty-cell-text {
+    padding: 8px;
+}
+
+.permissions-table {
+    max-width: 700px;
+}
+
+.red {
+    color: red;
+}
+
+.fail-button{
+    background-color: red;
+    color: black;
+}
+
+.pass-button{
+    background-color: green;
+    color: black;
+}
+
+.dropzone {
+    min-height: 50px !important;
+    background: white;
+    padding: 54px 54px;
+    border: 2px dashed #0087F7 !important;
+    border-radius: 5px;
+    background: white;
+    margin: 10px !important;
+    cursor: pointer;
+}
+
+.dz-image {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.dz-preview {
+    margin: 2px !important;
+}
+
+.dz-preview .dz-details {
+    max-width: 70px;
+    max-height: 70px;
+    min-height: 50px !important;
+}
+
+.dz-error-mark .dz-success-mark {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.dz-error-mark svg {
+    width: 24px !important;
+}
+
+.dz-success-mark svg {
+    width: 24px !important;
+}
+
+#button-footer {
+    padding-top: 10px;
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    height:50px;
+    width:100%;
+    background-color:rgba(21, 132, 187, 0.10);
+    z-index: 1000;
+}
+
+/* IE 6 */
+* html #button-footer {
+   position:absolute;
+   top:expression((0-(button-footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+.compact-table td, .compact-table th {
+    border: none !important;
+    padding: 0px 8px 0px 0px !important;
+}
+
+.card-tree ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.btn-mini {
+    padding: 2px 6px;
+    font-size: 10px;
+    line-height: 11px;
+}
+
+.card-tree .row {
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    /*margin-top: 2px;*/
+    /*margin-bottom: 2px;*/
+    margin-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    /*border: 1px solid darkslategrey;*/
+}
+
+.card-tree .field_item {
+    padding: 10px;
+    margin: 10px;
+    margin-right: 2px;
+    /*padding-right: 2px;*/
+    background-color: #00a7d0;
+    border: 1px solid darkslategrey;
+}
+
+#complaint-type .radio-inline {
+    margin-left: 0;
+}
+
+.complaint-text-area {
+    resize: vertical;
+}
+
+#complaint-type {
+    display: flex;
+}
+
+.risk-indicator {
+    height:70px;
+    width:70px;
+    display: inline-block;
+    color:white;
+    font-weight: bold;
+    padding:10px;
+}
+@media screen and (max-width: 320px) {
+    .risk-indicator {
+        width:25px;
+    }
+}
+
+.risk-indicator-active {
+    position: relative;
+    height: 100px;
+    top: 0;
+}
+
+.criminal-record-option {
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.custom-dropdown-input{
+    border-color: #D2D6DE;
+    display: block;
+    width: 100%;
+    height: 34px;
+    box-sizing:border-box;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+.custom-dropdown-input:focus{
+    border-color: #3C8DBC;
+    outline-color: #3C8DBC;
+}
+
+/* Hide the navigation titles in the collapsed sidebar,
+   and ensure they remain hidden on hover */
+.sidebar-collapse .main-sidebar .sidebar-menu li a span,
+.sidebar-collapse .main-sidebar .sidebar-menu li:hover span {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Overriding the Bootstrap CSS
+which generates no border on the bottom
+of many tables */
+.table-responsive>.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.border-top-3 {
+  border-top-width: 3px !important;
+}
+
+.direct-chat-msg .sticky {
+  background: rgba(221, 75, 57, 0.63);
+  border-color: rgba(221, 75, 57, 0.66);
+}
+
+.text-xs-custom {
+  font-size: .760rem !important;
+}
+
+.text-dark-custom {
+  color: #333;
+}
+
+.rg-header-custom {
+  background-color: #337AB7 !important;
+}
+
+#accordion {
+  h5 {
+    color: #444444;
+  }
+}
+
+.game-history-wins-header {
+  height: 48px;
+}
+
+

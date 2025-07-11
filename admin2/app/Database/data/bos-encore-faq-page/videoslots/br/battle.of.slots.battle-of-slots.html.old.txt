@@ -1,0 +1,664 @@
+<style><!--
+.battle-of-slots-faq { 
+    
+            color: #cccccc; 
+    
+            background: #131313; 
+    
+            width: 100%; 
+    
+            margin: auto; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__title { 
+    
+            font-size: 24px; 
+    
+            padding: 0px 0px 20px 0px; 
+    
+            width: 100%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__title--secondary { 
+    
+            font-size: 18px;F 
+    
+            padding: 30px 0px 0px 0px; 
+    
+            width: 100%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__question, 
+    
+        .battle-of-slots-faq__reward-title, 
+    
+        .battle-of-slots-faq__promo-title, 
+    
+        .battle-of-slots-faq__offer-title, 
+    
+        .battle-of-slots-faq a, 
+    
+        .battle-of-slots-faq__title, 
+    
+        .battle-of-slots-faq__title--secondary { 
+    
+            color: #ffffff; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-title, 
+    
+        .battle-of-slots-faq__offer-title, 
+    
+        .battle-of-slots-faq__promo-title, 
+    
+        .battle-of-slots-faq__normal-text, 
+    
+        .battle-of-slots-faq__promo-text, 
+    
+        .battle-of-slots-faq__offer-text, 
+    
+        .battle-of-slots-faq li { 
+    
+            font-size: 14px; 
+    
+      
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__content { 
+    
+            width: 100%; 
+    
+            padding: 0px 20px; 
+    
+            box-sizing: border-box; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__normal-text { 
+    
+            line-height: 24px; 
+    
+            padding: 0px 0px 10px 0px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__main-banner { 
+    
+            background: #131313; 
+    
+            max-width: 100%; 
+    
+            height: auto; 
+    
+            margin-bottom: 20px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-main-container { 
+    
+            margin: 0px; 
+    
+            padding: 0px 20px; 
+    
+            width: 100%; 
+    
+            display: inline-flex; 
+    
+            -webkit-flex-wrap: wrap; 
+    
+            flex-wrap: wrap; 
+    
+            flex-direction: row; 
+    
+            margin-right: auto; 
+    
+            margin-left: auto; 
+    
+            box-sizing: border-box; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-snippet { 
+    
+            display: flex; 
+    
+            width: 100%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__right-container { 
+    
+            width: 78%; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-title { 
+    
+            width: 95%; 
+    
+            font-weight: bold; 
+    
+            padding: 10px 0; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__offer-text { 
+    
+            width: 95%; 
+    
+            line-height: 21px; 
+    
+            padding: 0px 0px 10px 0px; 
+    
+            text-align: left !important; 
+    
+        } 
+    
+      
+    
+        img.battle-of-slots-faq__offer-logo { 
+    
+            max-width: 90%; 
+    
+            margin: 10px 20px 10px 0px; 
+    
+            height: auto; 
+    
+            border-radius: 5px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__clean-link { 
+    
+            text-decoration: none; 
+    
+            color: #999999; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__section { 
+    
+            padding-top: 20px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__video-desktop { 
+    
+            margin: 20px 20px 20px 20px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__video-mobile { 
+    
+            margin: 20px 20px 20px 20px; 
+    
+            width: 100%; 
+    
+            display: none; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-main-container { 
+    
+            margin: 0px; 
+    
+            padding: 0px 20px; 
+    
+            display: flex; 
+    
+            -webkit-flex-wrap: wrap; 
+    
+            flex-wrap: wrap; 
+    
+            margin-right: auto; 
+    
+            margin-left: auto; 
+    
+            flex-direction: row; 
+    
+            justify-content: space-between; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-snippet { 
+    
+            width: 48%; 
+    
+            max-width: 430px; 
+    
+            margin-bottom: 20px; 
+    
+            ; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-title { 
+    
+            width: 100%; 
+    
+            font-weight: bold; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__promo-text { 
+    
+            width: 100%; 
+    
+            line-height: 21px; 
+    
+            padding: 0px 0px 10px 0px; 
+    
+        } 
+    
+      
+    
+        img.battle-of-slots-faq__promo-logo { 
+    
+            max-width: 100%; 
+    
+            border-radius: 5px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-main-container { 
+    
+            margin: 0px; 
+    
+            padding: 10px 20px; 
+    
+            width: 100%; 
+    
+            display: flex; 
+    
+            -webkit-flex-wrap: wrap; 
+    
+            flex-wrap: wrap; 
+    
+            margin-right: auto; 
+    
+            margin-left: auto; 
+    
+            flex-direction: row; 
+    
+            box-sizing: border-box 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-snippet { 
+    
+            flex: 0 25%; 
+    
+            box-sizing: border-box; 
+    
+            text-align: center; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-title { 
+    
+            width: 100%; 
+    
+            font-weight: bold; 
+    
+            padding: 0px 20px 0px 0px; 
+    
+            text-align: center !important; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__reward-text { 
+    
+            width: 100%; 
+    
+            line-height: 21px; 
+    
+            padding: 0px 20px 10px 0px; 
+    
+            text-align: center !important; 
+    
+        } 
+    
+      
+    
+        img.battle-of-slots-faq__reward-logo { 
+    
+            max-width: 120px; 
+    
+            max-height: 120px; 
+    
+            border-radius: 5px; 
+    
+        } 
+    
+      
+    
+        .battle-of-slots-faq__question { 
+    
+            font-weight: bold; 
+    
+            font-size: 15px; 
+    
+            padding: 5px; 
+    
+            border: 1px solid #666666; 
+    
+            cursor: pointer; 
+    
+        } 
+    
+      
+    
+        /* Mobile */ 
+    
+        @media only screen and (max-width: 600px) { 
+    
+            .battle-of-slots-faq__promo-snippet { 
+    
+                width: 100%; 
+    
+                max-width: 100%; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__reward-snippet { 
+    
+                flex: 0 50%; 
+    
+            } 
+    
+      
+    
+            img.battle-of-slots-faq__offer-logo { 
+    
+                margin: 0; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__offer-text { 
+    
+                margin-top: 5px; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__offer-title { 
+    
+                margin: 0; 
+    
+                padding: 0; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__video-desktop { 
+    
+                display: none; 
+    
+            } 
+    
+      
+    
+            .battle-of-slots-faq__video-mobile { 
+    
+                display: block; 
+    
+            } 
+    
+        }
+--></style>
+<div class="battle-of-slots-faq"><!-- page banner -->
+<div><img class="battle-of-slots-faq__main-banner" src="/file_uploads//BOS_920x294_Banners_EN.jpg" alt="" /></div>
+<!-- page banner ends --> <!-- H1 and intro paragraph starts -->
+<div class="battle-of-slots-faq__content">
+<h1 class="battle-of-slots-faq__override">Guia do Videoslots para Battle of Slots</h1>
+<p class="battle-of-slots-faq__normal-text">Bem-vindo ao Battle of Slots, a primeira experiência de torneio de caça-níqueis multijogador do mundo.</p>
+<p class="battle-of-slots-faq__normal-text">Battle of Slots lhe oferece a chance de socializar com outros jogadores enquanto gira as bobinas em desafios competitivos de caça-níqueis. A melhor parte é que você pode ganhar Giros Extras, prêmios em dinheiro e até ingressos para outros eventos!</p>
+<p class="battle-of-slots-faq__normal-text">Participar é simples. Basta entrar no lobby do Battle of Slots e conferir todas as informações relevantes sobre cada competição individual. Isso inclui o número total de giros, a estrutura do prêmio, a taxa de buy-in, o valor da aposta e os limites de tempo. Depois de fazer sua escolha, basta clicar no botão de registro e aproveitar a ação.</p>
+<div class="battle-of-slots-faq__video-desktop"><iframe title="YouTube video player" src="https://www.youtube.com/embed/guH5exu7ZJI" frameborder="0" width="100%" height="495"></iframe></div>
+<h2 class="battle-of-slots-faq__override">Recursos e variações do Battle of Slots</h2>
+<div class="battle-of-slots-faq__video-mobile"><iframe title="YouTube video player" src="https://www.youtube.com/embed/guH5exu7ZJI" frameborder="0" width="90%" height="185"></iframe></div>
+<p class="battle-of-slots-faq__normal-text">Chamamos o primeiro modo jogável de <strong>Batalhas Programadas</strong>, que são competições que começam em um horário definido, desde que o número necessário de jogadores se inscreva. O segundo modo é chamado de <strong>Sit & Go</strong>, que são competições que começam assim que um número suficiente de jogadores se inscreve.</p>
+<p class="battle-of-slots-faq__normal-text">Parece interessante? Então continue lendo para saber mais sobre o que o Battle of Slots tem a oferecer.</p>
+</div>
+<div class="battle-of-slots-faq__offer-main-container">
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-normal-battles.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Batalhas normais</h3>
+<p class="battle-of-slots-faq__offer-text">Uma Batalha Normal pode ser um evento de Batalha Programada ou um evento Sit & Go e sempre terá uma taxa de buy-in para participar.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-guaranteed.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Batalhas garantidas</h3>
+<p class="battle-of-slots-faq__offer-text">Essas batalhas sempre têm um prêmio garantido a ser pago, mas o prêmio aumentará ainda mais se um número suficiente de jogadores fizer o buy-in.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-freeroll-tournaments.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Torneios Freeroll</h3>
+<p class="battle-of-slots-faq__offer-text">Os Torneios Freeroll permitem que você participe das Batalhas sem pagar uma taxa de inscrição. No entanto, para participar, você deve ter depositado um total de pelo menos 20 euros e ganho 1.000 pontos XP nos últimos 30 dias.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-rebuys.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Recompras</h3>
+<p class="battle-of-slots-faq__offer-text">Em algumas batalhas, é possível comprar giros adicionais quando você ficar sem giros. O número de giros é igual ao original e custa o mesmo que o buy-in.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-freezeout.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Freezeout</h3>
+<p class="battle-of-slots-faq__offer-text">Esse é um modo de Batalha em que você só pode fazer um único buy-in, o que significa que todos os participantes competirão exatamente nas mesmas condições. Uma vez que todos os giros tenham se esgotado, não é possível fazer nenhuma recompra.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-wild-west.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Oeste Selvagem</h3>
+<p class="battle-of-slots-faq__offer-text">O modo Wild West funciona da mesma forma que os re-buys, mas com a possibilidade de fazer até 25 re-buys por jogador.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-joker-feature.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Recurso Joker</h3>
+<p class="battle-of-slots-faq__offer-text">Se você se pré-registrar para uma batalha, será sorteado para se tornar o Coringa do jogo. Se o Coringa acabar ganhando, o prêmio será dobrado.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-heads-up.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Heads Up</h3>
+<p class="battle-of-slots-faq__offer-text">Esse modo de Batalha permite competir contra um jogador, com a chance de dobrar o seu buy-in. Ele termina quando o tempo se esgota ou quando ambos os jogadores completam todas as suas rodadas.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__offer-snippet">
+<div class="battle-of-slots-faq__left-container"><img class="battle-of-slots-faq__offer-logo" src="/file_uploads/boslp-jackpot-chases.jpg" alt="" /></div>
+<div class="battle-of-slots-faq__right-container">
+<h3 class="battle-of-slots-faq__offer-title">Perseguição ao Jackpot</h3>
+<p class="battle-of-slots-faq__offer-text">Nessas competições, você corre atrás do Jackpot em um total de 5 rodadas. Vencer uma rodada lhe dará um bilhete de entrada para a próxima, mas você também pode fazer um buy-in para chegar a qualquer rodada que desejar. Se não conseguir avançar na rodada 2, 3 ou 4, você poderá voltar para a rodada anterior e tentar novamente. O prêmio do jackpot é distribuído entre os três melhores jogadores no final.</p>
+</div>
+</div>
+</div>
+<div class="battle-of-slots-faq__content"> </div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Principais eventos da Battle of Slots</h2>
+<div class="battle-of-slots-faq__promo-main-container">
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Battle%20Weekend_new.jpg" alt="battle weekend" /> <!--removed img style 100% width--> <!--replaced image-->
+<h3 class="battle-of-slots-faq__promo-title">Battle Weekend</h3>
+<p class="battle-of-slots-faq__promo-text">Cada mês no Videoslots termina com uma nota forte com o nosso Fim de Semana de Batalha. Esse evento ocorre na sexta-feira, no sábado e no domingo, entre 16:00 GMT e 01:00 GMT, onde realizamos batalhas de 15 e 30 homens em dois caça-níqueis diferentes. Os prêmios são em forma de Giros Extras, portanto, não deixe de conferir!</p>
+</div>
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Frenzy%20Mondays_new.jpg" alt="frenzy mondays" /> <!--replaced image-->
+<h3 class="battle-of-slots-faq__promo-title">Frenzy Mondays</h3>
+<p class="battle-of-slots-faq__promo-text">Todas as segundas-feiras, damos a você a chance de batalhar por algumas Rodadas Extras durante duas horas de Batalhas ilimitadas! Essas batalhas de 15 e 30 homens ocorrem em quatro jogos diferentes, começando às 18:00 e terminando às 20:00 GMT.</p>
+</div>
+<!--moved main-container div to top-->
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Tuesday Madness Battle_new.jpg" alt="tuesday madness" />
+<h3 class="battle-of-slots-faq__promo-title">Tuesday Madness</h3>
+<p class="battle-of-slots-faq__promo-text">A Tuesday Madness é uma Batalha única que ocorre todas as terças-feiras com um enorme prêmio adicional de {{csym}} {{modm:5000}}. Isso continuará a crescer em {{csym}} {{modm:2}} a cada buy-in! Por exemplo: se 1.000 jogadores participarem da batalha, o prêmio total valerá {{csym}} {{modm:7000}}.</p>
+</div>
+<div class="battle-of-slots-faq__promo-snippet"><img class="battle-of-slots-faq__promo-logo" src="/file_uploads/Epic Thursdays_new.jpg" alt="epic thursdays" />
+<h3 class="battle-of-slots-faq__promo-title">Epic Thursdays</h3>
+<p class="battle-of-slots-faq__promo-text">Todas as quintas-feiras, damos a você a chance de batalhar por algumas Rodadas Extras durante quatro horas de Batalhas ilimitadas! Elas ocorrem em dois jogos diferentes, começando às 18:00 e terminando às 22:00 GMT.</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Prêmios da Batalha de Caça-níqueis</h2>
+</div>
+<div class="battle-of-slots-faq__reward-main-container">
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-battletickets.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Ingressos de Batalha</p>
+<p class="battle-of-slots-faq__reward-text">Vários valores</p>
+</div>
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-freespins.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Giros extras</p>
+<p class="battle-of-slots-faq__reward-text">Múltiplos valores</p>
+</div>
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-prize-winner.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Ganhos em dinheiro</p>
+<p class="battle-of-slots-faq__reward-text">Pagos em sua conta</p>
+</div>
+<div class="battle-of-slots-faq__reward-snippet"><img class="battle-of-slots-faq__reward-logo" src="/file_uploads/boslp-prize-rounder-tickets.png" alt="" />
+<p class="battle-of-slots-faq__reward-title">Bilhetes Rounder</p>
+<p class="battle-of-slots-faq__reward-text">Entrada gratuita no Jackpot Chase</p>
+</div>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Experimente o Battle of Slots hoje mesmo!</h2>
+<p class="battle-of-slots-faq__normal-text"><strong>No computador:</strong> clique na guia vermelha "Battle of Slots" no lado direito da tela. Isso abrirá uma janela pop-up que mostrará como a Battle of Slots funciona. Em seguida, clique em "Continuar" para verificar quais batalhas estão acontecendo no momento.</p>
+<p class="battle-of-slots-faq__normal-text"><strong>No celular:</strong> pressione o logotipo "Battle of Slots" no canto superior direito da tela. Em seguida, você entrará no lobby do Battle of Slots com uma lista de todas as batalhas que estão ocorrendo no momento.</p>
+<p class="battle-of-slots-faq__normal-text"><strong>Lembre-se de que, para participar da Battle of Slots, você precisará primeiro criar uma conta no Videoslots.</strong></p>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">FAQ da Batalha de Caça-níqueis</h2>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">O que é uma batalha?</h2>
+<div>Uma batalha é uma competição que permite que você desafie outros jogadores em jogos especificamente selecionados. O vencedor do primeiro lugar é sempre o jogador com o maior número de ganhos acumulados no final de cada rodada da Batalha.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Posso receber recompensas do cassino por jogar no Battle of Slots?</h2>
+<div>Sim! A participação no Battle of Slots pode trazer recompensas de cassino de várias maneiras diferentes, como Giros Extras, prêmios em dinheiro e bilhetes de entrada. Recomendamos visitar o lobby do Battle of Slots para descobrir quais prêmios você pode ganhar em cada evento.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Posso jogar Battle of Slots em dispositivos móveis?</h2>
+<div>Sim, você pode aproveitar o Battle of Slots em dispositivos móveis, seja um smartphone ou um tablet. Como resultado, você pode desafiar seus amigos e outros jogadores no Cassino Videoslots na palma de suas mãos.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Quanto tempo duram as batalhas?</h2>
+<div style="text-align: justify;">Isso depende da batalha em si. Você pode conferir todos os detalhes, inclusive a duração, no lobby da Batalha de Caça-níqueis.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">O que acontece se dois jogadores terminarem com a mesma pontuação?</h2>
+<div style="text-align: justify;">O vencedor será o jogador com o maior ganho em uma única rodada. Se dois jogadores terminarem com a mesma pontuação e o mesmo grande prêmio, o vencedor que tiver alcançado sua pontuação primeiro levará o prêmio final.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Posso ganhar dinheiro de verdade jogando nos torneios do Battle of Slots?</h2>
+<div style="text-align: justify;">Sim, você pode ganhar prêmios em dinheiro real ao participar dos torneios do Battle of Slots. Você sempre pode verificar os detalhes do prêmio antes de jogar.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">O seu cassino online organiza Batalhas de Caça-níqueis regularmente?</h2>
+<div style="text-align: justify;">Sim, nós organizamos Batalhas durante todo o dia no Videoslots.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Onde posso ler os Termos e Condições do Battle of Slots?</h2>
+<div style="text-align: justify;">Você pode ler os Termos e Condições dos torneios da Battle of Slots <a href="/br/terms-and-conditions/mga-games-specific/#casinoandbonuses">aqui</a>.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">O Battle of Slots tem um pagamento máximo?</h2>
+<div style="text-align: justify;">Não, não há pagamento máximo no Battle of Slots.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Preciso registrar uma nova conta para poder jogar no Battle of Slots?</h2>
+<div style="text-align: justify;">Você pode jogar no Battle of Slots com sua conta existente do Videoslots. Observe que só é permitido ter uma conta no videoslots.com.</div>
+</div>
+<div class="battle-of-slots-faq__normal-text faq-cat-accordion">
+<h2 class="battle-of-slots-faq__question">Com quem devo entrar em contato se tiver algum problema?</h2>
+<div style="text-align: justify;">Caso esteja enfrentando problemas ou tenha alguma dúvida sobre o Battle of Slots, você sempre poderá entrar em contato com o nosso atendimento ao cliente no lobby.</div>
+</div>
+</div>
+<div class="battle-of-slots-faq__content">
+<h2 class="battle-of-slots-faq__override">Termos e condições gerais</h2>
+<div class="battle-of-slots-faq__normal-text">
+<div class="battle-of-slots-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Jogar no videoslots.com é restrito a pessoas acima de 18 anos de idade. Consideramos o jogo como entretenimento adulto. Jogue com responsabilidade.</li>
+<li style="text-align: justify;">Os valores especificados em toda a competição são apenas uma indicação dos valores convertidos nas diversas moedas locais. Os valores em euros especificados nos termos prevalecem sobre quaisquer outros valores, que serão determinados pela taxa de conversão de moeda no momento do pagamento.</li>
+<li style="text-align: justify;">O usuário é responsável por quaisquer taxas de conversão de moeda ou taxas de transação que possam ser aplicadas pelo seu próprio banco.</li>
+<li style="text-align: justify;">Aplicam-se<a href="/br/terms-and-conditions">os Termos e Condições</a> do site.</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () { 
+    
+                $(".faq-cat-accordion").accordion({ collapsible: true, active: true }); 
+    
+            });
+// ]]></script>
+</div>
+</div>

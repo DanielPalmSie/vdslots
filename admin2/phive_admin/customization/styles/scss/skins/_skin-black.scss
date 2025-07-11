@@ -1,0 +1,33 @@
+@import "../colors";
+
+.skin-black {
+    .main-header {
+        background-color: #ffffff;
+
+        .nav-item > a > span, .nav-item > a > i {
+            color: $gray-900 !important;
+        }
+        .nav-item > a:hover {
+            background-color: #ffffff;
+        }
+        .nav-item > a > span:hover, .nav-item > a > i:hover {
+            color: lighten($gray-900, 40%) !important;
+        }
+        .navbar-nav .nav-item:first-child > a {
+            border-right: 1px solid #eee;
+        }
+        .navbar-nav:nth-child(2) .nav-item > a {
+            border-left: 1px solid #eee;
+        }
+    }
+    .main-sidebar {
+        .logo-switch {
+            background-color: #ffffff !important;
+            color: $gray-900 !important;
+            border-bottom: none;
+            &:hover {
+                background-color: #fcfcfc !important;
+            }
+        }
+    }
+}

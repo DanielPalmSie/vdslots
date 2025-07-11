@@ -1,0 +1,434 @@
+<style><!--
+.mrvegas-encores-faq {
+            color: #cccccc;
+            background: #131313;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .mrvegas-encores-faq__title {
+            font-size: 24px;
+            padding: 0px 0px 20px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__title--secondary {
+            font-size: 18px;
+            padding: 30px 0px 0px 0px;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__question,
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq a,
+        .mrvegas-encores-faq__title,
+        .mrvegas-encores-faq__title--secondary {
+            color: #ffffff;
+        }
+    
+        .mrvegas-encores-faq__reward-title,
+        .mrvegas-encores-faq__offer-title,
+        .mrvegas-encores-faq__promo-title,
+        .mrvegas-encores-faq__normal-text,
+        .mrvegas-encores-faq__promo-text,
+        .mrvegas-encores-faq__offer-text,
+        .mrvegas-encores-faq li {
+            font-size: 14px;
+    
+        }
+    
+        .mrvegas-encores-faq__content {
+            width: 100%;
+            padding: 0px 20px;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__normal-text {
+            line-height: 24px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        .mrvegas-encores-faq__main-banner {
+            background: #131313;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    
+        .mrvegas-encores-faq__offer-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            width: 100%;
+            display: inline-flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+    
+        .mrvegas-encores-faq__offer-snippet {
+            display: flex;
+            width: 100%;
+        }
+    
+        .mrvegas-encores-faq__right-container {
+            width: 78%;
+        }
+    
+        .mrvegas-encores-faq__offer-title {
+            width: 95%;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+    
+        .mrvegas-encores-faq__offer-text {
+            width: 95%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+            text-align: left !important;
+        }
+    
+        img.mrvegas-encores-faq__offer-logo {
+            max-width: 90%;
+            margin: 10px 20px 10px 0px;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__clean-link {
+            text-decoration: none;
+            color: #999999;
+        }
+    
+        .mrvegas-encores-faq__section {
+            padding-top: 20px;
+        }
+    
+        .mrvegas-encores-faq__video-desktop {
+            margin: 20px 20px 20px 20px;
+        }
+    
+        .mrvegas-encores-faq__video-mobile {
+            margin: 20px 20px 20px 20px;
+            width: 100%;
+            display: none;
+        }
+    
+        .mrvegas-encores-faq__promo-main-container {
+            margin: 0px;
+            padding: 0px 20px;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .mrvegas-encores-faq__promo-snippet {
+            width: 48%;
+            max-width: 430px;
+            margin-bottom: 20px;
+            ;
+        }
+    
+        .mrvegas-encores-faq__promo-title {
+            width: 100%;
+            font-weight: bold;
+        }
+    
+        .mrvegas-encores-faq__promo-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 0px 10px 0px;
+        }
+    
+        img.mrvegas-encores-faq__promo-logo {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__reward-main-container {
+            margin: 0px;
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: row;
+            box-sizing: border-box
+        }
+    
+        .mrvegas-encores-faq__reward-snippet {
+            flex: 0 25%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    
+        .mrvegas-encores-faq__reward-title {
+            width: 100%;
+            font-weight: bold;
+            padding: 0px 20px 0px 0px;
+            text-align: center !important;
+        }
+    
+        .mrvegas-encores-faq__reward-text {
+            width: 100%;
+            line-height: 21px;
+            padding: 0px 20px 10px 0px;
+            text-align: center !important;
+        }
+    
+        img.mrvegas-encores-faq__reward-logo {
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 5px;
+        }
+    
+        .mrvegas-encores-faq__question {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            border: 1px solid #666666;
+            cursor: pointer;
+        }
+
+        .faq_button_app {
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			text-decoration: none;
+  			color: inherit;
+		}
+    
+        /* Mobile */
+        @media only screen and (max-width: 600px) {
+            .mrvegas-encores-faq__promo-snippet {
+                width: 100%;
+                max-width: 100%;
+            }
+    
+            .mrvegas-encores-faq__reward-snippet {
+                flex: 0 50%;
+            }
+    
+            img.mrvegas-encores-faq__offer-logo {
+                margin: 0;
+            }
+    
+            .mrvegas-encores-faq__offer-text {
+                margin-top: 5px;
+            }
+    
+            .mrvegas-encores-faq__offer-title {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .mrvegas-encores-faq__video-desktop {
+                display: none;
+            }
+    
+            .mrvegas-encores-faq__video-mobile {
+                display: block;
+            }
+        }
+--></style>
+<!-- page banner ends -->
+<p>&nbsp;</p>
+<!-- H1 and intro paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<h1 class="mrvegas-encores-faq__override">Gu&iacute;a de Mr. Vegas para los Encores</h1>
+<p class="mrvegas-encores-faq__normal-text">Bienvenido a Encore, una fant&aacute;stica experiencia multijugador disponible en Mr. Vegas.</p>
+<p class="mrvegas-encores-faq__normal-text">Encore te ofrece la posibilidad de socializar con otros jugadores mientras haces girar los carretes en retos competitivos de tragamonedas. Lo mejor de todo es que puedes ganar Giros Extra, premios de dinero real &iexcl;y hasta tickets para participar en otros eventos!</p>
+<p class="mrvegas-encores-faq__normal-text">Formar parte es sencillo. Solo ingresa al lobby de Encore y revisa toda la informaci&oacute;n relevante para cada competencia disponible. Esto incluye el n&uacute;mero total de tiradas, estructura de las recompensas, tarifa del buy-in, cantidades de apuesta y plazos. Luego de que hayas elegido la competencia que prefieras, pincha el bot&oacute;n de registro para jugar al tiro.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__content">
+<div class="faq__button-container-mobile">
+<div class="faq__button-container">
+<a href="/tournament" class="btn btn-xl btn-default-xl gradient-default faq__button faq_button_app">Ir al Lobby de Encore</a>
+</div>
+</div>
+<h2 class="mrvegas-encores-faq__override">Caracter&iacute;sticas y variantes de Encore</h2>
+<p class="mrvegas-encores-faq__normal-text">Le decimos <strong>Scheduled Encores</strong> al primer tipo de modo de juego, que son competiciones que comienzan a cierta hora luego de que un n&uacute;mero de jugadores determinado se haya unido. La segunda modalidad es <strong>Sit & Go</strong>, que son competiciones que inician al tiro luego de que se alcance la cantidad de jugadores m&iacute;nima.</p>
+<p class="mrvegas-encores-faq__normal-text">&iquest;Te tinca? Sigue leyendo, o ve la gu&iacute;a de video que tenemos para ti, para descubrir qu&eacute; otras cosas Encore tiene para ofrecerte.</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-main-container">
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Normal_Encores_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Normal Encores</h3>
+<p class="mrvegas-encores-faq__offer-text">Un Normal Encore puede ser uno de los Schedules Encores o un evento Sit & Go, el cual siempre vendr&aacute; con una tarifa de buy-in a pagar por participante.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Guaranteed_Battles_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Guaranteed Encores</h3>
+<p class="mrvegas-encores-faq__offer-text">Estos Encores tienen un premio m&iacute;nimo que est&aacute; garantizado a pagarse, pero puede crecer a&uacute;n m&aacute;s por cada participante que pague el buy-in del evento.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freeroll_Tournaments_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Torneos Freeroll</h3>
+<p class="mrvegas-encores-faq__offer-text">Los Torneos Freeroll te permiten participar en el Encore sin pagar una tarifa de inscripci&oacute;n. Sin embargo, para formar parte de ellos, debes haber depositado al menos &euro;20 y haber obtenido por lo menos 1.000 XP durante los &uacute;ltimos 30 d&iacute;as.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Re-Buys_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Re-Buys</h3>
+<p class="mrvegas-encores-faq__offer-text">En algunos Encores, es posible comprar tiradas gratis adicionales luego de que se agoten las que tienes. El n&uacute;mero de giros gratis a obtener ser&aacute; igual al original y el costo es igual al de la tarifa de buy-in.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Freezeout_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Freezeout</h3>
+<p class="mrvegas-encores-faq__offer-text">Este es un tipo de Encore en el que solo puedes pagar una tarifa de buy-in, sin opci&oacute;n a recargar, lo que implica que todos juegan bajo las mismas condiciones. Una vez se agoten las jugadas, no podr&aacute;s hacer re-buys.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_Wild_West_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">Wild West</h3>
+<p class="mrvegas-encores-faq__offer-text">Wild West funciona igual que los re-buys, pero cada jugador tiene la opci&oacute;n de comprar hasta 25 re-buys.</p>
+</div>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__offer-snippet">
+<div class="mrvegas-encores-faq__left-container"><img class="mrvegas-encores-faq__offer-logo" src="/file_uploads//Encore_FAQ_Page_The_Joker_Feature_Thumbnail.jpg" alt="" /></div>
+<div class="mrvegas-encores-faq__right-container">
+<h3 class="mrvegas-encores-faq__offer-title">La caracter&iacute;stica Joker</h3>
+<p class="mrvegas-encores-faq__offer-text">Cuando te registras para participar en un Encore, entrar&aacute;s en un sorteo para elegir a un Joker entre todos los participantes. Si el jugador elegido como Joker gana, se duplicar&aacute; el premio que reciba.</p>
+</div>
+</div>
+</div>
+<!-- Info section ends -->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Eventos Principales de Encore</h2>
+</div>
+<!-- New paragraph starts -->
+<div><img class="mrvegas-encores-faq__promo-logo" style="text-align: center; width: 100%;" src="/file_uploads/FAQ_BattleBanners_EncoreSplash_880x164px.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Splash</h3>
+<p class="mrvegas-encores-faq__promo-text">Encore Splash es un evento Sit & Go que se lleva a cabo todos los viernes de 17:00 a 20:59 GMT. La emoci&oacute;n se vive en competiciones de 12 minutos a lo largo de 8 juegos diferentes en cada hora. &iexcl;Participar te permitir&aacute; ganar Giros Extra!</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-main-container">
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreMania.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Mania</h3>
+<p class="mrvegas-encores-faq__promo-text">Todos los lunes llega la Encore Mania. En este Scheduled Encore, todos los participantes recibir&aacute;n 100 giros para competir los unos con los otros. &iquest;Tienes lo que se necesita para ganar los Giros Extra?</p>
+</div>
+<!-- New paragraph starts -->
+<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreBlast.jpg" alt="" />
+<h3 class="mrvegas-encores-faq__promo-title">Encore Blast</h3>
+<p class="mrvegas-encores-faq__promo-text">Encore Blast es un torneo Sit & Go que se lleva a cabo todos los martes de 18:00 a 22:00 GMT, luego de que se registren 15 jugadores. Aseg&uacute;rate de participar si quieres ganar tickets de entrada a otros eventos de Encore.</p>
+</div>
+<!-- New paragraph starts --> <!--<div class="mrvegas-encores-faq__promo-snippet"><img class="mrvegas-encores-faq__promo-logo" src="/file_uploads//Encore_FAQ_Page_EncoreRush.jpg" alt="" />
+    <h3 class="mrvegas-encores-faq__promo-title">Encore Rush</h3>
+    <p class="mrvegas-encores-faq__promo-text">Todos los jueves, puedes participar en Encore Rush a partir de las 17:00 GMT. Repartiremos nuevos €500 Freerolls cada cinco minutos durante la primera hora, y todos durarán un mínimo de seis horas. ¡Ocupa tus 100 tiradas en un total de 12 juegos diferentes!</p>
+    </div>--> <!-- New paragraph starts --></div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Recompensas de Encore</h2>
+</div>
+<div class="mrvegas-encores-faq__reward-main-container">
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_EncoreTickets_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Tickets de Encore</p>
+<p class="mrvegas-encores-faq__reward-text">Valores m&uacute;ltiples</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_FreeSpins_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Giros Extra</p>
+<p class="mrvegas-encores-faq__reward-text">Valores m&uacute;ltiples</p>
+</div>
+<div class="mrvegas-encores-faq__reward-snippet"><img class="mrvegas-encores-faq__reward-logo" src="/file_uploads//Encore_FAQ_Page_CashWinnings_Icon.png" alt="" />
+<p class="mrvegas-encores-faq__reward-title">Premios de dinero</p>
+<p class="mrvegas-encores-faq__reward-text">Que se pagan a tu cuenta</p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">&iexcl;Vive la experiencia de Encore ahora!</h2>
+<p class="mrvegas-encores-faq__normal-text"><strong>En computadores:</strong> pincha la pesta&ntilde;a roja de &ldquo;Encore&rdquo; en la parte derecha de tu pantalla. Esto desplegar&aacute; una ventana que te explica c&oacute;mo funciona Encore. Luego, pincha &ldquo;Continuar&rdquo; para revisar qu&eacute; otros Encores se est&aacute;n llevando a cabo.</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>En celulares:</strong> Pincha el logo de &ldquo;Encore&rdquo; en la parte superior derecha de tu pantalla. Entrar&aacute;s al Lobby de Encore y ver&aacute;s una lista de todos los Encores disponibles.</p>
+<p class="mrvegas-encores-faq__normal-text"><strong>Recuerda: para participar en Encores, es necesario que te hayas registrado en Mr Vegas. </strong></p>
+</div>
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">Encore FAQ</h2>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Qu&eacute; es un Encore?</h2>
+<div>Un Encore es una competici&oacute;n en la que podr&aacute;s medirte ante otros jugadores en juegos selectos. El ganador se determina tomando en cuenta al jugador que m&aacute;s ganancias acumule luego de cada ronda del Encore.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Puedes recibir premios de casino por jugar Encore?</h2>
+<div>&iexcl;S&iacute;! Participar en Encore te permitir&aacute; obtener premios de todo tipo, como Giros Extra, premios de dinero y tickets de entrada a otros eventos. Te recomendamos visitar el lobby de Encore para que veas lo que ofrece cada competici&oacute;n.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question"><strong>&iquest;Puedes jugar Encore en dispositivos m&oacute;viles?</strong></h2>
+<div>S&iacute;, Encore est&aacute; disponible en dispositivos m&oacute;viles, bien sea un tel&eacute;fono inteligente o una tablet. Puedes retar a tus amigos en Mr. Vegas Casino desde la palma de tus manos.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Cu&aacute;les son los plazos de Encore?</h2>
+<div style="text-align: justify;">Eso depende del tipo de Encore en el que participes. Puedes revisar todos los detalles, incluyendo los plazos de juego, en el lobby de Encore.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Qu&eacute; pasa si dos jugadores terminan con la misma puntuaci&oacute;n?</h2>
+<div style="text-align: justify;">El ganador ser&aacute; determinado seg&uacute;n qui&eacute;n haya sido el usuario que m&aacute;s haya ganado con una sola tirada de los carretes. Si llegase a ocurrir que dos jugadores terminan con la misma puntuaci&oacute;n y la misma ganancia m&aacute;xima en un giro, el ganador ser&aacute; quien haya alcanzado primero su puntuaci&oacute;n.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Se puede ganar dinero real en los torneos de Encore?</h2>
+<div style="text-align: justify;">S&iacute;, es posible ganar premios de dinero real participando en torneos de Encore. Puedes ver los premios disponibles antes de participar.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Hay Encores con frecuencia en este casino online?</h2>
+<div style="text-align: justify;">S&iacute;, puedes participar en Encores a lo largo del d&iacute;a en Mr Vegas.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;D&oacute;nde puedo ver los T&eacute;rminos y Condiciones de Encore?</h2>
+<div style="text-align: justify;">Puedes revisar los T&eacute;rminos y Condiciones de los torneos Encore <a href="/cl/terms-and-conditions/mga-games-specific/#casino-and-bonuses">aqu&iacute;</a>.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Hay un pago m&aacute;ximo en Encore?</h2>
+<div style="text-align: justify;">No, no hay cantidad m&aacute;xima a pagar en los eventos Encore.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;Debo crear una nueva cuenta para participar en eventos Encore?</h2>
+<div style="text-align: justify;">Puedes participar en eventos con tu cuenta de Mr Vegas. Por favor recuerda que solo est&aacute; permitido tener una cuenta por persona en mrvegas.com.</div>
+</div>
+<div class="mrvegas-encores-faq__normal-text faq-cat-accordion">
+<h2 class="mrvegas-encores-faq__question">&iquest;A qui&eacute;n debo contactar si tengo alg&uacute;n problema?</h2>
+<div style="text-align: justify;">Si tienes alg&uacute;n inconveniente o alguna consulta referente a Encore, puedes contactar a nuestro equipo de atenci&oacute;n al cliente desde el lobby.</div>
+</div>
+</div>
+<!-- Updated EN CONTENT END-->
+<div class="mrvegas-encores-faq__content">
+<h2 class="mrvegas-encores-faq__override">T&eacute;rminos y Condiciones Generales</h2>
+<div class="mrvegas-encores-faq__normal-text">
+<div class="mrvegas-encores-faq__normal-text">
+<ul>
+<li style="text-align: justify;">Jugar en mrvegas.com no est&aacute; permitido para personas menores de 18 a&ntilde;os de edad. Los juegos de azar son una actividad para adultos. Juega responsablemente.</li>
+<li style="text-align: justify;">Las cantidades de dinero que se especifican a lo largo de la competici&oacute;n solo son un indicador del premio convertido en monedas locales. Las cantidades en euros que se especifican en los t&eacute;rminos prevalecen ante cualquier otra suma, la cual ser&aacute; determinada al momento del pago seg&uacute;n la tasa cambiaria del momento.</li>
+<li style="text-align: justify;">Eres responsable de cualquier tarifa cambiaria o costo de transacci&oacute;n que se aplique a tu banco.</li>
+<li style="text-align: justify;">Aplican los <a href="/cl/terms-and-conditions/">T&eacute;rminos y Condiciones</a> del sitio.</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function () {
+                $(".faq-cat-accordion").accordion({ collapsible: true, active: true });
+            });
+// ]]></script>
+</div>

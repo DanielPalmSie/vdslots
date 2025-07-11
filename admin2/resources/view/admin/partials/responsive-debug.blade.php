@@ -1,0 +1,11 @@
+<span class="d-block d-sm-none"><b>|| Responsive debug: xs</b></span>
+<span class="d-none d-sm-block d-md-none"><b>|| Responsive debug: sm</b></span>
+<span class="d-none d-md-block d-lg-none"><b>|| Responsive debug: md</b></span>
+<span class="d-none d-lg-block d-xl-none"><b>|| Responsive debug: lg</b></span>
+<span class="d-none d-xl-block d-xxl-none"><b>|| Responsive debug: xlg [720p]</b></span>
+<span class="d-none d-xxl-block"><b>|| Responsive debug: fhd [1080p]</b></span>
+<span class="d-none d-xxl-block"><b>|| Responsive debug: rt [1440p]</b></span>
+<span class="d-none d-xxl-block"><b>|| Responsive debug: rt15 [Retina 15"]</b></span>
+<span class="d-none d-xxl-block"><b>|| Responsive debug: uhd [UHD]</b></span>
+<span class="d-none d-xxl-block"><b>|| Responsive debug: 4k [4k]</b></span>
+<span class="d-none d-xxl-block"><b>|| Responsive debug: 8k [8k]</b></span>

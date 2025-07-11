@@ -1,0 +1,41 @@
+[
+  {
+    "name" : "Administration, Business, Marketing or Finance"
+  },
+  {
+    "name" : "Art, Culture, Recreation & Sport"
+  },
+  {
+    "name" : "Education, Law, Social or Government services"
+  },
+  {
+    "name" : "Health"
+  },
+  {
+    "name" : "Homemaker (Housewife, Househusband)"
+  },
+  {
+    "name" : "Manufacturing or Utilities"
+  },
+  {
+    "name" : "Natural resources, Agriculture or Related production"
+  },
+  {
+    "name" : "Retired"
+  },
+  {
+    "name" : "Sales, Hospitality or Services"
+  },
+  {
+    "name" : "Science, Technology or Engineering"
+  },
+  {
+    "name" : "Student"
+  },
+  {
+    "name" : "Trades, Transport, Construction or Equipment operators"
+  },
+  {
+    "name" : "Unemployed"
+  }
+]

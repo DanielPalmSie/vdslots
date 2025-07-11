@@ -1,0 +1,34 @@
+@import "../colors";
+
+.skin-yellow-light {
+    .main-header {
+        background-color: $yellow;
+        .nav-item > a {
+            background-color: $yellow;
+        }
+        .nav-item > a:hover {
+            background-color: darken($yellow, 5%);
+        }
+    }
+    .main-sidebar {
+        background-color: #f9fafc;
+        li > a {
+            color: lighten($gray-900, 6.5%);
+        }
+        li > a:hover {
+            color: #000000 !important;
+            background-color: #f4f4f5 !important;
+        }
+        li > p {
+            color: lighten($gray-900, 31.6%);
+        }
+        .logo-switch {
+            background-color: darken($yellow, 5%) !important;
+            color: #fff !important;
+            border-bottom: none;
+            &:hover {
+                background-color: darken($yellow, 6%) !important;
+            }
+        }
+    }
+}

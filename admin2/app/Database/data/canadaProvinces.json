@@ -1,0 +1,42 @@
+[
+  {
+    "iso_code" : "AB",
+    "name" : "Alberta"
+  },
+  {
+    "iso_code" : "BC",
+    "name" : "British Columbia"
+  },
+  {
+    "iso_code" : "ON",
+    "name" : "Ontario"
+  },
+  {
+    "iso_code" : "QC",
+    "name" : "Quebec"
+  },
+  {
+    "iso_code" : "NS",
+    "name" : "Nova Scotia"
+  },
+  {
+    "iso_code" : "NB",
+    "name" : "New Brunswich"
+  },
+  {
+    "iso_code" : "MB",
+    "name" : "Manitoba"
+  },
+  {
+    "iso_code" : "PE",
+    "name" : "Prince Edward Island"
+  },
+  {
+    "iso_code" : "SK",
+    "name" : "Saskatchewan"
+  },
+  {
+    "iso_code" : "NL",
+    "name" : "Newfoundland and Labrador"
+  }
+]

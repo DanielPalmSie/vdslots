@@ -1,0 +1,163 @@
+.stuck-tr-line {
+    background-color: #aa55aa;
+}
+
+.over-tr-line {
+    background-color: #885500;
+}
+
+.unknown-tr-line {
+    background-color: #ea2222;
+}
+
+.bonus-abuse-tr-line {
+    background-color: pink;
+}
+
+#pending-withdrawals-table tr a:hover {
+    text-decoration: underline;
+}
+
+.ccard-fraud-line {
+    background-color: #faa;
+}
+
+.bonus-fraud-line {
+    background-color: #abf;
+}
+
+.iban_country_mismatch-fraud-line {
+    background-color: #ff008c;
+}
+
+.ip_country_mismatch-fraud-line {
+    background-color: #0088ff;
+}
+
+.bonus_abuse-fraud-line {
+    background-color: pink;
+}
+
+.liability-fraud-line {
+    background-color: #fff800;
+}
+
+.source_of_funds_requested-fraud-line {
+    background-color: #d6cf00;
+}
+
+.majority-fraud-line {
+    background-color: #cfff00;
+}
+
+.instadebit-fraud-line {
+    background-color: #cbc400;
+}
+
+.trustly_country-fraud-line {
+    background-color: #a0a47a;
+}
+
+.multi_deposit-fraud-line {
+    background-color: #FF00A8;
+}
+
+.majority_sng_battles-fraud-line {
+    background-color: #ff750d;
+}
+
+.majority_unfinished_battles-fraud-line {
+    background-color: #6cffe6;
+}
+
+.manual_adjustment-fraud-line {
+    background-color: #23fcff;
+}
+
+.nodeposit-fraud-line {
+    background-color: #56f;
+}
+
+.loww-fraud-line {
+    background-color: #afb;
+}
+
+.manual-fraud-line {
+    background-color: #ffa500;
+}
+
+.withdraw_limit-fraud-line {
+    background-color: #ff2700;
+}
+
+.withdraw_last_24_hours_limit-fraud-line {
+    background-color: #ff0075;
+}
+
+.interac-withdrawal-fraud-line {
+    background-color: #6495ED;
+}
+
+.instadebit-withdrawal-fraud-line {
+    background-color: #87CEFA;
+}
+
+.too_many_rollbacks-fraud-line {
+    background-color: #3b5998;
+}
+
+.total-withdrawal-amount-limit-reached-fraud-line {
+    background-color: #720e9e;
+}
+
+.suspicious-email-fraud-line {
+    background-color: #B7410E;
+}
+
+.negative-balance-since-deposit-fraud-line {
+    background-color: #2F4F4F;
+}
+
+.neosurf-depositors-fraud-line {
+    background-color: #e1127a;
+}
+
+.aml-grs-high-risk-profile-fraud-line {
+    background-color: #00408d;
+}
+
+.welcome-bonus-abuse-fraud-line {
+    background-color: #1c324a;
+}
+
+[class$="-fraud-line"] {
+    display: inline-block;
+    width: 20px !important;
+    height: 20px;
+    margin: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.center-content {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.stuck-select2-option {
+    width: 5px;
+    cursor: default;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#descriptionModal .modal-dialog, #cancelModal .modal-dialog {
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons-container {
+    display: grid;
+    justify-items: unset;
+    gap: 3px;
+}

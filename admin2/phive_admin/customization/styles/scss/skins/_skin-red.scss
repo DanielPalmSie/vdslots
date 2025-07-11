@@ -1,0 +1,23 @@
+@import "../colors";
+
+.skin-red {
+    .main-header {
+        background-color: $red;
+        .nav-item > a {
+            background-color: $red;
+        }
+        .nav-item > a:hover {
+            background-color: darken($red, 5%);
+        }
+    }
+    .main-sidebar {
+        .logo-switch {
+            background-color: darken($red, 5%) !important;
+            color: #fff !important;
+            border-bottom: none;
+            &:hover {
+                background-color: darken($red, 6%) !important;
+            }
+        }
+    }
+}
