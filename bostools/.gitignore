@@ -1,0 +1,21 @@
+**/.hg/*
+**/.idea/*
+**/.scannerwork/*
+**/.sonar/*
+**/.vscode/*
+*DS_Store*
+.gitkeep
+.hgignore
+.hgtags
+.htaccess
+.phpstorm.meta.php
+.svn/*
+modules/IpBlock/GeoIP2-Country.mmdb
+Thumbs.db
+log/*
+shix/*
+vendor/*
+
+syntax: glob
+.idea/
+
