@@ -31,6 +31,8 @@ build/
 dist/
 */build/
 */dist/
+**/build/
+**/dist/
 
 # IDE/editor files
 .idea/
@@ -52,3 +54,5 @@ Thumbs.db
 phive/config/GamesRecommendations.config.php
 phive/config/brand-videoslots/dev/GamesRecommendations.config.php
 phive/config/Localizer.config.php
+
+diamondbet/soap/read_binlogs_tool/_config.sh
