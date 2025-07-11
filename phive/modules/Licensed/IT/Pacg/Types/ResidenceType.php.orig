@@ -1,0 +1,51 @@
+<?php
+namespace IT\Pacg\Types;
+
+
+/**
+ * Structure for the representation of residential address
+ * Class ResidenceType
+ */
+class ResidenceType extends AbstractType
+{
+
+    protected $fillable = [
+        'residential_address',
+        'municipality_of_residence',
+        'residential_province_acronym',
+        'residential_post_code',
+    ];
+
+    protected $rules = [
+        'residential_address'          => 'required|string|min:1|max:250',
+        'municipality_of_residence'    => 'required|string|min:1|max:100',
+        'residential_province_acronym' => 'required|string|min:5|max:5',
+        'residential_post_code'        => 'required|string|min:2|max:2',
+    ];
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            "indirizzo" => $this->residential_address,
+            "comune"    => $this->municipality_of_residence,
+            "provincia" => $this->residential_province_acronym,
+            "cap"       => $this->residential_post_code
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function toString(): string
+    {
+        return
+           "Address: {$this->residential_address}\n" .
+           "Municipality: {$this->municipality_of_residence}\n" .
+           "Province Acr: {$this->residential_province_acronym}\n" .
+           "Postal Code: {$this->residential_post_code}";
+    }
+
+}

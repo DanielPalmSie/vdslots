@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:withdrawAndDeposit xmlns:ns2="http://wallet.integration.eoc.edict.de">
+         <WithdrawAndDepositRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>{{playerName}}
+            <withdraw>{{amountBet}}</withdraw>
+            <deposit>{{amountWin}}</deposit>{{bigWin}}{{jackpotAmount}}{{bonusWin}}{{bonusBet}}
+            <currency>{{currency}}</currency>
+            <transactionRef>{{transactionRef}}</transactionRef>
+            <gameRoundRef>{{gameRoundRef}}</gameRoundRef>
+            <gameId>{{gameId}}</gameId>
+            <reason>{{reason}}</reason>
+            <sessionId>{{sessionId}}</sessionId>
+         </WithdrawAndDepositRequest>
+        </ns2:withdrawAndDeposit>
+    </S:Body>
+</S:Envelope>

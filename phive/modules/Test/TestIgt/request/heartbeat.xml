@@ -1,0 +1,3 @@
+<GameRequest>
+<HeartBeat timestamp="{{timestampiso8601}}"/>
+</GameRequest>

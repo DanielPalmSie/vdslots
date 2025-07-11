@@ -1,0 +1,12 @@
+.field-preferred_lang .label-preferred_lang {
+    display: none;
+}
+.field-preferred_lang {
+    margin-top: 40px;
+}
+.registration-country-default .regstep2-right .label-birthdate {
+    margin-top: 10px;
+}
+.registration-step-2-control.field-personal_number input {
+    background-image: none !important;
+}

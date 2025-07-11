@@ -1,0 +1,119 @@
+
+.jcarousel-skin-jackpot .jcarousel-container {
+	
+}
+
+.jcarousel-skin-jackpot .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-jackpot .jcarousel-container-horizontal {
+    width: 200px;
+    padding: 5px;
+	height: 140px;
+	margin-left: -10px;
+}
+
+.jcarousel-skin-jackpot .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-jackpot .jcarousel-clip-horizontal {
+    width:  190px;
+    height: 132px;
+	margin-left: -10px;
+}
+
+.jcarousel-skin-jackpot .jcarousel-item {
+    width: 200px;
+    height: 130px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.jcarousel-skin-jackpot .jcarousel-item-horizontal {
+	margin-left: -5px;
+}
+
+.jcarousel-skin-jackpot .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-jackpot .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-jackpot .jcarousel-next-horizontal {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 11px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(next-horizontal.png) no-repeat -2px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-jackpot .jcarousel-next-horizontal:hover,
+.jcarousel-skin-jackpot .jcarousel-next-horizontal:focus {
+    background-position: -22px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-next-horizontal:active {
+    background-position: -44px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-jackpot .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-jackpot .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-jackpot .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    width: 11px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(prev-horizontal.png) no-repeat -2px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-jackpot .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin-jackpot .jcarousel-prev-horizontal:focus {
+    background-position: -22px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-prev-horizontal:active {
+    background-position: -44px 0;
+}
+
+.jcarousel-skin-jackpot .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-jackpot .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-jackpot .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-jackpot .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -64px 0;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WithdrawRequest>
+		<UserName>{{userName}}</UserName>
+		<Password>{{userPassword}}</Password>
+		<PlayerId>{{userId}}</PlayerId>
+		<TransferId>{{transferId}}</TransferId>
+		<GameId>{{gameId}}</GameId>
+		<GameNumber>{{gameNumber}}</GameNumber>
+		<SessionId>{{secureToken}}</SessionId>
+		<Amount>{{amountBet}}</Amount>
+		<Currency>{{currency}}</Currency>
+		<Reason></Reason>
+		<PortalCode>Videoslots</PortalCode>
+		<PlatformType>DESKTOP</PlatformType>
+</WithdrawRequest>

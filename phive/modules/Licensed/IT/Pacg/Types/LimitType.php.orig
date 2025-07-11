@@ -1,0 +1,44 @@
+<?php
+namespace IT\Pacg\Types;
+
+
+/**
+ * Structure to represent the limits set to a gambling account
+ * Class LimitType
+ */
+class LimitType extends AbstractType
+{
+
+    protected $fillable = [
+        'limit_type',
+        'amount',  // euro cents
+    ];
+
+    protected $rules = [
+        'limit_type' => 'required|in:1,2,3', // TODO: add custom rule, that uses GamblingAccountLimitType::getAllowedValues()
+        'amount'     => 'required|int',  // euro cents
+    ];
+    
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            "tipoLimite" => $this->limit_type,
+            "importo"    => $this->amount
+        ];
+    }
+
+
+    /**
+     * @return string
+     */
+    public function toString(): string
+    {
+        return
+           "Limit Type: {$this->limit_type}\n" .
+           "Amount: {$this->amount}";
+    }
+}

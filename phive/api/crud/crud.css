@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+.stats_table, .list_table{}
+
+.stats_table td, .list_table td{ padding: 2px; }
+.stats_table .stats_header, .list_table .list_header{ background-color: #fdd; font-weight: bold; }
+.fill-odd{ background-color: #eee; }
+.fill-even{ background-color: #fff; }
+
+.stats_table .sub_table td{
+	width: 50px;
+}

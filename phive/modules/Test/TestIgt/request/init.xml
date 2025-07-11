@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameRequest>
+	<Header>
+		<GameDetails gameId="{{gameId}}" name="" channel="" presentation="" class="" />
+		<Customer userId="{{userId}}" skinCode="" ccyCode="{{currency}}" sessionId="" countryCode="" secureToken="{{secureToken}}" />
+		<Auth username="{{userName}}" password="{{userPassword}}" />
+		{{fundMode}}
+	</Header>
+	<Init{{promotions}}></Init>
+</GameRequest>

@@ -1,0 +1,4 @@
+<callerId>{{callerId}}</callerId>
+<callerPassword>{{callerPassword}}</callerPassword>{{playerName}}
+<currency>{{currency}}</currency>
+<gameId>{{gameId}}</gameId>

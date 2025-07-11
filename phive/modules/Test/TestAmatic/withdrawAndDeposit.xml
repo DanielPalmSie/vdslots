@@ -1,0 +1,51 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wal="http://wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wal:withdrawAndDeposit>
+         <WithdrawAndDepositRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <playerName>{{playerName}}</playerName>
+            <withdraw>{{withdraw}}</withdraw>
+            <deposit>{{deposit}}</deposit>
+            <!--Optional:-->
+            <bigWin>{{bigWin}}</bigWin>
+            <!--Optional:-->
+            <jackpotAmount>{{jackpotAmount}}</jackpotAmount>
+            <!--Optional:-->
+            <bonusWin>{{bonusWin}}</bonusWin>
+            <!--Optional:-->
+            <bonusBet>{{bonusBet}}</bonusBet>
+            <!--Zero or more repetitions:-->
+            <bonusPrograms>
+               <!--Optional:-->
+               <bonusProgramId>?</bonusProgramId>
+               <depositionId>?</depositionId>
+            </bonusPrograms>
+            <!--Zero or more repetitions:-->
+            <tournaments>
+               <tournamentId>?</tournamentId>
+               <tournamentOccurrenceId>?</tournamentOccurrenceId>
+            </tournaments>
+            <!--Zero or more repetitions:-->
+            <jackpotContributions>
+               <jackpotId>?</jackpotId>
+               <contribution>?</contribution>
+            </jackpotContributions>
+            <currency>{{currency}}</currency>
+            <transactionRef>{{transactionRef}}</transactionRef>
+            <!--Optional:-->
+            <gameRoundRef>{{gameRoundRef}}</gameRoundRef>
+            <!--Optional:-->
+            <gameId>{{gameId}}</gameId>
+            <reason>{{reason}}</reason>
+            <!--Optional:-->
+            <source>{{source}}</source>
+            <!--Optional:-->
+            <startDate>{{startDate}}</startDate>
+            <!--Optional:-->
+            <sessionId>{{sessionId}}</sessionId>
+         </WithdrawAndDepositRequest>
+      </wal:withdrawAndDeposit>
+   </soapenv:Body>
+</soapenv:Envelope>

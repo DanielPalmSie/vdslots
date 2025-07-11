@@ -1,0 +1,9 @@
+<callerId>{{callerId}}</callerId>
+<callerPassword>{{callerPassword}}</callerPassword>{{playerName}}
+<amount>{{amountWin}}</amount>{{jackpotAmount}}{{bonusWin}}
+<currency>{{currency}}</currency>
+<transactionRef>{{transactionRef}}</transactionRef>
+<gameId>{{gameId}}</gameId>
+<gameIDNumber>{{gameIDNumber}}</gameIDNumber>
+<reason>{{reason}}</reason>
+<clientType>{{clientType}}</clientType>

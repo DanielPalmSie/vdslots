@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wal="http://wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wal:getPlayerCurrency>
+         <PlayerCurrencyRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <playerName>{{playerName}}</playerName>
+            <!--Optional:-->
+            <sessionId>{{sessionId}}</sessionId>
+         </PlayerCurrencyRequest>
+      </wal:getPlayerCurrency>
+   </soapenv:Body>
+</soapenv:Envelope>

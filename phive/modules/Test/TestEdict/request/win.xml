@@ -1,0 +1,11 @@
+<DepositRequest>
+	<callerId>{{callerId}}</callerId>
+	<callerPassword>{{callerPassword}}</callerPassword>{{playerName}}
+	<amount>{{amountWin}}</amount>{{jackpotAmount}}{{bonusWin}}
+	<currency>{{currency}}</currency>
+	<transactionRef>{{transactionRef}}</transactionRef>
+	<gameRoundRef>{{gameRoundRef}}</gameRoundRef>
+	<gameId>{{gameId}}</gameId>
+	<reason>{{reason}}</reason>
+	<sessionId>{{sessionId}}</sessionId>
+</DepositRequest>

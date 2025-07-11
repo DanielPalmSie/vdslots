@@ -1,0 +1,198 @@
+variables:
+    SERVER_TEST:
+        value: ""
+        description: "Target deploy server"
+    COMMAND_TEST:
+        value: ""
+        options:
+            - "deploy-test"
+            - "release-test"
+            - ""
+        description: "To deploy a feature-branch for testing, select 'deploy-test'. After testing is done, run this job again with 'release-test'"
+    BRAND_TEST:
+        value: "videoslots"
+        description: "Target deploy brand (project folder name)"
+    TARGET_BRANCH:
+        value: ""
+        description: "Type 'main' to deploy the main branch, otherwise leave empty to deploy the selected branch name"
+    DOCKER_PIPELINE:
+        value: "false"
+        options:
+            - "false"
+            - "true"
+        description: "Select 'true' to create and push a docker image"
+    BRAND_VS: "videoslots"
+    BRAND_MRV: "mrvegas"
+    BRAND_KS: "kungaslottet"
+    BRAND_MR: "megariches"
+    BRAND_DBET: "dbet"
+
+stages:
+    - composer_validate
+    - deploy_test
+    - pipeline_run
+    - update_mmdb
+    - sonar_test_branch
+    - notify_slack
+    - deploy_preprod
+    - test_preprod_url
+    - deploy_prod
+    - restart_prod_supervisor
+    - test_prod_url
+    - update_story
+    - generate_hash
+    - docker_version_management
+    - docker_build
+    - docker_push
+
+include:
+    - project: "utilities/ci-templates"
+      file:
+          - "deploy-templates/deploy_test.yml"
+          - "deploy-templates/pipeline_run.yml"
+          - "code-analysis-templates/composer_validate_job.yml"
+          - "code-analysis-templates/sonar_test_branch.yml"
+          - "automation-templates/update_maxmind.yml"
+          - "automation-templates/generate_hash.yml"
+          - "deploy-templates/deploy_prod.yml"
+          - "automation-templates/test_url.yml"
+          - "automation-templates/update_story.yml"
+          - "automation-templates/slack_notification.yml"
+          - "docker-pipeline/version-management.yml"
+          - "docker-pipeline/docker-config.yml"
+          - "docker-pipeline/build.yml"
+          - "docker-pipeline/push.yml"
+
+deploy_test:
+    stage: deploy_test
+    variables:
+        BRAND: "$BRAND_TEST/$CI_PROJECT_NAME"
+
+sonar_test_branch:
+    variables:
+        EXTRA_ARGS: "-Dsonar.java.binaries=$PHIVE_JAVA_BIN -Dsonar.java.libraries=$PHIVE_JAVA_LIBS -Dsonar.exclusions=$SONARQUBE_EXCLUSIONS"
+
+1_deploy_preprod_videoslots_com:
+    stage: deploy_preprod
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PREPROD_VIDEOSLOTS
+        BRAND: "beta.$BRAND_VS.com"
+
+2_deploy_preprod_videoslots_es:
+    stage: deploy_preprod
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PREPROD_VIDEOSLOTS
+        BRAND: "beta.$BRAND_VS.es"
+
+1_deploy_preprod_videoslots_it:
+    stage: deploy_preprod
+    extends: .deploy_job_template
+    rules:
+        - if: '$CI_COMMIT_BRANCH == "license-italy" && $CI_PIPELINE_SOURCE != "schedule" && $DOCKER_PIPELINE == "false"'
+          when: manual
+    variables:
+        SERVERS: $SERVER_PREPROD_VIDEOSLOTS
+        BRAND: "beta.$BRAND_VS.it"
+
+3_deploy_preprod_mrvegas_com:
+    stage: deploy_preprod
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PREPROD_MRVEGAS
+        BRAND: "beta.$BRAND_MRV.com"
+
+test_preprod_url:
+    stage: test_preprod_url
+    extends: .test_url_template
+    variables:
+        URL: $URL_PREPROD
+
+1_deploy_prod_videoslots_com:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_VIDEOSLOTS_COM
+        BRAND: "$BRAND_VS.com"
+
+2_deploy_prod_videoslots_es:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_VIDEOSLOTS_ES
+        BRAND: "$BRAND_VS.es"
+
+3_deploy_prod_videoslots_ca:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_VIDEOSLOTS_CA
+        BRAND: "$BRAND_VS.ca"
+
+1_deploy_prod_videoslots_it:
+    extends: .deploy_job_template
+    rules:
+        - if: '$CI_COMMIT_BRANCH == "license-italy" && $CI_PIPELINE_SOURCE != "schedule" && $DOCKER_PIPELINE == "false"'
+          when: manual
+    variables:
+        SERVERS: $SERVER_PROD_VIDEOSLOTS_IT
+        BRAND: "$BRAND_VS.it"
+
+4_deploy_prod_mrvegas_com:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_MRVEGAS_COM
+        BRAND: "$BRAND_MRV.com"
+
+5_deploy_prod_mrvegas_ca:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_MRVEGAS_CA
+        BRAND: "$BRAND_MRV.ca"
+
+6_deploy_prod_kungaslottet_com:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_KUNGASLOTTET_COM
+        BRAND: "$BRAND_KS.com"
+
+7_deploy_prod_kungaslottet_se:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_KUNGASLOTTET_SE
+        BRAND: "$BRAND_KS.se"
+
+8_deploy_prod_megariches_com:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_MEGARICHES_COM
+        BRAND: "$BRAND_MR.com"
+
+9_deploy_prod_dbet_com:
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_DBET_COM
+        BRAND: "$BRAND_DBET.com"
+
+1_restart_prod_supervisor_vs_ks_mr_dbet:
+    stage: restart_prod_supervisor
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_VIDEOSLOTS_COM
+        BRAND: "$BRAND_VS.com"
+        EXTRA_ARGS: "restart-super"
+    allow_failure: true
+
+2_restart_prod_supervisor_mrv:
+    stage: restart_prod_supervisor
+    extends: .deploy_job_template
+    variables:
+        SERVERS: $SERVER_PROD_MRVEGAS_COM
+        BRAND: "$BRAND_MRV.com"
+        EXTRA_ARGS: "restart-super"
+    allow_failure: true
+
+docker_build:
+    stage: docker_build
+    script: |
+        git clone --filter=blob:none --branch $CI_COMMIT_REF_NAME git@${CI_SERVER_SHELL_SSH_HOST}:${CI_PROJECT_PATH}.git ./to-dockerize
+        docker build --pull ./to-dockerize -t $CONTAINER_IMAGE -t $CONTAINER_RELEASE_IMAGE
+        rm -rf ./to-dockerize

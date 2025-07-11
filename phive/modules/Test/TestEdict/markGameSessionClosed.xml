@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gam="http://gamesession.wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gam:markGameSessionClosed>
+         <markGameSessionClosedRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <sessionId>{{sessionId}}</sessionId>
+         </markGameSessionClosedRequest>
+      </gam:markGameSessionClosed>
+   </soapenv:Body>
+</soapenv:Envelope>

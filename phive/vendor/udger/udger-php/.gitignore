@@ -1,0 +1,4 @@
+/nbproject/*
+/run/*
+/vendor/
+composer.lock

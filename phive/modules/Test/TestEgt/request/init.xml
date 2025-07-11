@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AuthRequest>
+		<UserName>{{userName}}</UserName>
+		<Password>{{userPassword}}</Password>
+		<PlayerId>{{userId}}</PlayerId>
+		<DefenceCode>{{secureToken}}</DefenceCode>
+		<PortalCode>SomeOperatorId_EUR</PortalCode>
+		<SessionId>364e6b3945a0a5614867b6556d791cb0</SessionId>
+</AuthRequest>

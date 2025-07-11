@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameResponse>
+	<Header>
+		<Customer userId="{{userId}}">{{cashBalance}}{{frbBalance}}</Customer>
+	</Header>
+	<EndSession status="{{status}}"></EndSession>
+</GameResponse>

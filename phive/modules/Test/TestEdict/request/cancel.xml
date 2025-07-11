@@ -1,0 +1,7 @@
+<RollbackTransactionRequest>
+	<callerId>{{callerId}}</callerId>
+	<callerPassword>{{callerPassword}}</callerPassword>
+	<transactionRef>{{transactionRef}}</transactionRef>{{playerName}}
+	<gameId>{{gameId}}</gameId>
+	<sessionId>{{sessionId}}</sessionId>
+</RollbackTransactionRequest>

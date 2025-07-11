@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<WithdrawResponse>
+	<Balance>{{balance}}</Balance>
+	<CasinoTransferId>{{casinotransferid}}</CasinoTransferId>
+	<ErrorCode>{{err_code}}</ErrorCode>
+	<ErrorMessage>{{err_message}}</ErrorMessage>
+	<TotalBet>{{tot_bet}}</TotalBet>
+	<TotalWin>{{tot_win}}</TotalWin>
+	<PlayTime>{{tot_playtime}}</PlayTime>
+</WithdrawResponse>

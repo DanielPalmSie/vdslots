@@ -1,0 +1,80 @@
+<?php
+namespace IT\Pacg\Services;
+
+use IT\Pacg\Types\BonusDetailListType;
+use IT\Pacg\Types\DateTimeType;
+
+/**
+ * Class AccountTransactionsEntity
+ * @package IT\AbstractRequest\Services
+ */
+class AccountTransactionsEntity extends AbstractService
+{
+    protected $fillable = [
+        'account_sales_network_id',
+        'account_network_id',
+        'account_code',
+        'account_network_id',
+        'account_code',
+        'payment_method',
+        'bonus_balance_share_amount',
+        'balance_amount',
+        'transaction_amount',
+        'transaction_reason',
+        'transaction_datetime',
+        'bonus_details',
+        'transaction_id',
+    ];
+
+    protected $rules = [
+        'account_code' => 'required',
+        'payment_method' => 'required',
+        'bonus_balance_share_amount' => 'required',
+        'balance_amount' => 'required',
+        'transaction_amount' => 'required',
+        'transaction_reason' => 'required',
+        'transaction_datetime' => 'required|array',
+        'account_sales_network_id' => 'required',
+        'bonus_details' => 'required|array',
+    ];
+
+    /**
+     * @param array $property_values
+     * @return AbstractService
+     */
+    public function fill(array $property_values): AbstractService
+    {
+        parent::fill($property_values);
+
+        if (is_array($this->transaction_datetime)) {
+            $this->transaction_datetime = (new DateTimeType())->fill($this->transaction_datetime);
+        }
+        if (is_array($this->bonus_details)) {
+            $this->bonus_details = (new BonusDetailListType())->fill(['bonus_detail' => $this->bonus_details]);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        $values = [
+            "idReteConto"   => $this->account_sales_network_id,
+            "idCnConto"     => $this->account_network_id,
+            "causaleMovimento" => $this->transaction_reason,
+            "importoMovimento" => $this->balance_amount,
+            "importoSaldo" => $this->balance_amount,
+            "mezzoDiPagamento" => $this->payment_method,
+            "importoBonusSaldo" => $this->bonus_balance_share_amount,
+            "numDettagliBonusSaldo" => empty($this->bonus_details) ? 0 : $this->bonus_details->getBonusDetailAmount(),
+            "codiceConto" => $this->account_code,
+            "dataOraSaldo" => $this->transaction_datetime->toArray(),
+            "dettaglioBonusSaldo" => empty($this->bonus_details) ? [] : $this->bonus_details->toArray(),
+        ];
+
+        return parent::toArray($values);
+    }
+}

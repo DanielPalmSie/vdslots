@@ -1,0 +1,130 @@
+
+.jcarousel-skin-emuplay .jcarousel-container {
+	
+}
+
+.jcarousel-skin-emuplay .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-emuplay .jcarousel-container-horizontal {
+    width: 750px;
+    padding: 5px;
+	height: 115px;
+}
+
+.jcarousel-list{
+	display: block;
+	padding-left: 5px !important;
+}
+
+.jcarousel-skin-emuplay .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-emuplay .jcarousel-clip-horizontal {
+    width:  740px;
+    height: 115px;
+}
+
+.jcarousel-skin-emuplay .jcarousel-item {
+    width: 175px;
+    height: 115px;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+.jcarousel-skin-emuplay .jcarousel-item img{
+    box-shadow: 0 0 6px 1px #000;
+	border: solid 1px #7e5e1c;
+	width: 175px;
+	height: 103px;
+}
+
+.jcarousel-skin-emuplay .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 11px;
+}
+
+.jcarousel-skin-emuplay .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 11px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-emuplay .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-emuplay .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-emuplay .jcarousel-next-horizontal {
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    width: 16px;
+    height: 37px;
+    cursor: pointer;
+    background: transparent url(right-arrow.png) no-repeat;
+}
+
+.jcarousel-skin-emuplay .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(right-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-next-horizontal:hover,
+.jcarousel-skin-emuplay .jcarousel-next-horizontal:focus {
+    background-image: url(right-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-next-horizontal:active {
+    background-image: url(right-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-emuplay .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-emuplay .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-emuplay .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-image: url(right-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    width: 16px;
+    height: 37px;
+    cursor: pointer;
+    background: transparent url(left-arrow.png) no-repeat;
+}
+
+.jcarousel-skin-emuplay .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(left-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin-emuplay .jcarousel-prev-horizontal:focus {
+    background-image: url(left-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-prev-horizontal:active {
+    background-image: url(left-arrow.png);
+}
+
+.jcarousel-skin-emuplay .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-emuplay .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-emuplay .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-emuplay .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-image: url(left-arrow.png);
+}

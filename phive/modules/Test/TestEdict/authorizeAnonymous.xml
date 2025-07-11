@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aut="http://authorization.wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <aut:authorizeAnonymous>
+         <authorizationRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <sessionToken>{{sessionToken}}</sessionToken>
+         </authorizationRequest>
+      </aut:authorizeAnonymous>
+   </soapenv:Body>
+</soapenv:Envelope>

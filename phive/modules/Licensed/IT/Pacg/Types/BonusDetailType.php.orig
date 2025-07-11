@@ -1,0 +1,45 @@
+<?php
+namespace IT\Pacg\Types;
+
+/**
+ * Structure for the representation of Bonus detail
+ * Class BonusDetailType
+ */
+class BonusDetailType extends AbstractType
+{
+
+    protected $fillable = [
+        'gaming_family',
+        'gaming_type',
+        'bonus_amount',
+    ];
+
+    protected $rules = [
+        'gaming_family' => 'required|int|in:1,2,3,4,5,6,7,8,9,10,11', // TODO: add custom rule to check valid gaming family
+        'gaming_type'   => 'required|int',
+        'bonus_amount'  => 'required|int',
+    ];
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            "famigliaGioco" => $this->gaming_family,
+            "tipoGioco"     => $this->gaming_type,
+            "importo"       => $this->bonus_amount
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function toString(): string
+    {
+        return
+           "Family: {$this->gaming_family}\n" .
+           "Type: {$this->gaming_type}\n" .
+           "Amount: {$this->bonus_amount}";
+    }
+}

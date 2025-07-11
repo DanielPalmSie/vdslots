@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameResponse>
+	<Header>
+		<GameDetails{{gameId}} name="{{gameName}}" />
+		<Customer userId="{{userId}}" ccyCode="{{currency}}"{{secureToken}}>
+			<Balance amount="0.00" type="BONUS" />
+			<Balance amount="{{balance}}" type="CASH" />{{frbBalance}}
+		</Customer>
+	</Header>
+	<GetPlayerBalance status="{{status}}"{{msg}} />
+</GameResponse>

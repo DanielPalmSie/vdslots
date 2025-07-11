@@ -1,0 +1,60 @@
+
+.jcarousel-skin-games .jcarousel-container-vertical {
+    width: 310px;
+    height: 370px;
+    padding: 10px 10px 10px 0px;
+	margin-top: 10px;
+}
+
+.jcarousel-skin-games .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-games .jcarousel-clip-vertical {
+    width:  310px;
+    height: 365px;
+}
+
+.jcarousel-skin-games .jcarousel-item {
+    width: 310px;
+    height: 20px;
+	border-bottom: 1px solid #523719;
+}
+
+.jcarousel-skin-games .jcarousel-item .winner-line .winner-fname {
+    float: left;
+}
+
+.jcarousel-skin-games .jcarousel-item .winner-line .winner-amount {
+    float: right;
+	color: #ff8503;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.jcarousel-skin-games .jcarousel-item-vertical {
+    margin-bottom: 5px;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-games .jcarousel-next-vertical {
+    position: absolute;
+    bottom: -20px;
+    left: 143px;
+    width: 37px;
+    height: 16px;
+    cursor: pointer;
+    background: transparent url(down_arrow.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-games .jcarousel-prev-vertical {
+    position: absolute;
+    top: -10px;
+    left: 143px;
+    width: 37px;
+    height: 16px;
+    cursor: pointer;
+    background: transparent url(up_arrow.png) no-repeat 0 0;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false">
+
+    <testsuites>
+        <testsuite name="Phive Unit Tests">
+            <directory>tests</directory>
+        </testsuite>
+
+        <testsuite name="ICS">
+            <directory>tests/Unit/Modules/Licensed/ES/ICS</directory>
+        </testsuite>
+
+        <testsuite name="IdScan">
+            <directory>modules/IdScan/tests</directory>
+        </testsuite>
+
+        <testsuite name="Registration">
+            <directory>modules/DBUserHandler/Registration/tests</directory>
+        </testsuite>
+
+        <testsuite name="Distributed">
+            <directory>modules/Site/tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- Adding here the available groups for the sake of visibility
+    <groups>
+        <include>
+            <group>lic-CAON</group>
+            <group>isolated</group> < For those that require some manual setup
+        </include>
+    </groups>
+    -->
+</phpunit>

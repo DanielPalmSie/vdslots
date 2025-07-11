@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wal="http://wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wal:rollbackTransaction>
+         <RollbackTransactionRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <transactionRef>{{transactionRef}}</transactionRef>
+            <playerName>{{playerName}}</playerName>
+            <!--Optional:-->
+            <gameId>{{gameId}}</gameId>
+            <!--Optional:-->
+            <sessionId>{{sessionId}}</sessionId>
+         </RollbackTransactionRequest>
+      </wal:rollbackTransaction>
+   </soapenv:Body>
+</soapenv:Envelope>

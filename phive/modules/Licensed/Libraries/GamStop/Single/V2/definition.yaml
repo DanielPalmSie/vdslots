@@ -1,0 +1,116 @@
+swagger: '2.0'
+info:
+  description: Search for a person
+  version: 2.0.0
+  title: gamstop
+  termsOfService: Only authorised users
+  contact:
+    email: support@gamstop.co.uk
+schemes:
+  - https
+consumes:
+  - application/x-www-form-urlencoded
+produces:
+  - application/x-www-form-urlencoded
+security:
+  - X-API-Key: []
+paths:
+  /v2:
+    post:
+      summary: Search for person
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: firstName
+          in: formData
+          required: true
+          type: string
+          minLength: 2
+          maxLength: 20
+          x-example: Harry
+          description: First name of person
+        - name: lastName
+          in: formData
+          required: true
+          type: string
+          minLength: 2
+          maxLength: 20
+          x-example: Potter
+          description: Last name of person
+        - name: dateOfBirth
+          in: formData
+          required: true
+          type: string
+          minLength: 10
+          maxLength: 10
+          pattern: yyyy-mm-dd
+          x-example: '2003-04-06'
+          description: Date of birth in ISO format (yyyy-mm-dd)
+        - name: email
+          in: formData
+          required: true
+          type: string
+          minLength: 0
+          maxLength: 254
+          x-example: harry.potter@example.com
+          description: Email address
+        - name: postcode
+          in: formData
+          required: true
+          type: string
+          minLength: 5
+          maxLength: 10
+          x-example: HP1 1AA
+          description: Postcode - spaces not significant
+        - name: mobile
+          in: formData
+          required: true
+          type: string
+          minLength: 0
+          maxLength: 14
+          x-example: 07700900461
+          description: >-
+            UK mobile telephone number which may include spaces, hyphens and
+            optionally be prefixed with the international dialling code
+            (+44, 0044, +353, 00353).
+        - name: X-Trace-Id
+          in: header
+          required: false
+          type: string
+          maxLength: 36
+          description: >-
+            A freeform field that is put into the audit log that can be used by
+            the caller to identify a request.  This might be something to
+            indicate the person being checked (in some psuedononymous fashion),
+            a unique request ID, or a trace ID from a system such as zipkin
+      responses:
+        '200':
+          description: Returned for a normal search
+          headers:
+            X-Exclusion:
+              type: string
+              description: Exclusion type
+              enum:
+                - 'Y'
+                - 'N'
+                - 'P'
+            X-Unique-Id:
+              type: string
+              description: >-
+                Unique reference that identifies this call in the GAMSTOP logs.
+                Should be quoted by an operator when contacting GAMSTOP with a
+                either a technical or an application query
+        '400':
+          description: Returned if missing parameters
+        '403':
+          description: Returned if API key invalid or IP address not in range
+        '405':
+          description: Returned for non-POST calls
+        '429':
+          description: Returned if rate limited
+securityDefinitions:
+  X-API-Key:
+    type: apiKey
+    name: X-API-Key
+    in: header
+    description: long character string issued to authorised users only.

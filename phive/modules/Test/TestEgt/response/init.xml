@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AuthResponse>
+	<Balance>{{balance}}</Balance>
+	<ErrorCode>{{err_code}}</ErrorCode>
+	<ErrorMessage>{{err_message}}</ErrorMessage>
+</AuthResponse>

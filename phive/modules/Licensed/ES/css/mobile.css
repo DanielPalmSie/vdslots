@@ -1,0 +1,11 @@
+.registration-step-2-control.field-preferred_lang,
+.registration-step-2-control.field-currency {
+    width: 100%;
+    margin-left: 0;
+}
+.field-currency .label {
+    display: block !important;
+}
+.registration-step-2-control.field-personal_number input {
+    background-image: none !important;
+}

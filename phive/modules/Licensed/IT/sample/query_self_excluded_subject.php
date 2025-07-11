@@ -1,0 +1,15 @@
+<?php
+//load_test.php is important script for security reason, checking is local or stage env,
+//if yes to executed or die() otherwise
+require_once __DIR__ . '/load_test.php';
+
+
+$user = cu('devtestit002');
+
+$data = [
+    'tax_code' => 'RPLMRA95A41H501U',
+    'transaction_id' => time()
+];
+
+
+print_r(lic('querySelfExcludedSubject', [$data], $user));

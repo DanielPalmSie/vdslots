@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameResponse>
+	<Header>
+		<GameDetails{{gameId}} name="{{gameName}}" />
+		<Customer userId="{{userId}}" ccyCode="{{currency}}"{{secureToken}}>
+		    <Balance amount="0.00" type="BONUS" />
+			<Balance amount="{{balance}}" type="CASH" />{{frbBalance}}
+		</Customer>
+		<Messages>
+			<Message>
+				<Type>{{rcTitle}}</Type>
+				<Message>{{rcMessage}}</Message>
+				<MessageActions>
+					<MessageAction>
+						<Name>CONTINUE</Name>
+					</MessageAction>
+					<MessageAction>
+						<Name>CLOSE</Name>
+					</MessageAction>
+					<MessageAction>
+						<Name>VIEW_ACCOUNT_HISTORY</Name>
+						<ActionParameters>
+							<ActionParameter>
+								<Name>url</Name>
+								<Value>{{rcMessageBtnHistoryUrl}}</Value>
+							</ActionParameter>
+							<ActionParameter>
+								<Name>closeGame</Name>
+								<Value>YES</Value>
+							</ActionParameter>
+						</ActionParameters>
+					</MessageAction>
+				</MessageActions>
+			</Message>
+		</Messages>
+	</Header>
+	<{{method}} status="{{status}}"{{msg}} id="{{txn}}"{{action}}>
+		<RGSGameState finished="{{finished}}" txnId="{{txn}}">
+			{{betAmount}}{{winAmount}}{{cancelAmount}}</RGSGameState>
+	</{{method}}>	
+</GameResponse>

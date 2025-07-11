@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Notify>
+    <Header>
+        <GameDetails gameId="{{gameId}}" name="" channel="" presentation="" class="" />
+        <Customer userId="{{userId}}" skinCode="" ccyCode="{{currency}}" sessionId="" countryCode="" secureToken="{{secureToken}}" />
+    </Header>
+    <RealityCheck>
+        <action>{{rcAction}}</action>
+    </RealityCheck>
+
+</Notify>

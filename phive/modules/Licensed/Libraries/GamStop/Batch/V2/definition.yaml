@@ -1,0 +1,152 @@
+swagger: '2.0'
+info:
+  description: Search for persons - batch
+  version: 2.0.0-batch
+  title: gamstop
+  termsOfService: Only authorised users
+  contact:
+    email: support@gamstop.co.uk
+host: batch.stage.gamstop.co.uk
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+security:
+  - X-API-Key: []
+paths:
+  /v2:
+    post:
+      summary: Batch search for person
+      description: 'Request should be less than 256KB in size'
+      consumes:
+        - application/json
+      parameters:
+        - name: Persons
+          in: body
+          description: The list of persons to search
+          required: true
+          schema:
+            $ref: '#/definitions/Persons'
+        - name: X-Trace-Id
+          in: header
+          required: false
+          type: string
+          maxLength: 64
+          description: >-
+            A freeform field that is put into the audit log that can be used by the caller to identify a request. This might be something to
+            indicate the person being checked (in some psuedononymous fashion),
+            a unique request ID, or a trace ID from a system such as zipkin
+      responses:
+        '200':
+          description: Returned for a normal search
+          headers:
+            X-Unique-Id:
+              type: string
+              description: >-
+                Unique reference that identifies this call in the Gamstop logs.
+                Should be quoted by an operator when contacting Gamstop with a
+                either a technical or an application query
+          schema:
+            $ref: '#/definitions/Exclusions'
+        '400':
+          description: Returned if missing parameters or null
+        '403':
+          description: Returned if API key invalid or IP address not in range
+        '405':
+          description: Returned for non-POST calls
+        '429':
+          description: Returned if rate limited
+securityDefinitions:
+  X-API-Key:
+    type: apiKey
+    name: X-API-Key
+    in: header
+    description: long character string issued to authorised users only.
+definitions:
+  Persons:
+    type: array
+    maxLength: 1000
+    items:
+      $ref: '#/definitions/Person'
+  Person:
+    type: object
+    properties:
+      correlation-id:
+        type: string
+        maxLength: 255
+        description: Unique identifier must be unique within the context of this request
+      firstName:
+        type: string
+        minLength: 2
+        maxLength: 255
+        x-example: Harry
+        description: First name of person
+      lastName:
+        type: string
+        minLength: 2
+        maxLength: 255
+        x-example: Potter
+        description: Last name of person
+      dateOfBirth:
+        type: string
+        minLength: 10
+        maxLength: 10
+        pattern: yyyy-mm-dd
+        x-example: '2003-04-06'
+        description: Date of birth in ISO format (yyyy-mm-dd)
+      email:
+        type: string
+        minLength: 0
+        maximum: 254
+        x-example: harry.potter@example.com
+        description: Email address
+      postcode:
+        type: string
+        minLength: 5
+        maxLength: 10
+        x-example: HP1 1AA
+        description: Postcode - spaces not significant
+      mobile:
+        type: string
+        minLength: 0
+        maxLength: 14
+        x-example: 07700900461
+        description: >-
+          UK mobile telephone number which may include spaces, hyphens and
+          optionally be prefixed with the international dialling code (+44, 0044, +353, 00353).
+    required:
+      - firstName
+      - lastName
+      - dateOfBirth
+      - email
+      - postcode
+      - mobile
+  Exclusions:
+    type: array
+    maxLength: 1000
+    items:
+      $ref: '#/definitions/Exclusion'
+  Exclusion:
+    type: object
+    properties:
+      correlation-id:
+        type: string
+        description: The optional unique identifier field for each person if present in the request
+      ms-request-id:
+        type: string
+        description: >-
+          Unique reference that identifies this record in the GAMSTOP logs.
+          Should be quoted with the response header X-Unique-Id by an operator
+          when contacting GAMSTOP with either a technical or an application query
+      exclusion:
+        type: string
+        description: Exclusion type
+        enum:
+          - 'Y'
+          - 'N'
+          - 'P'
+    required:
+      - ms-request-id
+      - exclusion

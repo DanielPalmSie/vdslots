@@ -1,0 +1,80 @@
+<?php
+
+namespace Tests\Unit\Modules\Licensed\ES\ICS\Reports;
+
+use Carbon\Carbon;
+use ES\ICS\Constants\ICSConstants;
+use ES\ICS\Reports\BOT;
+use ES\ICS\Reports\Info;
+use Tests\Unit\TestPhiveBase;
+
+class BOTTest extends TestPhiveBase
+{
+    /** @var \Phive|object */
+    private $licensed;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->createScenario();
+    }
+
+    /**
+     * @dataProvider shouldSelectVersionProperlyDataProvider
+     */
+    public function testShouldSelectVersionProperly(
+        string $expectedVersion,
+        string $currentDate
+    ): void {
+
+        Carbon::setTestNow($currentDate);
+
+        $report = new BOT(
+            ICSConstants::COUNTRY,
+            $this->licensed->getAllLicSettings(),
+            [
+                'period_start' => '2000-01-01',
+                'period_end' => '2000-02-01',
+                'frequency' => array_rand(array_keys(ICSConstants::FREQUENCY_VALUES)),
+                'game_types' => [],
+            ]
+        );
+
+        $this->assertEquals($expectedVersion, $report->getXmlVersion());
+    }
+
+    public function shouldSelectVersionProperlyDataProvider(): array
+    {
+        return [
+            [Info::VERSIONS[2]['xmlVersion'], Info::VERSIONS[2]['endDateTime']]
+        ];
+    }
+
+    public function testShouldThrowWhenNoVersionMatch(): void
+    {
+        $currentDate = (new \DateTime(Info::VERSIONS[2]['endDateTime']))
+            ->modify('+1 day')
+            ->format('Y-m-d');
+
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessageMatches('/^ICS Report file .+? does not exist$/');
+
+        Carbon::setTestNow($currentDate);
+
+        new BOT(
+            ICSConstants::COUNTRY,
+            $this->licensed->getAllLicSettings(),
+            [
+                'period_start' => '2000-01-01',
+                'period_end' => '2000-02-01',
+                'frequency' => array_rand(array_keys(ICSConstants::FREQUENCY_VALUES)),
+                'game_types' => [],
+            ]
+        );
+    }
+
+    private function createScenario(): void
+    {
+        $this->licensed = phive('Licensed/ES/ES');
+    }
+}

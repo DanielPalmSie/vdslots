@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wal="http://wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wal:withdraw>
+         <WithdrawRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <playerName>{{playerName}}</playerName>
+            <amount>{{amount}}</amount>
+            <!--Optional:-->
+            <bonusBet>{{bonusBet}}</bonusBet>
+            <!--Zero or more repetitions:-->
+            <jackpotContributions>
+               <jackpotId>{{jackpotId}}</jackpotId>
+               <contribution>{{contribution}}</contribution>
+            </jackpotContributions>
+            <currency>{{currency}}</currency>
+            <transactionRef>{{transactionRef}}</transactionRef>
+            <!--Optional:-->
+            <gameRoundRef>{{gameRoundRef}}</gameRoundRef>
+            <!--Optional:-->
+            <gameId>{{gameId}}</gameId>
+            <reason>{{reason}}</reason>
+            <sessionId>{{sessionId}}</sessionId>
+         </WithdrawRequest>
+      </wal:withdraw>
+   </soapenv:Body>
+</soapenv:Envelope>

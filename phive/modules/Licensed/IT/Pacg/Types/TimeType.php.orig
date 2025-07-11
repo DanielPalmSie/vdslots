@@ -1,0 +1,42 @@
+<?php
+namespace IT\Pacg\Types;
+
+/**
+ * Structure for the representation of the time.
+ * Class TimeType
+ */
+class TimeType extends AbstractType
+{
+
+    protected $fillable = [
+        'hours',
+        'minutes',
+        'seconds',
+    ];
+
+    protected $rules = [
+        'hours'   => 'required|string|min:2|max:2',
+        'minutes' => 'required|string|min:2|max:2',
+        'seconds' => 'required|string|min:4|max:4',
+    ];
+
+    public function toArray(): array
+    {
+        return [
+            "ore"     => $this->hours,
+            "minuti"  => $this->minutes,
+            "secondi" => $this->seconds,
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function toString(): string
+    {
+        return
+            "Hours: {$this->hours}\n" .
+            "Minutes: {$this->minutes}\n" .
+            "Seconds: {$this->seconds}";
+    }
+}

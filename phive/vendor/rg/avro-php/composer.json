@@ -1,0 +1,17 @@
+{
+    "name": "rg/avro-php",
+    "description": "Composer packaging for vanilla Apache Avro, with fixes",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "suggest": {
+        "ext-gmp": "Large integer support for 32-bit platforms."
+    },
+    "autoload": {
+        "classmap": ["lib/"]
+    }
+}

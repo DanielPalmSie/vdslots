@@ -1,0 +1,5 @@
+<PlayerCurrencyRequest>
+	<callerId>{{callerId}}</callerId>
+	<callerPassword>{{callerPassword}}</callerPassword>{{playerName}}
+	<sessionId>{{sessionId}}</sessionId>
+</PlayerCurrencyRequest>

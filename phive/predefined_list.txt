@@ -1,0 +1,41 @@
+phive/modules/Affiliater/:Website Backend
+phive/modules/ArticleHandler/:Website Backend
+phive/modules/Bonuses/:Website Backend
+phive/modules/BoxHandler/:Website Backend
+phive/modules/CategoryHandler/:Website Backend
+phive/modules/Currencer/:Website Backend
+phive/modules/Filer/:Website Backend
+phive/modules/Former/:Website Backend
+phive/modules/Hierarchy/:Website Backend
+phive/modules/HierarchySQL/:Website Backend
+phive/modules/ImageHandler/:Website Backend
+phive/modules/InputHandler/:Website Backend
+phive/modules/IpBlock/:Website Backend
+phive/modules/Licensed/:Website Backend
+phive/modules/LimitedNewsHandler/:Website Backend
+phive/modules/Localizer/:Website Backend
+phive/modules/Logger/:Website Backend
+phive/modules/Mailer/:Website Backend
+phive/modules/MailHandler2/:Website Backend
+phive/modules/Menuer/:Website Backend
+phive/modules/Mosms/:Website Backend
+phive/modules/NewsHandler/:Website Backend
+phive/modules/Pager/:Website Backend
+phive/modules/Paginator/:Website Backend
+phive/modules/Permission/:Website Backend
+phive/modules/Raker/:Website Backend
+phive/modules/Redirect/:Website Backend
+phive/modules/Site/:Website Backend
+phive/modules/Test/:Website Backend
+phive/modules/Tournament/:Website Backend
+phive/modules/UserHandler/:Website Backend
+phive/modules/UserSearch/:Website Backend
+phive/api/:Core
+phive/modules/SQL/:Core
+phive/modules/Redis/:Core
+phive/modules/Micro/:Casino Module
+phive/modules/DBUserHandler/:User Registration Module
+phive/modules/Cashier/:Cashier Module
+phive/modules/Licensed/DK/Safe/:Denmark Safe
+phive/modules/Licensed/ES/ICS/:Internal Control System
+phive/modules/DBUserHandler/JpWheel.php:Wheel of Jackpots

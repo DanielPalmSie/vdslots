@@ -1,0 +1,36 @@
+
+.jcarousel-skin-winners .jcarousel-container-vertical {
+    width: 220px;
+    height: 125px;
+    padding: 10px 10px 10px 0px;
+}
+
+.jcarousel-skin-winners .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-winners .jcarousel-clip-vertical {
+    width:  220px;
+    height: 125px;
+}
+
+.jcarousel-skin-winners .jcarousel-item {
+    width: 220px;
+    height: 20px;
+	color: #401810;
+}
+
+.jcarousel-skin-winners .jcarousel-item .winner-line .winner-fname {
+    float: left;
+}
+
+.jcarousel-skin-winners .jcarousel-item .winner-line .winner-amount {
+    float: right;
+	color: #ff8503;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.jcarousel-skin-winners .jcarousel-item-vertical {
+    margin-bottom: 5px;
+}

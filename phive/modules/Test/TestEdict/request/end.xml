@@ -1,0 +1,5 @@
+<markGameSessionClosedRequest>
+	<callerId>{{callerId}}</callerId>
+	<callerPassword>{{callerPassword}}</callerPassword>
+	<sessionId>{{sessionId}}</sessionId>
+</markGameSessionClosedRequest>

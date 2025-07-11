@@ -1,0 +1,11 @@
+<WithdrawRequest>
+	<callerId>{{callerId}}</callerId>
+	<callerPassword>{{callerPassword}}</callerPassword>{{playerName}}
+	<amount>{{amountBet}}</amount>
+	<currency>{{currency}}</currency>
+	<transactionRef>{{transactionRef}}</transactionRef>{{bonusBet}}
+	<gameRoundRef>{{gameRoundRef}}</gameRoundRef>
+	<gameId>{{gameId}}</gameId>
+	<reason>{{reason}}</reason>
+	<sessionId>{{sessionId}}</sessionId>
+</WithdrawRequest>

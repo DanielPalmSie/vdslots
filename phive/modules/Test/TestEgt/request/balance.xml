@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GetPlayerBalanceRequest>
+	<UserName>{{userName}}</UserName>
+	<Password>{{userPassword}}</Password>
+	<PlayerId>{{userId}}</PlayerId>
+	<Currency>{{currency}}</Currency>
+	<PortalCode></PortalCode>		
+	<SessionId>{{secureToken}}</SessionId>	
+	<GameId>{{gameId}}</GameId>
+</GetPlayerBalanceRequest>

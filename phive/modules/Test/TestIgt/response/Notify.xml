@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NotifyResponse>
+    <Header>
+        <GameDetails{{gameId}} name="{{gameName}}" />
+        <Customer userId="{{userId}}" ccyCode="{{currency}}"{{secureToken}}>
+        </Customer>
+    </Header>
+    <Body status="{{status}}">
+    </Body>   
+</NotifyResponse>

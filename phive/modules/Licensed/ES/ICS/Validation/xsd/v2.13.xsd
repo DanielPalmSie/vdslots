@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- editado con XMLSpy v2015 sp2 (x64) (http://www.altova.com) por dgoj (DIRECCION GENERAL ORDENACION DEL JUEGO) -->
+<!-- editado por Dirección General Ordenación del Juego -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://cnjuego.gob.es/sci/v2.13.xsd" targetNamespace="http://cnjuego.gob.es/sci/v2.13.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="date-aaaamm">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{6}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="time-hhmmss">
+		<xs:annotation>
+			<xs:documentation>Especifica duración para las slots</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{6}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="date-aaaammdd">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{8}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="date-aaaammddhhmmss">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{14}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="date-aaaammddhhmmssTZ">
+		<xs:annotation>
+			<xs:documentation>Fecha y hora con zona horaria</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{14}([+|-]\d{4})?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ListaDeporte">
+		<xs:annotation>
+			<xs:documentation>Lista de códigos de eventos admitidos</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
+			<xs:enumeration value="8"/>
+			<xs:enumeration value="9"/>
+			<xs:enumeration value="10"/>
+			<xs:enumeration value="11"/>
+			<xs:enumeration value="12"/>
+			<xs:enumeration value="13"/>
+			<xs:enumeration value="14"/>
+			<xs:enumeration value="15"/>
+			<xs:enumeration value="16"/>
+			<xs:enumeration value="17"/>
+			<xs:enumeration value="18"/>
+			<xs:enumeration value="19"/>
+			<xs:enumeration value="20"/>
+			<xs:enumeration value="21"/>
+			<xs:enumeration value="22"/>
+			<xs:enumeration value="23"/>
+			<xs:enumeration value="24"/>
+			<xs:enumeration value="25"/>
+			<xs:enumeration value="26"/>
+			<xs:enumeration value="27"/>
+			<xs:enumeration value="28"/>
+			<xs:enumeration value="29"/>
+			<xs:enumeration value="30"/>
+			<xs:enumeration value="31"/>
+			<xs:enumeration value="32"/>
+			<xs:enumeration value="33"/>
+			<xs:enumeration value="34"/>
+			<xs:enumeration value="35"/>
+			<xs:enumeration value="36"/>
+			<xs:enumeration value="37"/>
+			<xs:enumeration value="38"/>
+			<xs:enumeration value="39"/>
+			<xs:enumeration value="40"/>
+			<xs:enumeration value="41"/>
+			<xs:enumeration value="42"/>
+			<xs:enumeration value="43"/>
+			<xs:enumeration value="44"/>
+			<xs:enumeration value="45"/>
+			<xs:enumeration value="46"/>
+			<xs:enumeration value="47"/>
+			<xs:enumeration value="48"/>
+			<xs:enumeration value="49"/>
+			<xs:enumeration value="50"/>
+			<xs:enumeration value="51"/>
+			<xs:enumeration value="52"/>
+			<xs:enumeration value="53"/>
+			<xs:enumeration value="54"/>
+			<xs:enumeration value="55"/>
+			<xs:enumeration value="56"/>
+			<xs:enumeration value="57"/>
+			<xs:enumeration value="58"/>
+			<xs:enumeration value="59"/>
+			<xs:enumeration value="60"/>
+			<xs:enumeration value="61"/>
+			<xs:enumeration value="62"/>
+			<xs:enumeration value="63"/>
+			<xs:enumeration value="64"/>
+			<xs:enumeration value="65"/>
+			<xs:enumeration value="66"/>
+			<xs:enumeration value="67"/>
+			<xs:enumeration value="68"/>
+			<xs:enumeration value="69"/>
+			<xs:enumeration value="70"/>
+			<xs:enumeration value="71"/>
+			<xs:enumeration value="72"/>
+			<xs:enumeration value="73"/>
+			<xs:enumeration value="74"/>
+			<xs:enumeration value="75"/>
+			<xs:enumeration value="76"/>
+			<xs:enumeration value="77"/>
+			<xs:enumeration value="78"/>
+			<xs:enumeration value="79"/>
+			<xs:enumeration value="80"/>
+			<xs:enumeration value="81"/>
+			<xs:enumeration value="82"/>
+			<xs:enumeration value="83"/>
+			<xs:enumeration value="84"/>
+			<xs:enumeration value="85"/>
+			<xs:enumeration value="86"/>
+			<xs:enumeration value="87"/>
+			<xs:enumeration value="88"/>
+			<xs:enumeration value="901"/>
+			<xs:enumeration value="902"/>
+			<xs:enumeration value="903"/>
+			<xs:enumeration value="904"/>
+			<xs:enumeration value="905"/>
+			<xs:enumeration value="998"/>
+			<xs:enumeration value="999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoMedioPago">
+		<xs:annotation>
+			<xs:documentation>Incluye numeración de medios de pago</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
+			<xs:enumeration value="8"/>
+			<xs:enumeration value="9"/>
+			<xs:enumeration value="10"/>
+			<xs:enumeration value="11"/>
+			<xs:enumeration value="12"/>
+			<xs:enumeration value="13"/>
+			<xs:enumeration value="14"/>
+			<xs:enumeration value="15"/>
+			<xs:enumeration value="16"/>
+			<xs:enumeration value="17"/>
+			<xs:enumeration value="18"/>
+			<xs:enumeration value="19"/>
+			<xs:enumeration value="20"/>
+			<xs:enumeration value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VarianteSesion">
+		<xs:annotation>
+			<xs:documentation>Lista de todas las variantes permitidas en un registro de tipo sesión</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="21"/>
+			<xs:enumeration value="Americana"/>
+			<xs:enumeration value="AM"/>
+			<xs:enumeration value="CL"/>
+			<xs:enumeration value="Francesa"/>
+			<xs:enumeration value="PO"/>
+			<xs:enumeration value="SU"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="paisISO">
+		<xs:annotation>
+			<xs:documentation>Incluye lista completa de países</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AF"/>
+			<xs:enumeration value="AX"/>
+			<xs:enumeration value="AL"/>
+			<xs:enumeration value="DZ"/>
+			<xs:enumeration value="AS"/>
+			<xs:enumeration value="AD"/>
+			<xs:enumeration value="AO"/>
+			<xs:enumeration value="AI"/>
+			<xs:enumeration value="AQ"/>
+			<xs:enumeration value="AG"/>
+			<xs:enumeration value="AR"/>
+			<xs:enumeration value="AM"/>
+			<xs:enumeration value="AN"/>
+			<xs:enumeration value="AW"/>
+			<xs:enumeration value="AU"/>
+			<xs:enumeration value="AT"/>
+			<xs:enumeration value="AZ"/>
+			<xs:enumeration value="BS"/>
+			<xs:enumeration value="BH"/>
+			<xs:enumeration value="BD"/>
+			<xs:enumeration value="BB"/>
+			<xs:enumeration value="BY"/>
+			<xs:enumeration value="BE"/>
+			<xs:enumeration value="BZ"/>
+			<xs:enumeration value="BJ"/>
+			<xs:enumeration value="BM"/>
+			<xs:enumeration value="BT"/>
+			<xs:enumeration value="BO"/>
+			<xs:enumeration value="BQ"/>
+			<xs:enumeration value="BA"/>
+			<xs:enumeration value="BW"/>
+			<xs:enumeration value="BV"/>
+			<xs:enumeration value="BR"/>
+			<xs:enumeration value="IO"/>
+			<xs:enumeration value="BN"/>
+			<xs:enumeration value="BG"/>
+			<xs:enumeration value="BF"/>
+			<xs:enumeration value="BI"/>
+			<xs:enumeration value="KH"/>
+			<xs:enumeration value="CM"/>
+			<xs:enumeration value="CA"/>
+			<xs:enumeration value="CV"/>
+			<xs:enumeration value="KY"/>
+			<xs:enumeration value="CF"/>
+			<xs:enumeration value="TD"/>
+			<xs:enumeration value="CL"/>
+			<xs:enumeration value="CN"/>
+			<xs:enumeration value="CX"/>
+			<xs:enumeration value="CC"/>
+			<xs:enumeration value="CO"/>
+			<xs:enumeration value="KM"/>
+			<xs:enumeration value="CG"/>
+			<xs:enumeration value="CD"/>
+			<xs:enumeration value="CK"/>
+			<xs:enumeration value="CR"/>
+			<xs:enumeration value="CI"/>
+			<xs:enumeration value="HR"/>
+			<xs:enumeration value="CU"/>
+			<xs:enumeration value="CW"/>
+			<xs:enumeration value="CY"/>
+			<xs:enumeration value="CZ"/>
+			<xs:enumeration value="DK"/>
+			<xs:enumeration value="DJ"/>
+			<xs:enumeration value="DM"/>
+			<xs:enumeration value="DO"/>
+			<xs:enumeration value="EC"/>
+			<xs:enumeration value="EG"/>
+			<xs:enumeration value="SV"/>
+			<xs:enumeration value="GQ"/>
+			<xs:enumeration value="ER"/>
+			<xs:enumeration value="EE"/>
+			<xs:enumeration value="ET"/>
+			<xs:enumeration value="FK"/>
+			<xs:enumeration value="FO"/>
+			<xs:enumeration value="FJ"/>
+			<xs:enumeration value="FI"/>
+			<xs:enumeration value="FR"/>
+			<xs:enumeration value="GF"/>
+			<xs:enumeration value="PF"/>
+			<xs:enumeration value="TF"/>
+			<xs:enumeration value="GA"/>
+			<xs:enumeration value="GM"/>
+			<xs:enumeration value="GE"/>
+			<xs:enumeration value="DE"/>
+			<xs:enumeration value="GH"/>
+			<xs:enumeration value="GI"/>
+			<xs:enumeration value="GR"/>
+			<xs:enumeration value="GL"/>
+			<xs:enumeration value="GD"/>
+			<xs:enumeration value="GP"/>
+			<xs:enumeration value="GU"/>
+			<xs:enumeration value="GT"/>
+			<xs:enumeration value="GG"/>
+			<xs:enumeration value="GN"/>
+			<xs:enumeration value="GW"/>
+			<xs:enumeration value="GY"/>
+			<xs:enumeration value="HT"/>
+			<xs:enumeration value="HM"/>
+			<xs:enumeration value="VA"/>
+			<xs:enumeration value="HN"/>
+			<xs:enumeration value="HK"/>
+			<xs:enumeration value="HU"/>
+			<xs:enumeration value="IS"/>
+			<xs:enumeration value="IN"/>
+			<xs:enumeration value="ID"/>
+			<xs:enumeration value="IR"/>
+			<xs:enumeration value="IQ"/>
+			<xs:enumeration value="IE"/>
+			<xs:enumeration value="IM"/>
+			<xs:enumeration value="IL"/>
+			<xs:enumeration value="IT"/>
+			<xs:enumeration value="JM"/>
+			<xs:enumeration value="JP"/>
+			<xs:enumeration value="JE"/>
+			<xs:enumeration value="JO"/>
+			<xs:enumeration value="KZ"/>
+			<xs:enumeration value="KE"/>
+			<xs:enumeration value="KI"/>
+			<xs:enumeration value="KP"/>
+			<xs:enumeration value="KR"/>
+			<xs:enumeration value="KW"/>
+			<xs:enumeration value="KG"/>
+			<xs:enumeration value="LA"/>
+			<xs:enumeration value="LV"/>
+			<xs:enumeration value="LB"/>
+			<xs:enumeration value="LS"/>
+			<xs:enumeration value="LR"/>
+			<xs:enumeration value="LY"/>
+			<xs:enumeration value="LI"/>
+			<xs:enumeration value="LT"/>
+			<xs:enumeration value="LU"/>
+			<xs:enumeration value="MO"/>
+			<xs:enumeration value="MK"/>
+			<xs:enumeration value="MG"/>
+			<xs:enumeration value="MW"/>
+			<xs:enumeration value="MY"/>
+			<xs:enumeration value="MV"/>
+			<xs:enumeration value="ML"/>
+			<xs:enumeration value="MT"/>
+			<xs:enumeration value="MH"/>
+			<xs:enumeration value="MQ"/>
+			<xs:enumeration value="MR"/>
+			<xs:enumeration value="MU"/>
+			<xs:enumeration value="YT"/>
+			<xs:enumeration value="MX"/>
+			<xs:enumeration value="FM"/>
+			<xs:enumeration value="MD"/>
+			<xs:enumeration value="MC"/>
+			<xs:enumeration value="MN"/>
+			<xs:enumeration value="ME"/>
+			<xs:enumeration value="MS"/>
+			<xs:enumeration value="MA"/>
+			<xs:enumeration value="MZ"/>
+			<xs:enumeration value="MM"/>
+			<xs:enumeration value="NA"/>
+			<xs:enumeration value="NR"/>
+			<xs:enumeration value="NP"/>
+			<xs:enumeration value="NL"/>
+			<xs:enumeration value="NC"/>
+			<xs:enumeration value="NZ"/>
+			<xs:enumeration value="NI"/>
+			<xs:enumeration value="NE"/>
+			<xs:enumeration value="NG"/>
+			<xs:enumeration value="NU"/>
+			<xs:enumeration value="NF"/>
+			<xs:enumeration value="MP"/>
+			<xs:enumeration value="NO"/>
+			<xs:enumeration value="OM"/>
+			<xs:enumeration value="PK"/>
+			<xs:enumeration value="PW"/>
+			<xs:enumeration value="PS"/>
+			<xs:enumeration value="PA"/>
+			<xs:enumeration value="PG"/>
+			<xs:enumeration value="PY"/>
+			<xs:enumeration value="PE"/>
+			<xs:enumeration value="PH"/>
+			<xs:enumeration value="PN"/>
+			<xs:enumeration value="PL"/>
+			<xs:enumeration value="PT"/>
+			<xs:enumeration value="PR"/>
+			<xs:enumeration value="QA"/>
+			<xs:enumeration value="RE"/>
+			<xs:enumeration value="RO"/>
+			<xs:enumeration value="RU"/>
+			<xs:enumeration value="RW"/>
+			<xs:enumeration value="BL"/>
+			<xs:enumeration value="SH"/>
+			<xs:enumeration value="KN"/>
+			<xs:enumeration value="LC"/>
+			<xs:enumeration value="MF"/>
+			<xs:enumeration value="PM"/>
+			<xs:enumeration value="VC"/>
+			<xs:enumeration value="WS"/>
+			<xs:enumeration value="SM"/>
+			<xs:enumeration value="ST"/>
+			<xs:enumeration value="SA"/>
+			<xs:enumeration value="SN"/>
+			<xs:enumeration value="RS"/>
+			<xs:enumeration value="SC"/>
+			<xs:enumeration value="SL"/>
+			<xs:enumeration value="SG"/>
+			<xs:enumeration value="SX"/>
+			<xs:enumeration value="SK"/>
+			<xs:enumeration value="SI"/>
+			<xs:enumeration value="SB"/>
+			<xs:enumeration value="SO"/>
+			<xs:enumeration value="ZA"/>
+			<xs:enumeration value="GS"/>
+			<xs:enumeration value="SS"/>
+			<xs:enumeration value="ES"/>
+			<xs:enumeration value="LK"/>
+			<xs:enumeration value="SD"/>
+			<xs:enumeration value="SR"/>
+			<xs:enumeration value="SJ"/>
+			<xs:enumeration value="SZ"/>
+			<xs:enumeration value="SE"/>
+			<xs:enumeration value="CH"/>
+			<xs:enumeration value="SY"/>
+			<xs:enumeration value="TW"/>
+			<xs:enumeration value="TJ"/>
+			<xs:enumeration value="TZ"/>
+			<xs:enumeration value="TH"/>
+			<xs:enumeration value="TL"/>
+			<xs:enumeration value="TG"/>
+			<xs:enumeration value="TK"/>
+			<xs:enumeration value="TO"/>
+			<xs:enumeration value="TT"/>
+			<xs:enumeration value="TN"/>
+			<xs:enumeration value="TR"/>
+			<xs:enumeration value="TM"/>
+			<xs:enumeration value="TC"/>
+			<xs:enumeration value="TV"/>
+			<xs:enumeration value="UG"/>
+			<xs:enumeration value="UA"/>
+			<xs:enumeration value="AE"/>
+			<xs:enumeration value="GB"/>
+			<xs:enumeration value="US"/>
+			<xs:enumeration value="UM"/>
+			<xs:enumeration value="UY"/>
+			<xs:enumeration value="UZ"/>
+			<xs:enumeration value="VU"/>
+			<xs:enumeration value="VE"/>
+			<xs:enumeration value="VN"/>
+			<xs:enumeration value="VG"/>
+			<xs:enumeration value="VI"/>
+			<xs:enumeration value="WF"/>
+			<xs:enumeration value="EH"/>
+			<xs:enumeration value="YE"/>
+			<xs:enumeration value="ZM"/>
+			<xs:enumeration value="ZW"/>
+		</xs:restriction>
+		<!--2.l. Lista de países en base a la codificación ISO-->
+	</xs:simpleType>
+	<xs:complexType name="Importe">
+		<xs:sequence>
+			<xs:element name="Linea" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Cantidad" type="xs:decimal"/>
+						<xs:element name="Unidad" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="euros">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EstadoCNJ">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="PV"/>
+			<xs:enumeration value="S"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="SC"/>
+			<xs:enumeration value="AC"/>
+			<xs:enumeration value="PR"/>
+			<xs:enumeration value="AE"/>
+			<xs:enumeration value="O"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoDocumento">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ID"/>
+			<xs:enumeration value="SS"/>
+			<xs:enumeration value="PA"/>
+			<xs:enumeration value="DL"/>
+			<xs:enumeration value="OT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="DesgloseOperador">
+		<xs:sequence>
+			<xs:element name="Total" type="Importe"/>
+			<xs:element name="Desglose" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="OperadorId" type="xs:string"/>
+						<xs:element name="Importe" type="Importe"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DesgloseOperadorConcepto">
+		<xs:sequence>
+			<xs:element name="Total" type="Importe"/>
+			<xs:element name="Desglose" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="OperadorId" type="xs:string"/>
+						<xs:element name="Concepto" type="xs:string"/>
+						<xs:element name="Importe" type="Importe"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DesgloseMedioPago">
+		<xs:sequence>
+			<xs:element name="Total" type="euros"/>
+			<xs:element name="Desglose" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="MedioPago" type="xs:string"/>
+						<xs:element name="TipoMedioPago" type="TipoMedioPago"/>
+						<xs:element name="OtroTipoEspecificar" type="xs:string" minOccurs="0"/>
+						<xs:element name="Importe" type="euros"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DesgloseOperadorTipoJuego">
+		<xs:sequence>
+			<xs:element name="Total" type="Importe"/>
+			<xs:element name="Desglose" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="OperadorId" type="xs:string"/>
+						<xs:element name="TipoJuego" type="TipoJuego"/>
+						<xs:element name="Importe" type="Importe"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DesgloseOperaciones">
+		<xs:sequence>
+			<xs:element name="Total" type="euros"/>
+			<xs:element name="Operaciones" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Fecha" type="date-aaaammddhhmmssTZ"/>
+						<xs:element name="MedioPago" type="xs:string"/>
+						<xs:element name="TipoMedioPago" type="TipoMedioPago"/>
+						<xs:element name="OtroTipoEspecificar" type="xs:string" minOccurs="0"/>
+						<xs:element name="Importe" type="euros"/>
+						<xs:element name="IP" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Dirección IP del dispositivo desde el que se ha realizado la operación</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Dispositivo">
+							<xs:annotation>
+								<xs:documentation>Dispositivo desde el que se ha realizado la operación</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="MO"/>
+									<xs:enumeration value="PC"/>
+									<xs:enumeration value="TB"/>
+									<xs:enumeration value="TF"/>
+									<xs:enumeration value="OT"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="IdDispositivo" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Identificador del dispositivo desde el que se ha producido la conexión</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RegistroCabecera">
+		<xs:sequence>
+			<xs:element name="OperadorId" type="xs:string"/>
+			<xs:element name="AlmacenId" type="xs:string"/>
+			<xs:element name="RegistroId" type="xs:string"/>
+			<xs:element name="SubregistroId" type="xs:positiveInteger"/>
+			<xs:element name="SubregistroTotal" type="xs:positiveInteger"/>
+			<xs:element name="Fecha" type="date-aaaammddhhmmss"/>
+			<xs:element name="Rectificacion" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="RegistroId" type="xs:string"/>
+						<xs:element name="RegistroFecha" type="date-aaaammddhhmmss"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RegistroAnulador">
+		<xs:complexContent>
+			<xs:restriction base="RegistroBase">
+				<xs:sequence>
+					<xs:element name="Cabecera" type="RegistroCabecera"/>
+				</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroBase" abstract="true">
+		<xs:sequence>
+			<xs:element name="Cabecera" type="RegistroCabecera"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="TipoJuego">
+		<xs:annotation>
+			<xs:documentation>Los siguientes tipos de juego son propios de SELAE: PDM, PHM, PLN, PLP, PEU, PBL, PGP, PLT Y TODOS LOS O**</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ADC"/>
+			<xs:enumeration value="AHC"/>
+			<xs:enumeration value="ADX"/>
+			<xs:enumeration value="ADM"/>
+			<xs:enumeration value="AHM"/>
+			<xs:enumeration value="AHX"/>
+			<xs:enumeration value="AOC"/>
+			<xs:enumeration value="AOX"/>
+			<xs:enumeration value="POC"/>
+			<xs:enumeration value="POT"/>
+			<xs:enumeration value="AZA"/>
+			<xs:enumeration value="BLJ"/>
+			<xs:enumeration value="BNG"/>
+			<xs:enumeration value="PUN"/>
+			<xs:enumeration value="RLT"/>
+			<xs:enumeration value="COC"/>
+			<xs:enumeration value="COM"/>
+			<xs:enumeration value="PDM"/>
+			<xs:enumeration value="PHM"/>
+			<xs:enumeration value="PLN"/>
+			<xs:enumeration value="PLP"/>
+			<xs:enumeration value="PEU"/>
+			<xs:enumeration value="PBL"/>
+			<xs:enumeration value="PGP"/>
+			<xs:enumeration value="PLT"/>
+			<xs:enumeration value="OLN"/>
+			<xs:enumeration value="OLP"/>
+			<xs:enumeration value="OEU"/>
+			<xs:enumeration value="OBL"/>
+			<xs:enumeration value="OGP"/>
+			<xs:enumeration value="OLT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="LoteCabecera">
+		<xs:sequence>
+			<xs:element name="OperadorId" type="xs:string"/>
+			<xs:element name="AlmacenId" type="xs:string"/>
+			<xs:element name="LoteId" type="xs:string"/>
+			<xs:element name="Version" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Lote">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Cabecera" type="LoteCabecera"/>
+				<xs:element name="Registro" type="RegistroBase" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:any namespace="http://www.w3.org/2000/09/xmldsig#" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Periodo"/>
+	<xs:complexType name="RegistroPeriodicoBase" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="RegistroBase">
+				<xs:sequence>
+					<xs:element name="Periodicidad">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Diaria"/>
+								<xs:enumeration value="Mensual"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="Periodo">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Periodo">
+									<xs:choice>
+										<xs:element name="Dia" type="date-aaaammdd"/>
+										<xs:element name="Mes" type="date-aaaamm"/>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroMensualBase" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="RegistroBase">
+				<xs:sequence>
+					<xs:element name="Mes" type="date-aaaamm"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroRUT">
+		<xs:complexContent>
+			<xs:extension base="RegistroPeriodicoBase">
+				<xs:sequence>
+					<xs:element name="NumeroJugadores" type="xs:nonNegativeInteger"/>
+					<xs:element name="NumeroAltas" type="xs:nonNegativeInteger"/>
+					<xs:element name="NumeroBajas" type="xs:nonNegativeInteger"/>
+					<xs:element name="NumeroActividad" type="xs:nonNegativeInteger"/>
+					<xs:element name="NumeroJugadoresPorEstado" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="EstadoCNJ" type="EstadoCNJ"/>
+								<xs:element name="EstadoOperador" type="xs:string"/>
+								<xs:element name="Numero" type="xs:nonNegativeInteger"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroCEVDM">
+		<xs:annotation>
+			<xs:documentation>Nueva versión del CEV para aceptar diarios y mensuales</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="RegistroPeriodicoBase">
+				<xs:sequence minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="EventoId" type="xs:string"/>
+					<xs:element name="DescripcionEvento" type="xs:string"/>
+					<xs:element name="FechaInicio" type="date-aaaammddhhmmssTZ"/>
+					<xs:element name="FechaFin" type="date-aaaammddhhmmssTZ"/>
+					<xs:element name="TipoEvento">
+						<xs:annotation>
+							<xs:documentation>Deportivo, Hipicas, Otras Apuestas</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="D"/>
+								<xs:enumeration value="H"/>
+								<xs:enumeration value="O"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="Deporte" type="ListaDeporte"/>
+					<xs:element name="OtroDeporteEspecificar" type="xs:string" minOccurs="0"/>
+					<xs:element name="Competicion" type="xs:string" minOccurs="0"/>
+					<xs:element name="Actualizado" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>S para modificaciones y N para altas</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="N"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroRUR">
+		<xs:complexContent>
+			<xs:extension base="RegistroMensualBase">
+				<xs:sequence>
+					<xs:element name="Jugador" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ID" type="ID" maxOccurs="unbounded"/>
+								<xs:element name="FechaActivacion" type="date-aaaammddhhmmss"/>
+								<xs:element name="Login" type="xs:string"/>
+								<xs:element name="Estado">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="EstadoCNJ" type="EstadoCNJ"/>
+											<xs:element name="EstadoOperador" type="xs:string"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroRUG">
+		<xs:complexContent>
+			<xs:extension base="RegistroMensualBase">
+				<xs:sequence>
+					<xs:element name="Jugador" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ID" type="ID" minOccurs="0" maxOccurs="unbounded"/>
+								<xs:element name="RegionFiscal">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="01"/>
+											<xs:enumeration value="02"/>
+											<xs:enumeration value="03"/>
+											<xs:enumeration value="04"/>
+											<xs:enumeration value="05"/>
+											<xs:enumeration value="06"/>
+											<xs:enumeration value="07"/>
+											<xs:enumeration value="08"/>
+											<xs:enumeration value="09"/>
+											<xs:enumeration value="10"/>
+											<xs:enumeration value="11"/>
+											<xs:enumeration value="12"/>
+											<xs:enumeration value="13"/>
+											<xs:enumeration value="14"/>
+											<xs:enumeration value="15"/>
+											<xs:enumeration value="16"/>
+											<xs:enumeration value="17"/>
+											<xs:enumeration value="18"/>
+											<xs:enumeration value="19"/>
+											<xs:enumeration value="20"/>
+											<xs:enumeration value="21"/>
+											<xs:enumeration value="22"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:choice>
+									<xs:element name="Residente">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Nacionalidad" type="paisISO"/>
+												<xs:choice>
+													<xs:element name="DNI" type="xs:string"/>
+													<xs:element name="NIE" type="xs:string"/>
+												</xs:choice>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="NoResidente">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Nacionalidad" type="paisISO"/>
+												<xs:element name="PaisResidencia" type="paisISO"/>
+												<xs:element name="TipoDocumento" type="TipoDocumento"/>
+												<xs:element name="EspecificarTipoDocumento" type="xs:string" minOccurs="0"/>
+												<xs:element name="Documento" type="xs:string"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:choice>
+								<xs:element name="FechaNacimiento" type="date-aaaammdd"/>
+								<xs:element name="Nombre" type="xs:string"/>
+								<xs:element name="Apellido1" type="xs:string"/>
+								<xs:element name="Apellido2" type="xs:string" minOccurs="0"/>
+								<xs:element name="email" type="xs:string"/>
+								<xs:element name="Sexo">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="M"/>
+											<xs:enumeration value="F"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="Domicilio">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Direccion" type="xs:string"/>
+											<xs:element name="Ciudad" type="xs:string"/>
+											<xs:element name="CP" type="xs:string"/>
+											<xs:element name="Pais" type="paisISO"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Telefono" type="xs:string"/>
+								<xs:element name="VSVDI">
+									<xs:annotation>
+										<xs:documentation>Verificación positiva en el SVDI (S/N)</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="S"/>
+											<xs:enumeration value="N"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="FVSVDI" type="date-aaaammddhhmmssTZ" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Fecha de primera verificación positiva en el SVDI</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="VDocumental">
+									<xs:annotation>
+										<xs:documentation>Verificación documental positiva (S/N)</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="S"/>
+											<xs:enumeration value="N"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="FVDocumental" type="date-aaaammddhhmmssTZ" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Fecha de primera verificación documental positiva</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="Premio" type="xs:decimal" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Premio en Euros del ganador, para jugadores presenciales de SELAE</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="Retencion" type="xs:decimal" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Retención, en Euros, efectuada al premio del ganador, para jugadores presenciales de SELAE</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroRUD">
+		<xs:complexContent>
+			<xs:extension base="RegistroPeriodicoBase">
+				<xs:sequence>
+					<xs:element name="Jugador" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:annotation>
+									<xs:documentation>Fecha de primera verificación positiva en el SVDI</xs:documentation>
+								</xs:annotation>
+								<xs:element name="ID" type="ID" maxOccurs="unbounded"/>
+								<xs:element name="FechaActivacion" type="date-aaaammddhhmmss">
+									<xs:annotation>
+										<xs:documentation>Primera activación del registro de usuario</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="CambiosEnDatos">
+									<xs:annotation>
+										<xs:documentation>Campo triestado: (A)lta, (N)o ha variado, (S)í ha variado</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="S"/>
+											<xs:enumeration value="N"/>
+											<xs:enumeration value="A"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="RegionFiscal">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="01"/>
+											<xs:enumeration value="02"/>
+											<xs:enumeration value="03"/>
+											<xs:enumeration value="04"/>
+											<xs:enumeration value="05"/>
+											<xs:enumeration value="06"/>
+											<xs:enumeration value="07"/>
+											<xs:enumeration value="08"/>
+											<xs:enumeration value="09"/>
+											<xs:enumeration value="10"/>
+											<xs:enumeration value="11"/>
+											<xs:enumeration value="12"/>
+											<xs:enumeration value="13"/>
+											<xs:enumeration value="14"/>
+											<xs:enumeration value="15"/>
+											<xs:enumeration value="16"/>
+											<xs:enumeration value="17"/>
+											<xs:enumeration value="18"/>
+											<xs:enumeration value="19"/>
+											<xs:enumeration value="20"/>
+											<xs:enumeration value="21"/>
+											<xs:enumeration value="22"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:choice>
+									<xs:element name="Residente">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Nacionalidad" type="paisISO">
+													<xs:annotation>
+														<xs:documentation>Lista ISO</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:choice>
+													<xs:element name="DNI" type="xs:string"/>
+													<xs:element name="NIE" type="xs:string"/>
+												</xs:choice>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="NoResidente">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Nacionalidad" type="paisISO"/>
+												<xs:element name="PaisResidencia" type="paisISO"/>
+												<xs:element name="TipoDocumento" type="TipoDocumento"/>
+												<xs:element name="EspecificarTipoDocumento" type="xs:string" minOccurs="0"/>
+												<xs:element name="Documento" type="xs:string"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:choice>
+								<xs:element name="FechaNacimiento" type="date-aaaammdd"/>
+								<xs:element name="Login" type="xs:string"/>
+								<xs:element name="Pseudonimo" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+								<xs:element name="Nombre" type="xs:string"/>
+								<xs:element name="Apellido1" type="xs:string"/>
+								<xs:element name="Apellido2" type="xs:string" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Opcional si es extranjero</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="email" type="xs:string"/>
+								<xs:element name="Sexo">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="M"/>
+											<xs:enumeration value="F"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="Domicilio">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Direccion" type="xs:string"/>
+											<xs:element name="Ciudad" type="xs:string"/>
+											<xs:element name="CP" type="xs:string"/>
+											<xs:element name="Pais" type="paisISO">
+												<xs:annotation>
+													<xs:documentation>Lista ISO</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Telefono" type="xs:string"/>
+								<xs:element name="LimitesDeposito">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Diario" type="euros"/>
+											<xs:element name="Semanal" type="euros"/>
+											<xs:element name="Mensual" type="euros"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Estado">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="EstadoCNJ" type="EstadoCNJ"/>
+											<xs:element name="EstadoOperador" type="xs:string"/>
+											<xs:element name="Historico" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="EstadoCNJ" type="xs:string"/>
+														<xs:element name="EstadoOperador" type="xs:string"/>
+														<xs:element name="Desde" type="date-aaaammddhhmmssTZ"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="VSVDI">
+									<xs:annotation>
+										<xs:documentation>Verificación positiva en el SVDI (S/N)</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="S"/>
+											<xs:enumeration value="N"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="FVSVDI" type="date-aaaammddhhmmssTZ" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Fecha de primera verificación positiva en el SVDI</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="VDocumental">
+									<xs:annotation>
+										<xs:documentation>Verificación documental positiva (S/N)</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="S"/>
+											<xs:enumeration value="N"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="FVDocumental" type="date-aaaammddhhmmssTZ" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Fecha de primera verificación documental positiva</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroCJT">
+		<xs:complexContent>
+			<xs:extension base="RegistroPeriodicoBase">
+				<xs:sequence>
+					<xs:element name="SaldoInicial" type="Importe"/>
+					<xs:element name="Depositos" type="DesgloseMedioPago"/>
+					<xs:element name="Retiradas" type="DesgloseMedioPago"/>
+					<xs:element name="Participacion" type="DesgloseOperadorTipoJuego"/>
+					<xs:element name="ParticipacionDevolucion" type="DesgloseOperadorTipoJuego"/>
+					<xs:element name="Premios" type="DesgloseOperadorTipoJuego"/>
+					<xs:element name="Otros" type="DesgloseOperadorConcepto"/>
+					<xs:element name="SaldoFinal" type="Importe"/>
+					<xs:element name="PremiosEspecie" type="DesgloseOperadorTipoJuego"/>
+					<xs:element name="AjustePremios" type="DesgloseOperadorTipoJuego"/>
+					<xs:element name="Trans_IN" type="DesgloseOperador"/>
+					<xs:element name="Trans_OUT" type="DesgloseOperador"/>
+					<xs:element name="Comision" type="DesgloseOperadorTipoJuego"/>
+					<xs:element name="Bonos" type="DesgloseOperadorConcepto">
+						<xs:annotation>
+							<xs:documentation>Se utilizarán solo los conceptos: CONCESION, CANCELACION y LIBERACION</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroCJD">
+		<xs:complexContent>
+			<xs:extension base="RegistroPeriodicoBase">
+				<xs:sequence>
+					<xs:element name="Jugador" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ID" type="ID" maxOccurs="unbounded"/>
+								<xs:element name="SaldoInicial" type="Importe"/>
+								<xs:element name="Depositos" type="DesgloseOperaciones"/>
+								<xs:element name="Retiradas" type="DesgloseOperaciones"/>
+								<xs:element name="Participacion" type="DesgloseOperadorTipoJuego"/>
+								<xs:element name="ParticipacionDevolucion" type="DesgloseOperadorTipoJuego"/>
+								<xs:element name="Premios" type="DesgloseOperadorTipoJuego"/>
+								<xs:element name="Otros" type="DesgloseOperadorConcepto"/>
+								<xs:element name="SaldoFinal" type="Importe"/>
+								<xs:element name="PremiosEspecie" type="DesgloseOperadorTipoJuego"/>
+								<xs:element name="Cuentas" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Cuenta" type="xs:string"/>
+											<xs:element name="SaldoFinal" type="Importe"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="AjustePremios" type="DesgloseOperadorTipoJuego"/>
+								<xs:element name="Trans_IN" type="DesgloseOperador"/>
+								<xs:element name="Trans_OUT" type="DesgloseOperador"/>
+								<xs:element name="Comision" type="DesgloseOperadorTipoJuego"/>
+								<xs:element name="Bonos" type="DesgloseOperadorConcepto">
+									<xs:annotation>
+										<xs:documentation>Se utilizarán solo los conceptos: CONCESION, CANCELACION y LIBERACION</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroOPT">
+		<xs:complexContent>
+			<xs:extension base="RegistroMensualBase">
+				<xs:sequence>
+					<xs:element name="TipoJuego" type="TipoJuego"/>
+					<xs:element name="Participacion" type="DesgloseOperador"/>
+					<xs:element name="ParticipacionDevolucion" type="DesgloseOperador"/>
+					<xs:element name="Premios" type="DesgloseOperador"/>
+					<xs:element name="PremiosEspecie" type="DesgloseOperador"/>
+					<xs:element name="Botes" type="DesgloseOperador"/>
+					<xs:element name="AjustesRed" type="DesgloseOperador"/>
+					<xs:element name="Otros" type="DesgloseOperadorConcepto">
+						<xs:annotation>
+							<xs:documentation>Se deben reportar los conceptos: APA - Ajustes de Participación; APR - Ajustes de premios; BON - Bonos; OTR para Otros</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Comision" type="DesgloseOperador"/>
+					<xs:element name="GGR" type="Importe">
+						<xs:annotation>
+							<xs:documentation>El signo será negativo para indicar una ganancia en el operador para el juego</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroORT">
+		<xs:complexContent>
+			<xs:extension base="RegistroMensualBase">
+				<xs:sequence>
+					<xs:element name="TipoJuego" type="TipoJuego"/>
+					<xs:element name="Participacion" type="DesgloseOperador"/>
+					<xs:element name="ParticipacionDevolucion" type="DesgloseOperador"/>
+					<xs:element name="Premios" type="DesgloseOperador"/>
+					<xs:element name="PremiosEspecie" type="DesgloseOperador"/>
+					<xs:element name="Botes" type="DesgloseOperador"/>
+					<xs:element name="AjustesRed" type="DesgloseOperador"/>
+					<xs:element name="Otros" type="DesgloseOperadorConcepto">
+						<xs:annotation>
+							<xs:documentation>Se deben reportar los conceptos: APA - Ajustes de Participación; APR - Ajustes de premios; BON - Bonos; OTR para Otros</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Comision" type="DesgloseOperador"/>
+					<xs:element name="GGR" type="Importe">
+						<xs:annotation>
+							<xs:documentation>El signo será negativo para indicar una ganancia en el operador para el juego</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroBOT">
+		<xs:complexContent>
+			<xs:extension base="RegistroMensualBase">
+				<xs:sequence>
+					<xs:element name="TipoJuego" type="TipoJuego"/>
+					<xs:element name="PartidasVivas">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="SaldoInicial" type="Importe"/>
+								<xs:element name="Movimientos" type="Importe">
+									<xs:annotation>
+										<xs:documentation>Se deben reportar dos movimientos, (+) aumento de partidas vivas y (-) las apuestas que se han resuelto en el mes</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="SaldoFinal" type="Importe"/>
+								<xs:element name="DesgloseCompromiso" minOccurs="0" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Desglose del Saldo Final de Partidas Vivas, según la resolución esperada de estas en los meses venideros</xs:documentation>
+									</xs:annotation>
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Fecha" type="date-aaaamm"/>
+											<xs:element name="SaldoFinal" type="Importe"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Botes">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="SaldoInicial" type="Importe"/>
+								<xs:element name="Movimientos" type="Importe">
+									<xs:annotation>
+										<xs:documentation>Se deben reportar dos movimientos, (+) aumento de botes y (-) botes que se han entregado en el mes</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="SaldoFinal" type="Importe"/>
+								<xs:element name="DesgloseBotes" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="BoteId" type="xs:string"/>
+											<xs:element name="BoteDesc" type="xs:string"/>
+											<xs:element name="FechaInicio" type="date-aaaammdd"/>
+											<xs:element name="FechaFin" type="date-aaaammdd" minOccurs="0"/>
+											<xs:element name="SaldoInicial" type="Importe"/>
+											<xs:element name="Movimientos" type="Importe"/>
+											<xs:element name="SaldoFinal" type="Importe"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroJUT" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="RegistroBase">
+				<xs:sequence>
+					<xs:element name="JuegoId" type="xs:string"/>
+					<xs:element name="JuegoDesc" type="xs:string"/>
+					<xs:element name="TipoJuego" type="TipoJuego"/>
+					<xs:element name="FechaInicio" type="date-aaaammddhhmmssTZ"/>
+					<xs:element name="FechaFin" type="date-aaaammddhhmmssTZ"/>
+					<xs:element name="JuegoEnRed">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="N"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="JuegoAplazado" minOccurs="0">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="N"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="JuegoSuspendido" minOccurs="0">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="N"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="JuegoCancelado" minOccurs="0">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="N"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="BooleanLI" minOccurs="0">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="N"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="Totales">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Participacion" type="DesgloseOperador"/>
+								<xs:element name="ParticipacionDevolucion" type="DesgloseOperador"/>
+								<xs:element name="Premios" type="DesgloseOperador"/>
+								<xs:element name="PremiosEspecie" type="DesgloseOperador"/>
+								<xs:element name="Botes">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Total" type="Importe"/>
+											<xs:element name="Desglose" minOccurs="0" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="BoteId" type="xs:string"/>
+														<xs:element name="BoteDesc" type="xs:string"/>
+														<xs:element name="Movimiento" type="Importe"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroJUD" abstract="false">
+		<xs:complexContent>
+			<xs:extension base="RegistroBase">
+				<xs:sequence>
+					<xs:element name="JuegoId" type="xs:string"/>
+					<xs:element name="FechaFin" type="date-aaaammddhhmmssTZ">
+						<xs:annotation>
+							<xs:documentation>Fecha y hora final del suceso, se debe corresponder con la reportada en el fichero JUT para el mismo JuegoId</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Jugador" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ID" type="ID"/>
+								<xs:element name="Participacion" type="Importe"/>
+								<xs:element name="ParticipacionDevolucion" type="Importe"/>
+								<xs:element name="Premios" type="Importe"/>
+								<xs:element name="PremiosEspecie" type="Importe"/>
+								<xs:element name="DesgloseEspecie" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Descripcion" type="xs:string"/>
+											<xs:element name="Valoracion" type="Importe"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="TicketApuesta" type="xs:string" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>TicketId</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="FechaApuesta" type="date-aaaammddhhmmssTZ" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Fecha del Ticket</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="DesgloseCruzadas" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Reto">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="N"/>
+														<xs:enumeration value="S"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+											<xs:element name="Cruces" minOccurs="0" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="LayBack" type="xs:string"/>
+														<xs:element name="Ticket" type="xs:string"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="PlanificacionAzar" minOccurs="0">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="DuracionLimite" type="time-hhmmss"/>
+											<xs:element name="ParticipacionLimite" type="euros"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="IP" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Dirección IP del dispositivo desde el que se ha realizado la apuesta</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="Dispositivo">
+									<xs:annotation>
+										<xs:documentation>Dispositivo desde el que se ha realizado la apuesta</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="MO"/>
+											<xs:enumeration value="PC"/>
+											<xs:enumeration value="TB"/>
+											<xs:enumeration value="TF"/>
+											<xs:enumeration value="OT"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="IdDispositivo" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Identificador del dispositivo desde el que se ha producido la conexión</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="Cuota" type="xs:decimal" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Cuota de la apuesta en el momento que es aceptada por el jugador</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroJUA" abstract="false">
+		<xs:complexContent>
+			<xs:extension base="RegistroMensualBase">
+				<xs:sequence minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="EventoId" type="xs:string" maxOccurs="unbounded"/>
+					<xs:element name="TicketApuesta" type="xs:string"/>
+					<xs:element name="ID" type="ID"/>
+					<xs:element name="FechaAjuste" type="date-aaaammddhhmmssTZ"/>
+					<xs:element name="MotivoAjuste" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Detalle de la razón por la que se ha producido el ajuste</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ImporteAjuste" type="Importe"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroPokerCash">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="Variante">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="DR"/>
+								<xs:enumeration value="ST"/>
+								<xs:enumeration value="OM"/>
+								<xs:enumeration value="TH"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="VarianteComercial" type="xs:string" minOccurs="0"/>
+					<xs:element name="MesaId" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroPokerTorneo">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="Variante">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="DR"/>
+								<xs:enumeration value="ST"/>
+								<xs:enumeration value="OM"/>
+								<xs:enumeration value="TH"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="VarianteComercial" type="xs:string" minOccurs="0"/>
+					<xs:element name="NumeroParticipantes" type="xs:nonNegativeInteger"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroPuntoBanca">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroSesion">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="Variante" type="VarianteSesion" minOccurs="0"/>
+					<xs:element name="VarianteComercial" type="xs:string" minOccurs="0"/>
+					<xs:element name="PartidasJugadas" type="xs:positiveInteger"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroBingo">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="PrecioCarton" type="euros"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroConcurso">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="NumeroParticipaciones" type="xs:nonNegativeInteger"/>
+					<xs:element name="NumeroPremiados" type="xs:nonNegativeInteger"/>
+					<xs:element name="NumeroLlamadas" type="xs:nonNegativeInteger"/>
+					<xs:element name="PrecioMinutoLlamada" type="euros"/>
+					<xs:element name="ImporteMaximoLlamada" type="euros"/>
+					<xs:element name="ParticipacionLlamadas" type="euros"/>
+					<xs:element name="STALlamadas" type="euros"/>
+					<xs:element name="NumeroSMS" type="xs:nonNegativeInteger"/>
+					<xs:element name="PrecioSMS" type="euros"/>
+					<xs:element name="ParticipacionSMS" type="euros"/>
+					<xs:element name="STASMS" type="euros"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroApuesta">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="EnDirecto">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="N"/>
+								<xs:enumeration value="S"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="TipoApuesta">
+						<xs:annotation>
+							<xs:documentation>S - Simple: 1 Evento, 1 Hecho; M - Múltiple: 1 Evento, mas de 1 Hecho; C - Combinada: Varios Eventos</xs:documentation>
+							<xs:documentation>Total de eventos distintos en la apuesta</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="S"/>
+								<xs:enumeration value="M"/>
+								<xs:enumeration value="C"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NumeroEventos" type="xs:nonNegativeInteger"/>
+					<xs:element name="Eventos" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="EventoId" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Referencia al catálogo de eventos</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="Hecho" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Mercado: Resultado</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="FechaHecho" type="date-aaaammddhhmmssTZ">
+									<xs:annotation>
+										<xs:documentation>Fecha y hora del hecho</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="NumeroApostantes" type="xs:nonNegativeInteger"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RegistroLoteria">
+		<xs:complexContent>
+			<xs:extension base="RegistroJUT">
+				<xs:sequence>
+					<xs:element name="NumeroApostantes" type="xs:nonNegativeInteger"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ID">
+		<xs:sequence>
+			<xs:element name="OperadorId" type="xs:string"/>
+			<xs:element name="JugadorId" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

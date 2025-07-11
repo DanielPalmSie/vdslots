@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wal="http://wallet.integration.eoc.edict.de">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wal:deposit>
+         <DepositRequest>
+            <callerId>{{callerId}}</callerId>
+            <callerPassword>{{callerPassword}}</callerPassword>
+            <playerName>{{playerName}}</playerName>
+            <amount>{{amount}}</amount>
+            <!--Zero or more repetitions:-->
+            <bonusPrograms>
+               <!--Optional:-->
+               <bonusProgramId>?</bonusProgramId>
+               <depositionId>?</depositionId>
+            </bonusPrograms>
+            <!--Zero or more repetitions:-->
+            <tournaments>
+               <tournamentId>?</tournamentId>
+               <tournamentOccurrenceId>?</tournamentOccurrenceId>
+            </tournaments>
+            <!--Optional:-->
+            <bigWin>{{bigWin}}</bigWin>
+            <!--Optional:-->
+            <jackpotAmount>{{jackpotAmount}}</jackpotAmount>
+            <!--Optional:-->
+            <bonusWin>{{bonusWin}}</bonusWin>
+            <currency>{{currency}}</currency>
+            <transactionRef>{{transactionRef}}</transactionRef>
+            <!--Optional:-->
+            <gameRoundRef>{{gameRoundRef}}</gameRoundRef>
+            <!--Optional:-->
+            <gameId>{{gameId}}</gameId>
+            <!--Optional:-->
+            <reason>{{reason}}</reason>
+            <!--Optional:-->
+            <source>{{source}}</source>
+            <!--Optional:-->
+            <startDate>{{startDate}}</startDate>
+            <!--Optional:-->
+            <sessionId>{{sessionId}}</sessionId>
+         </DepositRequest>
+      </wal:deposit>
+   </soapenv:Body>
+</soapenv:Envelope>

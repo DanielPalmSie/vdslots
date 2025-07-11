@@ -1,0 +1,5 @@
+<authorizationRequest>
+	<callerId>{{callerId}}</callerId>
+	<callerPassword>{{callerPassword}}</callerPassword>{{playerName}}           
+	<sessionToken>{{sessionToken}}</sessionToken>
+</authorizationRequest>

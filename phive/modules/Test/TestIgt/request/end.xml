@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameRequest>
+	<Header>
+		<GameDetails channel="" presentation="" class="" />
+		<Customer userId="{{userId}}" ccyCode="{{currency}}" sessionId="" skinCode="" />
+		<Auth username="{{userName}}" password="{{userPassword}}" />
+		{{fundMode}}
+	</Header>
+	<EndSession status="LOGGED_OUT"></EndSession>
+</GameRequest>

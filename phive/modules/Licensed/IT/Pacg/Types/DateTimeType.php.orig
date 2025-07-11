@@ -1,0 +1,79 @@
+<?php
+namespace IT\Pacg\Types;
+
+/**
+ * Structure for the representation of the date and time
+ * Class DateTimeType
+ */
+class DateTimeType extends AbstractType
+{
+    protected $fillable = [
+        'date',
+        'time',
+    ];
+
+    protected $rules = [
+        'date'   => 'required|string|min:2|max:2',
+        'time' => 'required|string|min:2|max:2',
+    ];
+
+
+    /**
+     * @return DateType
+     */
+    public function getDateType(): DateType
+    {
+        return $this->date_type;
+    }
+
+    /**
+     * @param array $date_type_data
+     */
+    public function setDateType(array $date_type_data)
+    {
+        $date_type = new DateType();
+        $date_type->fill($date_type_data);
+        $this->date_type = $date_type;
+    }
+
+    /**
+     * @return TimeType
+     */
+    public function getTimeType(): TimeType
+    {
+        return $this->time_type;
+    }
+
+    /**
+     * @param array $time_type_data
+     */
+    public function setTimeType(array $time_type_data)
+    {
+        $time_type = new TimeType();
+        $time_type->fill($time_type_data);
+        $this->time_type = $time_type;
+    }
+
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            "data" => $this->getDateType()->toArray(),
+            "ora" => $this->getTimeType()->toArray()
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function toString(): string
+    {
+        return
+           "Date\n{$this->getDateType()->toString()}\n".
+           "Time\n{$this->getTimeType()->toString()}";
+    }
+
+}

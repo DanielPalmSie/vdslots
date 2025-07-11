@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WithdrawAndDepositRequest>
+	<UserName>{{userName}}</UserName>
+	<Password>{{userPassword}}</Password>
+	<PlayerId>{{userId}}</PlayerId>
+	<TransferId>{{transferId}}</TransferId>
+	<GameId>{{gameId}}</GameId>
+	<GameNumber>{{gameNumber}}</GameNumber>
+	<SessionId>{{secureToken}}</SessionId>
+	<Amount>{{amountBet}}</Amount>
+	<Currency>{{currency}}</Currency>
+	<Reason>{{finished}}</Reason>
+	<PortalCode></PortalCode>
+	<PlatformType></PlatformType>
+	<WinAmount>{{amountWin}}</WinAmount>
+</WithdrawAndDepositRequest>

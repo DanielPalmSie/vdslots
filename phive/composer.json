@@ -1,0 +1,133 @@
+{
+    "name": "videoslots/phive",
+    "description": "phive",
+    "type": "project",
+    "homepage": "https://wiki.videoslots.com/index.php?title=Phive_Composer",
+    "require": {
+        "php": "^7.4",
+        "ext-bcmath": "*",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mysqli": "*",
+        "ext-openssl": "*",
+        "ext-posix": "*",
+        "aws/aws-php-sns-message-validator": "^1.6",
+        "aws/aws-sdk-php": "^3.181",
+        "caseyamcl/guzzle_retry_middleware": "^2.7",
+        "components/jquery": "3.7.1",
+        "davidepastore/codice-fiscale": "^0.6.0",
+        "deeplcom/deepl-php": "^1.5",
+        "fabpot/goutte": "^4.0",
+        "firebase/php-jwt": "6.1.0",
+        "geoip2/geoip2": "^2.10",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/container": "^8.83",
+        "intervention/image": "^2.7",
+        "ip2location/ip2location-php": "^9.5",
+        "ip2location/ip2proxy-php": "^4.1",
+        "laminas/laminas-http": "^2.13",
+        "laminas/laminas-mail": "^2.11",
+        "longlang/phpkafka": "^1.2",
+        "maxmind/minfraud": "^1.13",
+        "monolog/monolog": "^2.0.0",
+        "nelexa/zip": "^4.0",
+        "parsecsv/php-parsecsv": "^1.2",
+        "php-amqplib/php-amqplib": "3.6.0",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "phpseclib/phpseclib": "~2.0",
+        "predis/predis": "^1.1",
+        "rakit/validation": "^1.2",
+        "robrichards/wse-php": "^2.0",
+        "robrichards/xmlseclibs": "^3.1",
+        "snipe/banbuilder": "2.3.0",
+        "sop/asn1": "^4.1",
+        "spatie/array-to-xml": "^2.16",
+        "swiftmailer/swiftmailer": "^6.0",
+        "symfony/dom-crawler": "^5.4",
+        "symfony/polyfill-ctype": "1.25.*",
+        "symfony/polyfill-mbstring": "1.25.*",
+        "symfony/polyfill-php80": "1.25.*",
+        "udger/udger-php": "dev-master#4cf215faa151196c52d112f7ddc31ce77233a01c",
+        "videoslots/history_messages": "^1.4",
+        "videoslots/laraphive": "^2.1.158",
+        "videoslots/mts-sdk-php": "v1.0.4",
+        "vlucas/phpdotenv": "^5.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "IT\\": "modules/Licensed/IT",
+            "ES\\": "modules/Licensed/ES",
+            "CA\\": "modules/Licensed/CA",
+            "XML\\": "modules/XML",
+            "Licensed\\": "modules/Licensed",
+            "GeoComply\\": "modules/GeoComply",
+            "IdScan\\": "modules/IdScan",
+            "History\\": "modules/History",
+            "PayNPlay\\": "modules/PayNPlay",
+            "Mosms\\": "modules/Mosms",
+            "GamesRecommendations\\": "modules/GamesRecommendations",
+	        "Tests\\": "tests",
+            "Dotenv\\": "vendor/vlucas/phpdotenv",
+            "FormerLibrary\\": "modules/Former/Libraries",
+            "DBUserHandler\\": "modules/DBUserHandler",
+            "Videoslots\\": "src",
+            "ClosedLoop\\": "modules/ClosedLoop",
+            "RgEvaluation\\": "modules/RgEvaluation",
+            "RgAction\\": "modules/RgAction"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@gitlab-ssh.videoslots.com:syx-api/lara-phive.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab-ssh.videoslots.com:syx-api/laravel-sharded.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab-ssh.videoslots.com:reporting-service/history-messages.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab-ssh.videoslots.com:mts/mts-sdk-php.git"
+        }
+    ],
+    "require-dev": {
+        "ext-sqlite3": "*",
+        "adamwojs/php-cs-fixer-phpdoc-force-fqcn": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "opis/closure": "^3.5",
+        "pestphp/pest": "^1.22",
+        "phpcompatibility/php-compatibility": "*",
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php ./utils/auto_update_env_file.php",
+            "php ./utils/auto_update_config_cache.php",
+            "php ./utils/auto_update_config_cache_multibrand.php",
+            "php ./utils/setup_log_folder.php",
+            "php ./utils/download_external_files.php",
+            "php ./utils/create_symlink.php",
+            "cp ./vendor/components/jquery/jquery.min.js ./js/"
+        ],
+        "verify-cs": "./vendor/bin/php-cs-fixer --config=.php-cs-fixer.dist.php --allow-risky=yes fix --dry-run --diff",
+        "code-sniff": "./vendor/bin/phpcs",
+        "code-sniff-fix": "./vendor/bin/phpcbf",
+        "format": "./vendor/bin/php-cs-fixer --config=.php-cs-fixer.dist.php --allow-risky=yes fix"
+    }
+}

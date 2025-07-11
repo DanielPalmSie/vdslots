@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<{{namespace}}:Envelope xmlns:{{namespace}}="http://schemas.xmlsoap.org/soap/envelope/">
+    <{{namespace}}:Body>
+        <{{service}}:{{action}} xmlns:{{service}}="{{xmlnsurl}}">
+            <return>
+            {{return}}
+            </return>
+        </{{service}}:{{action}}>
+    </{{namespace}}:Body>
+</{{namespace}}:Envelope>
